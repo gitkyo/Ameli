@@ -1,1 +1,2 @@
-# Projet de d'intégration Front de la plateforme en ligne Ameli.fr
+# Ameli
+Projet d'intégration de la plateforme en ligne Ameli.fr
