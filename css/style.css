@@ -1,0 +1,163 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*
+@import "variables.less";
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+@import "glyphicons.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+@import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "responsive-embed.less";
+@import "wells.less";
+@import "close.less";
+
+// Components w/ JavaScript
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+*/
+/* FONT */
+@font-face {
+  font-family: 'OPENSANS_LIGHT_ITALIC';
+  src: url('../fonts/other/opensans-lightitalic-webfont.eot');
+  src: url('../fonts/other/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/other/opensans-lightitalic-webfont.woff') format('woff'), url('../fonts/other/opensans-lightitalic-webfont.ttf') format('truetype'), url('../fonts/other/opensans-lightitalic-webfont.svg#OPENSANS_LIGHT_ITALIC') format('svg');
+}
+@font-face {
+  font-family: 'OPENSANS_LIGHT';
+  src: url('../fonts/other/opensans-light-webfont.eot');
+  src: url('../fonts/other/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/other/opensans-light-webfont.woff') format('woff'), url('../fonts/other/opensans-light-webfont.ttf') format('truetype'), url('../fonts/other/opensans-light-webfont.svg#OPENSANS_LIGHT') format('svg');
+}
+/* Globals variables*/
+/* @borderTopPostTete : #dae5eb; */
+/* DIVERS */
+html,
+body {
+  height: 100%;
+}
+body > div {
+  height: calc(100% -  45px);
+}
+.form-group.required .control-label:after {
+  content: "*";
+  color: #e76207;
+}
+/* HEADER */
+header section.preEntete {
+  position: relative;
+  height: 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #dae4eb;
+  z-index: 10;
+}
+header section.preEntete .logoAM {
+  margin: 0 auto;
+  width: 124px;
+  height: 52px;
+  background: url(../img/logo_am_entete.svg) no-repeat;
+  background-color: transparent;
+}
+header section.entete {
+  position: relative;
+  padding: 0 32px;
+  height: 73px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0, 93, 168, 0.17);
+}
+header section.entete h1 {
+  position: absolute;
+  top: 20px;
+  height: 68px;
+  width: 127px;
+  height: 42px;
+  background: url(../img/logo_ameli.svg) no-repeat;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 0.1rem;
+  color: #fff;
+}
+header section.entete h2 {
+  position: absolute;
+  top: 41px;
+  left: 170px;
+  font-family: OPENSANS_LIGHT_ITALIC, Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #495058;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+header section.postTete {
+  background-color: #f7f7f7;
+  color: #757575;
+  border-bottom: 1px solid #d4d4d4;
+  /* border-top: 1px solid @borderTopPostTete; */
+  text-align: center;
+  padding: 20px 2%;
+  text-transform: uppercase;
+}
+/* FOOTER */
+footer {
+  height: 45px;
+  background-color: #efefef;
+}
+footer p {
+  display: inline-block;
+  padding: 9px 2%;
+  font-family: OPENSANS_LIGHT, Arial, Helvetica, sans-serif;
+  background: #e5e5e5;
+  margin-left: 7px;
+  font-size: 0.9em;
+}
+footer a,
+footer a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+body > div.accueil h3 {
+  border-bottom: 1px solid #005ea8;
+}
+body > div.accueil div.action {
+  background-color: #f7f7f7;
+}
+/*# sourceMappingURL=style.css.map */

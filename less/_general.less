@@ -1,0 +1,117 @@
+/* FONT */
+@font-face {
+	font-family: 'OPENSANS_LIGHT_ITALIC';
+	src: url('../fonts/other/opensans-lightitalic-webfont.eot');
+	src: url('../fonts/other/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/other/opensans-lightitalic-webfont.woff') format('woff'),
+		url('../fonts/other/opensans-lightitalic-webfont.ttf') format('truetype'),
+		url('../fonts/other/opensans-lightitalic-webfont.svg#OPENSANS_LIGHT_ITALIC') format('svg');
+}
+@font-face {
+	font-family: 'OPENSANS_LIGHT';
+	src: url('../fonts/other/opensans-light-webfont.eot');
+	src: url('../fonts/other/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/other/opensans-light-webfont.woff') format('woff'),
+		url('../fonts/other/opensans-light-webfont.ttf') format('truetype'),
+		url('../fonts/other/opensans-light-webfont.svg#OPENSANS_LIGHT') format('svg');
+}
+
+/* Globals variables*/
+@backgroundFooter : #efefef;
+@backgroundGrisClair : #f7f7f7;
+@colorPostTete : #757575;
+@borderBotPostTete : #d4d4d4;
+/* @borderTopPostTete : #dae5eb; */
+@colorAsterixRequirForm : #e76207;
+@hauteurFooter : 45px;
+
+/* DIVERS */
+html,
+body{
+	height: 100%;
+}
+body > div{
+	height: calc(~"100% - "@hauteurFooter);
+}
+.form-group.required .control-label:after {
+	content:"*";
+	color:@colorAsterixRequirForm;
+}
+
+/* HEADER */
+header {
+	section.preEntete {
+		position: relative;
+		height: 30px;
+		background-color: #fff;
+		border-bottom: 1px solid #dae4eb;
+		z-index: 10;
+		.logoAM {
+			margin: 0 auto;
+			width: 124px;
+			height: 52px;
+			background: url(../img/logo_am_entete.svg) no-repeat;
+			background-color: transparent;
+		}
+	}
+	section.entete {
+		position: relative;
+		padding: 0 32px;
+		height: 73px;
+		background-color: #fff;
+		margin-top: 10px;
+		border-bottom: 1px solid rgba(0, 93, 168, 0.17);
+		h1{
+			position: absolute;
+			top: 20px;
+			height: 68px;
+			width: 127px;
+			height: 42px;
+			background: url(../img/logo_ameli.svg) no-repeat;
+			background-color: transparent;
+			margin: 0;
+			padding: 0;
+			font-size: 0.1rem;
+			color: #fff;
+		}
+		h2{
+			position: absolute;
+			top: 41px;
+			left: 170px;
+			font-family: OPENSANS_LIGHT_ITALIC,Arial,Helvetica,sans-serif;
+			font-size: 2.2rem;
+			font-weight: normal;
+			color: #495058;
+			margin: 0;
+			text-transform: none;
+			letter-spacing: normal;
+		}
+	}
+	section.postTete{
+		background-color: @backgroundGrisClair;
+		color: @colorPostTete;
+		border-bottom: 1px solid @borderBotPostTete;
+		/* border-top: 1px solid @borderTopPostTete; */
+		text-align: center;
+		padding: 20px 2%;
+		text-transform: uppercase;
+	}
+}
+
+/* FOOTER */
+footer{
+	height: @hauteurFooter;
+	background-color: @backgroundFooter;
+	p {
+		display: inline-block;
+		padding: 9px 2%;
+		font-family: OPENSANS_LIGHT,Arial,Helvetica,sans-serif;
+		background: #e5e5e5;
+		margin-left: 7px;
+		font-size: 0.9em;
+	}
+	a, a:hover {
+		color: rgb(51,51,51);
+		text-decoration: none;
+	}
+}

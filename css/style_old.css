@@ -1,0 +1,2290 @@
+/*
+
+Custom CSS - @Pier - pierre-delaunay.fr 
+
+*/
+/*fonts/other externes*/
+@font-face {
+    font-family: 'OPENSANS_LIGHT_ITALIC';
+    src: url('../fonts/other/opensans-lightitalic-webfont.eot');
+    src: url('../fonts/other/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-lightitalic-webfont.svg#OPENSANS_LIGHT_ITALIC') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY';
+    src: url('../fonts/other/raleway-regular-webfont.eot');
+    src: url('../fonts/other/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-regular-webfont.svg#RALEWAY') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_BOLD';
+    src: url('../fonts/other/raleway-bold-webfont.eot');
+    src: url('../fonts/other/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-bold-webfont.svg#RALEWAY_BOLD') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_ITALIC';
+    src: url('../fonts/other/raleway-italic-webfont.eot');
+    src: url('../fonts/other/raleway-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-italic-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-italic-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-italic-webfont.svg#RALEWAY_ITALIC') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_LIGHT';
+    src: url('../fonts/other/raleway-light-webfont.eot');
+    src: url('../fonts/other/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-light-webfont.svg#RALEWAY_LIGHT') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_LIGHT_ITALIC';
+    src: url('../fonts/other/raleway-lightitalic-webfont.eot');
+    src: url('../fonts/other/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-lightitalic-webfont.svg#RALEWAY_LIGHT_ITALIC') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_SEMIBOLD';
+    src: url('../fonts/other/raleway-semibold-webfont.eot');
+    src: url('../fonts/other/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-semibold-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-semibold-webfont.svg#RALEWAY_SEMIBOLD') format('svg');
+}
+@font-face {
+    font-family: 'RALEWAY_SEMIBOLD_ITALIC';
+    src: url('../fonts/other/raleway-semibolditalic-webfont.eot');
+    src: url('../fonts/other/raleway-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/raleway-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/other/raleway-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/other/raleway-semibolditalic-webfont.svg#RALEWAY_SEMIBOLD_ITALIC') format('svg');
+}
+
+@font-face {
+    font-family: 'OPENSANS';
+    src: url('../fonts/other/opensans-regular-webfont.eot');
+    src: url('../fonts/other/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-regular-webfont.svg#OPENSANS') format('svg');
+}
+@font-face {
+    font-family: 'OPENSANS_BOLD';
+    src: url('../fonts/other/opensans-bold-webfont.eot');
+    src: url('../fonts/other/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-bold-webfont.svg#OPENSANS_BOLD') format('svg');
+}
+@font-face {
+    font-family: 'OPENSANS_ITALIC';
+    src: url('../fonts/other/opensans-italic-webfont.eot');
+    src: url('../fonts/other/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-italic-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-italic-webfont.svg#OPENSANS_ITALIC') format('svg');
+}
+@font-face {
+    font-family: 'OPENSANS_LIGHT';
+    src: url('../fonts/other/opensans-light-webfont.eot');
+    src: url('../fonts/other/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-light-webfont.svg#OPENSANS_LIGHT') format('svg');
+}
+@font-face {
+    font-family: 'OPENSANS_SEMIBOLD';
+    src: url('../fonts/other/opensans-semibold-webfont.eot');
+    src: url('../fonts/other/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-semibold-webfont.svg#OPENSANS_SEMIBOLD') format('svg');
+}
+@font-face {
+    font-family: 'OPENSANS_SEMIBOLD_ITALIC';
+    src: url('../fonts/other/opensans-semibolditalic-webfont.eot');
+    src: url('../fonts/other/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/other/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/other/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/other/opensans-semibolditalic-webfont.svg#OPENSANS_SEMIBOLD_ITALIC') format('svg');
+}
+
+/*
+
+Other properties - All pages
+
+*/
+html, body{
+	background-color: #dbddde;
+}	
+div.container.main{
+	margin-bottom: 11px;
+	background-color: #fff;
+}
+header section.preEntete {
+    position: relative;
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #dae4eb;
+    z-index: 10;
+}
+header section.entete {
+    position: relative;
+    padding: 0 32px;    
+    height: 73px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0, 93, 168, 0.17);
+}
+header section.entete h1 {
+    position: absolute;
+    top: 20px;
+    height: 68px;
+    width: 127px;
+    height: 42px;
+    background: url(../img/logo_ameli.svg) no-repeat;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 0.1rem;
+    color: #fff;
+}
+header section.entete h2 {
+    position: absolute;
+    top: 41px;
+    left: 170px;
+    font-family: OPENSANS_LIGHT_ITALIC,Arial,Helvetica,sans-serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: #495058;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: normal;
+}
+header section.preEntete .logoAM {
+    margin: 0 auto;
+    width: 124px;
+    height: 52px;
+    background: url(../img/logo_am_entete.svg) no-repeat;
+    background-color: transparent;
+}
+section.entete a:hover{
+    text-decoration: none;
+}
+div.wrapper{
+	background-color: #ededed;
+    padding: 0 4% 72px 4%;
+}
+div.stepper div.step{
+
+    color: #a8c3d8;
+    border: 1px solid #a8c3d8;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 17px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    position: relative;
+    border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+}
+div.stepper div.step.visited{    
+    background-color: #fff;
+    color: #005da8;
+    border: none;    
+}
+div.stepper div.step.active{
+    background: #005da8;
+    color: #fff;
+}
+div.stepper div.step span{
+    position: absolute;
+    bottom: -21px;
+    margin: 0 -20px;
+    background-color: #005da8;
+    padding: 4px 10px;
+    border-radius: 18px;
+    border: 3px solid #fff;
+    z-index: 2;
+    left: 50%;
+}
+div.stepper{
+    padding: 0px 10%;
+    margin: 20px 0;
+}
+div.stepper p{
+    text-transform: uppercase;    
+    font-family:OPENSANS_SEMIBOLD,Arial,Helvetica,sans-serif;
+}
+div.stepper div.first p, div.stepper div.last p, div.stepper div.second p{
+    padding-top: 7px;
+}
+div.stepper div.second p{
+    margin-top: -3px;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+div.stepper div.fourth p{
+    line-height: 20px;
+}
+div.stepper div.last p{
+    margin-bottom: 15px;
+    line-height: 7px;
+}
+div.stepper div.third p{
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+footer p{
+    display: inline-block;
+    padding: 9px 2%;
+    font-family: OPENSANS_LIGHT,Arial,Helvetica,sans-serif;
+    background: #e5e5e5;
+    margin-left: 7px;
+    font-size: 0.9em;
+}
+footer a,footer a:hover{
+    color: rgb(51,51,51);
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+}
+/*DoM Element Charted*/
+button.ameliStart{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px 2px 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #437fae;
+    color: #005da8;
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+    
+}
+button.ameliStart:hover, 
+button.ameliStart:focus,
+button.ameliStart:active,
+button.ameliStart:visited{
+    background-color: #005da8;
+    color: #fff;    
+    outline: none !important;
+}
+button.connexion{
+    background: url(../images/cadenas_hover_off.png) no-repeat 50% 50%;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+button.connexion:hover, button.connexion:active, button.connexion:visited, button.connexion:focus{
+    background: url(../images/cadenas_hover_on.png) no-repeat 50% 50%;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+h2.ameli{
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #434242;
+    text-transform: uppercase;
+}
+h3.ameli{
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #434242;
+    text-transform: uppercase;
+}
+h4.ameli{
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #434242;
+    text-transform: uppercase;
+}
+a.prevAmeli{        
+    height: 35px;
+    line-height: 35px;
+    background: url(../img/picto_precedent.svg) no-repeat 10px center;
+    background-color: #ffffff;
+    padding: 0 15px 2px 30px;    
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #437fae;
+    color: #005da8;
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+}
+a.draftAmeli{        
+    height: 35px;
+    color: #29a0a4;
+    line-height: 35px;
+    background: url(../images/icon_pause.png) no-repeat 10px center;
+    background-color: #ffffff;
+    background-size: 8%;
+    padding: 0 15px 2px 30px;    
+    text-transform: uppercase;
+    cursor: pointer;    
+    border: 1px solid #29a0a4;    
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+}
+a.editAmeli{        
+    height: 35px;
+    color: #29a0a4;
+    line-height: 35px;
+    background: url(../images/edit_icon.png) no-repeat 10px center;
+    background-color: #ffffff;
+    background-size: 14%;
+    padding: 0 15px 2px 30px;    
+    text-transform: uppercase;
+    cursor: pointer;    
+    border: 1px solid #29a0a4;    
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+}
+a.draftAmeli:hover{   
+    background: url(../images/icon_pause_hover.png) no-repeat 10px center;
+    background-size: 8%;
+    background-color: #29a0a4;
+    border-color: #29a0a4;
+}
+a.prevAmeli:hover{
+    background: url(../img/picto_precedent_hover.svg) no-repeat 10px center;
+    background-color: #005da8;  
+}
+.suivAmeli{        
+    height: 35px;
+    line-height: 35px;
+    background: url(../img/picto_suivant.svg) no-repeat 10px center;
+    background-color: #ffffff;
+    padding: 0 15px 2px 30px;    
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #437fae;
+    color: #005da8;
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.suivAmeli:hover, .suivAmeli:focus, .suivAmeli:visited, .suivAmeli:active{
+    background: url(../img/picto_suivant_hover.svg) no-repeat 10px center;
+    background-color: #005da8;
+    outline: none !important;
+}
+.annuleAmeli{        
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px 2px 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #437fae;
+    color: #005da8;
+    font-weight: bold;
+    -moz-box-shadow: 0 0 1px #73b1e1;
+    -webkit-box-shadow: 0 0 1px #73b1e1;
+    box-shadow: 0 0 1px #73b1e1;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -khtml-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.annuleAmeli:hover, .annuleAmeli:focus, .annuleAmeli:visited, .annuleAmeli:active{    
+    background-color: #005da8;
+    color: #fff;    
+    outline: none !important;    
+}
+.hiddenAmeli{
+    visibility: hidden;
+    border: 0;
+    height: 0px !important;
+    width: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important; 
+}
+/*
+Page d'accueil
+
+*/
+div.container.accueil, div.container.accueil .wrapper{
+    background-color: #fff;
+}
+div.container.accueil div.label_connexion{
+    font-size: 2.5em;
+    color: #a1a1a1;
+    margin-bottom: 32px;
+    font-family: RALEWAY_LIGHT;    
+}
+div.container.accueil div.subTitleRow{
+    margin-top: 10px;    
+}
+div.container.accueil div.iconMetier{
+    margin-top: 46px;
+    text-align: center;
+}
+div.container.accueil div.iconMetier div.passport{
+    background: url(../images/icon_hp_passport.png) no-repeat 10% 50%;
+    background-size: 12%;
+    text-indent: 3%;
+    min-height: 28px;
+    padding-top: 4px;
+}
+div.container.accueil div.iconMetier div.mannequin{
+    background: url(../images/icon_hp_mannequin.png) no-repeat 34% 50%;
+    background-size: 12%;
+    text-indent: 3%;
+    min-height: 28px;
+    padding-top: 4px;
+}
+div.container.accueil div.iconMetier div.langue{
+    background: url(../images/icon_hp_chat.png) no-repeat 24% 50%;
+    background-size: 12%;
+    text-indent: 3%;
+    min-height: 28px;
+    padding-top: 4px;
+}
+div.container.accueil form {
+    background-color: #f7f7f7;
+    position:   relative;   
+    margin: 70px 0 0 0%;
+    padding: 19px 8% 176px 8%;
+    border-radius: 3px
+}
+div.container.accueil div.titleRow {
+    text-align: center;
+}
+div.container.accueil .inscriptionZone{
+    margin-top: 80px    
+}
+div.container.accueil .inscriptionZone a:hover{
+    text-decoration:    none;   
+}
+div.container.accueil .inscriptionZone div.first{
+    text-align: right;  
+    border-right: 1px solid rgba(35, 82, 124, 0.45);     
+}
+div.container.accueil .buttonZone{
+    position: absolute;
+    bottom: -53px;
+    left: 40%
+}
+/*
+
+Page info salarie
+
+*/
+div.container.infoSalarie div.styledForm{
+    background: #f7f7f7;
+    margin: 0;
+    padding: 2% 15px;
+    height: 79px;
+}
+div.container.infoSalarie div.rowRappelDonneeDetail{
+    padding-left: 9%;
+}
+div.container.infoSalarie div.wrapper h2{
+    text-align: center;
+}
+div.container.infoSalarie div.extraFluid{
+    width: 108.2%;
+    margin-left: -4%;
+    margin-bottom: 22px;
+    background-color: #fff;
+    padding: 0px 10%;
+    padding-bottom: 18px;
+}
+div.container.infoSalarie div.extraFluid.noBottom{
+    margin-bottom:  0;
+    padding-bottom: 0;
+}
+div.container.infoSalarie div.specialRow{
+    padding:    0;
+}
+div.container.infoSalarie form.formTop div.form-group{
+    margin-bottom: 0;
+}
+div.container.infoSalarie form.formTop{
+    background: #fff;
+    margin-top: 10px;
+/*     margin-right: 8.6%;
+margin-left: -8px; */
+    padding: 7px 2% 21px 2%;
+}
+div.container.infoSalarie form.formTop p.jobIcon{
+    background: url(../images/icon_job.png) no-repeat 0% 50%;
+    background-size: 28px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.manIcon{
+    background: url(../images/icon_john.png) no-repeat -2% 50%;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.workIcon{
+    background: url(../images/icon_work.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.gpsIcon{
+    background: url(../images/icon_gps.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.mailIcon{
+    background: url(../images/icon_mail.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.phoneIcon{
+    background: url(../images/icon_phone.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.cityIcon{
+    background: url(../images/icon_cp.png) no-repeat -6px -3px;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop p.cpIcon{
+    background: url(../images/icon_city.png) no-repeat -6px -3px;
+    background-size: 32px;
+    padding-left: 32px;
+}
+div.container.infoSalarie form.formTop div.rel{
+    position: relative;
+}
+div.container.infoSalarie form.formTop div.barre{
+    position: absolute;
+    height: 69%;
+    background: rgba(0, 0, 0, 0.21);
+    width: 1px;
+    right: 3%;
+    top: 22px;
+}
+div.container.infoSalarie div.rowProcedure{
+    margin-top: 26px;
+}
+div.container.infoSalarie div.rowSituation{
+    margin-top: 7px;
+    padding: 0 0% 40px 27px;
+}
+div.container.infoSalarie div.rowSituation.two{    
+    padding-bottom: 32px;
+    margin-top: 16px;
+}
+div.container.infoSalarie div.rowIdent{
+    margin-top: 26px;
+}
+div.container.infoSalarie div.rowRappelDonnee.two{
+    margin-top: 24px;
+}
+div.container.infoSalarie form.dataForm {
+    background-color: #fff;
+    margin: -11px 7.8%;
+    padding: 17px 3% 0 3%;
+    z-index: 1;
+}
+div.container.infoSalarie div.rowRappelDonnee{
+    padding-bottom: 15px;
+}
+div.container.infoSalarie div.rowRappelDonnee h3{
+    padding-left: 9%;    
+}
+div.container.infoSalarie form.dataForm input.noUEEE, div.container.infoSalarie form.dataForm input.detailWork{
+    display: none;
+}
+div.container.infoSalarie form.dataForm .buttonZone{
+    text-align: right;
+    margin: 0;
+    width: 107.6%;
+    margin-left: -3.8%;
+    background: #f7f7f7;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+div.container.infoSalarie button.icon_aide{
+    background: url('../img/picto_aide.png') no-repeat 50% 50%;
+    background-size: 23px;
+    min-height: 40px;
+    border: none;
+}
+div.container.infoSalarie button.icon_aide:focus, div.container.infoSalarie button.icon_aide:visited, div.container.infoSalarie button.icon_aide:active{
+    outline: none;
+    box-shadow: none;
+}
+div.container.infoSalarie div.jeune{
+    background: url(../images/icon_jeune.png) no-repeat 15px 2px;
+    background-size: 14%;
+    padding-top: 19px;
+}
+div.container.infoSalarie div.adulte{
+    background: url(../images/icon_adulte.png) no-repeat 14px -1px;
+    background-size: 17%;
+    padding-top: 19px;
+}
+div.container.infoSalarie div.assistantLangue{
+    background: url(../images/icon_chat.png) no-repeat 14px -3px;
+    background-size: 28%;
+    padding-top: 19px;
+}
+div.container.infoSalarie div.manequin {
+    background: url(../images/icon_manequin.png) no-repeat 22px 5px;
+    background-size: 21%;
+    padding-top: 19px;
+}
+div.container.infoSalarie div.passport {
+    background: url(../images/icon_passport.png) no-repeat 22px 13px;
+    background-size: 18%;
+    padding-top: 19px;
+}
+div.container.infoSalarie div.assistantLangue p.help-block,
+div.container.infoSalarie div.manequin p.help-block,
+div.container.infoSalarie div.passport p.help-block{
+    padding-left: 17px;
+    font-size: 0.7em;
+}
+div.container.infoSalarie h4.ameli{
+    padding-bottom: 20px;
+}
+div.container.infoSalarie div.isPassport {
+    background-color: #f7f7f7;
+    padding: 15px 2% 24px 2%;
+    margin-left: 4%;
+    margin-right: 0%;
+    margin-bottom: 44px;
+    position:   relative;   
+}
+div.container.infoSalarie div.isPassport div.pic{
+    position: absolute;
+    right: 16%;
+    top: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 60px 50px;
+    border-color: transparent transparent #f7f7f7 transparent;
+}
+div.container.infoSalarie div.firstRadio {    
+    margin-bottom: 14px
+}
+
+/*
+
+Page piece jointe
+
+*/
+div.container.piecesJointes form.formTop div.form-group{
+    margin-bottom: 0;
+}
+div.container.piecesJointes form.formTop div.rel{
+    position: relative;
+}
+div.container.piecesJointes form.formTop div.barre{
+    position: absolute;
+    height: 69%;
+    background: rgba(0, 0, 0, 0.21);
+    width: 1px;
+    right: 3%;
+    top: 22px;
+}
+div.container.piecesJointes div.rowRappelDonnee{
+    padding-bottom: 15px;
+}
+div.container.piecesJointes div.rowRappelDonnee h3{
+    padding-left: 9%;    
+}
+div.container.piecesJointes form.formTop p.jobIcon{
+    background: url(../images/icon_job.png) no-repeat 0% 50%;
+    background-size: 28px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.manIcon{
+    background: url(../images/icon_john.png) no-repeat -2% 50%;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.workIcon{
+    background: url(../images/icon_work.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.gpsIcon{
+    background: url(../images/icon_gps.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.mailIcon{
+    background: url(../images/icon_mail.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.phoneIcon{
+    background: url(../images/icon_phone.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.cityIcon{
+    background: url(../images/icon_cp.png) no-repeat -6px -3px;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.piecesJointes form.formTop p.cpIcon{
+    background: url(../images/icon_city.png) no-repeat -6px -3px;
+    background-size: 32px;
+    padding-left: 32px;
+}
+div.container.piecesJointes div.extraFluid{
+    width: 108.2%;
+    padding-bottom: 20px;
+    margin-left: -4%;
+    margin-bottom: 22px;
+    background-color: #fff;
+}
+div.container.piecesJointes input.inputFileAmeli{
+    border: none;
+    box-shadow: none;
+}
+div.container.piecesJointes p.specialhelp{
+    padding: 0 1% 0 20%;
+    font-size: 0.9em;
+}
+div.container.piecesJointes button.inputFileAmeli{
+    border-color: #29a0a4;
+    height: 47px !important;
+    padding: 0px 5%;
+    color: #29a0a4;
+    padding-top: 0 !important;
+    padding-left: 50px;
+    background: url(../images/icon_upload.png) no-repeat 11px 50%;
+    background-size: 16%;    
+    margin-left: 55px;
+}
+div.container.piecesJointes button.one{    
+    margin-top: -10px;    
+}
+div.container.piecesJointes button.second{
+    margin-top: 25px;    
+}
+div.container.piecesJointes div.titleRow{
+    padding-bottom: 30px;    
+}
+div.container.piecesJointes div.stepperZone{
+    margin-top: 25px;
+}
+div.container.piecesJointes div.extraFluid.noBottom{
+    margin-bottom:  0;
+    padding-bottom: 0;
+}
+div.container.piecesJointes div.specialRow{
+    padding:    0;
+    text-align:     center; 
+    margin-bottom: 12px;
+}
+div.container.piecesJointes form {
+    background-color: #fff;
+    margin: -11px 7.8%;
+    padding: 17px 3% 0 3%;
+    z-index: 1;
+}
+div.container.piecesJointes h4.transition{
+    color: #005da8;
+}
+div.container.piecesJointes form label{
+    background: url(../images/icon_file.png) no-repeat 0% 45%;
+    background-size: 37px;
+    padding-left: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: normal;
+}
+div.container.piecesJointes div.rowFile{
+    margin-bottom: 18px;
+}
+div.container.piecesJointes div.rowFile.second .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.second div.ou {
+    height: 100px;
+    padding-top: 43px;
+}
+div.container.piecesJointes div.rowFile.third .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.third div.ou {
+    height: 58px;
+    padding-top: 24px;
+}
+div.container.piecesJointes div.rowFile.fourth .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.fourth div.ou {
+    height: 58px;
+    padding-top: 21px;
+}
+div.container.piecesJointes div.rowFile.fift .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.fift div.ou {
+    height: 58px;
+    padding-top: 21px;
+}
+div.container.piecesJointes div.rowFile.sixt .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.sixt div.ou {
+    height: 101px;
+    padding-top: 56px;
+}
+div.container.piecesJointes div.rowFile.sept .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.sept div.ou {
+    height: 33px;
+    padding-top: 7px;
+}
+div.container.piecesJointes div.rowFile.height .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.height div.ou {
+    height: 33px;
+    padding-top: 7px;
+}
+div.container.piecesJointes div.rowFile.nine .inputFileAmeli, 
+div.container.piecesJointes div.rowFile.nine div.ou {
+    height: 33px;
+    padding-top: 7px;
+}
+div.container.piecesJointes div.ou{    
+    font-weight: bold;
+}
+div.container.piecesJointes div.rowFile.second div.colFile{
+    padding-bottom: 120px;
+}
+div.container.piecesJointes div.rowFile.third div.colFile{
+    padding-bottom: 83px;
+}
+div.container.piecesJointes div.rowFile.fourth div.colFile{
+    padding-bottom: 82px
+}
+div.container.piecesJointes div.rowFile.fift div.colFile{
+    padding-bottom: 73px;
+    border: none;
+}
+div.container.piecesJointes div.rowFile.sixt div.colFile{
+    padding-bottom: 160px;
+}
+div.container.piecesJointes div.rowFile.sept div.colFile{
+    padding-bottom: 93px;
+}
+div.container.piecesJointes div.rowFile.height div.colFile{
+    border: none;
+}
+div.container.piecesJointes div.rowFile.nine div.colFile{
+    border: none;
+}
+div.container.piecesJointes div.rowFile.one{
+    margin-top: 30px;
+}
+div.container.piecesJointes div.rowFile.sixt{
+    margin-top: 30px;
+}
+div.container.piecesJointes div.rowFile.sept{
+    margin-top: 30px;
+}
+div.container.piecesJointes div.rowFile.height{
+    margin-top: 30px;
+}
+div.container.piecesJointes div.rowFile.nine{
+    margin-top: 30px;
+    margin-bottom: 43px;
+}
+div.container.piecesJointes div.rowFile.third button.third{
+    
+}
+div.container.piecesJointes div.rowFile.sixt button.sixt{
+    margin-top: 37px;
+}
+div.container.piecesJointes div.rowFile.sixt p.lorem{
+    font-style: italic;
+    font-size: 0.8em;
+    padding-top: 20px;
+    color: rgba(62, 58, 58, 0.78);
+}
+div.container.piecesJointes div.colFile{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 77px;
+    width: 94%;
+}
+/* div.container.piecesJointes form label.titreSej{
+    background: url(../images/icon_sejour.png) no-repeat 0% 50%;
+    background-size: 30px;
+    padding-left: 40px;
+}
+div.container.piecesJointes form label.titreSejTemp{
+    background: url(../images/icon_sejourTemp.png) no-repeat 0% 50%;
+    background-size: 30px;
+    padding-left: 40px;
+}
+div.container.piecesJointes form label.titreVisa{
+    background: url(../images/icon_visa.png) no-repeat 0% 50%;
+    background-size: 30px;
+    padding-left: 40px;
+} */
+div.container.piecesJointes form label.special{
+    padding-top: 7px;
+    background-position: 0% 100%;
+}
+div.container.piecesJointes form .buttonZone{
+    text-align: right;
+    margin: 0;
+    width: 107.6%;
+    margin-left: -3.8%;
+    background: #f7f7f7;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+div.container.piecesJointes form div.modal-body{
+    text-align: center;
+    padding: 7% 0%;
+}
+div.container.piecesJointes form div.modal-body div.colYes{
+    text-align: right;
+    padding-right: 8%;
+}
+div.container.piecesJointes form div.modal-body div.colNo{
+    text-align: left;
+    padding-left: 8%;
+}
+div.container.piecesJointes form div.modal-header,
+div.container.piecesJointes form div.modal-footer{
+    background: #f7f7f7;
+}
+div.container.piecesJointes .annuleAmeli{
+    float: left;
+}
+div.container.piecesJointes form div.modal-body button.yes,
+div.container.piecesJointes form div.modal-body button.no{
+    padding: 17px 10%;
+}
+div.container.piecesJointes form div.modal-body button.yes.active,
+div.container.piecesJointes form div.modal-body button.no.active{
+    background : #005da8 !important;
+    color: #fff;
+}
+div.container.piecesJointes form div.modal-footer button[type='submit'].notAllowed:hover,
+div.container.piecesJointes form div.modal-footer button[type='submit'].notAllowed:focus,
+div.container.piecesJointes form div.modal-footer button[disabled].notAllowed,
+div.container.piecesJointes form div.modal-footer button[type='submit'].notAllowed:active{
+    cursor : not-allowed !important;       
+}
+
+/*
+
+Page rendezVous
+
+*/
+div.container.rendezVous div.buttonZone a.suivAmeli{
+    float: right;
+}
+/*
+
+Page Recap
+
+*/
+div.container.recap div.stepper div.second p{
+    margin-top: -3px;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+div.container.recap div.stepper div.fourth p{
+    line-height: 20px;
+}
+div.container.recap div.stepper div.last p{
+    margin-bottom: 15px;
+    line-height: 7px;
+}
+div.container.recap div.rowRappelDonneeDetail{
+    padding-left: 9%;
+}
+div.container.recap div.wrapper h2{
+    text-align: center;
+}
+div.container.recap div.extraFluid{
+    width: 108.2%;
+    margin-left: -4%;
+    margin-bottom: 22px;
+    background-color: #fff;
+    padding: 0px 10%;
+    padding-bottom: 18px;
+}
+div.container.recap div.extraFluid.noBottom{
+    margin-bottom:  0;
+    padding-bottom: 0;
+}
+div.container.recap div.specialRow{
+    padding:    0;
+}
+div.container.recap form.formTop div.form-group{
+    margin-bottom: 0;
+}
+div.container.recap form.formTop{
+    background: #fff;
+    margin-top: 10px;
+    padding: 7px 2% 21px 2%;
+}
+div.container.recap form.formTop p.jobIcon{
+    background: url(../images/icon_job.png) no-repeat 0% 50%;
+    background-size: 28px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.manIcon{
+    background: url(../images/icon_john.png) no-repeat -2% 50%;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.workIcon{
+    background: url(../images/icon_work.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.gpsIcon{
+    background: url(../images/icon_gps.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.mailIcon{
+    background: url(../images/icon_mail.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.phoneIcon{
+    background: url(../images/icon_phone.png) no-repeat 0% 50%;
+    background-size: 20px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.cityIcon{
+    background: url(../images/icon_cp.png) no-repeat -6px -3px;
+    background-size: 39px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop p.cpIcon{
+    background: url(../images/icon_city.png) no-repeat -6px -3px;
+    background-size: 32px;
+    padding-left: 32px;
+}
+div.container.recap form.formTop div.rel{
+    position: relative;
+}
+div.container.recap form.formTop div.barre{
+    position: absolute;
+    height: 69%;
+    background: rgba(0, 0, 0, 0.21);
+    width: 1px;
+    right: 3%;
+    top: 22px;
+}
+div.container.recap div.rowRappelDonnee.two{
+    margin-top: 24px;
+}
+div.container.recap form.dataForm {
+    background-color: #fff;
+    margin: -11px 7.8%;
+    padding: 17px 3% 0 3%;
+    z-index: 1;
+}
+div.container.recap div.rowRappelDonnee{
+    padding-bottom: 15px;
+}
+div.container.recap div.rowRappelDonnee h3{
+    padding-left: 9%;    
+}
+div.container.recap form.dataForm .buttonZone{
+    text-align: right;
+    margin: 0;
+    width: 107.6%;
+    margin-left: -3.8%;
+    background: #f7f7f7;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+div.container.recap form.visu input[disabled]{
+    padding-top: 0;
+    color: #757575;
+    background: none;
+    font-weight: 600;
+    padding-left: 8%;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+}
+div.container.recap form.visu input[type~=text]{
+    padding-top: 0;
+    color: #757575;
+    background: none;
+    font-weight: 600;
+    padding-left: 8%;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    pointer-events:none;
+}
+div.container.recap form.edit input{
+    padding-top: 0;
+    color: #757575;
+    background-image: url('../images/modeEdit.png') !important;
+    background-size: 25px;
+    font-weight: 600;
+    padding-left: 8%;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-color: transparent;
+    padding-right: 10%;
+    padding-bottom: 0;
+    height: 26px;
+}
+div.container.recap form.edit div.form-group:hover input{
+    background-image: url('../images/hoverModeEdit.png') !important;
+    background-size: 9%;
+    background-repeat: no-repeat;
+    background-position: 99% 50%;
+    background-color: transparent;    
+}
+div.container.recap div.rowSituation h3{
+    padding-bottom: 27px;
+}
+div.container.recap form.edit div.form-group div.col-xs-6{
+    padding-right: 0;    
+}
+div.container.recap form.edit div.form-group div.col-xs-6 input{
+    
+}
+div.container.recap form.edit div.form-group.file{
+    background-color:transparent; 
+}
+div.container.recap form.edit div.form-group.file:hover{
+    background-color:transparent; 
+}
+div.container.recap form.edit div.form-group{
+    background-color: #f1f1f1;
+    margin-bottom: 9px !important;
+    width: 70%;
+    margin-left: 7% !important;
+}
+div.container.recap form.edit div.form-group:not(.file):hover{
+    background-color: #005ea8 !important;    
+}
+div.container.recap form.edit div.form-group.active:hover label{    
+    color: #fff;
+}
+div.container.recap form.edit div.form-group.active:hover label:hover{
+    color: #fff;
+}
+div.container.recap form.edit div.form-group:hover label, 
+div.container.recap form.edit div.form-group:hover input{
+    color: #fff;
+    cursor: pointer;
+}
+div.container.recap form.visu label,
+div.container.recap form.visu p.ident{
+    text-align: left;    
+    padding-left: 13%;
+    font-weight: normal;
+    color: #929292;
+    padding-right: 8%;
+}
+div.container.recap form.edit label,
+div.container.recap form.edit p.ident{    
+    text-align: left;
+    padding-left: 5%;
+    font-weight: normal;
+    color: #929292;
+    padding-right: 2%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+div.container.recap form.dataForm div.form-group{
+    margin: 0;
+    z-index: 99999;
+}
+div.container.recap form.visu span.killPdf{
+    display: none;
+}
+div.container.recap form.edit span.killPdf{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #157073;
+    padding: 6px 7px;
+    cursor: pointer;
+}
+div.container.recap form.edit div.form-group.active input{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(117, 117, 117);
+    font-weight: normal;
+    width: 86%;
+    background-image: none !important;
+    display: inline-block;
+    border-radius: 0;
+    color: rgb(51,51,51);
+}
+div.container.recap form.edit div.form-group.active label{
+    color: rgb(146, 146, 146);
+}
+div.container.recap form.edit div.form-group.active div.okBnt{
+    display: inline-block;
+    background: #005ea8;
+    color: #fff;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+div.container.recap form.edit div.form-group div.okBnt{
+    display: none;
+}
+div.container.recap form.visu div.form-group div.okBnt{
+    display: none;
+}
+div.container.recap form.edit div.form-group.active input:hover{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+}
+div.container.recap form.edit div.form-group.active label:hover{
+    color: rgb(146, 146, 146);
+}
+div.container.recap form.dataForm div.line{
+    height: 1px;
+    width: 74%;
+    background: #e2e2e2;
+    margin: 13px auto;
+}
+div.container.recap form.edit div.form-group.file:hover label, 
+div.container.recap form.edit div.form-group.file:hover input {
+    color: #929292;
+    cursor: pointer;
+}
+div.container.recap form.visu button.inputFileAmeli{
+    float: left;
+    opacity: 1;
+    cursor: auto;
+    margin-top: 20px;
+    margin-left: 3%;
+    background-color: #25a1a3;
+    border: #25a1a3;
+}
+div.container.recap form.edit button.inputFileAmeli{
+    float: left;
+    opacity: 1;
+    cursor: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 3%;
+    background-color: #25a1a3;
+    border: #25a1a3;
+    padding-right: 7%;
+}
+div.container.recap form.visu div.form-group.file{
+    padding-bottom: 18px;
+}
+div.container.recap form.visu h4{
+    color: #747474;
+    width: 74%;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 23px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 1em;
+    font-weight: bold;
+}
+div.container.recap form.visu h4.otherChild{
+    margin-top: 100px;
+}
+div.container.recap div.rowSituation{
+    padding-bottom: 90px;
+}
+div.container.recap h3.MargeTop{
+    margin-top: 71px;
+}
+div.container.recap form.visu a.editAmeli:hover{    
+    background-image: url('../images/edit_icon_white.png');
+}
+div.container.recap form.edit a.editAmeli:hover{    
+    background-image: url('../images/save_white.png') !important;
+}
+div.container.recap form.visu p.help-block{    
+    margin: 0;
+}
+div.container.recap form.edit p.help-block{    
+    margin: 0;
+}
+div.container.recap form.visu button.inputFileAmeli.more {
+    visibility: hidden;   
+}
+div.container.recap form.edit button.inputFileAmeli.more {
+    visibility: block;
+    height: 47px !important;
+    padding: 0px 5%;
+    color: #29a0a4;
+    padding-top: 0 !important;
+    padding-left: 50px;
+    background: url(../images/icon_upload.png) no-repeat 11px 50%;
+    background-size: 9%;
+    border: 1px solid #29a0a4;    
+    width: 100%;
+    margin-bottom: 14px;
+}
+/*
+
+Page confirmation
+
+*/
+div.container.confirmation div.buttonZone a.suivAmeli{
+    float: right;
+}
+div.container.confirmation form {
+    background-color: #fff;
+    margin: -11px 7.8%;
+    padding: 17px 3% 0 3%;
+    z-index: 1;
+}
+div.container.confirmation div.confirmRow{
+    padding-bottom: 29px;
+}
+div.container.confirmation .buttonZone{
+    text-align: right;
+    margin: 0;
+    width: 107.6%;
+    margin-left: -3.8%;
+    background: #f7f7f7;
+    border: 1px solid #fff;
+    padding: 10px 0;
+}
+div.container.confirmation div.extraFluid{
+    width: 108.2%;
+    margin-left: -4%;
+    margin-bottom: 22px;
+    background-color: #fff;
+}
+div.container.confirmation div.extraFluid.noBottom{
+    margin-bottom:  0;
+}
+div.container.confirmation div.specialRow{
+    padding:    0;
+}
+div.container.confirmation div.stepperZone {    
+    margin-top: 25px;
+}
+/*
+
+Page Accueil - Agent
+
+*/
+div.container.accueil.agent button.connexion{
+    background: url(../images/cadenas_blue_hover_off.png) no-repeat 50% 50%;
+    background-size: 100%;    
+}
+div.container.accueil.agent button.connexion:hover, button.connexion:active, button.connexion:visited, button.connexion:focus{
+    background: url(../images/cadenas_hover_off.png) no-repeat 50% 50%;
+    background-size: 100%;   
+}
+div.container.accueil.agent span.agentLabelTop {
+    vertical-align: top;
+    font-size: 0.7em;
+    padding-left: 7px;
+}
+div.container.accueil.agent span.agentLabelBot {
+    color: #005ea8;
+    font-size: 0.46em;
+    vertical-align: top;
+    padding-left: 3px;
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+}
+div.container.accueil.agent h2.ameli {
+    font-family: RALEWAY, Arial, Helvetica, sans-serif;
+    color: #595959;
+    margin-top: 67px;
+    font-size: 1.5em;
+}
+/*
+
+Page listeDossier - Agent
+
+*/
+div.container.listeDossier.agent h2.ameli {
+    font-family: RALEWAY, Arial, Helvetica, sans-serif;
+    color: #595959;    
+    font-size: 1.5em;
+    padding-left: 4%;
+}
+div.container.listeDossier.agent div.titleRow{
+    background-color: #f7f7f7;
+    margin: 0;
+    width: 108.4%;
+    margin-left: -4.2%;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+div.container.listeDossier.agent span.agentLabelTop {
+    vertical-align: top;
+    font-size: 0.63em;
+    padding-left: 4px;
+    color: #005ea8;
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+}
+div.container.listeDossier.agent span.nomAgent{
+    color: #e8203a;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;  
+}
+div.container.listeDossier.agent a.deco{
+    text-transform: uppercase;
+    color: #6e6e6e;
+    width: 100%;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+}
+div.container.listeDossier.agent div.infoLoginAgentLeft{
+    float: left;
+    padding-left: 16%;
+    margin-top: 7px;
+    font-family: RALEWAY_BOLD, Arial, Helvetica, sans-serif;
+}
+div.container.listeDossier.agent div.iconAgent{
+    width: 30px;
+    background: url(../images/iconAgent.png) no-repeat 50% 50% transparent;
+    background-size: 100%;
+    float: right;
+    height: 30px;
+    margin-right: 16%;
+}
+div.container.listeDossier.agent div.choixAction {
+    margin-top: 58px;
+    border-bottom: 1px solid #d5d5d5;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #6f6f6f;
+}
+div.container.listeDossier.agent div.action p{
+    cursor: pointer;
+}
+div.container.listeDossier.agent div.action:not(.active) p:hover{
+    color: #005ea8;
+}
+div.container.listeDossier.agent div.action.active p{
+    color: #6f6f6f;
+    cursor: pointer;
+    font-family: RALEWAY_BOLD, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #005ea8;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+    margin-right: 76px;
+}
+div.container.listeDossier.agent div.pager span.pagerNext{
+    padding-left: 6px;
+}
+div.container.listeDossier.agent div.pager span.pagerPrev{
+    padding-right: 1px;
+}
+div.container.listeDossier.agent div.pager span.pagerNext:hover,
+div.container.listeDossier.agent div.pager span.pagerPrev:hover{
+    color: #005ea8;
+    cursor: pointer;
+    font-weight: bold;
+}
+div.container.listeDossier.agent div.action {
+    padding-left: 0;
+}
+div.container.listeDossier.agent div.tableau {
+    padding: 0 3.6%;
+    margin-top: 40px;
+}
+div.container.listeDossier.agent div.tableau td{
+    border-bottom: 0;
+    border-top: 0;
+    z-index: 0;
+}
+div.container.listeDossier.agent div.tableau tr:last-child{
+    border-bottom: 1px solid #e1e1e1;
+}
+div.container.listeDossier.agent div.tableau tr:hover{
+    background-color: #005ea8 !important;
+    cursor: pointer;
+    color: #fff;
+}
+div.container.listeDossier.agent div.tableau span.iconFilterDown:hover{
+    border-color: #005ea8 transparent transparent transparent;
+}
+div.container.listeDossier.agent div.tableau div.name span.iconSearch{
+
+}
+div.container.listeDossier.agent div.tableau span.iconSearch{
+    height: 30px;
+    width: 30px;
+    background: url(../images/iconSearch_off.png) no-repeat 50% 50% transparent;
+    background-size: 98%;
+    position: absolute;
+    bottom: -1px;
+    right: -28px;
+}
+div.container.listeDossier.agent div.tableau select.selectFilterInput{
+    height: auto;
+    font-size: 0.9em;
+    min-width: 85px;
+}
+div.container.listeDossier.agent div.tableau .searchFilterInput#searchName{
+    width: 65px;
+}
+div.container.listeDossier.agent div.tableau .searchFilterInput#statut{
+    width: 75px;
+    min-width: 75px;
+    margin-top: 18px;
+    height: 25px;
+}
+div.container.listeDossier.agent div.tableau .searchFilterInput#searchBirthDate{
+    width: 85px;
+    margin-top: 1px;
+}
+div.container.listeDossier.agent div.tableau .searchFilterInput{
+    margin-top: 17px;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 1px 3px 1px 3px;
+    height: 25px;    
+}
+div.container.listeDossier.agent div.tableau span.iconSearch.active{
+    display: none;
+}
+/* div.container.listeDossier.agent div.tableau span.iconSearch:hover{
+    height: 30px;
+    width: 30px;
+    background: url(../images/iconSearch_on.png) no-repeat 50% 50% transparent;
+     background-size: 98%;
+    position: absolute;
+    bottom: -1px;
+    right: -28px;
+} */
+div.container.listeDossier.agent div.tableau tr span.iconFilterDown{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #ffffff transparent transparent transparent;    
+    position: absolute;
+    right: -17px;
+    top: 6px;
+    -webkit-transform:rotate(360deg);
+}
+div.container.listeDossier.agent div.tableau th:last-child{
+    border-right: 1px solid #8a8a8a;
+}
+div.container.listeDossier.agent div.tableau thead th::after{
+    content: '';
+}
+div.container.listeDossier.agent div.tableau th > div{
+    position: relative;
+    height: 60px;
+}
+div.container.listeDossier.agent div.tableau th > div.dateR{
+    min-width: 125px;
+}
+div.container.listeDossier.agent div.tableau th > div.name{
+    min-width: 65px;
+}
+div.container.listeDossier.agent div.tableau th > div.firstNameR{
+    min-width: 68px;
+}
+div.container.listeDossier.agent div.tableau th > div.dateN{
+    min-width: 85px;
+}
+div.container.listeDossier.agent div.tableau th > div.boss{
+    min-width: 91px;
+}
+div.container.listeDossier.agent div.tableau th > div.cat{
+
+}
+div.container.listeDossier.agent div.tableau th > div.status{    
+    min-width: 75px;
+}
+div.container.listeDossier.agent div.tableau th{
+    background-color: #8a8a8a;
+    
+    color: #fff;  
+    font-family: RALEWAY, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.7px;
+
+}
+div.container.listeDossier.agent div.pager {
+    text-align: center;
+}
+div.container.listeDossier.agent div.wrapper {
+    background-color: #fff;
+}
+div.container.listeDossier.agent .table-striped > tbody>tr:nth-of-type(odd) {
+    background-color: #f8f8f8;
+}
+/* @-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+} */
+/*
+
+Page detailDossier - Agent
+
+*/
+div.container.detailDossier.agent h2.ameli {
+    font-family: RALEWAY, Arial, Helvetica, sans-serif;
+    color: #595959;    
+    font-size: 1.5em;
+    padding-left: 4%;
+}
+div.container.detailDossier.agent div.titleRow{
+    background-color: #f7f7f7;
+    margin: 0;
+    width: 108.4%;
+    margin-left: -4.2%;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+div.container.detailDossier.agent span.agentLabelTop {
+    vertical-align: top;
+    font-size: 0.63em;
+    padding-left: 4px;
+    color: #005ea8;
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+}
+div.container.detailDossier.agent span.nomAgent{
+    color: #e8203a;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;  
+}
+div.container.detailDossier.agent a.deco{
+    text-transform: uppercase;
+    color: #6e6e6e;
+    width: 100%;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+}
+div.container.detailDossier.agent div.infoLoginAgentLeft{
+    float: left;
+    padding-left: 16%;
+    margin-top: 7px;
+    font-family: RALEWAY_BOLD, Arial, Helvetica, sans-serif;
+}
+div.container.detailDossier.agent div.iconAgent{
+    width: 30px;
+    background: url(../images/iconAgent.png) no-repeat 50% 50% transparent;
+    background-size: 100%;
+    float: right;
+    height: 30px;
+    margin-right: 16%;
+}
+div.container.detailDossier.agent div.choixAction {
+    margin-top: 58px;
+    border-bottom: 1px solid #d5d5d5;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #6f6f6f;
+}
+div.container.detailDossier.agent div.action p{
+    cursor: pointer;
+}
+div.container.detailDossier.agent div.action:not(.active) p:hover{
+    color: #005ea8;
+}
+div.container.detailDossier.agent div.action.active p a{
+    color: #005ea8;
+    text-decoration: none;
+}
+div.container.detailDossier.agent div.action.active p{
+    color: #6f6f6f;
+    cursor: pointer;
+    font-family: RALEWAY_BOLD, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #005ea8;
+    margin-bottom: 0;
+    padding-bottom: 9px;
+    margin-right: 76px;
+}
+div.container.detailDossier.agent div.wrapper {
+    background-color: #fff;
+}
+div.container.detailDossier.agent div.infoBlock div.valueAgent{
+    font-family: RALEWAY_SEMIBOLD, Arial, Helvetica, sans-serif;
+    color: #767676;
+}
+div.container.detailDossier.agent div.infoBlock div.labelAgent.file{
+    margin-top: 3px;
+    padding-left: 6%;
+    word-break: break-all;
+    margin-bottom: 3px;    
+}
+div.container.detailDossier.agent div.infoBlock div.labelAgent{
+    padding-left: 5%;
+    font-family: RALEWAY_LIGHT, Arial, Helvetica, sans-serif;
+    color: #929292;
+    padding-right: 0;
+    min-height: 20px;
+}
+div.container.detailDossier.agent div.dataRow div.line {
+    height: 1px;
+    width: 75%;
+    background-color: #d5d5d5;
+    margin: 23px auto;
+}
+div.container.detailDossier.agent div.infoBlock.fileBlock {
+    cursor: pointer;
+}
+
+div.container.detailDossier.agent div.infoBlock {
+    padding: 6px 0% 0 9%;
+}
+
+div.container.detailDossier.agent div.infoBlock:first-of-type {
+    padding: 25px 0% 0 9%;    
+}
+div.container.detailDossier.agent div.action {
+    padding-left: 0;
+}
+div.container.detailDossier.agent div.leftZone div.bordR{
+    border: 1px solid #d5d5d5;
+    margin-bottom: 23px;
+    padding-bottom: 57px;    
+}
+div.container.detailDossier.agent div.rightZone{
+    border: 1px solid #d5d5d5;
+    padding-bottom: 40px;
+}
+div.container.detailDossier.agent h4.labelPj {
+    background: url(../images/icon_pj.jpg) no-repeat 0% -3px;
+    background-size: 20px;
+    padding-left: 28px;
+    margin-bottom: 0px;
+    margin-top: 55px;
+}
+div.container.detailDossier.agent h4.labelDossier {
+    background: url(../images/icon_dossier.jpg) no-repeat 0% -3px;
+    background-size: 25px;
+    padding-left: 28px;
+}
+div.container.detailDossier.agent h4.iconMan {
+    background: url(../images/icon_man.jpg) no-repeat 0% 3px;
+    background-size: 13px;
+    padding-left: 20px;
+    padding-top: 4px;
+}
+div.container.detailDossier.agent h4 span.iconShow:hover{
+    font-family: RALEWAY_BOLD;
+}
+div.container.detailDossier.agent h4 span.iconShow.first{
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+div.container.detailDossier.agent h4 span.iconShow{
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+    top: 0;
+    font-family: RALEWAY_SEMIBOLD;
+}
+div.container.detailDossier.agent h4.other {
+    margin-top: 51px;
+}
+div.container.detailDossier.agent div.leftZone h4 {
+    margin-left: 6%;
+}
+div.container.detailDossier.agent h4 {
+    color: #015fa9;
+    position: relative;
+    border-bottom: 1px solid #015fa9;
+    margin-left: 3%;
+    margin-right: 6%;
+    padding-bottom: 11px;
+    margin-top: 30px;
+}
+div.container.detailDossier.agent div.leftZone {
+    margin-left: 15px;
+    padding: 0;
+}
+div.container.detailDossier.agent div.rightZone button.edit {
+    border: 1px solid #005ea8;
+    border-radius: 30px;
+    color: #005ea8;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 10px;
+    font-family: RALEWAY_SEMIBOLD;
+    font-size: 0.9em;
+    padding: 14px 16px;
+}
+div.container.detailDossier.agent div.rightZone button.edit:active, 
+div.container.detailDossier.agent div.rightZone button.edit:focus, 
+div.container.detailDossier.agent div.rightZone button.edit:visited {
+    outline: none;
+}
+div.container.detailDossier.agent div.rightZone button.edit:hover {
+    background-color: #005ea8;
+    color: #fff;    
+}
+div.container.detailDossier.agent div.rightZone div.commentRow p.status{
+    color: #757575;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+div.container.detailDossier.agent div.rightZone div.commentRow p.dateComment{
+    color: #c2c2c2;
+    font-family: OPENSANS_LIGHT_ITALIC;
+    font-style: italic;
+}
+div.container.detailDossier.agent div.rightZone div.commentRow p.bodyComment{
+    font-family: OPENSANS_LIGHT;
+    line-height: 23px;
+    font-size: 0.9em;
+}
+div.container.detailDossier.agent div.rightZone div.commentRow p.authorComment{
+    background: url(../images/icon_author_comment.jpg) no-repeat 0% 50%;
+    background-size: 22px;
+    height: 25px;
+    padding-top: 3px;
+    color: #8b8b8b;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin-top: 16px;
+}
+div.container.detailDossier.agent div.rightZone div.commentRow{
+    padding: 0% 9%;
+    margin-top: 35px;
+}
+div.container.detailDossier.agent div.rightZone {
+    margin-left: 2%;
+}
+div.container.detailDossier.agent a.icon_dl {
+    height: 20px;
+    margin-left: 23px;
+    width: 20px;
+    background: url(../images/icon_dl_file.jpg) no-repeat 50% 50%;
+    background-size: 90%;
+    display: block;
+}
+div.container.detailDossier.agent div.labelDossier {
+    
+}
+div.container.detailDossier.agent div.dataRow.other {
+    margin-top: 30px;
+}
+div.container.detailDossier.agent div.dataRow {
+    margin-top: 1px;
+    padding: 0 2%;
+}
+div.container.detailDossier.agent h3 a.dossierlink{
+    float: right;
+    margin-right: 5%;
+    border: 1px solid #005ea8;
+    border-radius: 30px;
+    color: #005ea8;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: RALEWAY_SEMIBOLD;
+    font-size: 0.8em;
+    padding: 14px 16px;
+    margin-top: -11px;
+}
+div.container.detailDossier.agent h3 a.dossierlink:hover{
+    color: #fff;
+    background-color: #005ea8;
+    text-decoration: none;
+}
+div.container.detailDossier.agent h3 {
+    text-transform: uppercase;
+    color: #5d5d5d;
+    margin-bottom: 40px;
+    font-size: 1.27em;
+    padding-left: 2%;
+    margin-top: 60px;
+}
+div.container.detailDossier.agent div.dossierRow div.borderR{
+    position: absolute;
+    top: 0;
+    height: 44px;
+    background-color: #d5d5d5;
+    width: 1px;
+    left: 48%;
+}
+div.container.detailDossier.agent div.dossierRow p.labelTopRight,
+div.container.detailDossier.agent div.dossierRow p.labelBotRight{
+    color: #757575;
+    font-family: RALEWAY;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+div.container.detailDossier.agent div.dossierRow p.labelTopLeft{
+    color: #767676;
+    margin-bottom: 0;
+}
+div.container.detailDossier.agent div.dossierRow p.labelBotLeft{
+    color: #fa8406;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+div.container.detailDossier.agent div.dossierRow {
+    padding: 0 11%;
+    position: relative;
+    margin-top: 30px;
+}
+div.container.detailDossier.agent div#myModal div.modal-header h4{
+    color: #484f57;
+    padding-left: 1%;
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: RALEWAY_LIGHT_ITALIC;
+}
+div.container.detailDossier.agent div#myModal p.stepModal.two{
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+div.container.detailDossier.agent div#myModal p.stepModal{
+    color: #48525e;
+    font-family: OPENSANS_SEMIBOLD;
+}
+div.container.detailDossier.agent div#myModal form {
+    padding: 0 4%;
+}
+div.container.detailDossier.agent div#myModal div.radioRow {
+    padding: 6px 13%;
+}
+div.container.detailDossier.agent div#myModal div.radio input{
+    visibility: hidden;
+}
+div.container.detailDossier.agent div#myModal div.radio label{
+    color: rgb(51,51,51);
+    font-weight: normal;
+    padding-left: 50px;
+    background: url("../images/iconRadioOff.jpg") 3px 50% no-repeat;
+    background-size: 14px;
+}
+div.container.detailDossier.agent div#myModal textarea{
+    padding: 14px 4%;
+}
+div.container.detailDossier.agent div#myModal textarea::-webkit-input-placeholder {    
+  font-style: italic;
+}
+div.container.detailDossier.agent div#myModal textarea::-moz-placeholder { /* Firefox 19+ */
+  font-style: italic;
+}
+div.container.detailDossier.agent div#myModal textarea:-ms-input-placeholder { /* IE 10+ */
+  font-style: italic;
+}
+div.container.detailDossier.agent div#myModal textarea:-moz-placeholder { /* Firefox 18- */
+  font-style: italic;
+}
+div.container.detailDossier.agent div#myModal div.radio {
+    margin-bottom: 26px;
+}
+div.container.detailDossier.agent div#myModal div.modal-footer {
+    border: none;
+    text-align: center;
+}
+div.container.detailDossier.agent div#myModal button.cancel {    
+    border: 1px solid #e40d2c;
+    border-radius: 30px;
+    color: #e40d2c;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: RALEWAY_SEMIBOLD;
+    font-size: 0.9em;
+    padding: 14px 16px;
+}
+div.container.detailDossier.agent div#myModal button.cancel:hover{
+    color: #fff;
+    background-color: #e40d2c;
+}
+div.container.detailDossier.agent div#myModal button.valid {
+    border: 1px solid #005ea8;
+    border-radius: 30px;
+    color: #005ea8;
+    background-color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: RALEWAY_SEMIBOLD;
+    font-size: 0.9em;
+    padding: 14px 16px;
+    margin-left: 3%;
+}
+div.container.detailDossier.agent div#myModal button.valid:hover{
+    color: #fff;
+    background-color: #005ea8;
+}
+div.container.detailDossier.agent div#myModal button.cancel:active,
+div.container.detailDossier.agent div#myModal button.cancel:visited,
+div.container.detailDossier.agent div#myModal button.cancel:focus,
+div.container.detailDossier.agent div#myModal button.valid:active,
+div.container.detailDossier.agent div#myModal button.valid:visited,
+div.container.detailDossier.agent div#myModal button.valid:focus{
+    outline: none;
+}
+div.container.detailDossier.agent div#myModal div.modal-header {
+    background-color: #f7f7f7;
+}
+/*
+
+Media Queries
+
+*/
+
+
+
+@media (min-width: 1200px) { /* au dessus de 1200px */    
+    div.container.main {        
+        width: 1024px;
+    }
+    div.stepper {
+        margin-top: 11px;
+        padding: 0px 177px;
+    }
+    div.stepper {
+        margin-top: 11px;
+        padding: 0px 99px;
+    }
+    div.stepper div.col-md-2{
+        padding: 0 5px;
+    }  
+    div.stepper div.col-md-3{
+        padding: 0 5px;
+    }    
+    div.stepper p {    
+        line-height: 15px;
+        font-size: 12.93px;
+    }
+}
+@media (max-width: 1200px) { /* au dessous de 1200px */    
+    div.container.detailDossier.agent div.infoBlock div.labelAgent {
+        height: auto; 
+    }
+    div.container.infoSalarie form.formTop {
+        background: #fff;
+        margin-right: 8%;
+        margin-left: -8px;
+        padding: 0 2% 14px 2%;
+        margin-left: 7.8%;
+    }
+    div.container.piecesJointes form.formTop div.barre,
+    div.container.infoSalarie form.formTop div.barre {
+        height: 84%;    
+        width: 1px;
+        right: 20%;
+        top: 22px;
+    }
+    div.container.listeDossier.agent div.action.active p {        
+        margin-right: 68px;
+    }
+}
+@media (max-width: 992px) { /* en dessous de 992px */   
+
+    div.container.detailDossier.agent div.dataRow div.line {    
+        width: 81%;
+    }
+
+    div.container.detailDossier.agent div.infoBlock div.labelAgent {
+        padding-left: 15px;
+    }
+    div.container.detailDossier.agent div.infoBlock {    
+        margin-top: 10px;
+    }
+
+    div.container.detailDossier.agent div.dossierRow div.borderR {
+        height: 72px;
+    }     
+    div.container.listeDossier.agent div.action.active p {        
+        margin-right: 36px;
+    }
+    div.container.infoSalarie div.assistantLangue,
+    div.container.infoSalarie div.jeune,
+    div.container.infoSalarie div.adulte,
+    div.container.infoSalarie div.manequin,
+    div.container.infoSalarie div.passport {        
+        background-size: 6%;        
+    }
+    div.container.accueil div.iconMetier {    
+        text-align: left;
+    }
+    div.container.accueil div.iconMetier > div{    
+        background-position: 0 50% !important;
+        background-size: 9% !important;
+        text-indent: 7% !important;
+        min-height: 50px !important;
+        padding-top: 15px !important;
+    }
+    div.container.piecesJointes form.formTop div.barre,
+    div.container.infoSalarie form.formTop div.barre {
+        display: none;
+    }
+
+}
+@media (min-width: 767px) { /* en dessus de 768px */  
+    div.container.detailDossier.agent .modal-dialog {
+        width: 696px;
+    }
+}
+@media (max-width: 767px) { /* en dessous de 768px */  
+
+    div.container.detailDossier.agent div.dossierRow div.borderR {
+        height: 40px;
+    }  
+    div.container.detailDossier.agent div.dossierRow p.labelTopRight, div.container.detailDossier.agent div.dossierRow p.labelBotRight {
+        text-align: right;
+    }
+    div.container.detailDossier.agent div.rightZone {    
+        margin-top: 30px;
+    }
+
+    div.container.accueil.agent form {
+        padding-bottom: 85px;
+    }
+
+    div.container.listeDossier.agent div.action.active p {
+        margin-right: 0;
+        border: 0;
+        color: #005ea8;
+    }
+
+    div.container.infoSalarie div.buttonZone div.text-center{
+        margin: 16px 0;
+    }
+    div.container.piecesJointes div.buttonZone div.text-center{
+        margin: 16px 0;
+    }
+
+}
+@media (min-width: 768px){ /* au dessus de 768 */
+    .modal-dialog {
+        width: 620px;   
+    }
+}
+@media (max-width: 620px) { /* en dessous de 620px */    
+    div.container.listeDossier.agent div.infoLoginAgentLeft {
+        text-align: right;
+    }
+    div.container.listeDossier.agent div.infoLoginAgent {
+        padding-right: 26px;
+    }
+}
+@media (max-width: 600px) { /* en dessous de 600px */    
+
+    div.container.infoSalarie div.assistantLangue,
+    div.container.infoSalarie div.manequin,
+    div.container.infoSalarie div.jeune,
+    div.container.infoSalarie div.adulte,
+    div.container.infoSalarie div.passport {        
+        background-position: 26px 14px;
+        background-size: 25px;       
+    }
+
+}
+@media (max-width: 450px) { /* en dessous de 450px */    
+    header section.entete h2 {    
+        top: 22px;
+    } 
+
+}
+@media (max-width: 400px) { /* en dessous de 400px */        
+    div.container.listeDossier.agent div.infoLoginAgent {
+        width: 100%;
+        text-align: center;
+    }
+    div.container.listeDossier.agent a.deco,
+    div.container.listeDossier.agent div.titleAgent,
+    div.container.listeDossier.agent h2.ameli,
+    div.container.listeDossier.agent div.infoLoginAgentLeft{
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 0;
+    }    
+    div.container.listeDossier.agent div.iconAgent {
+        width: 100%;
+        margin: 0;
+        background-size: 30px;
+        margin-top: 7px;
+    }
+
+}
+@media (max-width: 350px) { /* en dessous de 400px */    
+
+    header section.entete h2 {
+        position: relative;
+        left: 0;
+        top: 70px;
+        text-align: center;
+    }
+    header section.entete {
+        height: 130px;
+    }
+
+}
+
