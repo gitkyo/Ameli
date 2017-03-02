@@ -10,8 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Je suis employeur</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap + bootstrap_override + customcss -->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,80 +24,79 @@
 
     <div class="container-fluid main accueil">
 
-    <div class="row header">
-        <header>
-            <section class="preEntete">
-                <div class="logoAM"></div>
-            </section>
+        <div class="row header">
+            <header>
+                <section class="preEntete">
+                    <div class="logoAM"></div>
+                </section>
 
-            <section class="entete">
-                <a href='index.html'><h1>ameli.fr</h1></a><h2>Je suis employeur</h2>
-            </section>
+                <section class="entete">
+                    <div class="logoBlock">
+                        <a href='index.html'>
+                            <h1>ameli.fr</h1>
+                        </a>
+                        <h2>Je suis employeur</h2>
+                    </div>
+                    <div class="loginBlock"><a>Mon compte</a></div>
+                </section>
 
-            <section class="postTete">
-                PREMIèRE CONNEXION
-            </section>
-        </header>
-    </div> <!-- fin row header -->
+                <section class="postTete">
+                    <h3>PREMIèRE CONNEXION</h3>
+                </section>
+            </header>
+        </div> <!-- fin row header -->
 
-
-    <div class="wrapper row">
         <form class="form-horizontal">
 
-
+            <div class="wrapper row">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 leftZone">
 
-                        <h3>Saisissez votre email</h3>
+                        <h4>Saisissez votre email</h4>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Confirmer l'Email</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Confirmer l'Email</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="">
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="col-lg-6">
-                        <h3>Personalisez votre code d'accès</h3>
+                    <div class="col-lg-6 rightZone">
+                        <h4>Personalisez votre code d'accès</h4>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Confirmer l'Email</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Confirmer l'Email</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div> <!-- fin wrapper -->
 
             <div class="actionRow row">
                 <div class="form-group">
-                    <div class="col-sm-offset-10 col-sm-2">
-                        <button type="submit" class="btn btn-default">Suivant</button>
-                    </div>
+                    <button type="submit" class="suivAmeli btn btn-primary">Suivant</button>
                 </div>
             </div>
 
-
         </form>
-    </div> <!-- fin wrapper -->
-
-
     </div> <!-- fin container -->
 
     <footer>
@@ -109,11 +107,9 @@
 
                 <div class="col-lg-12">
 
-                    <p>Version : 0.1</p>
-
-                    <p>Juin 2016</p>
-
                     <p><a href='mention.html'>Mentions légales</a></p>
+                    <p>Version : 0.1</p>
+                    <p>Janvier 2017</p>
 
                 </div>
 

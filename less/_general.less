@@ -21,21 +21,18 @@
 @backgroundGrisClair : #f7f7f7;
 @colorPostTete : #757575;
 @borderBotPostTete : #d4d4d4;
+@bleuAmeli : #005da8;
 /* @borderTopPostTete : #dae5eb; */
 @colorAsterixRequirForm : #e76207;
-@hauteurFooter : 45px;
+@hauteurFooter : 90px;
+@hauteurHeader : 217px;
 
 /* DIVERS */
-html,
-body{
-	height: 100%;
-}
-body > div{
-	height: calc(~"100% - "@hauteurFooter);
-}
 .form-group.required .control-label:after {
 	content:"*";
 	color:@colorAsterixRequirForm;
+	margin-left: 6px;
+	font-weight: bold;
 }
 
 /* HEADER */
@@ -57,34 +54,49 @@ header {
 	section.entete {
 		position: relative;
 		padding: 0 32px;
-		height: 73px;
+		height: 80px;
 		background-color: #fff;
 		margin-top: 10px;
 		border-bottom: 1px solid rgba(0, 93, 168, 0.17);
-		h1{
-			position: absolute;
-			top: 20px;
-			height: 68px;
-			width: 127px;
-			height: 42px;
-			background: url(../img/logo_ameli.svg) no-repeat;
-			background-color: transparent;
-			margin: 0;
-			padding: 0;
-			font-size: 0.1rem;
-			color: #fff;
+		div.logoBlock{
+			float: left;
+			h1{
+				position: absolute;
+				top: 20px;
+				height: 68px;
+				width: 127px;
+				height: 42px;
+				background: url(../img/logo_ameli.svg) no-repeat;
+				background-color: transparent;
+				margin: 0;
+				padding: 0;
+				font-size: 0.1rem;
+				color: #fff;
+			}
+			h2{
+				position: absolute;
+				top: 41px;
+				left: 170px;
+				font-family: OPENSANS_LIGHT_ITALIC,Arial,Helvetica,sans-serif;
+				font-size: 2.2rem;
+				font-weight: normal;
+				color: #495058;
+				margin: 0;
+				text-transform: none;
+				letter-spacing: normal;
+			}
 		}
-		h2{
-			position: absolute;
-			top: 41px;
-			left: 170px;
-			font-family: OPENSANS_LIGHT_ITALIC,Arial,Helvetica,sans-serif;
-			font-size: 2.2rem;
-			font-weight: normal;
-			color: #495058;
-			margin: 0;
-			text-transform: none;
-			letter-spacing: normal;
+		div.loginBlock{
+			float: right;
+			margin-top: 46px;
+			> a{
+				color: #c4c4c4;
+				cursor: pointer;
+				&:hover{
+					text-decoration: none;
+					color: @bleuAmeli;
+				}
+			}
 		}
 	}
 	section.postTete{
@@ -102,6 +114,9 @@ header {
 footer{
 	height: @hauteurFooter;
 	background-color: @backgroundFooter;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
 	p {
 		display: inline-block;
 		padding: 9px 2%;
@@ -113,5 +128,11 @@ footer{
 	a, a:hover {
 		color: rgb(51,51,51);
 		text-decoration: none;
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	footer{
+		height: 130px;
 	}
 }
