@@ -5046,6 +5046,27 @@ input[type="button"].btn-block {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
+.btn.okAmeli.orange {
+  color: #f68527;
+  border-color: #f68527;
+}
+.btn.okAmeli.orange.inverse {
+  color: #fff;
+  background-color: #f68527;
+}
+.btn.okAmeli.orange.inverse:hover,
+.btn.okAmeli.orange.inverse:focus,
+.btn.okAmeli.orange.inverse:visited,
+.btn.okAmeli.orange.inverse:active {
+  background-color: #fff;
+  color: #f68527;
+}
+.btn.okAmeli.orange:hover,
+.btn.okAmeli.orange:focus,
+.btn.okAmeli.orange:visited,
+.btn.okAmeli.orange:active {
+  background-color: #f68527;
+}
 .btn.okAmeli:hover,
 .btn.okAmeli:focus,
 .btn.okAmeli:visited,
@@ -8452,6 +8473,9 @@ button.close {
   margin-left: 6px;
   font-weight: bold;
 }
+p {
+  color: #757575;
+}
 /* HEADER */
 header section.preEntete {
   position: relative;
@@ -8523,6 +8547,9 @@ header section.postTete {
   text-align: center;
   padding: 20px 2%;
   text-transform: uppercase;
+}
+header section.postTete span {
+  color: #f68527;
 }
 /* FOOTER */
 footer {
@@ -8602,12 +8629,141 @@ body > div.mention div.wrapper {
   padding-top: 40px;
 }
 body > div.mention div.wrapper p {
-  color: #757575;
   margin-bottom: 20px;
 }
 body > div.mention div.wrapper button {
   margin: 0 auto;
   display: block;
   margin-top: 60px;
+}
+body > div.confirmation div.wrapper {
+  padding: 0 20%;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  text-align: center;
+}
+body > div.confirmation div.wrapper p.subTitle {
+  margin-top: 50px;
+}
+body > div.confirmation div.wrapper div.border {
+  display: inline;
+  border: 1px solid #ebebeb;
+  padding: 8px 3px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+body > div.confirmation div.wrapper div.border div.completeBar {
+  background: #ebebeb;
+  width: auto;
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 3px 7%;
+  color: #005da8;
+}
+body > div.confirmation div.wrapper div.downloadPDF {
+  margin-top: 20px;
+}
+body > div.confirmation div.wrapper div.downloadPDF a {
+  font-weight: normal;
+  padding: 0 40px;
+  font-size: 0.8em;
+}
+body > div.confirmation div.wrapper div.downloadPDF p {
+  display: inline-block;
+  padding-right: 20px;
+}
+body > div.confirmation div.wrapper a.action {
+  display: inline-block;
+  margin-top: 120px;
+  margin-bottom: 172px;
+}
+@media (max-width: 768px) {
+  body > div.confirmation div.wrapper {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.confirmation div.wrapper a.action {
+    display: none;
+  }
+  body > div.confirmation div.wrapper a.action.hidden {
+    display: block !important;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+body > div.connexion div.wrapper {
+  padding: 0;
+}
+body > div.connexion div.wrapper div.loginRow {
+  background: url(../img/background_postHeader_connexion.jpg) no-repeat 50% 0%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+body > div.connexion div.wrapper div.loginRow div.loginBlock {
+  padding: 70px 8%;
+}
+body > div.connexion div.wrapper div.loginRow p {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+body > div.connexion div.wrapper div.loginRow p span {
+  color: #005da8;
+}
+body > div.connexion div.wrapper div.loginRow button {
+  margin-top: 45px;
+  padding: 0px 30px;
+  height: 40px;
+}
+body > div.connexion div.wrapper div.bottomContainer {
+  padding: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+body > div.connexion div.wrapper div.bottomContainer h3 {
+  color: #757575;
+}
+body > div.connexion div.wrapper div.bottomContainer p.subtitle {
+  padding: 5px 30%;
+}
+body > div.connexion div.wrapper div.bottomContainer p.last {
+  margin-bottom: 70px;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow {
+  padding: 50px 15%;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow p {
+  margin-top: 20px;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow p span {
+  color: #f68527;
+  font-weight: bold;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon {
+  height: 100px;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon1 {
+  background: url(../img/icon_1_connexion.jpg) no-repeat 50% 50%;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon2 {
+  background: url(../img/icon_2_connexion.jpg) no-repeat 50% 50%;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon3 {
+  background: url(../img/icon_3_connexion.jpg) no-repeat 50% 50%;
+}
+body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 {
+  background: url(../img/icon_4_connexion.jpg) no-repeat 50% 50%;
 }
 /*# sourceMappingURL=style.css.map */

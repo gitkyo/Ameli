@@ -103,6 +103,21 @@
     -khtml-border-radius: 35px;
     -o-border-radius: 35px;
     border-radius: 35px;
+    &.orange{
+      color: @orangeAmeli;
+      border-color: @orangeAmeli;
+      &.inverse{
+        color: #fff;
+        background-color: @orangeAmeli;
+        &:hover, &:focus, &:visited, &:active {
+          background-color: #fff;
+          color: @orangeAmeli;
+        }
+      }
+      &:hover, &:focus, &:visited, &:active {
+        background-color: @orangeAmeli;
+      }
+    }
     &:hover, &:focus, &:visited, &:active {
       background-color: @bleuAmeli;
       outline: none !important;
