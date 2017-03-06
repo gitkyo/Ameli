@@ -15,6 +15,18 @@
 		url('../fonts/other/opensans-light-webfont.ttf') format('truetype'),
 		url('../fonts/other/opensans-light-webfont.svg#OPENSANS_LIGHT') format('svg');
 }
+@font-face {
+	font-family: 'Proxima Nova Semibold';
+	src: url('../fonts/Proxima Nova Semibold.otf') format("opentype");
+}
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/Proxima Nova Regular.otf') format("opentype");
+}
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/Proxima Nova Light.otf') format("opentype");
+}
 
 /* Globals variables*/
 @backgroundFooter : #efefef;
@@ -37,21 +49,22 @@
 }
 p{
 	color: @colorPostTete;
+	font-family: 'Proxima Nova Regular';
 }
 
 /* HEADER */
 header {
 	section.preEntete {
 		position: relative;
-		height: 30px;
+		height: 40px;
 		background-color: #fff;
 		border-bottom: 1px solid #dae4eb;
 		z-index: 10;
 		.logoAM {
 			margin: 0 auto;
 			width: 124px;
-			height: 52px;
-			background: url(../img/logo_am_entete.svg) no-repeat;
+			height: 65px;
+			background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
 			background-color: transparent;
 		}
 	}
@@ -94,8 +107,12 @@ header {
 			float: right;
 			margin-top: 46px;
 			> a{
+				font-family: 'Proxima Nova Semibold';
 				color: #c4c4c4;
 				cursor: pointer;
+				padding-left: 30px;
+				background: url(../img/iccon_account.jpg) 0% 50% no-repeat;
+				display: inline-block;
 				&:hover{
 					text-decoration: none;
 					color: @bleuAmeli;
@@ -111,6 +128,9 @@ header {
 		text-align: center;
 		padding: 20px 2%;
 		text-transform: uppercase;
+		h3{
+			font-family: 'Proxima Nova Semibold';
+		}
 		span{
 			color: @orangeAmeli;
 		}
