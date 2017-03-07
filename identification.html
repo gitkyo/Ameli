@@ -12,6 +12,10 @@
 
     <!-- Bootstrap + bootstrap_override + customcss -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Custom select (http://selectric.js.org) -->
+    <link href="css/selectric.css" rel="stylesheet">
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,58 +65,173 @@
                         <h4>Informations sur l'entreprise</h4>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Nom de l'entreprise ou de l'employeur</label>
+                            <label for="input1" class="col-sm-4 control-label">Nom de l'entreprise ou de l'employeur</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Villisa compagny">
+                              <input type="text" class="form-control" id="input1" placeholder="Villisa compagny">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Adresse</label>
+                            <label for="input2" class="col-sm-4 control-label">Adresse</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="72 Rue du chemin fleurie">
+                              <input type="text" class="form-control" id="input2" placeholder="72 Rue du chemin fleurie">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Code postal</label>
+                            <label for="input3" class="col-sm-4 control-label">Code postal</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="13001">
+                              <input type="text" class="form-control" id="input3" placeholder="13001">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Ville</label>
+                            <label for="input4" class="col-sm-4 control-label">Ville</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Marseille">
+                              <input type="text" class="form-control" id="input4" placeholder="Marseille">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Siret</label>
+                            <label for="input5" class="col-sm-4 control-label">Siret</label>
                             <div class="col-sm-8">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="404 833 579 00022">
+                              <input type="text" class="form-control" id="input5" placeholder="404 833 579 00022">
                             </div>
                         </div>
 
                         <div class="form-group required">
-                            <label for="inputEmail3" class="col-sm-4 control-label">Branche d'activité</label>
+                            <label for="input6" class="col-sm-4 control-label">Branche d'activité</label>
                             <div class="col-sm-8 withSelect">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="">
-                              <select class="form-control">
+                              <select class="form-control" id="input6">
                                 <option></option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                <option>Metier 1</option>
+                                <option>Metier 2</option>
+                                <option>Metier 3</option>
+                                <option>Metier 4</option>
+                                <option>Metier 5</option>
                               </select>
+                            </div>
+                        </div>
+
+                        <h4>Informations sur le medecin du travail</h4>
+
+                        <div class="form-group required">
+                            <label for="input7" class="col-sm-4 control-label">Nom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input7" placeholder="Albertini">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input8" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input8" placeholder="docteur@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input9" class="col-sm-4 control-label">Adresse postale</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input9" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input10" class="col-sm-4 control-label">Numéro de téléphone</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input10" placeholder="">
                             </div>
                         </div>
 
                     </div>
                     <div class="col-lg-6 rightZone">
                         <h4>Informations sur le salarié</h4>
+
+                        <div class="form-group required">
+                            <label for="input9" class="col-sm-4 control-label">Nom de jeune fille</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input9" placeholder="" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input10" class="col-sm-4 control-label">Nom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input10" placeholder="Dupont" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input10" class="col-sm-4 control-label">Prénom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input10" placeholder="Michel" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input11" class="col-sm-4 control-label">Numéro sécurité social</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input11" placeholder="1 69 05 49 588 157 80" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input12" class="col-sm-4 control-label">Adresse</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input12" placeholder="42 rue Bart" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input13" class="col-sm-4 control-label">Code postal</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input13" placeholder="13000" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input14" class="col-sm-4 control-label">Ville</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input14" placeholder="Marseille" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input15" class="col-sm-4 control-label">Téléphone</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input15" placeholder="06 58 15 40 15" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input16" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input16" placeholder="dupont.michel@gmail.com" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group required dateFormGroup">
+                            <label for="input17" class="col-sm-4 control-label">Date du Certificat Médical Initial</label>
+                            <div class='col-sm-8 input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" id="input17" disabled/>
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input18" class="col-sm-4 control-label">Côté de l’affection</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Gauche
+                                </label>
+                                <label class="radio-inline decale">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Droite
+                                </label>
+                            </div>
+                        </div>
+
                     </div>
 
                 </form>
@@ -144,15 +263,21 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
     <script src="js/jquery-1.11.3.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom scripts -->
+    <!-- Custom select (http://selectric.js.org/index.html) -->
+    <script src="js/jquery.selectric.js"></script>
 
+    <!-- Moment JS (https://momentjs.com/) -->
+    <script src="js/moment.min.js"></script>
+
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
 
   </body>
