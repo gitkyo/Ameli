@@ -8481,6 +8481,7 @@ button.close {
 /* Globals variables*/
 /* @borderTopPostTete : #dae5eb; */
 /* DIVERS */
+/* Requier form hack */
 .form-group.required .control-label:after {
   content: "*";
   color: #e76207;
@@ -8490,6 +8491,23 @@ button.close {
 p {
   color: #757575;
   font-family: 'Proxima Nova Regular';
+}
+/* tooltips */
+.tooltip .tooltip-inner {
+  background-color: #005da8;
+  color: #fff;
+}
+.tooltip .tooltip-arrow {
+  border-right-color: #005da8 !important;
+}
+span.myTooltip {
+  cursor: pointer;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  color: #777775;
+  padding: 3px 7px;
 }
 /* Custom Select */
 .selectric .button {
@@ -8513,6 +8531,8 @@ div.BandeauAide {
   padding-top: 12px;
   padding-left: 12px;
   border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   padding-right: 12px;
   padding-bottom: 12px;
   cursor: pointer;
@@ -8909,10 +8929,18 @@ body > div.connexion div.wrapper div.loginRow div.loginBlock {
   padding: 70px 8%;
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-  width: 75%;
+  width: 92%;
+}
+body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.first input {
+  width: 87%;
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second {
   margin-bottom: 10px;
+}
+body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second input {
+  width: 87%;
+  display: inline-block;
+  margin-right: 12px;
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm a {
   cursor: pointer;
@@ -8973,7 +9001,7 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon3 
 body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 {
   background: url(../img/icon_4_connexion.jpg) no-repeat 50% 50%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   body > div.connexion div.wrapper div.loginRow {
     background: url(../img/background_postHeader_connexion_md.jpg) no-repeat 50% 0%;
   }
@@ -8981,12 +9009,17 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
     width: 33%;
   }
 }
+@media (max-width: 1100px) {
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
+    width: 35%;
+  }
+}
 @media (max-width: 992px) {
   body > div.connexion div.wrapper div.loginRow {
     background: url(../img/background_postHeader_connexion_sm.jpg) no-repeat 50% 0%;
   }
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 43%;
+    width: 45%;
   }
   body > div.connexion div.wrapper div.bottomContainer div.iconRow > div {
     margin-bottom: 80px;
@@ -8997,7 +9030,7 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
 }
 @media (max-width: 768px) {
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 50%;
+    width: 71%;
   }
 }
 @media (max-width: 480px) {
@@ -9011,6 +9044,19 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
     width: 80%;
     display: inline-block;
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.first input {
+    width: 100%;
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second input {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  body > div.connexion div.wrapper div.loginRow button {
+    margin-top: 22px;
+    padding: 0px 30px;
+    height: 40px;
   }
 }
 body > div.identification div.wrapper div.tabsRow {

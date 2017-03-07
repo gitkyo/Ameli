@@ -11,9 +11,19 @@ body > div.connexion{
 				padding: 70px 8%;
 				div.hiddenForm{
 					div.form-group{
-						width: 75%;
+						width: 92%;
+						&.first{
+							input{
+								width: 87%;
+							}
+						}
 						&.second{
 							margin-bottom: 10px;
+							input{
+								width: 87%;
+								display: inline-block;
+								margin-right: 12px;
+							}
 						}
 					}
 					a{
@@ -81,11 +91,20 @@ body > div.connexion{
 	}
 }
 
-@media (max-width: @screen-lg-min) {
+@media (max-width: 1199px) {
 	body > div.connexion div.wrapper div.loginRow{
 		background: url(../img/background_postHeader_connexion_md.jpg) no-repeat 50% 0%;
 		div.loginBlock div.hiddenForm div.form-group {
 			width: 33%;
+		}
+	}
+
+}
+
+@media (max-width: 1100px) {
+	body > div.connexion div.wrapper div.loginRow{
+		div.loginBlock div.hiddenForm div.form-group {
+			width: 35%;
 		}
 	}
 
@@ -97,7 +116,7 @@ body > div.connexion{
 		div.loginRow{
 			background: url(../img/background_postHeader_connexion_sm.jpg) no-repeat 50% 0%;
 			div.loginBlock div.hiddenForm div.form-group {
-				width: 43%;
+				width: 45%;
 			}
 		}
 		div.bottomContainer {
@@ -114,7 +133,7 @@ body > div.connexion{
 @media (max-width: @screen-sm-min) {
 	body > div.connexion div.wrapper div.loginRow{
 		div.loginBlock div.hiddenForm div.form-group {
-			width: 50%;
+			width: 71%;
 		}
 	}
 }
@@ -130,7 +149,20 @@ body > div.connexion{
 			div.hiddenForm div.form-group {
 				width: 80%;
 				display: inline-block;
+				&.first input{
+					width: 100%;
+				}
+				&.second input {
+					width: 100%;
+					display: inline-block;
+					margin-bottom: 16px;
+				}
 			}
+		}
+		button {
+			margin-top: 22px;
+			padding: 0px 30px;
+			height: 40px;
 		}
 	}
 }

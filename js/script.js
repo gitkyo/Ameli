@@ -9,6 +9,9 @@ jQuery( document ).ready(function() {
 			$('div.loginRow p').addClass('hidden');
 			$('div.hiddenForm').removeClass('hidden');
 		});
+
+		//active tooltips
+		$('[data-toggle="tooltip"]').tooltip()
 	}
 
 	var initIdentification = function(){

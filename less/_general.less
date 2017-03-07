@@ -41,6 +41,7 @@
 @hauteurHeader : 217px;
 
 /* DIVERS */
+/* Requier form hack */
 .form-group.required .control-label:after {
 	content:"*";
 	color:@colorAsterixRequirForm;
@@ -52,6 +53,25 @@ p{
 	font-family: 'Proxima Nova Regular';
 }
 
+/* tooltips */
+.tooltip{
+	.tooltip-inner{
+		background-color: @bleuAmeli;
+		color: #fff;
+	}
+	.tooltip-arrow{
+		border-right-color: @bleuAmeli !important;
+	}
+}
+span.myTooltip{
+	cursor: pointer;
+	border: 1px solid #e4e4e4;
+	border-radius: 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 10px;
+	color: #777775;
+	padding: 3px 7px;
+}
 /* Custom Select */
 .selectric .button {
 	border-left : 1px solid #ccc;
@@ -74,6 +94,8 @@ div.BandeauAide{
 	padding-top: 12px;
 	padding-left: 12px;
 	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	padding-right: 12px;
 	padding-bottom: 12px;
 	cursor: pointer;
