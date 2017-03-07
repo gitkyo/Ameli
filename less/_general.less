@@ -240,6 +240,7 @@ header {
 				background: url(../img/iccon_account.jpg) 0% 50% no-repeat;
 				display: inline-block;
 				&:hover{
+					background: url(../img/iccon_account_on.jpg) 0% 50% no-repeat;
 					text-decoration: none;
 					color: @bleuAmeli;
 				}
@@ -259,6 +260,39 @@ header {
 		}
 		span{
 			color: @orangeAmeli;
+		}
+	}
+}
+@media (max-width: 400px) {
+	header section.entete {
+		height: 120px;
+		div.logoBlock h2{
+			position: inherit;
+			margin-top: 70px;
+			section.postTete{
+				margin-top: 30px;
+			}
+		}
+	}
+
+}
+@media (max-width: 600px) {
+	header section.entete div.loginBlock {
+		float: right;
+		margin-top: -40px;
+		z-index: 11;
+		position: inherit;
+	}
+}
+@media (max-width: 500px) {
+	header section.entete div.loginBlock {
+		margin-top: -58px;
+		margin-right: -23px;
+		> a{
+			width: 25px;
+			font-size: 0;
+			height: 25px;
+			padding: 0;
 		}
 	}
 }

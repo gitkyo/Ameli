@@ -8663,6 +8663,7 @@ header section.entete div.loginBlock > a {
   display: inline-block;
 }
 header section.entete div.loginBlock > a:hover {
+  background: url(../img/iccon_account_on.jpg) 0% 50% no-repeat;
   text-decoration: none;
   color: #005da8;
 }
@@ -8680,6 +8681,38 @@ header section.postTete h3 {
 }
 header section.postTete span {
   color: #f68527;
+}
+@media (max-width: 400px) {
+  header section.entete {
+    height: 120px;
+  }
+  header section.entete div.logoBlock h2 {
+    position: inherit;
+    margin-top: 70px;
+  }
+  header section.entete div.logoBlock h2 section.postTete {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  header section.entete div.loginBlock {
+    float: right;
+    margin-top: -40px;
+    z-index: 11;
+    position: inherit;
+  }
+}
+@media (max-width: 500px) {
+  header section.entete div.loginBlock {
+    margin-top: -58px;
+    margin-right: -23px;
+  }
+  header section.entete div.loginBlock > a {
+    width: 25px;
+    font-size: 0;
+    height: 25px;
+    padding: 0;
+  }
 }
 /* FOOTER */
 footer {
@@ -8983,6 +9016,7 @@ body > div.identification div.wrapper div.tabsRow p.active {
 }
 body > div.identification div.wrapper div.wrapperForm {
   margin-top: 60px;
+  margin-bottom: 200px;
   padding: 0 6%;
 }
 body > div.identification div.wrapper div.wrapperForm h4 {
@@ -8991,6 +9025,9 @@ body > div.identification div.wrapper div.wrapperForm h4 {
   border-bottom: 1px solid #005da8;
   padding-bottom: 10px;
   color: #404040;
+}
+body > div.identification div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
 }
 body > div.identification div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
@@ -9012,5 +9049,38 @@ body > div.identification div.wrapper div.wrapperForm div.form-group div.withSel
   float: right;
   margin-top: -40px;
   padding: 0 0 0 12px;
+}
+body > div.identification div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.identification div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.identification div.actionRow > div.form-group button {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  body > div.identification div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.identification div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.identification div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.identification div.actionRow > div.form-group button {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
