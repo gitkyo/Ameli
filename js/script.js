@@ -18,6 +18,10 @@ jQuery( document ).ready(function() {
 		//init datePicker
 		$('#datetimepicker1').datetimepicker();
 
+		$(window).bind('beforeunload', function(){
+		  return "Vous êtes sur le point de quitter le questionnaire avant de l'avoir finalisé. Vous pourrez le reprendre en l'état en vous connectant à nouveau au service avec votre code d'accès.";
+		});
+
 	}
 
 	window.init = function() {

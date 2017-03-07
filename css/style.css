@@ -8505,6 +8505,23 @@ p {
   background: #fff;
   margin: 0 !important;
 }
+div.BandeauAide {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 12;
+  padding-top: 12px;
+  padding-left: 12px;
+  border-radius: 2px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  background-color: #f68527;
+}
+div.BandeauAide p {
+  color: #fff;
+  margin-bottom: 0;
+}
 /* Date pciker */
 div.form-group.dateFormGroup input {
   margin-left: 4%;
