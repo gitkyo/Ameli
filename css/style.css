@@ -5019,6 +5019,19 @@ input[type="button"].btn-block {
   -o-border-radius: 35px;
   border-radius: 35px;
 }
+.btn.suivAmeli.prevAmeli {
+  background: url(../img/picto_precedent.svg) no-repeat 80px center;
+  padding: 0 35px 2px 15px;
+}
+.btn.suivAmeli.prevAmeli:hover,
+.btn.suivAmeli.prevAmeli:focus,
+.btn.suivAmeli.prevAmeli:visited,
+.btn.suivAmeli.prevAmeli:active {
+  background: url(../img/picto_precedent_hover.svg) no-repeat 80px center;
+  background-color: #005da8;
+  outline: none !important;
+  color: #fff;
+}
 .btn.suivAmeli:hover,
 .btn.suivAmeli:focus,
 .btn.suivAmeli:visited,
@@ -8492,6 +8505,17 @@ p {
   color: #757575;
   font-family: 'Proxima Nova Regular';
 }
+html,
+body {
+  height: 100%;
+  background-color: #efefef;
+}
+body > div.container-fluid.main {
+  background-color: #fff;
+}
+header {
+  background-color: #fff;
+}
 /* tooltips */
 .tooltip .tooltip-inner {
   background-color: #005da8;
@@ -8499,6 +8523,27 @@ p {
 }
 .tooltip .tooltip-arrow {
   border-right-color: #005da8 !important;
+}
+div.withLabel p {
+  display: inline-block;
+  margin-left: 30px;
+}
+div.withLabel input {
+  display: inline-block;
+  width: 80%;
+}
+div.withTooltip span.myTooltip {
+  padding: 3px 9px;
+  position: absolute;
+  right: -35px;
+  top: 5px;
+}
+div.widthRadio {
+  text-align: right;
+  padding-right: 4%;
+}
+div.widthRadio label.decale {
+  margin-left: 20% !important;
 }
 span.myTooltip {
   cursor: pointer;
@@ -8548,12 +8593,18 @@ div.form-group.dateFormGroup input {
   width: 93%;
 }
 div.form-group.dateFormGroup span.input-group-addon {
-  left: -14px;
+  left: -15px;
   position: relative;
+}
+div.periode div.form-group.dateFormGroup input {
+  width: 88%;
 }
 @media (max-width: 1600px) {
   div.form-group.dateFormGroup span.input-group-addon {
     left: -12px;
+  }
+  div.withLabel input {
+    width: 75%;
   }
 }
 @media (max-width: 1400px) {
@@ -8571,11 +8622,17 @@ div.form-group.dateFormGroup span.input-group-addon {
   div.form-group.dateFormGroup input {
     width: 91%;
   }
+  div.withLabel input {
+    width: 65%;
+  }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   div.form-group.dateFormGroup input {
     width: 95%;
     margin-left: 15px;
+  }
+  div.withLabel input {
+    width: 80%;
   }
 }
 @media (max-width: 1100px) {
@@ -8583,12 +8640,18 @@ div.form-group.dateFormGroup span.input-group-addon {
     left: -17px;
   }
   div.form-group.dateFormGroup input {
-    width: 94%;
+    width: 94.5%;
+  }
+  div.periode div.form-group.dateFormGroup input {
+    width: 85%;
   }
 }
 @media (max-width: 900px) {
   div.form-group.dateFormGroup input {
     width: 93%;
+  }
+  div.periode div.form-group.dateFormGroup input {
+    width: 81%;
   }
 }
 @media (max-width: 800px) {
@@ -8600,34 +8663,58 @@ div.form-group.dateFormGroup span.input-group-addon {
   div.form-group.dateFormGroup input {
     width: 94.5%;
   }
+  div.periode div.form-group.dateFormGroup input {
+    width: 94.5%;
+  }
 }
 @media (max-width: 700px) {
   div.form-group.dateFormGroup input {
     width: 94%;
+  }
+  div.periode div.form-group.dateFormGroup input {
+    width: 93.5%;
   }
 }
 @media (max-width: 600px) {
   div.form-group.dateFormGroup input {
     width: 93%;
   }
+  div.periode div.form-group.dateFormGroup input {
+    width: 93%;
+  }
+  div.withLabel input {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   div.form-group.dateFormGroup input {
-    width: 92%;
+    width: 91%;
+  }
+  div.periode div.form-group.dateFormGroup input {
+    width: 91%;
   }
 }
 @media (max-width: 450px) {
   div.form-group.dateFormGroup input {
     width: 90%;
   }
+  div.withLabel input {
+    width: 64%;
+  }
 }
 @media (max-width: 400px) {
   div.form-group.dateFormGroup input {
     width: 89%;
   }
+  div.periode div.form-group.dateFormGroup input {
+    width: 89%;
+  }
 }
 @media (max-width: 350px) {
   div.form-group.dateFormGroup input {
+    width: 87%;
+  }
+  div.periode div.form-group.dateFormGroup input {
     width: 87%;
   }
 }
@@ -8639,7 +8726,7 @@ div.form-group.dateFormGroup span.input-group-addon {
 /* HEADER */
 header section.preEntete {
   position: relative;
-  height: 40px;
+  height: 44px;
   background-color: #fff;
   border-bottom: 1px solid #dae4eb;
   z-index: 10;
@@ -8647,7 +8734,7 @@ header section.preEntete {
 header section.preEntete .logoAM {
   margin: 0 auto;
   width: 124px;
-  height: 65px;
+  height: 75px;
   background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
   background-color: transparent;
 }
@@ -8789,9 +8876,10 @@ body > div.accueil div.actionRow > div.form-group button {
   margin-right: 134px;
 }
 body > div.accueil div.wrapper {
-  min-height: 588px;
+  min-height: 450px;
   padding: 0 150px;
   padding-top: 70px;
+  background-color: #fff;
 }
 body > div.accueil div.wrapper div.leftZone {
   padding-right: 6%;
@@ -8814,6 +8902,9 @@ body > div.accueil div.wrapper h4 {
   body > div.accueil div.wrapper div.rightZone {
     margin-top: 100px;
   }
+  body > div.accueil div.wrapper {
+    padding-bottom: 50px;
+  }
 }
 @media (max-width: 768px) {
   body > div.accueil div.wrapper {
@@ -8826,6 +8917,7 @@ body > div.accueil div.wrapper h4 {
   }
 }
 body > div.mention div.wrapper {
+  background-color: #fff;
   padding: 0 20%;
   padding-bottom: 80px;
   padding-top: 40px;
@@ -8840,11 +8932,27 @@ body > div.mention div.wrapper button {
   margin-top: 60px;
   text-transform: initial;
 }
-body > div.confirmation div.wrapper {
+body > div.cgu div.wrapper {
+  background-color: #fff;
   padding: 0 20%;
   padding-bottom: 80px;
+  padding-top: 40px;
+}
+body > div.cgu div.wrapper p {
+  margin-bottom: 20px;
+  font-family: 'Proxima Nova Regular';
+}
+body > div.cgu div.wrapper button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 60px;
+  text-transform: initial;
+}
+body > div.confirmation div.wrapper {
+  padding: 0 20%;
   padding-top: 80px;
   text-align: center;
+  background-color: #fff;
 }
 body > div.confirmation div.wrapper p.subTitle {
   margin-top: 50px;
@@ -8894,7 +9002,7 @@ body > div.confirmation div.wrapper div.downloadPDF p {
 body > div.confirmation div.wrapper a.action {
   display: inline-block;
   margin-top: 120px;
-  margin-bottom: 172px;
+  margin-bottom: 110px;
 }
 @media (max-width: 768px) {
   body > div.confirmation div.wrapper {
@@ -8916,6 +9024,7 @@ body > div.confirmation div.wrapper a.action {
   }
 }
 body > div.connexion div.wrapper {
+  background-color: #fff;
   padding: 0;
 }
 body > div.connexion div.wrapper div.loginRow {
@@ -8927,6 +9036,7 @@ body > div.connexion div.wrapper div.loginRow {
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock {
   padding: 70px 8%;
+  min-height: 366px;
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
   width: 92%;
@@ -8947,10 +9057,9 @@ body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm a {
   font-family: 'Proxima Nova Regular';
 }
 body > div.connexion div.wrapper div.loginRow p {
-  font-family: 'Proxima Nova Semibold';
+  font-family: 'Proxima Nova Regular';
   text-transform: uppercase;
   font-size: 1.4em;
-  font-weight: bold;
 }
 body > div.connexion div.wrapper div.loginRow p span {
   color: #005da8;
@@ -9059,6 +9168,9 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
     height: 40px;
   }
 }
+body > div.identification div.wrapper {
+  background-color: #fff;
+}
 body > div.identification div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
@@ -9079,7 +9191,7 @@ body > div.identification div.wrapper div.tabsRow p.active {
 }
 body > div.identification div.wrapper div.wrapperForm {
   margin-top: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 0 6%;
 }
 body > div.identification div.wrapper div.wrapperForm h4 {
@@ -9091,6 +9203,10 @@ body > div.identification div.wrapper div.wrapperForm h4 {
 }
 body > div.identification div.wrapper div.wrapperForm h4.infoTitle {
   margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.identification div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
 }
 body > div.identification div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
@@ -9120,7 +9236,7 @@ body > div.identification div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.identification div.actionRow > div.form-group button {
+body > div.identification div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
@@ -9140,7 +9256,136 @@ body > div.identification div.actionRow > div.form-group button {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.identification div.actionRow > div.form-group button {
+  body > div.identification div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+body > div.description div.wrapper {
+  background-color: #fff;
+}
+body > div.description div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.description div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.description div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.description div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+}
+body > div.description div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.description div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.description div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.description div.wrapper div.wrapperForm h4.infoTitleCondition {
+  border-color: #84156e;
+  margin-top: 70px;
+}
+body > div.description div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  padding-left: 2%;
+}
+body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+  padding-left: 2%;
+}
+body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.description div.wrapper div.wrapperForm .decale {
+  margin-left: 15%;
+}
+body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect {
+  position: relative;
+}
+body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect input {
+  width: 91%;
+}
+body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect select {
+  width: 10%;
+  float: right;
+  margin-top: -40px;
+  padding: 0 0 0 12px;
+}
+body > div.description div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.description div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.description div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.description div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.description div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
+  }
+  body > div.description div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+    padding-left: 0;
+  }
+  body > div.description div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.description div.wrapper div.wrapperForm {
+    /* padding: 0 12%; */
+  }
+}
+@media (max-width: 768px) {
+  body > div.description div.wrapper {
+    /* div.wrapperForm {
+				padding: 0 15%;
+			} */
+  }
+  body > div.description div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.description div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 auto;

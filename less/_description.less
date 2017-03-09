@@ -1,4 +1,4 @@
-body > div.identification{
+body > div.description{
 	div.wrapper{
 		background-color: #fff;
 		div.tabsRow{
@@ -36,9 +36,27 @@ body > div.identification{
 				&.infoTitleSalaire{
 					border-color: #56ca81;
 				}
+				&.infoTitleCondition{
+					border-color: #84156e;
+					margin-top: 70px;
+				}
 			}
 			div.leftZone{
 				padding-right: 5%;
+				div.periode div.dateFormGroup{
+					&.first div.input-group{
+						padding-left: 2%;
+					}
+					&.second{
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							padding-left: 0;
+							left: -10px;
+						}
+					}
+				}
 			}
 			div.rightZone{
 				padding-left: 5%;
@@ -71,17 +89,26 @@ body > div.identification{
 				float: right;
 				margin-right: 134px;
 				margin-bottom: 10px;
+				&.prevAmeli{
+					float: left;
+					margin-left: 134px;
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: @screen-lg-min) {
-	body > div.identification div.wrapper div.wrapperForm {
+@media (max-width: 1199px) {
+	body > div.description div.wrapper div.wrapperForm {
+		/* padding: 0 10%; */
 		div.rightZone {
 			padding-left: 0%;
 			padding-right: 5%;
 			margin-top: 160px;
+		}
+		div.leftZone div.periode div.dateFormGroup.first div.input-group {
+			padding-left: 0;
 		}
 		h4.infoTitle {
 			margin-top: 160px;
@@ -89,11 +116,22 @@ body > div.identification{
 	}
 }
 
+@media (max-width: @screen-md-min) {
+	body > div.description div.wrapper div.wrapperForm {
+		/* padding: 0 12%; */
+	}
+}
+
 @media (max-width: @screen-sm-min) {
-	body > div.identification {
-		div.wrapper div.tabsRow p{
-			width: 100%;
-			margin-bottom: 25px;
+	body > div.description {
+		div.wrapper {
+			/* div.wrapperForm {
+				padding: 0 15%;
+			} */
+			div.tabsRow p{
+				width: 100%;
+				margin-bottom: 25px;
+			}
 		}
 		div.actionRow > div.form-group a {
 			float: none;

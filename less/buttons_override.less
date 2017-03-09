@@ -78,6 +78,16 @@
     font-family: 'Proxima Nova Semibold';
     -o-border-radius: 35px;
     border-radius: 35px;
+    &.prevAmeli{
+      background: url(../img/picto_precedent.svg) no-repeat 80px center;
+      padding: 0 35px 2px 15px;
+      &:hover, &:focus, &:visited, &:active {
+        background: url(../img/picto_precedent_hover.svg) no-repeat 80px center;
+        background-color: @bleuAmeli;
+        outline: none !important;
+        color: #fff;
+      }
+    }
     &:hover, &:focus, &:visited, &:active {
       background: url(../img/picto_suivant_hover.svg) no-repeat 10px center;
       background-color: @bleuAmeli;

@@ -52,7 +52,16 @@ p{
 	color: @colorPostTete;
 	font-family: 'Proxima Nova Regular';
 }
-
+html,body{
+	height: 100%;
+	background-color: #efefef;
+}
+body > div.container-fluid.main{
+	background-color: #fff;
+}
+header{
+	background-color: #fff;
+}
 /* tooltips */
 .tooltip{
 	.tooltip-inner{
@@ -61,6 +70,29 @@ p{
 	}
 	.tooltip-arrow{
 		border-right-color: @bleuAmeli !important;
+	}
+}
+div.withLabel{
+	p{
+		display: inline-block;
+		margin-left: 30px;
+	}
+	input{
+		display: inline-block;
+		width: 80%;
+	}
+}
+div.withTooltip span.myTooltip{
+	padding: 3px 9px;
+	position: absolute;
+	right: -35px;
+	top: 5px;
+}
+div.widthRadio{
+	text-align: right;
+	padding-right: 4%;
+	label.decale{
+		margin-left: 20% !important;
 	}
 }
 span.myTooltip{
@@ -112,13 +144,21 @@ div.form-group.dateFormGroup{
 		width: 93%;
 	}
 	span.input-group-addon{
-		left: -14px;
+		left: -15px;
 		position: relative;
+	}
+}
+div.periode div.form-group.dateFormGroup{
+	input{
+		width: 88%;
 	}
 }
 @media (max-width: 1600px) {
 	div.form-group.dateFormGroup span.input-group-addon {
 		left: -12px;
+	}
+	div.withLabel input {
+		width: 75%;
 	}
 }
 
@@ -138,12 +178,18 @@ div.form-group.dateFormGroup{
 	div.form-group.dateFormGroup input {
 		width: 91%;
 	}
+	div.withLabel input {
+		width: 65%;
+	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 	div.form-group.dateFormGroup input {
 		width: 95%;
 		margin-left: 15px;
+	}
+	div.withLabel input {
+		width: 80%;
 	}
 }
 
@@ -152,13 +198,19 @@ div.form-group.dateFormGroup{
 		left: -17px;
 	}
 	div.form-group.dateFormGroup input {
-		width: 94%;
+		width: 94.5%;
+	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 85%;
 	}
 }
 
 @media (max-width: 900px) {
 	div.form-group.dateFormGroup input {
 		width: 93%;
+	}
+	div.periode div.form-group.dateFormGroup input {
+	    width: 81%;
 	}
 }
 
@@ -172,11 +224,17 @@ div.form-group.dateFormGroup{
 	div.form-group.dateFormGroup input {
 		width: 94.5%;
 	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 94.5%;
+	}
 }
 
 @media (max-width: 700px) {
 	div.form-group.dateFormGroup input {
 		width: 94%;
+	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 93.5%;
 	}
 }
 
@@ -184,11 +242,20 @@ div.form-group.dateFormGroup{
 	div.form-group.dateFormGroup input {
 		width: 93%;
 	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 93%;
+	}
+	div.withLabel input {
+		width: 75%;
+	}
 }
 
 @media (max-width: 500px) {
 	div.form-group.dateFormGroup input {
-		width: 92%;
+		width: 91%;
+	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 91%;
 	}
 }
 
@@ -196,16 +263,25 @@ div.form-group.dateFormGroup{
 	div.form-group.dateFormGroup input {
 		width: 90%;
 	}
+	div.withLabel input {
+		width: 64%;
+	}
 }
 
 @media (max-width: 400px) {
 	div.form-group.dateFormGroup input {
 		width: 89%;
 	}
+	div.periode div.form-group.dateFormGroup input {
+		width: 89%;
+	}
 }
 
 @media (max-width: 350px) {
 	div.form-group.dateFormGroup input {
+		width: 87%;
+	}
+	div.periode div.form-group.dateFormGroup input {
 		width: 87%;
 	}
 }
@@ -220,14 +296,14 @@ div.form-group.dateFormGroup{
 header {
 	section.preEntete {
 		position: relative;
-		height: 40px;
+		height: 44px;
 		background-color: #fff;
 		border-bottom: 1px solid #dae4eb;
 		z-index: 10;
 		.logoAM {
 			margin: 0 auto;
 			width: 124px;
-			height: 65px;
+			height: 75px;
 			background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
 			background-color: transparent;
 		}
