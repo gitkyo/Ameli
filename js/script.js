@@ -32,6 +32,8 @@ jQuery( document ).ready(function() {
 
 	var initDescription = function(){
 
+		$("div.tabsRow div.border").addClass('animOn');
+
 		//active tooltips
 		$('[data-toggle="tooltip"]').tooltip();
 		//init custom select
@@ -85,7 +87,8 @@ jQuery( document ).ready(function() {
 		var cptInput3 = 40;
 		//When click to add new absence
 		$("span.separation p").click(function(event) {
-			/* Act on the event */
+
+			// Increment counter
 			cpt++;
 			cptInput1++;
 			cptInput2++;
@@ -94,19 +97,13 @@ jQuery( document ).ready(function() {
 			// Add DOM block "nouvelle absence"
 			$("span.separation").before("<div class='oneBlock'>" + oneBlock + '</div>');
 
-
+			// Get last block to use later
 			var lastBlock = $("div.rightZone div.oneBlock:last-of-type");
 
-
+			// Alter absence text
 			lastBlock.find("p").text("Absence " + cpt);
 
-			// Alter some id to init new dateTimePicker
-			/*$("div.rightZone div.oneBlock:last-of-type #datetimepicker"+(cpt1DateTimePicker - 1)).attr("id", "datetimepicker"+(cpt1DateTimePicker + 1));
-			$("div.rightZone div.oneBlock:last-of-type #datetimepicker"+(cpt2DateTimePicker - 1)).attr("id", "datetimepicker"+(cpt2DateTimePicker + 1));*/
-			/*cpt1DateTimePicker++;
-			cpt2DateTimePicker++;*/
-
-
+			// not the first time
 			if(cpt > 2){
 				/*console.log('là : '+cpt);
 				console.log("new datetimepicker"+(cpt1DateTimePicker + cpt));
@@ -117,6 +114,7 @@ jQuery( document ).ready(function() {
 				lastBlock.find(".second .date").attr("id", "datetimepicker"+(cpt2DateTimePicker + cpt));
 			}else{
 
+				// First fired
 				/*console.log("#datetimepicker"+(cpt1DateTimePicker));
 				console.log("#Changer en");
 				console.log("datetimepicker"+(cpt1DateTimePicker + 2));
@@ -130,6 +128,7 @@ jQuery( document ).ready(function() {
 				lastBlock.find("#datetimepicker"+(cpt2DateTimePicker)).attr("id", "datetimepicker"+(cpt2DateTimePicker + 2));
 			}
 
+			// Increment counter
 			cpt1DateTimePicker++;
 			cpt2DateTimePicker++;
 
@@ -143,14 +142,13 @@ jQuery( document ).ready(function() {
 			cptInput1++;
 			cptInput2++;
 
-
+			// Init new dateTimePicker
 			if(cpt > 2){
 				/*console.log("là");
 				console.log("#datetimepicker"+(cpt1DateTimePicker + cpt - 1));
 				console.log("#datetimepicker"+(cpt2DateTimePicker + cpt - 1));
 				console.log("---");*/
 
-				// Init new dateTimePicker
 				$("#datetimepicker"+(cpt1DateTimePicker + cpt - 1)).datetimepicker({
 					format: 'DD/MM/YYYY'
 				});
@@ -190,6 +188,7 @@ jQuery( document ).ready(function() {
 				});
 			}
 
+			// Replace last block with the newest
 			oneBlock= lastBlock.html();
 		});
 

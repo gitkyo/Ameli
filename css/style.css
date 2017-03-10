@@ -9282,6 +9282,9 @@ body > div.description div.wrapper div.tabsRow div.border {
   float: right;
   height: 23px;
 }
+body > div.description div.wrapper div.tabsRow div.border.animOn p {
+  color: #f68527;
+}
 body > div.description div.wrapper div.tabsRow div.border p {
   color: #cecece;
   display: inline-block;
