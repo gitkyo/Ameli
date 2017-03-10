@@ -1,3 +1,4 @@
+@charset UTF-8;
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8494,6 +8495,9 @@ button.close {
 /* Globals variables*/
 /* @borderTopPostTete : #dae5eb; */
 /* DIVERS */
+html {
+  -webkit-font-smoothing: antialiased;
+}
 /* Requier form hack */
 .form-group.required .control-label:after {
   content: "*";
@@ -9262,6 +9266,79 @@ body > div.identification div.actionRow > div.form-group a {
     margin: 0 auto;
   }
 }
+/* @animation : color: @orangeAmeli; */
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 30%;
+  }
+}
 body > div.description div.wrapper {
   background-color: #fff;
 }
@@ -9272,6 +9349,7 @@ body > div.description div.wrapper div.tabsRow {
   margin-left: 1%;
 }
 body > div.description div.wrapper div.tabsRow div.border {
+  min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
   border-top-right-radius: 15px;
@@ -9281,22 +9359,76 @@ body > div.description div.wrapper div.tabsRow div.border {
   font-family: 'Proxima Nova Regular';
   float: right;
   height: 23px;
+  position: relative;
 }
 body > div.description div.wrapper div.tabsRow div.border.animOn p {
-  color: #f68527;
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.description div.wrapper div.tabsRow div.border.animOn div.completeBar {
+  width: 30%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBar*/
+  animation-name: pinnoccioBar;
+  -webkit-animation-name: pinnoccioBar;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
 }
 body > div.description div.wrapper div.tabsRow div.border p {
   color: #cecece;
-  display: inline-block;
   text-transform: lowercase;
-  position: relative;
-  top: -27px;
-  padding-left: 75px;
-  padding-right: 0px;
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 body > div.description div.wrapper div.tabsRow div.border div.completeBar {
-  background: #ebebeb;
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -9304,7 +9436,7 @@ body > div.description div.wrapper div.tabsRow div.border div.completeBar {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  width: 75px;
+  width: 0;
   min-height: 19px;
   position: relative;
   top: -2px;
