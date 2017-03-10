@@ -34,11 +34,7 @@
 body > div.description{
 	div.wrapper{
 		background-color: #fff;
-		div.tabsRow{
-			margin-top: 30px;
-			width: 98%;
-			border-bottom: 1px solid #c9c9c9;
-			margin-left: 1%;
+		div.barRow{
 			div.border{
 				min-width: 255px;
 				border: 1px solid #ebebeb;
@@ -51,6 +47,8 @@ body > div.description{
 				float: right;
 				height: 23px;
 				position: relative;
+				top: -35px;
+				right: 35px;
 				&.animOn{
 					p{
 
@@ -119,7 +117,7 @@ body > div.description{
 					color: #cecece;
 					text-transform: lowercase;
 					position: absolute;
-					right: 0;
+					right: 15px;
 					top: 0;
 				}
 				div.completeBar{
@@ -137,6 +135,12 @@ body > div.description{
 					top: -2px;
 				}
 			}
+		}
+		div.tabsRow{
+			margin-top: 30px;
+			width: 98%;
+			border-bottom: 1px solid #c9c9c9;
+			margin-left: 1%;
 			p{
 				text-transform: uppercase;
 				display: inline-block;
@@ -296,17 +300,17 @@ body > div.description{
 }
 
 @media (max-width: @screen-md-min) {
-	body > div.description div.wrapper div.tabsRow div.border{
+	body > div.description div.wrapper div.barRow div.border{
 		float: none;
-		margin-top: 10px;
-		p{
-			top: -2px;
-		}
+		top: 15px;
+		left: 2%;
+		width: 96%;
 		div.completeBar{
 			width: 30%;
 		}
 	}
 }
+
 
 @media (max-width: @screen-sm-min) {
 	body > div.description {
@@ -314,9 +318,8 @@ body > div.description{
 			/* div.wrapperForm {
 				padding: 0 15%;
 			} */
-			div.tabsRow div.border{
+			div.barRow div.border{
 				p {
-					top: -27px;
 					text-align: right;
 				}
 			}
@@ -332,5 +335,17 @@ body > div.description{
 			display: inline-block;
 			margin: 0 auto;
 		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.description div.wrapper div.barRow div.border {
+		left: 4%;
+		width: 92%;
+	}
+}
+@media (max-width: 300px) {
+	body > div.description div.wrapper div.barRow div.border {
+		left: -5%;
 	}
 }

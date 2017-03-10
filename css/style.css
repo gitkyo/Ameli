@@ -9342,13 +9342,7 @@ body > div.identification div.actionRow > div.form-group a {
 body > div.description div.wrapper {
   background-color: #fff;
 }
-body > div.description div.wrapper div.tabsRow {
-  margin-top: 30px;
-  width: 98%;
-  border-bottom: 1px solid #c9c9c9;
-  margin-left: 1%;
-}
-body > div.description div.wrapper div.tabsRow div.border {
+body > div.description div.wrapper div.barRow div.border {
   min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
@@ -9360,8 +9354,10 @@ body > div.description div.wrapper div.tabsRow div.border {
   float: right;
   height: 23px;
   position: relative;
+  top: -35px;
+  right: 35px;
 }
-body > div.description div.wrapper div.tabsRow div.border.animOn p {
+body > div.description div.wrapper div.barRow div.border.animOn p {
   animation-name: colorTextOange;
   -webkit-animation-name: colorTextOange;
   /* Safari 4.0 - 8.0 */
@@ -9386,7 +9382,7 @@ body > div.description div.wrapper div.tabsRow div.border.animOn p {
 						animation: @animation;
 						} */
 }
-body > div.description div.wrapper div.tabsRow div.border.animOn div.completeBar {
+body > div.description div.wrapper div.barRow div.border.animOn div.completeBar {
   width: 30%;
   background-color: #ebebeb;
   animation-name: colorBarOange;
@@ -9421,14 +9417,14 @@ body > div.description div.wrapper div.tabsRow div.border.animOn div.completeBar
   /* Safari 4.0 - 8.0 */
   animation-timing-function: linear;
 }
-body > div.description div.wrapper div.tabsRow div.border p {
+body > div.description div.wrapper div.barRow div.border p {
   color: #cecece;
   text-transform: lowercase;
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
 }
-body > div.description div.wrapper div.tabsRow div.border div.completeBar {
+body > div.description div.wrapper div.barRow div.border div.completeBar {
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -9440,6 +9436,12 @@ body > div.description div.wrapper div.tabsRow div.border div.completeBar {
   min-height: 19px;
   position: relative;
   top: -2px;
+}
+body > div.description div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
 }
 body > div.description div.wrapper div.tabsRow p {
   text-transform: uppercase;
@@ -9586,14 +9588,13 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
   }
 }
 @media (max-width: 992px) {
-  body > div.description div.wrapper div.tabsRow div.border {
+  body > div.description div.wrapper div.barRow div.border {
     float: none;
-    margin-top: 10px;
+    top: 15px;
+    left: 2%;
+    width: 96%;
   }
-  body > div.description div.wrapper div.tabsRow div.border p {
-    top: -2px;
-  }
-  body > div.description div.wrapper div.tabsRow div.border div.completeBar {
+  body > div.description div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
 }
@@ -9603,8 +9604,7 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
 				padding: 0 15%;
 			} */
   }
-  body > div.description div.wrapper div.tabsRow div.border p {
-    top: -27px;
+  body > div.description div.wrapper div.barRow div.border p {
     text-align: right;
   }
   body > div.description div.wrapper div.tabsRow p {
@@ -9615,6 +9615,17 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
     float: none;
     display: inline-block;
     margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  body > div.description div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.description div.wrapper div.barRow div.border {
+    left: -5%;
   }
 }
 /*# sourceMappingURL=style.css.map */

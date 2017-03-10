@@ -32,7 +32,7 @@ jQuery( document ).ready(function() {
 
 	var initDescription = function(){
 
-		$("div.tabsRow div.border").addClass('animOn');
+		$("div.barRow div.border").addClass('animOn');
 
 		//active tooltips
 		$('[data-toggle="tooltip"]').tooltip();
