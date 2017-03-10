@@ -9271,6 +9271,41 @@ body > div.description div.wrapper div.tabsRow {
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
+body > div.description div.wrapper div.tabsRow div.border {
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+}
+body > div.description div.wrapper div.tabsRow div.border p {
+  color: #cecece;
+  display: inline-block;
+  text-transform: lowercase;
+  position: relative;
+  top: -27px;
+  padding-left: 75px;
+  padding-right: 0px;
+  float: right;
+}
+body > div.description div.wrapper div.tabsRow div.border div.completeBar {
+  background: #ebebeb;
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 75px;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
 body > div.description div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
@@ -9287,6 +9322,20 @@ body > div.description div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
+  /* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
 }
 body > div.description div.wrapper div.wrapperForm h4 {
   font-family: 'Proxima Nova Semibold';
@@ -9319,23 +9368,54 @@ body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.
   padding-left: 0;
   left: -10px;
 }
+body > div.description div.wrapper div.wrapperForm div.leftZone .decale {
+  margin-left: 15%;
+}
 body > div.description div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.description div.wrapper div.wrapperForm .decale {
-  margin-left: 15%;
+body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock {
+  margin-top: 70px;
 }
-body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect {
+body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock:first-of-type {
+  margin-bottom: 0px;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock > p {
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock div.motifRow {
+  width: 96%;
+  margin-left: 2%;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone span.separation {
+  display: block;
   position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
 }
-body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect input {
-  width: 91%;
+body > div.description div.wrapper div.wrapperForm div.rightZone span.separation:hover p {
+  color: #005da8;
 }
-body > div.description div.wrapper div.wrapperForm div.form-group div.withSelect select {
-  width: 10%;
-  float: right;
-  margin-top: -40px;
-  padding: 0 0 0 12px;
+body > div.description div.wrapper div.wrapperForm div.rightZone span.separation:hover span.line {
+  border-color: #005da8;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone span.separation p {
+  color: #d5d5d5;
+  display: inline-block;
+  top: 34px;
+  position: relative;
+  background-color: #fff;
+  padding: 0 1%;
+}
+body > div.description div.wrapper div.wrapperForm div.rightZone span.separation span.line {
+  border-top: 1px dashed #d5d5d5;
+  display: inline-block;
+  width: 100%;
 }
 body > div.description div.actionRow {
   background-color: #f7f7f7;
@@ -9371,8 +9451,15 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
   }
 }
 @media (max-width: 992px) {
-  body > div.description div.wrapper div.wrapperForm {
-    /* padding: 0 12%; */
+  body > div.description div.wrapper div.tabsRow div.border {
+    float: none;
+    margin-top: 10px;
+  }
+  body > div.description div.wrapper div.tabsRow div.border p {
+    top: -2px;
+  }
+  body > div.description div.wrapper div.tabsRow div.border div.completeBar {
+    width: 30%;
   }
 }
 @media (max-width: 768px) {
@@ -9380,6 +9467,10 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
     /* div.wrapperForm {
 				padding: 0 15%;
 			} */
+  }
+  body > div.description div.wrapper div.tabsRow div.border p {
+    top: -27px;
+    text-align: right;
   }
   body > div.description div.wrapper div.tabsRow p {
     width: 100%;
