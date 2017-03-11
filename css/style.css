@@ -9652,7 +9652,7 @@ body > div.description2 {
     background-color: #f68527;
   }
 }
-@-webkit-keyframes pinnoccioBar {
+@-webkit-keyframes pinnoccioBarTwo {
   0% {
     width: 0%;
   }
@@ -9688,7 +9688,7 @@ body > div.description2 {
     background-color: #f68527;
   }
 }
-@keyframes pinnoccioBar {
+@keyframes pinnoccioBarTwo {
   0% {
     width: 0%;
   }
@@ -9769,9 +9769,9 @@ body > div.description2 div.wrapper div.barRow div.border.animOn div.completeBar
   -webkit-animation-timing-function: ease-in;
   /* Safari 4.0 - 8.0 */
   animation-timing-function: ease-in;
-  /* pinnoccioBar*/
-  animation-name: pinnoccioBar;
-  -webkit-animation-name: pinnoccioBar;
+  /* pinnoccioBarTwo*/
+  animation-name: pinnoccioBarTwo;
+  -webkit-animation-name: pinnoccioBarTwo;
   /* Safari 4.0 - 8.0 */
   animation-duration: 0.9s;
   -webkit-animation-duration: 0.9s;
