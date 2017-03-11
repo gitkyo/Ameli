@@ -4320,14 +4320,16 @@ input[type="checkbox"] {
 //
 // Apply to any element you wish to create light text for placement immediately
 // below a form control. Use for general help, formatting, or instructional text.
-
+*/
 .help-block {
-  display: block; // account for any element using help-block
+  display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: lighten(@text-color, 25%); // lighten the text some for contrast
+  color: #adadad;
+  font-family: 'Proxima Nova Regular';
+  font-size: 0.9em;
 }
-
+/*
 
 // Inline forms
 //
@@ -9266,7 +9268,9 @@ body > div.identification div.actionRow > div.form-group a {
     margin: 0 auto;
   }
 }
-/* @animation : color: @orangeAmeli; */
+body > div.description {
+  /* @animation : color: @orangeAmeli; */
+}
 @-webkit-keyframes colorTextOange {
   0% {
     color: #cecece;
@@ -9611,10 +9615,11 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
     width: 100%;
     margin-bottom: 25px;
   }
+  body > div.description div.actionRow > div.form-group a.prevAmeli,
   body > div.description div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 5%;
   }
 }
 @media (max-width: 480px) {
@@ -9625,6 +9630,463 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
 }
 @media (max-width: 300px) {
   body > div.description div.wrapper div.barRow div.border {
+    left: -5%;
+  }
+}
+body > div.description2 {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+body > div.description2 div.wrapper {
+  background-color: #fff;
+}
+body > div.description2 div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.description2 div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.description2 div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 45%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBar*/
+  animation-name: pinnoccioBar;
+  -webkit-animation-name: pinnoccioBar;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.description2 div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.description2 div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.description2 div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.description2 div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.description2 div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.description2 div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+  /* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+}
+body > div.description2 div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.description2 div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.description2 div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.description2 div.wrapper div.wrapperForm h4.infoTitleCondition {
+  border-color: #84156e;
+  margin-top: 70px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.form-group.reduced {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone textarea {
+  max-width: 100%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  padding-left: 2%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+  padding-left: 2%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock {
+  margin-top: 70px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock > p {
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock > p:after {
+  content: "*";
+  color: #e76207;
+  margin-left: 6px;
+  font-weight: bold;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock div.motifRow {
+  width: 96%;
+  margin-left: 2%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock:first-of-type {
+  margin-bottom: 0px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation {
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation:hover p {
+  color: #005da8;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation:hover span.line {
+  border-color: #005da8;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation p {
+  color: #d5d5d5;
+  display: inline-block;
+  top: 34px;
+  position: relative;
+  background-color: #fff;
+  padding: 0 1%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation span.line {
+  border-top: 1px dashed #d5d5d5;
+  display: inline-block;
+  width: 100%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.leftZone .decale {
+  margin-left: 15%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  width: 94%;
+  position: absolute;
+  top: 8px;
+  height: 3.5px;
+  background-color: #dbdbdb;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+  display: inline-block;
+  position: relative;
+  min-height: 30px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  bottom: -25px;
+  width: auto;
+  color: #a4a4a4;
+  margin-bottom: 0;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom span.boule {
+  height: 20px;
+  width: 20px;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active p {
+  color: #005da8;
+  font-family: 'Proxima Nova Semibold';
+  margin: 0 -1px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active span.boule {
+  background-color: #005da8;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.one {
+  text-align: left;
+  float: left;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two {
+  text-align: center;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+  margin-left: -26px;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three {
+  text-align: left;
+  float: right;
+}
+body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+  margin-left: -111px;
+}
+body > div.description2 div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.description2 div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.description2 div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.description2 div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.description2 div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    width: 94.8%;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+    padding-left: 0;
+  }
+  body > div.description2 div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.description2 div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.description2 div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  body > div.description2 div.wrapper {
+    /* div.wrapperForm {
+				padding: 0 15%;
+			} */
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    width: 92.2%;
+  }
+  body > div.description2 div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.description2 div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.description2 div.actionRow > div.form-group a.prevAmeli,
+  body > div.description2 div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+    margin-left: 0;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+    margin-left: 0;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+    width: 100%;
+  }
+  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    display: none;
+  }
+  body > div.description2 div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.description2 div.wrapper div.barRow div.border {
     left: -5%;
   }
 }

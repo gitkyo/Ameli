@@ -133,14 +133,28 @@ jQuery( document ).ready(function() {
 			cpt2DateTimePicker++;
 
 			// Alter for control ID
-			lastBlock.find("div.first label").attr("for", "input"+(cptInput1 + 1));
-			lastBlock.find("div.second label").attr("for", "input"+(cptInput2 + 1));
+			if(cpt > 2){
+				cptInput1 = cptInput1 + 2;
+				cptInput2 = cptInput2 + 2;
+				cptInput3 = cptInput3 + 2;
+			}else{
+				cptInput1 = cptInput1 + 1;
+				cptInput2 = cptInput2 + 1;
+				cptInput3 = cptInput3 + 1;
+			}
 
-			lastBlock.find("div.first input").attr("id", "input"+(cptInput1 + 1));
-			lastBlock.find("div.second input").attr("id", "input"+(cptInput2 + 1));
+			lastBlock.find("div.first label").attr("for", "input"+(cptInput1));
+			lastBlock.find("div.second label").attr("for", "input"+(cptInput2));
+
+			lastBlock.find("div.first input").attr("id", "input"+(cptInput1));
+			lastBlock.find("div.second input").attr("id", "input"+(cptInput2));
+
+			lastBlock.find("div.motifRow label").attr("for", "input"+(cptInput3));
+			lastBlock.find("div.motifRow input").attr("id", "input"+(cptInput3));
 
 			cptInput1++;
 			cptInput2++;
+			cptInput3++;
 
 			// Init new dateTimePicker
 			if(cpt > 2){
@@ -194,11 +208,177 @@ jQuery( document ).ready(function() {
 
 	}
 
+	var initDescription2 = function(){
+
+		$("div.barRow div.border").addClass('animOn');
+		//init dateTimePicker
+		$('#datetimepicker1').datetimepicker({
+			format: 'DD/MM/YYYY',
+			useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker2').datetimepicker({
+			format: 'DD/MM/YYYY',
+			useCurrent: false //Important! See issue #1075
+		});
+		// Link dateTimePicker bettween them
+		$("#datetimepicker1").on("dp.change", function (e) {
+			$('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker2").on("dp.change", function (e) {
+			$('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+		});
+		/*
+		Popup
+		$(window).bind('beforeunload', function(){
+		  return "Vous êtes sur le point de quitter le questionnaire avant de l'avoir finalisé. Vous pourrez le reprendre en l'état en vous connectant à nouveau au service avec votre code d'accès.";
+		});*/
+
+		// Get DOM of block "nouvelle absence"
+		var oneBlock = $("div.leftZone div.oneBlock").html();
+		// some counter
+		var cpt = 1;
+		var cpt1DateTimePicker = 1;
+		var cpt2DateTimePicker = 2;
+		var cptInput1 = 2;
+		var cptInput2 = 3;
+		var cptInput3 = 4;
+		//When click to add new absence
+		$("span.separation p").click(function(event) {
+
+			// Increment counter
+			cpt++;
+			cptInput1++;
+			cptInput2++;
+			cptInput3++;
+
+			// Add DOM block "nouvelle absence"
+			$("span.separation").before("<div class='oneBlock'>" + oneBlock + '</div>');
+
+
+			// Get last block to use later
+			var lastBlock = $("div.leftZone div.oneBlock").last();
+
+			// Alter absence text
+			lastBlock.find(".requiered").text("Poste " + cpt);
+
+			// not the first time
+			if(cpt > 2){
+				/*console.log('là : '+cpt);
+				console.log("new datetimepicker"+(cpt1DateTimePicker + cpt));
+				console.log("new datetimepicker"+(cpt2DateTimePicker + cpt));
+				console.log("-----");*/
+
+				lastBlock.find(".first .date").attr("id", "datetimepicker"+(cpt1DateTimePicker + cpt));
+				lastBlock.find(".second .date").attr("id", "datetimepicker"+(cpt2DateTimePicker + cpt));
+			}else{
+
+				// First fired
+				/*console.log("#datetimepicker"+(cpt1DateTimePicker));
+				console.log("#Changer en");
+				console.log("datetimepicker"+(cpt1DateTimePicker + 2));
+				console.log("et");
+				console.log("#datetimepicker"+(cpt2DateTimePicker));
+				console.log("#Changer en");
+				console.log("datetimepicker"+(cpt2DateTimePicker + 2));
+				console.log("-----");*/
+
+				lastBlock.find("#datetimepicker"+(cpt1DateTimePicker)).attr("id", "datetimepicker"+(cpt1DateTimePicker + 2));
+				lastBlock.find("#datetimepicker"+(cpt2DateTimePicker)).attr("id", "datetimepicker"+(cpt2DateTimePicker + 2));
+			}
+
+			// Increment counter
+			cpt1DateTimePicker++;
+			cpt2DateTimePicker++;
+
+			// Alter for control ID
+			if(cpt > 2){
+				cptInput1 = cptInput1 + 2;
+				cptInput2 = cptInput2 + 2;
+				cptInput3 = cptInput3 + 2;
+			}else{
+				cptInput1 = cptInput1 + 1;
+				cptInput2 = cptInput2 + 1;
+				cptInput3 = cptInput3 + 1;
+			}
+
+			lastBlock.find("div.first label").attr("for", "input"+(cptInput1));
+			lastBlock.find("div.second label").attr("for", "input"+(cptInput2));
+
+			lastBlock.find("div.first input").attr("id", "input"+(cptInput1));
+			lastBlock.find("div.second input").attr("id", "input"+(cptInput2));
+
+			lastBlock.find("div.motifRow label").attr("for", "input"+(cptInput3));
+			lastBlock.find("div.motifRow input").attr("id", "input"+(cptInput3));
+
+			cptInput1++;
+			cptInput2++;
+			cptInput3++;
+
+			// Init new dateTimePicker
+			if(cpt > 2){
+				/*console.log("là");
+				console.log("#datetimepicker"+(cpt1DateTimePicker + cpt - 1));
+				console.log("#datetimepicker"+(cpt2DateTimePicker + cpt - 1));
+				console.log("---");*/
+
+				$("#datetimepicker"+(cpt1DateTimePicker + cpt - 1)).datetimepicker({
+					format: 'DD/MM/YYYY'
+				});
+				$("#datetimepicker"+(cpt2DateTimePicker + cpt - 1)).datetimepicker({
+					format: 'DD/MM/YYYY',
+					useCurrent: false //Important! See issue #1075
+				});
+
+				// Link new dateTimePicker bettween them
+				$("#datetimepicker"+(cpt1DateTimePicker + cpt - 1)).on("dp.change", function (e) {
+					$('#datetimepicker'+(cpt2DateTimePicker + cpt - 1)).data("DateTimePicker").minDate(e.date);
+				});
+				$("#datetimepicker"+(cpt2DateTimePicker + cpt - 1)).on("dp.change", function (e) {
+					$('#datetimepicker'+(cpt1DateTimePicker + cpt - 1)).data("DateTimePicker").maxDate(e.date);
+				});
+			}
+			else{
+				/*console.log("#datetimepicker"+(cpt1DateTimePicker + 1));
+				console.log("#datetimepicker"+(cpt2DateTimePicker + 1));
+				console.log("---");*/
+
+				// Init new dateTimePicker
+				$("#datetimepicker"+(cpt1DateTimePicker + 1)).datetimepicker({
+					format: 'DD/MM/YYYY'
+				});
+				$("#datetimepicker"+(cpt2DateTimePicker + 1)).datetimepicker({
+					format: 'DD/MM/YYYY',
+					useCurrent: false //Important! See issue #1075
+				});
+
+				// Link new dateTimePicker bettween them
+				$("#datetimepicker"+(cpt1DateTimePicker + 1)).on("dp.change", function (e) {
+					$('#datetimepicker'+(cpt2DateTimePicker + 1)).data("DateTimePicker").minDate(e.date);
+				});
+				$("#datetimepicker"+(cpt2DateTimePicker + 1)).on("dp.change", function (e) {
+					$('#datetimepicker'+(cpt1DateTimePicker + 1)).data("DateTimePicker").maxDate(e.date);
+				});
+			}
+
+			// Replace last block with the newest
+			oneBlock= lastBlock.html();
+		});
+
+		// OnClick boule button
+		$("div.oneRadioCustom").click(function(event) {
+			/* Act on the event */
+			$(this).parent(".rowCustomRadio").find('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
 		if( $('.container-fluid.main').hasClass('identification') ) initIdentification();
 		if( $('.container-fluid.main').hasClass('description') ) initDescription();
+		if( $('.container-fluid.main').hasClass('description2') ) initDescription2();
 
 	}
 
