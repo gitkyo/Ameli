@@ -373,12 +373,43 @@ jQuery( document ).ready(function() {
 
 	}
 
+	var initQuestionnaire = function(){
+
+		$("div.oneEmploye").click(function(event) {
+			/* Act on the event */
+			if( !$(this).hasClass('active') ) {
+
+				// toggle employe focus
+				$("div.oneEmploye.active").removeClass('active');
+				$(this).addClass('active');
+
+				// toggle folder focus
+				var personFocused = $(this).attr("class").split(" ")[1];
+				$("div.oneQuestionnaireEnAttente").addClass('hidden');
+				$("."+personFocused).removeClass('hidden');
+
+			}
+		});
+
+		$("div.oneQuestionnaireEnAttente").click(function(event) {
+			/* Act on the event */
+			if( !$(this).hasClass('active') ) {
+
+				// toggle employe focus
+				$("div.oneQuestionnaireEnAttente.active").removeClass('active');
+				$(this).addClass('active');
+
+			}
+		});
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
 		if( $('.container-fluid.main').hasClass('identification') ) initIdentification();
 		if( $('.container-fluid.main').hasClass('description') ) initDescription();
 		if( $('.container-fluid.main').hasClass('description2') ) initDescription2();
+		if( $('.container-fluid.main').hasClass('questionnaire') ) initQuestionnaire();
 
 	}
 

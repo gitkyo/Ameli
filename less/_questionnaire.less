@@ -1,0 +1,162 @@
+@borderH4 : #005ea8;
+
+body > div.questionnaire{
+	div.actionRow{
+		background-color: @backgroundGrisClair;
+		> div.form-group{
+			margin: 10px 0;
+			text-align: center;
+			button{
+				float: right;
+				margin-right: 134px;
+			}
+		}
+	}
+	div.wrapper{
+		min-height: 450px;
+		padding: 0 150px;
+		padding-top: 70px;
+		background-color: #fff;
+		div.leftZone{
+			padding-right: 6%;
+			div.oneEmploye{
+				cursor: pointer;
+				height: 45px;
+				margin-bottom: 30px;
+				border: 1px solid #d5d5d5;
+				border-radius: 2px;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				p{
+					margin-top: 10px;
+					margin: 0;
+					padding-left: 2%;
+					position: relative;
+					padding-right: 10%;
+					display: block;
+					height: 100%;
+					padding-top: 12px;
+					color: #767676;
+					span{
+						position: absolute;
+						padding: 0px 20px;
+						border-left: 1px solid #d5d5d5;
+						right: 0;
+						top: 0;
+						height: 100%;
+						padding-top: 12px;
+					}
+				}
+				&.active, &:hover {
+					border-color: @bleuAmeli;
+					p{
+						color: @bleuAmeli;
+						span{
+							border-color: @bleuAmeli;
+						}
+					}
+				}
+			}
+		}
+		div.rightZone{
+			padding-left: 6%;
+			div.oneQuestionnaireEnAttente{
+				cursor: pointer;
+				position: relative;
+				padding-left: 50px;
+				min-height: 50px;
+				margin-bottom: 30px;
+				border: 1px solid #d5d5d5;
+				border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				&.active, &:hover{
+					background-color: @bleuAmeli;
+					div.right {
+						p.date{
+							color: #fff;
+						}
+						div.detail {
+							p{
+								color: #fff;
+							}
+							span{
+								color: #fff;
+							}
+						}
+					}
+				}
+				div.left{
+					display: inline-block;
+					background: url(../img/icon_dossier.png) no-repeat 50% 50%;
+					border-right: 1px solid #d5d5d5;
+					width: 50px;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				div.right{
+					display: inline-block;
+					width: 100%;
+					padding-bottom: 4px;
+					p.date{
+						color: #bebebe;
+						border-bottom: 1px solid #d5d5d5;
+						margin-top: 5px;
+						padding-left: 3%;
+						margin-bottom: 7px;
+					}
+					div.detail{
+						p{
+							color: #8d8d8d;
+							font-family: 'Proxima Nova Semibold';
+							padding-left: 3%;
+							margin-bottom: 0;
+						}
+						span{
+							font-family: 'Proxima Nova Regular';
+							color: #767676;
+							padding-left: 3%;
+							font-size: 12px;
+							line-height: 1.42857143;
+						}
+					}
+				}
+			}
+		}
+		h4{
+			font-family: 'Proxima Nova Semibold';
+			margin-bottom: 50px;
+			border-bottom: 1px solid @borderH4;
+			padding-bottom: 10px;
+			color: #404040;
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	body > div.questionnaire div.wrapper div.leftZone,
+	body > div.questionnaire div.wrapper div.rightZone{
+		padding: 0;
+	}
+	body > div.questionnaire div.wrapper div.rightZone{
+		margin-top: 100px;
+	}
+	body > div.questionnaire div.wrapper {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.questionnaire {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+		div.actionRow > div.form-group button {
+			display: inline-block;
+			margin: 0;
+			float: none;
+		}
+	}
+}
