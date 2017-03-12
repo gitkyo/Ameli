@@ -8483,6 +8483,10 @@ button.close {
   src: url('../fonts/other/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/other/opensans-light-webfont.woff') format('woff'), url('../fonts/other/opensans-light-webfont.ttf') format('truetype'), url('../fonts/other/opensans-light-webfont.svg#OPENSANS_LIGHT') format('svg');
 }
 @font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('../fonts/Myriad Pro Regular.ttf') format("truetype");
+}
+@font-face {
   font-family: 'Proxima Nova Semibold';
   src: url('../fonts/Proxima Nova Semibold.otf') format("opentype");
 }
@@ -10063,6 +10067,9 @@ body > div.description2 div.actionRow > div.form-group a.prevAmeli {
   }
 }
 @media (max-width: 480px) {
+  body > div.description2 div.wrapper div.radioFormGroup label {
+    text-align: center;
+  }
   body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
     text-align: center !important;
     width: 100%;
@@ -10243,6 +10250,473 @@ body > div.questionnaire div.wrapper h4 {
     display: inline-block;
     margin: 0;
     float: none;
+  }
+}
+body > div.pathologie {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBarThree {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBarThree {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+body > div.pathologie div.wrapper {
+  background-color: #fff;
+}
+body > div.pathologie div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.pathologie div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.pathologie div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 45%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBarThree*/
+  animation-name: pinnoccioBarThree;
+  -webkit-animation-name: pinnoccioBarThree;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.pathologie div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.pathologie div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.pathologie div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.pathologie div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.pathologie div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.pathologie div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+  /* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+}
+body > div.pathologie div.wrapper div.wrapperForm div.minimized div.leftZone {
+  display: none;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.minimized div.rightZone {
+  display: none;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.minimized h4 span {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+body > div.pathologie div.wrapper div.wrapperForm h4 {
+  cursor: pointer;
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+  position: relative;
+  padding-right: 100px;
+}
+body > div.pathologie div.wrapper div.wrapperForm h4 span {
+  color: #383838;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.form-group.reduced {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.firstRowSpecialRadio {
+  margin-top: 100px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+  width: 94%;
+  position: absolute;
+  top: 8px;
+  height: 3.5px;
+  background-color: #dbdbdb;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom {
+  display: inline-block;
+  position: relative;
+  min-height: 30px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom p {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  bottom: -25px;
+  width: auto;
+  color: #a4a4a4;
+  margin-bottom: 0;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom span.boule {
+  height: 20px;
+  width: 20px;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.active p {
+  color: #005da8;
+  font-family: 'Proxima Nova Semibold';
+  margin: 0 -1px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.active span.boule {
+  background-color: #005da8;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.one {
+  text-align: left;
+  float: left;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.two {
+  text-align: center;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.two p {
+  margin-left: -26px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.three {
+  text-align: left;
+  float: right;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.three p {
+  margin-left: -111px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.second {
+  margin-top: 55px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+  background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 80px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle {
+  margin-bottom: 20px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone label.fileIcon {
+  background: url(../img/icon_file.png) no-repeat 0% 50%;
+  padding-left: 25px;
+  padding-top: 4px;
+  width: 100%;
+  letter-spacing: 0.2px;
+  margin-bottom: 25px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+  color: #464646;
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Proxima Nova Regular';
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.one,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.two,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.three,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four {
+  border-color: #f68527;
+  color: #f68527;
+  font-size: 0.8em;
+  font-family: 'Proxima Nova Regular';
+  padding-left: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
+  background-size: 18px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 1%;
+  text-transform: uppercase;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.one:focus,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.two:focus,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.three:focus,
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four:focus {
+  outline: none;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group {
+  margin-bottom: 52px;
+}
+body > div.pathologie div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.pathologie div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.pathologie div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.pathologie div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+    width: 94.8%;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.pathologie div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.pathologie div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  body > div.pathologie div.wrapper {
+    /* div.wrapperForm {
+				padding: 0 15%;
+			} */
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+    width: 92.2%;
+  }
+  body > div.pathologie div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.pathologie div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.pathologie div.actionRow > div.form-group a.prevAmeli,
+  body > div.pathologie div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.pathologie div.wrapper div.radioFormGroup label {
+    text-align: center;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom.two p {
+    margin-left: 0;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom.three p {
+    margin-left: 0;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom p {
+    width: 100%;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+    display: none;
+  }
+  body > div.pathologie div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.pathologie div.wrapper div.barRow div.border {
+    left: -5%;
   }
 }
 /*# sourceMappingURL=style.css.map */

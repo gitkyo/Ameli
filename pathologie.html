@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Je suis employeur | Questionnaire Maladie Professionnelle</title>
+
+    <!-- Bootstrap + bootstrap_override + customcss -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom select (http://selectric.js.org) -->
+    <link href="css/selectric.css" rel="stylesheet">
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="BandeauAide"><p>Besoin d'aide ?</p></div>
+
+    <div class="container-fluid main pathologie">
+
+        <div class="row header">
+            <header>
+                <section class="preEntete">
+                    <div class="logoAM"></div>
+                </section>
+
+                <section class="entete">
+                    <div class="logoBlock">
+                        <a href='index.html'>
+                            <h1>ameli.fr</h1>
+                        </a>
+                        <h2>Je suis employeur</h2>
+                    </div>
+                    <div class="loginBlock"><a>Mon compte</a></div>
+                </section>
+
+                <section class="postTete">
+                    <h3>Questionnaire <span>Maladie Professionnelle</span></h3>
+                </section>
+            </header>
+        </div> <!-- fin row header -->
+
+        <div class="wrapper container-fluid">
+            <div class="row tabsRow">
+                <p>Identification</p>
+                <p>Description</p>
+                <p class="active">Pathologie</p>
+                <p>Récapitulatif</p>
+            </div>
+            <div class="row barRow">
+                <div class="border"><div class="completeBar"></div><p>complété à 45%</p></div>
+            </div>
+
+            <div class="wrapperForm row">
+                <form class="form-horizontal">
+
+                    <div class="row top minimized">
+                        <h4>Tendinite Achileenne <span>></span></h4>
+                        <div class="col-lg-6 leftZone">
+
+                            <p class="subTitle">Travaux prolongés sur la pointe des pieds</p>
+                            <div class="iconPathologiePied"></div>
+
+
+                            <div class="form-group">
+                                <label for="" class="fileIcon">Joindre un fichier en rapport avec le mouvement exercé par l’employé</label>
+                                <input type="file" class="form-control input1 hidden one" id="input1" placeholder="">
+                                <button class="btn btn-primary input1 one">Ajouter un document</button>
+                                <p class="help-block specialhelp one">aucun document ajouté</p>
+                            </div>
+
+                            <div class="form-group hidden second">
+                                <label for="" class="fileIcon">Autres pièces jointes</label>
+                                <input type="file" class="form-control input2 hidden two" id="input2" placeholder="">
+                                <button class="btn btn-primary input2 two">Ajouter un document</button>
+                                <p class="help-block specialhelp two">aucun document ajouté</p>
+                            </div>
+
+                            <div class="row firstRowSpecialRadio">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input3" class="control-label col-xs-12" >
+                                      Position debout
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input4" class="control-label col-xs-12" >
+                                      Position assise
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input5" class="control-label col-xs-12" >
+                                      Autre position
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-6 rightZone">
+
+                            <div class="form-group">
+                                <label for="input6" class="col-sm-8 control-label">Nombre de jour par semaine</label>
+                                <div class="col-sm-4 withSelect">
+                                  <select class="form-control" id="input6">
+                                    <option>Choisissez...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input7" class="col-xs-8 control-label">Le poste de travail est-il réglable en fonction de la taille de la personne ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input7" id="input7" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input7" id="input7" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input8" class="col-xs-8 control-label">Y-a-t-il un équipement d'aide à la manutention ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input8" id="input8" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input8" id="input8" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input9" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input9" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input10" class="col-xs-8 control-label">Y-a-t-il d'autres outils ou matériels utilisés qui n'ont pas été mentionnés ci-dessus ? </label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input10" id="input10" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input10" id="input10" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input11" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input11" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input11" class="col-xs-8 control-label">Utilise-t-il  des outils vibrants ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input11" id="input11" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input11" id="input11" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input12" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input12" placeholder="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row bottom minimized">
+                        <h4>Syndrome de compression du nerf sciatique poplité externe <span>></span></h4>
+                        <div class="col-lg-6 leftZone">
+
+                            <p class="subTitle">Travaux prolongés sur la pointe des pieds</p>
+                            <div class="iconPathologiePied"></div>
+
+
+                            <div class="form-group">
+                                <label for="" class="fileIcon">Joindre un fichier en rapport avec le mouvement exercé par l’employé</label>
+                                <input type="file" class="form-control input13 hidden three" id="input13" placeholder="">
+                                <button class="btn btn-primary input13 three">Ajouter un document</button>
+                                <p class="help-block specialhelp three">aucun document ajouté</p>
+                            </div>
+
+                            <div class="form-group hidden second">
+                                <label for="" class="fileIcon">Autres pièces jointes</label>
+                                <input type="file" class="form-control input14 hidden four" id="input14" placeholder="">
+                                <button class="btn btn-primary input14 four">Ajouter un document</button>
+                                <p class="help-block specialhelp four">aucun document ajouté</p>
+                            </div>
+
+                            <div class="row firstRowSpecialRadio">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input15" class="control-label col-xs-12" >
+                                      Position debout
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input16" class="control-label col-xs-12" >
+                                      Position assise
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input17" class="control-label col-xs-12" >
+                                      Autre position
+                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-6 rightZone">
+
+                            <div class="form-group">
+                                <label for="input18" class="col-sm-8 control-label">Nombre de jour par semaine</label>
+                                <div class="col-sm-4 withSelect">
+                                  <select class="form-control" id="input18">
+                                    <option>Choisissez...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input19" class="col-xs-8 control-label">Le poste de travail est-il réglable en fonction de la taille de la personne ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input19" id="input19" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input19" id="input19" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input20" class="col-xs-8 control-label">Y-a-t-il un équipement d'aide à la manutention ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input20" id="input20" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input20" id="input20" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input21" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input21" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input22" class="col-xs-8 control-label">Y-a-t-il d'autres outils ou matériels utilisés qui n'ont pas été mentionnés ci-dessus ? </label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input22" id="input22" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input22" id="input10" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input23" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input23" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group required">
+                                <label for="input24" class="col-xs-8 control-label">Utilise-t-il  des outils vibrants ?</label>
+                                <div class="col-xs-4 widthRadio">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input24" id="input24" value="option1" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input24" id="input24" value="option1"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input25" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <div class="col-sm-4 withTooltip">
+                                  <input type="text" class="form-control" id="input25" placeholder="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+
+
+        </div> <!-- fin wrapper -->
+        <div class="actionRow row">
+            <div class="form-group">
+                <a href="description2.html" type="submit" class="suivAmeli prevAmeli btn btn-primary">Retour</a>
+                <a href="#" type="submit" class="suivAmeli btn btn-primary">Suivant</a>
+            </div>
+        </div>
+
+    </div> <!-- fin container -->
+
+    <footer>
+
+        <div class="container-fluid footer">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <p><a href='mention.html'>Mentions légales</a></p>
+                    <p>Version : 0.1</p>
+                    <p>Janvier 2017</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom select (http://selectric.js.org/index.html) -->
+    <script src="js/jquery.selectric.js"></script>
+
+    <!-- Moment JS (https://momentjs.com/) -->
+    <!-- <script src="js/moment.min.js"></script> -->
+
+    <!-- Moment JS local settings FR -->
+    <!-- <script src="js/moment-local.js"></script> -->
+
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <!-- <script src="js/bootstrap-datetimepicker.min.js"></script> -->
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+
+</html>
