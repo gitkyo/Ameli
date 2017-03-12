@@ -10987,10 +10987,16 @@ body > div.recap div.wrapper div.wrapperForm div.periode {
   position: relative;
   min-height: 30px;
 }
+body > div.recap div.wrapper div.wrapperForm div.periode p {
+  padding-left: 3px;
+}
+body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+  padding-left: 43px;
+}
 body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
   position: absolute;
   right: 2%;
-  top: 0;
+  top: 14px;
   display: inline-block;
   height: 100%;
   width: 30px;
@@ -11007,6 +11013,7 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
+  width: 91%;
   /*
 						border: 0;
 						box-shadow: none;
@@ -11034,6 +11041,7 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.secon
   padding-left: 2%;
 }
 body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.second label {
+  position: absolute;
   padding-left: 0;
   left: 10px;
   font-family: 'Proxima Nova Semibold';
@@ -11131,7 +11139,16 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.first div.input-group {
+  body > div.recap div.wrapper div.wrapperForm div.periode p {
+    padding-left: 7px;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+    padding-left: 35px;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    width: 92.3%;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup div.input-group {
     padding-left: 0;
   }
   body > div.recap div.wrapper div.wrapperForm h4.infoTitle {
@@ -11148,12 +11165,19 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
   body > div.recap div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    width: 89.9%;
+  }
 }
 @media (max-width: 768px) {
-  body > div.recap div.wrapper {
-    /* div.wrapperForm {
-				padding: 0 15%;
-			} */
+  body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+    padding-left: 15px;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
+    top: 28px;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    width: 93.7%;
   }
   body > div.recap div.wrapper div.barRow div.border p {
     text-align: right;
@@ -11174,10 +11198,16 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     left: 4%;
     width: 92%;
   }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    width: 89.3%;
+  }
 }
 @media (max-width: 300px) {
   body > div.recap div.wrapper div.barRow div.border {
     left: -5%;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    width: 79.3%;
   }
 }
 /*# sourceMappingURL=style.css.map */

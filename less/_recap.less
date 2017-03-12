@@ -215,10 +215,16 @@ body > div.recap{
 				padding-right: 30px;
 				position: relative;
 				min-height: 30px;
+				p{
+					padding-left: 3px
+				}
+				div.specialNoPadding{
+					padding-left: 43px;
+				}
 				span.btnOkEditPeriode{
 					position: absolute;
 					right: 2%;
-					top: 0;
+					top: 14px;
 					display: inline-block;
 					height: 100%;
 					width: 30px;
@@ -234,6 +240,7 @@ body > div.recap{
 						padding-top: 0;
 						padding-bottom: 0;
 						height: 30px;
+						width: 91%;
 						/*
 						border: 0;
 						box-shadow: none;
@@ -264,6 +271,7 @@ body > div.recap{
 							padding-left: 2%;
 						}
 						label{
+							position: absolute;
 							padding-left: 0;
 							left: 10px;
 							font-family: 'Proxima Nova Semibold';
@@ -387,8 +395,22 @@ body > div.recap{
 			padding-right: 5%;
 			margin-top: 160px;
 		}
-		div.periode div.dateFormGroup.first div.input-group {
-			padding-left: 0;
+
+		div.periode {
+			p{
+				padding-left: 7px;
+			}
+			div.specialNoPadding {
+				padding-left: 35px;
+			}
+			div.dateFormGroup{
+				input{
+					width: 92.3%;
+				}
+				div.input-group {
+					padding-left: 0;
+				}
+			}
 		}
 		h4.infoTitle {
 			margin-top: 160px;
@@ -406,15 +428,26 @@ body > div.recap{
 			width: 30%;
 		}
 	}
+	body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+		width: 89.9%;
+	}
 }
 
 
 @media (max-width: @screen-sm-min) {
 	body > div.recap {
 		div.wrapper {
-			/* div.wrapperForm {
-				padding: 0 15%;
-			} */
+			div.wrapperForm div.periode {
+				div.specialNoPadding {
+					padding-left: 15px;
+				}
+				span.btnOkEditPeriode{
+					top: 28px
+				}
+				div.dateFormGroup input {
+					width: 93.7%;
+				}
+			}
 			div.barRow div.border{
 				p {
 					text-align: right;
@@ -441,9 +474,15 @@ body > div.recap{
 		left: 4%;
 		width: 92%;
 	}
+	body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+		width: 89.3%;
+	}
 }
 @media (max-width: 300px) {
 	body > div.recap div.wrapper div.barRow div.border {
 		left: -5%;
+	}
+	body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+	    width: 79.3%;
 	}
 }
