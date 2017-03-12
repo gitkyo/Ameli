@@ -9262,6 +9262,9 @@ body > div.identification div.actionRow > div.form-group a {
   }
 }
 @media (max-width: 768px) {
+  body > div.identification div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
   body > div.identification div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
@@ -9614,6 +9617,9 @@ body > div.description div.actionRow > div.form-group a.prevAmeli {
   }
   body > div.description div.wrapper div.barRow div.border p {
     text-align: right;
+  }
+  body > div.description div.wrapper div.tabsRow {
+    border-color: #fff;
   }
   body > div.description div.wrapper div.tabsRow p {
     width: 100%;
@@ -10054,6 +10060,9 @@ body > div.description2 div.actionRow > div.form-group a.prevAmeli {
   }
   body > div.description2 div.wrapper div.barRow div.border p {
     text-align: right;
+  }
+  body > div.description2 div.wrapper div.tabsRow {
+    border-color: #fff;
   }
   body > div.description2 div.wrapper div.tabsRow p {
     width: 100%;
@@ -10606,7 +10615,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four {
   border-radius: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 1%;
+  padding-right: 20px;
   text-transform: uppercase;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.one:focus,
@@ -10676,6 +10685,9 @@ body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
   }
   body > div.pathologie div.wrapper div.barRow div.border p {
     text-align: right;
+  }
+  body > div.pathologie div.wrapper div.tabsRow {
+    border-color: #fff;
   }
   body > div.pathologie div.wrapper div.tabsRow p {
     width: 100%;
@@ -11110,6 +11122,38 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.on span.
 body > div.recap div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
+body > div.recap div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
+  margin-top: 40px;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+  background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 80px;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload {
+  display: inline-block;
+  border: 1px solid;
+  border-color: #f68527;
+  color: #f68527;
+  font-size: 0.8em;
+  font-family: 'Proxima Nova Regular';
+  padding-left: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.second {
+  margin-left: 15px;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:hover {
+  text-decoration: none;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:focus {
+  outline: none;
+}
 body > div.recap div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
@@ -11133,6 +11177,9 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
 @media (max-width: 1199px) {
   body > div.recap div.wrapper div.wrapperForm {
     /* padding: 0 10%; */
+  }
+  body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+    right: 10px;
   }
   body > div.recap div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
@@ -11170,6 +11217,13 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
   }
 }
 @media (max-width: 768px) {
+  body > div.recap div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+    right: 10px;
+    top: 12px;
+  }
   body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
     padding-left: 15px;
   }
