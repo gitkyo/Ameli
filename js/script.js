@@ -474,7 +474,10 @@ jQuery( document ).ready(function() {
 
 			if($(this).hasClass('toEditSelect')){
 				$(this).parents("div.specialEdit").addClass('hidden').next().removeClass('hidden');
-				var olderValue = $(this).prev().val().split(" ")[0];
+
+				if($(this).hasClass('nan')) var olderValue = $(this).prev().val();
+				else var olderValue = $(this).prev().val().split(" ")[0];
+
 				$(this).parents(".specialEdit").next().find("select").val( olderValue );
 			}
 
@@ -525,6 +528,51 @@ jQuery( document ).ready(function() {
 			/* Stuff to do when the mouse leaves the element */
 			$(this).prev("input[disabled]").css("backgroundColor", "#fff");
 		});
+
+		// File upload edition
+		$("p.fichierJointLabel").click(function(event) {
+			/* Act on the event */
+			if($(this).hasClass('off')){
+
+				$(this).addClass('on').removeClass('off');
+				$("a.upload").addClass('editOn');
+				$("p.specialhelp").show();
+
+				$("a.upload.editOn").one("click",function(event) {
+					/* Act on the event */
+					event.preventDefault();
+
+					$(this).prev().trigger('click');
+					$(this).prev().change(function(){
+						$(this).next().text( $(this).val() );
+						$(this).next().next().text( $(this).val() );
+					});
+
+				});
+
+			}else{
+
+				/* Act on the event */
+				$(this).removeClass('on').addClass('off');
+				$("a.upload").removeClass('editOn');
+				$("p.specialhelp").hide();
+
+			}
+
+		});
+
+		$(".emptyInputFile").click(function(event) {
+			/* Act on the event */
+			event.preventDefault();
+
+			$(this).prev().trigger('click');
+			$(this).prev().change(function(){
+				$(this).next().text( $(this).val() );
+				$(this).next().next().text( $(this).val() );
+			});
+		});
+
+		/**/
 
 		//init dateTimePicker
 		$('#datetimepicker1').datetimepicker({

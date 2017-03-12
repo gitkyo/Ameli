@@ -183,6 +183,12 @@ body > div.recap{
 				padding-right: 30px;
 				margin-bottom: 2px;
 				position: relative;
+				&.marginTopFormGroup{
+					margin-top: 25px;
+					select{
+						margin-left: 0;
+					}
+				}
 				span.secondLabel{
 					font-weight: normal;
 					font-family: 'Proxima Nova Semibold';
@@ -283,8 +289,16 @@ body > div.recap{
 			}
 			div.form-group.specialEdit{
 				margin-bottom: 3px;
+				&.marginTopFormGroup{
+					margin-top: 25px;
+				}
 				div.editCol{
 					position: relative;
+					&.fullWidth{
+						input{
+							padding-left: 0;
+						}
+					}
 				}
 				label{
 					font-family: 'Proxima Nova Light';
@@ -349,6 +363,22 @@ body > div.recap{
 				p.otherFileUpload{
 					margin-top: 40px;
 				}
+				p.specialhelp{
+					display: inline-block;
+				}
+				p.fichierJointLabel{
+					cursor: pointer;
+					&:hover{
+						background: url(../img/icon_edit.png) no-repeat 100% 50%;
+						background-size: 25px;
+						background-color: rgb(241, 241, 241);
+					}
+					&.on{
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+						background-color: rgb(241, 241, 241);
+					}
+				}
 				div.iconPathologiePied{
 					background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
 					width: 198px;
@@ -368,6 +398,11 @@ body > div.recap{
 					padding-bottom: 10px;
 					padding-right: 20px;
 					text-transform: uppercase;
+					&.emptyInputFile{
+						padding-left: 50px;
+						margin-bottom: 50px;
+						background: url(../img/icon_upload.png) no-repeat 18px 50%;
+					}
 					&.second{
 						margin-left: 15px;
 					}
@@ -376,6 +411,10 @@ body > div.recap{
 					}
 					&:focus{
 						outline: none;
+					}
+					&.editOn{
+						padding-left: 50px;
+						background: url(../img/icon_upload.png) no-repeat 18px 50%;
 					}
 
 				}

@@ -10967,6 +10967,12 @@ body > div.recap div.wrapper div.wrapperForm div.editSelect {
   margin-bottom: 2px;
   position: relative;
 }
+body > div.recap div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup {
+  margin-top: 25px;
+}
+body > div.recap div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup select {
+  margin-left: 0;
+}
 body > div.recap div.wrapper div.wrapperForm div.editSelect span.secondLabel {
   font-weight: normal;
   font-family: 'Proxima Nova Semibold';
@@ -11063,8 +11069,14 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.secon
 body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit {
   margin-bottom: 3px;
 }
+body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.marginTopFormGroup {
+  margin-top: 25px;
+}
 body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol {
   position: relative;
+}
+body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.fullWidth input {
+  padding-left: 0;
 }
 body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit label {
   font-family: 'Proxima Nova Light';
@@ -11125,6 +11137,22 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone {
 body > div.recap div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
   margin-top: 40px;
 }
+body > div.recap div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+  display: inline-block;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel {
+  cursor: pointer;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel:hover {
+  background: url(../img/icon_edit.png) no-repeat 100% 50%;
+  background-size: 25px;
+  background-color: #f1f1f1;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel.on {
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+  background-color: #f1f1f1;
+}
 body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
   background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
   width: 198px;
@@ -11145,6 +11173,11 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload {
   padding-right: 20px;
   text-transform: uppercase;
 }
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.emptyInputFile {
+  padding-left: 50px;
+  margin-bottom: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
+}
 body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.second {
   margin-left: 15px;
 }
@@ -11153,6 +11186,10 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:hover {
 }
 body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:focus {
   outline: none;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.editOn {
+  padding-left: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
 }
 body > div.recap div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;

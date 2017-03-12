@@ -307,14 +307,226 @@
 			            <h4 class="postTitle">Tendinite Achileenne</h4>
                         <p>Travaux prolongés sur la pointe des pieds</p>
                         <div class="iconPathologiePied"></div>
-                        <p>Fichiers joints en rapports avec le mouvement exercé par l’employé :</p>
+                        <p class="fichierJointLabel off">Fichiers joints en rapports avec le mouvement exercé par l’employé :<span class="btnOkEdit"></span></p>
 
+                        <input type="file" class="form-control input16 hidden three" id="input16" placeholder="">
                         <a href="pdf/fake_pdf_formulaire.pdf" class="upload" title="voir photo_tendinite.jpg">photo_tendinite.jpg</a>
+                        <p class="specialhelp"></p>
+
+                        <input type="file" class="form-control input17 hidden three" id="input17" placeholder="">
                         <a href="pdf/fake_pdf_formulaire.pdf" class="upload second" title="voir mouvement_tendi...pdf">mouvement_tendi...pdf</a>
+                        <p class="specialhelp"></p>
 
                         <p class="otherFileUpload">Autres fichiers joints</p>
-                        <a href="pdf/fake_pdf_formulaire.pdf" class="upload" title="voir autre_photo.png">autre_photo.png</a>
+                        <input type="file" class="form-control input18 hidden three" id="input18" placeholder="">
+                        <a class="btn btn-primary upload emptyInputFile">AJOUTER UN DOCUEMENT</a>
+                        <p class="specialhelp"></p>
 
+                        <div class="form-group specialEdit off">
+                            <label for="input19" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input19" placeholder="" value="5 jours" disabled>
+                              <div class="fakeInput toEditSelect"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input20" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control" id="input20">
+                                <option>Choisissez...</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                              </select>
+                              <span class="secondLabel">jours</span>
+                            </div>
+                            <span class="btnOkEditSelect" data-label="jours"></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input21" class="col-sm-6 control-label">Position debout ?</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input21" placeholder="" value="Tout le temps" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input22" class="col-sm-6 control-label">Position debout ?</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control" id="input22">
+                                <option>Tout le temps</option>
+                                <option>Occassionnellement</option>
+                                <option>Jamais</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input22" class="col-sm-6 control-label">Position assise ?</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input22" placeholder="" value="Jamais" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input23" class="col-sm-6 control-label">Position assise ?</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control" id="input23">
+                                <option>Tout le temps</option>
+                                <option>Occassionnellement</option>
+                                <option>Jamais</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input24" class="col-sm-6 control-label">Autre position ?</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input24" placeholder="" value="Occassionnellement" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input25" class="col-sm-6 control-label">Autre position ?</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control" id="input25">
+                                <option>Tout le temps</option>
+                                <option>Occassionnellement</option>
+                                <option>Jamais</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input26" class="col-sm-12 control-label">Le poste de travail est-il réglable en fonction de la taille de la personne ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input26" placeholder="" value="Non" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input27" class="col-sm-12 control-label">Le poste de travail est-il réglable en fonction de la taille de la personne ?</label>
+                            <div class="col-sm-12 withSelect">
+                              <select class="form-control" id="input27">
+                                <option>Oui</option>
+                                <option>Non</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input28" class="col-sm-12 control-label">Y’a t’il un équipement d’aide à la manutention ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input28" placeholder="" value="Oui" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden marginTopFormGroup">
+                            <label for="input29" class="col-sm-12 control-label">Y’a t’il un équipement d’aide à la manutention ?</label>
+                            <div class="col-sm-12 withSelect">
+                              <select class="form-control" id="input29">
+                                <option>Oui</option>
+                                <option>Non</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input30" class="col-sm-12 control-label">Si oui, lequel ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input30" placeholder="" value="Lorem Ipsum" disabled>
+                                <div class="fakeInput"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input31" class="col-sm-12 control-label">Y’a t’il d’autre outil ou matériel utilisés qui n’ont pas été mentionné ci-dessus ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input31" placeholder="" value="Oui" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden marginTopFormGroup">
+                            <label for="input32" class="col-sm-12 control-label">Y’a t’il d’autre outil ou matériel utilisés qui n’ont pas été mentionné ci-dessus ?</label>
+                            <div class="col-sm-12 withSelect">
+                              <select class="form-control" id="input32">
+                                <option>Oui</option>
+                                <option>Non</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input33" class="col-sm-12 control-label">Si oui, lequel ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input33" placeholder="" value="Lorem ipsum dolor sit amet" disabled>
+                                <div class="fakeInput"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input34" class="col-sm-12 control-label">Utilise t’il des outils vibrant ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input34" placeholder="" value="Oui" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden marginTopFormGroup">
+                            <label for="input35" class="col-sm-12 control-label">Utilise t’il des outils vibrant ?</label>
+                            <div class="col-sm-12 withSelect">
+                              <select class="form-control" id="input35">
+                                <option>Oui</option>
+                                <option>Non</option>
+                              </select>
+                              <!-- <span class="secondLabel">jours</span> -->
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off marginTopFormGroup">
+                            <label for="input36" class="col-sm-12 control-label">Si oui, lequel ?</label>
+                            <div class="col-sm-12 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input36" placeholder="" value="Lorem ipsum dolor sit amet" disabled>
+                                <div class="fakeInput"></div>
+                            </div>
+                        </div>
 
 
                     </div>
