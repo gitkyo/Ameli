@@ -173,6 +173,9 @@ body > div.recap{
 				}
 				&.infoTitleSalaire{
 					border-color: #56ca81;
+					&.marginTop{
+						margin-top: 70px;
+					}
 				}
 				&.infoTitleCondition{
 					border-color: #84156e;
@@ -227,6 +230,16 @@ body > div.recap{
 				div.specialNoPadding{
 					padding-left: 43px;
 				}
+				div.specialPadding{
+					input{
+						margin-left: 0;
+					}
+				}
+				div.specialPadding{
+					input{
+						width: 98% !important;
+					}
+				}
 				span.btnOkEditPeriode{
 					position: absolute;
 					right: 2%;
@@ -237,6 +250,9 @@ body > div.recap{
 					cursor: pointer;
 					background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
 					background-size: 20px;
+					&.spe{
+						top: 25px;
+					}
 				}
 				div.dateFormGroup{
 					margin-bottom: 0;
@@ -303,6 +319,9 @@ body > div.recap{
 				label{
 					font-family: 'Proxima Nova Light';
 					padding-top: 0;
+					&.noPadRight{
+						padding-right: 0;
+					}
 				}
 				input{
 					font-family: 'Proxima Nova Semibold';
@@ -422,6 +441,35 @@ body > div.recap{
 			}
 			div.rightZone{
 				padding-left: 5%;
+				div.dateFormGroup{
+					margin-bottom: 0;
+					label{
+						font-family: 'Proxima Nova Light';
+						padding-top: 0;
+					}
+					input{
+						font-family: 'Proxima Nova Semibold';
+						color: #555555;
+						padding-top: 0;
+						padding-bottom: 0;
+						height: 30px;
+						width: 91%;
+					}
+					div.specialPaddingForIcon{
+						padding-right: 3%;
+					}
+					span.btnOkEditDate{
+						position: absolute;
+						right: 10px;
+						top: 0;
+						display: inline-block;
+						height: 100%;
+						width: 30px;
+						cursor: pointer;
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+					}
+				}
 
 			}
 			/* div.form-group{
@@ -516,6 +564,12 @@ body > div.recap{
 				border-color: #fff;
 			}
 			div.wrapperForm {
+				div.leftZone a.upload.second {
+					margin-left: 0;
+					display: block;
+					margin-top: 15px;
+					width: 165px;
+				}
 				div.editSelect span.btnOkEditSelect {
 					right: 10px;
 					top: 12px;

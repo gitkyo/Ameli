@@ -511,6 +511,21 @@ jQuery( document ).ready(function() {
 				prevInputTextForDate.removeClass('hidden');
 			});
 
+			$("span.btnOkEditDate").click(function(event) {
+				/* Act on the event */
+				var currentDateBlock = $(this).parents(".dateFormGroup");
+				var prevInputTextForDate = $(this).parents(".dateFormGroup").prev();
+
+				var valueDate = currentDateBlock.find("input").val();
+
+				prevInputTextForDate.find("input").val(valueDate).css("backgroundColor","#fff").prop("disabled", true).next().show();
+
+				prevInputTextForDate.removeClass('on').addClass('off');
+
+				currentDateBlock.addClass('hidden')
+				prevInputTextForDate.removeClass('hidden');
+			});
+
 			$("div.specialEdit.on span.btnOkEdit").click(function(event) {
 				/* Act on the event */
 				$(this).next().next().show();
@@ -585,12 +600,90 @@ jQuery( document ).ready(function() {
 			defaultDate: "2016-12-20",
 			useCurrent: false //Important! See issue #1075
 		});
+		$('#datetimepicker3').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-12-23",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker4').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-12-20",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker5').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "20016-04-07",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker6').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-04-17",
+			useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker7').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-10-10",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker8').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-10-25",
+			useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker9').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "20016-04-07",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker10').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-04-17",
+			useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker11').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-10-10",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker12').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-10-25",
+			useCurrent: false //Important! See issue #1075
+		});
 		// Link dateTimePicker bettween them
 		$("#datetimepicker1").on("dp.change", function (e) {
 			$('#datetimepicker2').data("DateTimePicker").minDate(e.date);
 		});
 		$("#datetimepicker2").on("dp.change", function (e) {
 			$('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+		});
+
+		$("#datetimepicker5").on("dp.change", function (e) {
+			$('#datetimepicker6').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker6").on("dp.change", function (e) {
+			$('#datetimepicker5').data("DateTimePicker").maxDate(e.date);
+		});
+
+		$("#datetimepicker7").on("dp.change", function (e) {
+			$('#datetimepicker8').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker8").on("dp.change", function (e) {
+			$('#datetimepicker7').data("DateTimePicker").maxDate(e.date);
+		});
+
+		$("#datetimepicker9").on("dp.change", function (e) {
+			$('#datetimepicker10').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker10").on("dp.change", function (e) {
+			$('#datetimepicker9').data("DateTimePicker").maxDate(e.date);
+		});
+
+		$("#datetimepicker11").on("dp.change", function (e) {
+			$('#datetimepicker12').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker12").on("dp.change", function (e) {
+			$('#datetimepicker11').data("DateTimePicker").maxDate(e.date);
 		});
 
 		// toggle date/periode disabled / enable input value

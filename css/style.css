@@ -10958,6 +10958,9 @@ body > div.recap div.wrapper div.wrapperForm h4.postTitle {
 body > div.recap div.wrapper div.wrapperForm h4.infoTitleSalaire {
   border-color: #56ca81;
 }
+body > div.recap div.wrapper div.wrapperForm h4.infoTitleSalaire.marginTop {
+  margin-top: 70px;
+}
 body > div.recap div.wrapper div.wrapperForm h4.infoTitleCondition {
   border-color: #84156e;
   margin-top: 70px;
@@ -11011,6 +11014,12 @@ body > div.recap div.wrapper div.wrapperForm div.periode p {
 body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
   padding-left: 43px;
 }
+body > div.recap div.wrapper div.wrapperForm div.periode div.specialPadding input {
+  margin-left: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.periode div.specialPadding input {
+  width: 98% !important;
+}
 body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
   position: absolute;
   right: 2%;
@@ -11021,6 +11030,9 @@ body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
   cursor: pointer;
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
+}
+body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode.spe {
+  top: 25px;
 }
 body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup {
   margin-bottom: 0;
@@ -11081,6 +11093,9 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.edit
 body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit label {
   font-family: 'Proxima Nova Light';
   padding-top: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit label.noPadRight {
+  padding-right: 0;
 }
 body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit input {
   font-family: 'Proxima Nova Semibold';
@@ -11194,6 +11209,35 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.editOn {
 body > div.recap div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
+body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup {
+  margin-bottom: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup input {
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+  width: 91%;
+}
+body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup div.specialPaddingForIcon {
+  padding-right: 3%;
+}
+body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup span.btnOkEditDate {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
 body > div.recap div.actionRow {
   background-color: #f7f7f7;
 }
@@ -11256,6 +11300,12 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
 @media (max-width: 768px) {
   body > div.recap div.wrapper div.tabsRow {
     border-color: #fff;
+  }
+  body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.second {
+    margin-left: 0;
+    display: block;
+    margin-top: 15px;
+    width: 165px;
   }
   body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
     right: 10px;
