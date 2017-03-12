@@ -457,6 +457,99 @@ jQuery( document ).ready(function() {
 		});
 	}
 
+	var initRecap = function(){
+
+		$("div.barRow div.border").addClass('animOn');
+
+		// toggle text disabled / enable input value
+		$("div.specialEdit.off div.fakeInput").click(function(event) {
+			/* Act on the event */
+			$(this).hide().prev("input[disabled]").prop("disabled", false).focus();
+			$(this).parents("div.specialEdit").removeClass('off');
+			$(this).parents("div.specialEdit").addClass('on');
+
+			if($(this).hasClass('toEditPeriode')){
+				$(this).parents("div.specialEdit").addClass('hidden').next().removeClass('hidden');
+			}
+
+			if($(this).hasClass('toEditSelect')){
+				$(this).parents("div.specialEdit").addClass('hidden').next().removeClass('hidden');
+				var olderValue = $(this).prev().val().split(" ")[0];
+				$(this).parents(".specialEdit").next().find("select").val( olderValue );
+			}
+
+			$("div.editSelect span.btnOkEditSelect").click(function(event) {
+				var currentSelectBlock = $(this).parents(".editSelect");
+				var prevInputTextForSelect = currentSelectBlock.prev();
+				var valueSelect = currentSelectBlock.find("select").val();
+				var unite = $(this).attr("data-label");
+
+				prevInputTextForSelect.find("input").val(valueSelect+" "+unite).css("backgroundColor","#fff").prop("disabled", true).next().show();
+				prevInputTextForSelect.removeClass('on').addClass('off');
+
+				currentSelectBlock.addClass('hidden')
+				prevInputTextForSelect.removeClass('hidden');
+
+			});
+
+			$("div.periode span.btnOkEditPeriode").click(function(event) {
+				/* Act on the event */
+				var currentPeriodeBlock = $(this).parents(".periode");
+				var prevInputTextForDate = $(this).parents(".periode").prev();
+
+				var firstValueDate = currentPeriodeBlock.find("div.first input").val();
+				var secondValueDate = currentPeriodeBlock.find("div.second input").val();
+
+				prevInputTextForDate.find("input").val("Du "+firstValueDate+" au "+secondValueDate).css("backgroundColor","#fff").prop("disabled", true).next().show();
+
+				prevInputTextForDate.removeClass('on').addClass('off');
+
+				currentPeriodeBlock.addClass('hidden')
+				prevInputTextForDate.removeClass('hidden');
+			});
+
+			$("div.specialEdit.on span.btnOkEdit").click(function(event) {
+				/* Act on the event */
+				$(this).next().next().show();
+				$(this).next("input").prop("disabled", true).css("backgroundColor","#fff").focus();
+				$(this).parents("div.specialEdit").removeClass('on');
+				$(this).parents("div.specialEdit").addClass('off');
+			});
+		});
+
+
+		$("div.specialEdit.off div.fakeInput").hover(function(event) {
+			/* Act on the event */
+			$(this).prev("input[disabled]").css("backgroundColor", "#F1F1F1");
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			$(this).prev("input[disabled]").css("backgroundColor", "#fff");
+		});
+
+		//init dateTimePicker
+		$('#datetimepicker1').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2007-07-14",
+			//useCurrent: false //Important! See issue #1075
+		});
+		$('#datetimepicker2').datetimepicker({
+			format: 'DD/MM/YYYY',
+			defaultDate: "2016-12-20",
+			useCurrent: false //Important! See issue #1075
+		});
+		// Link dateTimePicker bettween them
+		$("#datetimepicker1").on("dp.change", function (e) {
+			$('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+		});
+		$("#datetimepicker2").on("dp.change", function (e) {
+			$('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+		});
+
+		// toggle date/periode disabled / enable input value
+
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
@@ -465,6 +558,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('description2') ) initDescription2();
 		if( $('.container-fluid.main').hasClass('questionnaire') ) initQuestionnaire();
 		if( $('.container-fluid.main').hasClass('pathologie') ) initPathologie();
+		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
 
 	}
 

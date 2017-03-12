@@ -1,0 +1,449 @@
+body > div.recap{
+	/* @animation : color: @orangeAmeli; */
+	@-webkit-keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@-webkit-keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@-webkit-keyframes pinnoccioBarFour {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 95%}
+	}
+	@keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@keyframes pinnoccioBarFour {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 95%}
+	}
+	div.wrapper{
+		background-color: #fff;
+		div.barRow{
+			div.border{
+				min-width: 255px;
+				border: 1px solid #ebebeb;
+				padding: 3px 2px;
+				border-top-right-radius: 15px;
+				border-top-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				border-bottom-left-radius: 15px;
+				font-family: 'Proxima Nova Regular';
+				float: right;
+				height: 23px;
+				position: relative;
+				top: -35px;
+				right: 35px;
+				&.animOn{
+					p{
+
+					animation-name: colorTextOange;
+					-webkit-animation-name: colorTextOange; /* Safari 4.0 - 8.0 */
+
+					animation-duration: 0.3s;
+					-webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+
+					animation-delay: 0s;
+					-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+					-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+					animation-iteration-count: 3;
+
+					-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+					animation-timing-function: ease-in;
+						/* color: @orangeAmeli; */
+
+						/* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+						/* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+					}
+					div.completeBar{
+						width: 95%;
+						background-color: #ebebeb;
+						animation-name: colorBarOange;
+						-webkit-animation-name: colorBarOange; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.3s;
+						-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 2s;
+						-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 3;
+
+						-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+						animation-timing-function: ease-in;
+
+						/* pinnoccioBarFour*/
+						animation-name: pinnoccioBarFour;
+						-webkit-animation-name: pinnoccioBarFour; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.9s;
+						-webkit-animation-duration: 0.9s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 0s;
+						-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 1;
+
+						-webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+						animation-timing-function: linear;
+
+
+					}
+				}
+				p{
+					color: #cecece;
+					text-transform: lowercase;
+					position: absolute;
+					right: 15px;
+					top: 0;
+				}
+				div.completeBar{
+					width: 0;
+					font-family: 'Proxima Nova Regular';
+					font-size: 1.2em;
+					display: inline-block;
+					border-top-right-radius: 15px;
+					border-top-left-radius: 15px;
+					border-bottom-right-radius: 15px;
+					border-bottom-left-radius: 15px;
+					width: 0;
+					min-height: 19px;
+					position: relative;
+					top: -2px;
+				}
+			}
+		}
+		div.tabsRow{
+			margin-top: 30px;
+			width: 98%;
+			border-bottom: 1px solid #c9c9c9;
+			margin-left: 1%;
+			p{
+				text-transform: uppercase;
+				display: inline-block;
+				margin-bottom: 0;
+				padding-bottom: 10px;
+				margin-right: 4%;
+				&.active{
+					font-family: 'Proxima Nova Semibold';
+					color: @bleuAmeli;
+					border-bottom: 1px solid @bleuAmeli;
+				}
+			}
+		}
+		div.wrapperForm{
+			margin-top: 60px;
+			margin-bottom: 100px;
+			padding: 0 6%;
+			h4{
+				font-family: 'Proxima Nova Semibold';
+				margin-bottom: 50px;
+				border-bottom: 1px solid @bleuAmeli;
+				padding-bottom: 10px;
+				color: #404040;
+				&.infoTitle{
+					margin-top: 70px;
+					border-color: #f68428;
+				}
+				&.postTitle{
+					margin-top: 70px;
+				}
+				&.infoTitleSalaire{
+					border-color: #56ca81;
+				}
+				&.infoTitleCondition{
+					border-color: #84156e;
+					margin-top: 70px;
+				}
+			}
+			div.editSelect{
+				padding-right: 30px;
+				margin-bottom: 2px;
+				position: relative;
+				span.secondLabel{
+					font-weight: normal;
+					font-family: 'Proxima Nova Semibold';
+					color: #555555;
+				}
+				span.btnOkEditSelect{
+					position: absolute;
+					right: 2%;
+					top: 0;
+					display: inline-block;
+					height: 100%;
+					width: 30px;
+					cursor: pointer;
+					background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+					background-size: 20px;
+				}
+				label{
+					padding-top: 0;
+					font-family: 'Proxima Nova Light';
+				}
+				select{
+					display: inline-block;
+					width: 110px;
+					padding: 0;
+					height: 20px;
+					margin-left: 20px;
+				}
+			}
+			div.periode {
+				padding-right: 30px;
+				position: relative;
+				min-height: 30px;
+				span.btnOkEditPeriode{
+					position: absolute;
+					right: 2%;
+					top: 0;
+					display: inline-block;
+					height: 100%;
+					width: 30px;
+					cursor: pointer;
+					background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+					background-size: 20px;
+				}
+				div.dateFormGroup{
+					margin-bottom: 0;
+					input{
+						font-family: 'Proxima Nova Semibold';
+						color: #555555;
+						padding-top: 0;
+						padding-bottom: 0;
+						height: 30px;
+						/*
+						border: 0;
+						box-shadow: none;
+						-webkit-box-shadow: none;
+						-moz-box-shadow: none; */
+					}
+					&.first {
+						span.secondLabel{
+							position: absolute;
+							left: -16px;
+							top: 9px;
+							font-weight: normal;
+							font-family: 'Proxima Nova Semibold';
+							color: #555555;
+							left: -15px;
+							top: 5px;
+						}
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							font-family: 'Proxima Nova Light';
+							padding-top: 5px;
+						}
+					}
+					&.second{
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							padding-left: 0;
+							left: 10px;
+							font-family: 'Proxima Nova Semibold';
+							color: #555555;
+							left: -3px;
+						}
+					}
+				}
+			}
+			div.form-group.specialEdit{
+				margin-bottom: 3px;
+				div.editCol{
+					position: relative;
+				}
+				label{
+					font-family: 'Proxima Nova Light';
+					padding-top: 0;
+				}
+				input{
+					font-family: 'Proxima Nova Semibold';
+					padding-right: 30px;
+					height: 20px;
+					border: none;
+					box-shadow: none;
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					&[type="text"]:disabled {
+						cursor: pointer;
+						background-color: #fff;
+					}
+				}
+				&.off{
+					div.fakeInput{
+						position:absolute;
+						left:0;
+						right:0;
+						top:0;
+						bottom:0;
+						cursor: pointer;
+						margin-left: 2%;
+						width: 96%;
+						height: 20px;
+						&:hover{
+							cursor: pointer;
+							background: url(../img/icon_edit.png) no-repeat 100% 50%;
+							background-size: 25px;
+						}
+					}
+					input{
+						/* &:hover{
+							cursor: pointer;
+							background: url(../img/icon_edit.png) no-repeat 100% 50% #e1e1e1;
+							background-size: 20px;
+						} */
+					}
+				}
+				&.on{
+					input{
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+					}
+					span.btnOkEdit{
+						position: absolute;
+						right: 2%;
+						top: 0;
+						display: inline-block;
+						height: 100%;
+						width: 30px;
+						cursor: pointer;
+					}
+				}
+			}
+			div.leftZone{
+				padding-right: 5%;
+
+			}
+			div.rightZone{
+				padding-left: 5%;
+
+			}
+			/* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+		}
+	}
+	div.actionRow {
+		background-color: #f7f7f7;
+		> div.form-group {
+			margin: 10px 0;
+			text-align: center;
+			a {
+				float: right;
+				margin-right: 134px;
+				margin-bottom: 10px;
+				&.prevAmeli{
+					float: left;
+					margin-left: 134px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	body > div.recap div.wrapper div.wrapperForm {
+		/* padding: 0 10%; */
+		div.rightZone {
+			padding-left: 0%;
+			padding-right: 5%;
+			margin-top: 160px;
+		}
+		div.periode div.dateFormGroup.first div.input-group {
+			padding-left: 0;
+		}
+		h4.infoTitle {
+			margin-top: 160px;
+		}
+	}
+}
+
+@media (max-width: @screen-md-min) {
+	body > div.recap div.wrapper div.barRow div.border{
+		float: none;
+		top: 15px;
+		left: 2%;
+		width: 96%;
+		div.completeBar{
+			width: 30%;
+		}
+	}
+}
+
+
+@media (max-width: @screen-sm-min) {
+	body > div.recap {
+		div.wrapper {
+			/* div.wrapperForm {
+				padding: 0 15%;
+			} */
+			div.barRow div.border{
+				p {
+					text-align: right;
+				}
+			}
+			div.tabsRow{
+				p{
+					width: 100%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		div.actionRow > div.form-group a.prevAmeli,
+		div.actionRow > div.form-group a{
+			float: none;
+			display: inline-block;
+			margin: 0 5%;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.recap div.wrapper div.barRow div.border {
+		left: 4%;
+		width: 92%;
+	}
+}
+@media (max-width: 300px) {
+	body > div.recap div.wrapper div.barRow div.border {
+		left: -5%;
+	}
+}
