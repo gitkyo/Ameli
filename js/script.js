@@ -691,8 +691,44 @@ jQuery( document ).ready(function() {
 
 	}
 
+	var initMention = function(){
+		var oldURL = document.referrer;
+		$("a.prevAmeli").attr("href",oldURL);
+	}
+
+	var initAide = function(){
+
+		$(".BandeauAide").click(function(event) {
+			/* Act on the event */
+			$(this).find('p').text("Pour toute question, veuillez contactez le 3606");
+		});
+	}
+
+	var initAccueil = function(){
+		var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+
+		var isOther = getUrlParameter('back');
+		if(isOther == 1) {
+			$(".required").removeClass('required');
+		}
+	}
+
 	window.init = function() {
 
+		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
 		if( $('.container-fluid.main').hasClass('identification') ) initIdentification();
 		if( $('.container-fluid.main').hasClass('description') ) initDescription();
@@ -700,6 +736,10 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('questionnaire') ) initQuestionnaire();
 		if( $('.container-fluid.main').hasClass('pathologie') ) initPathologie();
 		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
+		if( $('.container-fluid.main').hasClass('mention') ) initMention();
+		if( $('.container-fluid').hasClass('main') ) initAide();
+
+
 
 	}
 

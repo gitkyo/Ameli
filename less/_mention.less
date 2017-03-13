@@ -15,4 +15,31 @@ body > div.mention{
 			text-transform: initial;
 		}
 	}
+	div.actionRow {
+		background-color: #f7f7f7;
+		> div.form-group {
+			margin: 10px 0;
+			text-align: center;
+			a {
+				float: right;
+				margin-right: 134px;
+				margin-bottom: 10px;
+				&.prevAmeli{
+					float: left;
+					margin-left: 134px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.mention {
+		div.actionRow > div.form-group a.prevAmeli{
+			float: none;
+			display: inline-block;
+			margin: 0 5%;
+		}
+	}
 }

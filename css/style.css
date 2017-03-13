@@ -5003,7 +5003,9 @@ input[type="button"].btn-block {
 .btn.suivAmeli {
   height: 35px;
   line-height: 35px;
-  background: url(../img/picto_suivant.svg) no-repeat 10px center;
+  background-image: url(../img/picto_suivant.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
   background-color: #ffffff;
   padding: 0 15px 2px 30px;
   text-transform: uppercase;
@@ -5023,24 +5025,30 @@ input[type="button"].btn-block {
   border-radius: 35px;
 }
 .btn.suivAmeli.prevAmeli {
-  background: url(../img/picto_precedent.svg) no-repeat 80px center;
+  background-image: url(../img/picto_precedent.svg);
+  background-repeat: no-repeat;
+  background-position: 80px center;
+  background-color: #fff ;
+  color: #005da8;
   padding: 0 35px 2px 15px;
 }
 .btn.suivAmeli.prevAmeli:hover,
 .btn.suivAmeli.prevAmeli:focus,
-.btn.suivAmeli.prevAmeli:visited,
 .btn.suivAmeli.prevAmeli:active {
-  background: url(../img/picto_precedent_hover.svg) no-repeat 80px center;
+  background-image: url(../img/picto_precedent_hover.svg);
+  background-repeat: no-repeat;
+  background-position: 80px center;
   background-color: #005da8;
-  outline: none !important;
-  color: #fff;
+  color: #fff ;
+  outline: none ;
 }
 .btn.suivAmeli:hover,
 .btn.suivAmeli:focus,
-.btn.suivAmeli:visited,
 .btn.suivAmeli:active {
-  background: url(../img/picto_suivant_hover.svg) no-repeat 10px center;
+  background-image: url(../img/picto_suivant_hover.svg);
   background-color: #005da8;
+  background-position: 10px center;
+  background-repeat: no-repeat;
   outline: none !important;
   color: #fff;
 }
@@ -8942,6 +8950,30 @@ body > div.mention div.wrapper button {
   margin-top: 60px;
   text-transform: initial;
 }
+body > div.mention div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.mention div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.mention div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.mention div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  body > div.mention div.actionRow > div.form-group a.prevAmeli {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
 body > div.cgu div.wrapper {
   background-color: #fff;
   padding: 0 20%;
@@ -10579,10 +10611,12 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.second {
   margin-top: 55px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
-  background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
+  background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
   margin-bottom: 80px;
+  margin-top: 80px;
+  margin-left: 5%;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle {
   margin-bottom: 20px;

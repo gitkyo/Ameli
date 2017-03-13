@@ -60,7 +60,9 @@
   &.suivAmeli{
     height: 35px;
     line-height: 35px;
-    background: url(../img/picto_suivant.svg) no-repeat 10px center;
+    background-image: url(../img/picto_suivant.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
     background-color: #ffffff;
     padding: 0 15px 2px 30px;
     text-transform: uppercase;
@@ -79,18 +81,26 @@
     -o-border-radius: 35px;
     border-radius: 35px;
     &.prevAmeli{
-      background: url(../img/picto_precedent.svg) no-repeat 80px center;
+      background-image: url(../img/picto_precedent.svg) ;
+      background-repeat: no-repeat;
+      background-position: 80px center;
+      background-color: #fff ;
+      color: @bleuAmeli ;
       padding: 0 35px 2px 15px;
-      &:hover, &:focus, &:visited, &:active {
-        background: url(../img/picto_precedent_hover.svg) no-repeat 80px center;
-        background-color: @bleuAmeli;
-        outline: none !important;
-        color: #fff;
+      &:hover, &:focus, &:active {
+        background-image: url(../img/picto_precedent_hover.svg) ;
+        background-repeat: no-repeat;
+        background-position: 80px center;
+        background-color: @bleuAmeli ;
+        color: #fff ;
+        outline: none ;
       }
     }
-    &:hover, &:focus, &:visited, &:active {
-      background: url(../img/picto_suivant_hover.svg) no-repeat 10px center;
+    &:hover, &:focus, &:active {
+      background-image: url(../img/picto_suivant_hover.svg);
       background-color: @bleuAmeli;
+      background-position: 10px center;
+      background-repeat: no-repeat;
       outline: none !important;
       color: #fff;
     }
