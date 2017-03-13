@@ -726,6 +726,16 @@ jQuery( document ).ready(function() {
 		}
 	}
 
+	var initQuestionnaire1 = function(){
+		//init dateTimePicker
+		$('#datetimepicker1').datetimepicker({
+			format: 'DD/MM/YYYY'
+		});
+
+
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
@@ -737,6 +747,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('pathologie') ) initPathologie();
 		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
 		if( $('.container-fluid.main').hasClass('mention') ) initMention();
+		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
 		if( $('.container-fluid').hasClass('main') ) initAide();
 
 

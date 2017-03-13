@@ -1,0 +1,95 @@
+@borderH4 : #005ea8;
+
+body > div.questionnaire1{
+	section.postTete{
+		border-bottom: none;
+		background-color: #efefef;
+		div.userBlock{
+			margin-top: -15px;
+			display: inline-block;
+			float: right;
+			width: 200px;
+			text-align: right;
+			padding-right: 50px;
+			background: url(../img/icon_user.png) no-repeat 93% 8px;
+			background-size: 29px;
+			span{
+				font-family: 'Proxima Nova semiBold';
+				color: #ea213a;
+				width: 100%;
+				font-size: 0.6em;
+				display: inline-block;
+			}
+			a{
+				font-family: 'Proxima Nova semiBold';
+				color: #6e6e6e;
+				width: 100%;
+				font-size: 0.4em;
+				display: inline-block;
+				top: -13px;
+				position: relative;
+			}
+		}
+	}
+	h3{
+		font-family: 'Proxima Nova Light';
+		text-align: left;
+	}
+	div.actionRow{
+		background-color: @backgroundGrisClair;
+		> div.form-group{
+			margin: 10px 0;
+			text-align: center;
+			button{
+				float: right;
+				margin-right: 134px;
+			}
+		}
+	}
+	div.wrapper{
+		min-height: 450px;
+		padding: 0 150px;
+		padding-top: 100px;
+		background-color: #fff;
+		h4{
+			font-family: 'Proxima Nova Regular';
+			margin-bottom: 50px;
+			border-bottom: 1px solid @borderH4;
+			padding-bottom: 10px;
+			color: #404040;
+		}
+		div.center{
+			text-align: center;
+		}
+		a{
+			margin-top: 40px;
+			margin-bottom: 125px;
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	body > div.questionnaire1 div.wrapper div.leftZone,
+	body > div.questionnaire1 div.wrapper div.rightZone{
+		padding: 0;
+	}
+	body > div.questionnaire1 div.wrapper div.rightZone{
+		margin-top: 100px;
+	}
+	body > div.questionnaire1 div.wrapper {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.questionnaire1 {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+		div.actionRow > div.form-group button {
+			display: inline-block;
+			margin: 0;
+			float: none;
+		}
+	}
+}

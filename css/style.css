@@ -5072,6 +5072,11 @@ input[type="button"].btn-block {
   border-radius: 35px;
   font-family: 'Proxima Nova Semibold';
 }
+.btn.okAmeli.light {
+  font-family: 'Proxima Nova Regular';
+  font-size: 0.8em;
+  padding: 0 40px;
+}
 .btn.okAmeli.orange {
   color: #f68527;
   border-color: #f68527;
@@ -11383,6 +11388,93 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
     width: 79.3%;
+  }
+}
+body > div.questionnaire1 section.postTete {
+  border-bottom: none;
+  background-color: #efefef;
+}
+body > div.questionnaire1 section.postTete div.userBlock {
+  margin-top: -15px;
+  display: inline-block;
+  float: right;
+  width: 200px;
+  text-align: right;
+  padding-right: 50px;
+  background: url(../img/icon_user.png) no-repeat 93% 8px;
+  background-size: 29px;
+}
+body > div.questionnaire1 section.postTete div.userBlock span {
+  font-family: 'Proxima Nova semiBold';
+  color: #ea213a;
+  width: 100%;
+  font-size: 0.6em;
+  display: inline-block;
+}
+body > div.questionnaire1 section.postTete div.userBlock a {
+  font-family: 'Proxima Nova semiBold';
+  color: #6e6e6e;
+  width: 100%;
+  font-size: 0.4em;
+  display: inline-block;
+  top: -13px;
+  position: relative;
+}
+body > div.questionnaire1 h3 {
+  font-family: 'Proxima Nova Light';
+  text-align: left;
+}
+body > div.questionnaire1 div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.questionnaire1 div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.questionnaire1 div.actionRow > div.form-group button {
+  float: right;
+  margin-right: 134px;
+}
+body > div.questionnaire1 div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-top: 100px;
+  background-color: #fff;
+}
+body > div.questionnaire1 div.wrapper h4 {
+  font-family: 'Proxima Nova Regular';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.questionnaire1 div.wrapper div.center {
+  text-align: center;
+}
+body > div.questionnaire1 div.wrapper a {
+  margin-top: 40px;
+  margin-bottom: 125px;
+}
+@media (max-width: 1200px) {
+  body > div.questionnaire1 div.wrapper div.leftZone,
+  body > div.questionnaire1 div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.questionnaire1 div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.questionnaire1 div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.questionnaire1 div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.questionnaire1 div.actionRow > div.form-group button {
+    display: inline-block;
+    margin: 0;
+    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
