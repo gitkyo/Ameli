@@ -8612,19 +8612,21 @@ div.BandeauAide p {
 }
 /* Date pciker */
 div.form-group.dateFormGroup input {
-  margin-left: 4%;
-  width: 93%;
+  margin-left: 16px;
+  width: calc(100% - 30px);
 }
 div.form-group.dateFormGroup span.input-group-addon {
   left: -15px;
   position: relative;
 }
-div.periode div.form-group.dateFormGroup input {
-  width: 88%;
+div.periode div.form-group.dateFormGroup {
+  /* input{
+		width: 88%;
+	} */
 }
 @media (max-width: 1600px) {
   div.form-group.dateFormGroup span.input-group-addon {
-    left: -12px;
+    /* left: -12px; */
   }
   div.withLabel input {
     width: 75%;
@@ -8635,7 +8637,7 @@ div.periode div.form-group.dateFormGroup input {
     left: -14px;
   }
   div.form-group.dateFormGroup input {
-    width: 92%;
+    /* width: 92%; */
   }
 }
 @media (max-width: 1300px) {
@@ -8643,7 +8645,7 @@ div.periode div.form-group.dateFormGroup input {
     left: -15px;
   }
   div.form-group.dateFormGroup input {
-    width: 91%;
+    /* width: 91%; */
   }
   div.withLabel input {
     width: 65%;
@@ -8651,8 +8653,8 @@ div.periode div.form-group.dateFormGroup input {
 }
 @media (max-width: 1199px) {
   div.form-group.dateFormGroup input {
-    width: 95%;
-    margin-left: 15px;
+    /* width: 95%;
+		margin-left: 15px; */
   }
   div.withLabel input {
     width: 80%;
@@ -8663,47 +8665,47 @@ div.periode div.form-group.dateFormGroup input {
     left: -17px;
   }
   div.form-group.dateFormGroup input {
-    width: 94.5%;
+    /* width: 94.5%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 85%;
+    /* width: 85%; */
   }
 }
 @media (max-width: 900px) {
   div.form-group.dateFormGroup input {
-    width: 93%;
+    /* width: 93%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 81%;
+    /* width: 81%; */
   }
 }
 @media (max-width: 800px) {
   div.form-group.dateFormGroup input {
-    width: 92%;
+    /* width: 92%; */
   }
 }
 @media (max-width: 768px) {
   div.form-group.dateFormGroup input {
-    width: 94.5%;
+    /* width: 94.5%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 94.5%;
+    /* width: 94.5%; */
   }
 }
 @media (max-width: 700px) {
   div.form-group.dateFormGroup input {
-    width: 94%;
+    /* width: 94%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 93.5%;
+    /* width: 93.5%; */
   }
 }
 @media (max-width: 600px) {
   div.form-group.dateFormGroup input {
-    width: 93%;
+    /* width: 93%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 93%;
+    /* width: 93%; */
   }
   div.withLabel input {
     width: 75%;
@@ -8711,15 +8713,15 @@ div.periode div.form-group.dateFormGroup input {
 }
 @media (max-width: 500px) {
   div.form-group.dateFormGroup input {
-    width: 91%;
+    /* width: 91%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 91%;
+    /* width: 91%; */
   }
 }
 @media (max-width: 450px) {
   div.form-group.dateFormGroup input {
-    width: 90%;
+    /* width: 90%; */
   }
   div.withLabel input {
     width: 64%;
@@ -8727,23 +8729,23 @@ div.periode div.form-group.dateFormGroup input {
 }
 @media (max-width: 400px) {
   div.form-group.dateFormGroup input {
-    width: 89%;
+    /* width: 89%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 89%;
+    /* width: 89%; */
   }
 }
 @media (max-width: 350px) {
   div.form-group.dateFormGroup input {
-    width: 87%;
+    /* width: 87%; */
   }
   div.periode div.form-group.dateFormGroup input {
-    width: 87%;
+    /* width: 87%; */
   }
 }
 @media (max-width: 300px) {
   div.form-group.dateFormGroup input {
-    width: 83%;
+    /* width: 83%; */
   }
 }
 /* HEADER */
@@ -11082,7 +11084,7 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
-  width: 91%;
+  /* width: 91%; */
   /*
 						border: 0;
 						box-shadow: none;
@@ -11261,7 +11263,7 @@ body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup inp
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
-  width: 91%;
+  /* 	width: 91%; */
 }
 body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup div.specialPaddingForIcon {
   padding-right: 3%;
@@ -11313,7 +11315,7 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     padding-left: 35px;
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
-    width: 92.3%;
+    /* 	width: 92.3%; */
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup div.input-group {
     padding-left: 0;
@@ -11333,7 +11335,7 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     width: 30%;
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
-    width: 89.9%;
+    /* width: 89.9%; */
   }
 }
 @media (max-width: 768px) {
@@ -11357,7 +11359,7 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     top: 28px;
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
-    width: 93.7%;
+    /* width: 93.7%; */
   }
   body > div.recap div.wrapper div.barRow div.border p {
     text-align: right;
@@ -11379,7 +11381,7 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     width: 92%;
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
-    width: 89.3%;
+    /* width: 89.3%; */
   }
 }
 @media (max-width: 300px) {
@@ -11387,7 +11389,7 @@ body > div.recap div.actionRow > div.form-group a.prevAmeli {
     left: -5%;
   }
   body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
-    width: 79.3%;
+    /* width: 79.3%; */
   }
 }
 body > div.questionnaire1 section.postTete {
@@ -11424,19 +11426,8 @@ body > div.questionnaire1 h3 {
   font-family: 'Proxima Nova Light';
   text-align: left;
 }
-body > div.questionnaire1 div.actionRow {
-  background-color: #f7f7f7;
-}
-body > div.questionnaire1 div.actionRow > div.form-group {
-  margin: 10px 0;
-  text-align: center;
-}
-body > div.questionnaire1 div.actionRow > div.form-group button {
-  float: right;
-  margin-right: 134px;
-}
 body > div.questionnaire1 div.wrapper {
-  min-height: 450px;
+  min-height: 600px;
   padding: 0 150px;
   padding-top: 100px;
   background-color: #fff;
@@ -11453,7 +11444,6 @@ body > div.questionnaire1 div.wrapper div.center {
 }
 body > div.questionnaire1 div.wrapper a {
   margin-top: 40px;
-  margin-bottom: 125px;
 }
 @media (max-width: 1200px) {
   body > div.questionnaire1 div.wrapper div.leftZone,
@@ -11470,11 +11460,6 @@ body > div.questionnaire1 div.wrapper a {
 @media (max-width: 768px) {
   body > div.questionnaire1 div.wrapper {
     padding: 50px 10%;
-  }
-  body > div.questionnaire1 div.actionRow > div.form-group button {
-    display: inline-block;
-    margin: 0;
-    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
