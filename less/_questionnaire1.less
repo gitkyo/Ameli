@@ -4,6 +4,7 @@ body > div.questionnaire1{
 	section.postTete{
 		border-bottom: none;
 		background-color: #efefef;
+		position: relative;
 		div.userBlock{
 			margin-top: -15px;
 			display: inline-block;
@@ -13,6 +14,9 @@ body > div.questionnaire1{
 			padding-right: 50px;
 			background: url(../img/icon_user.png) no-repeat 93% 8px;
 			background-size: 29px;
+			position: absolute;
+			top: 39px;
+			right: 2%;
 			span{
 				font-family: 'Proxima Nova semiBold';
 				color: #ea213a;
@@ -34,6 +38,7 @@ body > div.questionnaire1{
 	h3{
 		font-family: 'Proxima Nova Light';
 		text-align: left;
+		padding-right: 20%;
 	}
 	div.wrapper{
 		min-height: 600px;
@@ -74,5 +79,16 @@ body > div.questionnaire1{
 		div.wrapper {
 			padding: 50px 10%;
 		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.questionnaire1 {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+	}
+	body > div.questionnaire1 h3 {
+		padding-right: 60%;
 	}
 }
