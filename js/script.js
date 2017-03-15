@@ -742,7 +742,7 @@ jQuery( document ).ready(function() {
 			cpt++;
 
 			var htmlRaisonSocial = '<div class="form-group mrgtop padBot">'+
-	                            		'<label for="input5" class="col-sm-4 control-label readOnly">Raison social de l’employeur '+cpt+' :</label>'+
+	                            		'<label for="input5" class="col-sm-4 control-label readOnly spec">Raison social de l’employeur '+cpt+' :</label>'+
 	                            		'<div class="col-sm-8">'+
 	                              		'<input type="text" class="form-control" id="input5" placeholder="">'+
 	                            		'</div>'+

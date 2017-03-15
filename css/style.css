@@ -11421,6 +11421,9 @@ body > div.questionnaire2 div.wrapper div.form-group label.readOnly {
   font-family: 'Proxima Nova Light';
   color: #929292;
 }
+body > div.questionnaire2 div.wrapper div.form-group label.readOnly.spec {
+  padding-top: 7px;
+}
 body > div.questionnaire2 div.wrapper div.form-group p {
   color: #767676;
   margin-bottom: 0;
