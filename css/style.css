@@ -11406,6 +11406,9 @@ body > div.questionnaire2 div.wrapper div.form-group.checkBoxBlock label {
 body > div.questionnaire2 div.wrapper div.form-group.mrgtop {
   margin-top: 30px;
 }
+body > div.questionnaire2 div.wrapper div.form-group.padBot {
+  padding-bottom: 20px;
+}
 body > div.questionnaire2 div.wrapper div.form-group.numberInputBlock {
   margin-top: 50px;
 }
@@ -11414,11 +11417,14 @@ body > div.questionnaire2 div.wrapper div.form-group.numberInputBlock p {
   padding-top: 8px;
 }
 body > div.questionnaire2 div.wrapper div.form-group label.readOnly {
+  padding-top: 5px;
   font-family: 'Proxima Nova Light';
   color: #929292;
 }
 body > div.questionnaire2 div.wrapper div.form-group p {
   color: #767676;
+  margin-bottom: 0;
+  padding-top: 5px;
   font-family: 'Proxima Nova semiBold';
 }
 body > div.questionnaire2 div.wrapper div.leftZone {

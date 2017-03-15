@@ -734,17 +734,21 @@ jQuery( document ).ready(function() {
 	}
 
 	var initQuestionnaire2 = function(){
-		var htmlRaisonSocial = '<div class="form-group mrgtop">'+
-                            		'<label for="input5" class="col-sm-4 control-label">Raison social de l’employeur :</label>'+
-                            		'<div class="col-sm-8">'+
-                              		'<input type="text" class="form-control" id="input5" placeholder="">'+
-                            		'</div>'+
-                        		'</div>';
+		var cpt =0;
 
 		$(".separation").click(function(event) {
 			/* Act on the event */
 			console.log('cocou');
-			$(".rightZone").append(htmlRaisonSocial);
+			cpt++;
+
+			var htmlRaisonSocial = '<div class="form-group mrgtop padBot">'+
+	                            		'<label for="input5" class="col-sm-4 control-label readOnly">Raison social de l’employeur '+cpt+' :</label>'+
+	                            		'<div class="col-sm-8">'+
+	                              		'<input type="text" class="form-control" id="input5" placeholder="">'+
+	                            		'</div>'+
+	                        		'</div>';
+
+			$(this).before(htmlRaisonSocial);
 
 		});
 	}
