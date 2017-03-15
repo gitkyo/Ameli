@@ -41,7 +41,7 @@ body > div.questionnaire2{
 		padding-right: 20%;
 	}
 	div.wrapper{
-		min-height: 800px;
+		min-height: 900px;
 		padding: 0 150px;
 		padding-top: 100px;
 		background-color: #fff;
@@ -53,6 +53,9 @@ body > div.questionnaire2{
 			color: #404040;
 			&.margTopTitle{
 				margin-top: 70px;
+			}
+			&.orange{
+				border-color: #f78b35;
 			}
 		}
 		div.center{
@@ -68,6 +71,9 @@ body > div.questionnaire2{
 				label{
 					margin-bottom: 10px;
 				}
+			}
+			&.mrgtop{
+				margin-top: 30px;
 			}
 			&.numberInputBlock{
 				margin-top: 50px;
@@ -90,6 +96,38 @@ body > div.questionnaire2{
 		}
 		div.rightZone{
 			padding-left: 6%;
+			span.separation {
+				top: -25px;
+				display: block;
+				position: relative;
+				text-align: center;
+				cursor: pointer;
+				text-transform: uppercase;
+				&:hover{
+					p{
+						color: @bleuAmeli;
+					}
+					span.line{
+						border-top: 1px dashed @bleuAmeli;
+					}
+				}
+				p{
+					font-size: 0.8em;
+					letter-spacing: 1px;
+					color: #cacaca;
+					display: inline-block;
+					top: 32px;
+					position: relative;
+					background-color: #fff;
+					padding: 0 1%;
+
+				}
+				span.line{
+					border-top: 1px dashed #d5d5d5;
+					display: inline-block;
+					width: 100%;
+				}
+			}
 		}
 		div.actionRow{
 			margin-top: 45px;

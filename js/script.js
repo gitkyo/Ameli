@@ -731,9 +731,22 @@ jQuery( document ).ready(function() {
 		$('#datetimepicker1').datetimepicker({
 			format: 'DD/MM/YYYY'
 		});
+	}
 
+	var initQuestionnaire2 = function(){
+		var htmlRaisonSocial = '<div class="form-group mrgtop">'+
+                            		'<label for="input5" class="col-sm-4 control-label">Raison social de l’employeur :</label>'+
+                            		'<div class="col-sm-8">'+
+                              		'<input type="text" class="form-control" id="input5" placeholder="">'+
+                            		'</div>'+
+                        		'</div>';
 
+		$(".separation").click(function(event) {
+			/* Act on the event */
+			console.log('cocou');
+			$(".rightZone").append(htmlRaisonSocial);
 
+		});
 	}
 
 	window.init = function() {
@@ -748,6 +761,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
 		if( $('.container-fluid.main').hasClass('mention') ) initMention();
 		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
+		if( $('.container-fluid.main').hasClass('questionnaire2') ) initQuestionnaire2();
 		if( $('.container-fluid').hasClass('main') ) initAide();
 
 
