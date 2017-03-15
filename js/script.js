@@ -738,7 +738,6 @@ jQuery( document ).ready(function() {
 
 		$(".separation").click(function(event) {
 			/* Act on the event */
-			console.log('cocou');
 			cpt++;
 
 			var htmlRaisonSocial = '<div class="form-group mrgtop padBot">'+

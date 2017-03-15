@@ -11374,6 +11374,7 @@ body > div.questionnaire2 div.wrapper {
   padding: 0 150px;
   padding-top: 100px;
   background-color: #fff;
+  padding-bottom: 150px;
 }
 body > div.questionnaire2 div.wrapper h4 {
   font-family: 'Proxima Nova Regular';
@@ -11483,6 +11484,9 @@ body > div.questionnaire2 div.wrapper div.actionRow {
 @media (max-width: 768px) {
   body > div.questionnaire2 div.wrapper {
     padding: 50px 10%;
+  }
+  body > div.questionnaire2 div.wrapper div.actionRow {
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
