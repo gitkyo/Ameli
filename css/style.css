@@ -11585,4 +11585,306 @@ body > div.questionnaire3 div.wrapper a {
     padding-right: 60%;
   }
 }
+body > div.liste-dossier section.postTete {
+  border-bottom: none;
+  background-color: #efefef;
+  position: relative;
+}
+body > div.liste-dossier section.postTete div.userBlock {
+  margin-top: -15px;
+  display: inline-block;
+  float: right;
+  width: 200px;
+  text-align: right;
+  padding-right: 50px;
+  background: url(../img/icon_user.png) no-repeat 93% 8px;
+  background-size: 29px;
+  position: absolute;
+  top: 39px;
+  right: 2%;
+}
+body > div.liste-dossier section.postTete div.userBlock span {
+  font-family: 'Proxima Nova semiBold';
+  color: #ea213a;
+  width: 100%;
+  font-size: 0.6em;
+  display: inline-block;
+}
+body > div.liste-dossier section.postTete div.userBlock a {
+  font-family: 'Proxima Nova semiBold';
+  color: #6e6e6e;
+  width: 100%;
+  font-size: 0.4em;
+  display: inline-block;
+  top: -13px;
+  position: relative;
+}
+body > div.liste-dossier h3 {
+  font-family: 'Proxima Nova Light';
+  text-align: left;
+  padding-right: 20%;
+}
+body > div.liste-dossier div.wrapper {
+  padding: 0 4%;
+  padding-top: 100px;
+  background-color: #fff;
+  min-height: 860px;
+  padding-bottom: 70px;
+}
+body > div.liste-dossier div.wrapper h4 {
+  font-family: 'Proxima Nova semiBold';
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  color: #404040;
+  text-transform: uppercase;
+  padding-left: 2%;
+}
+body > div.liste-dossier div.wrapper div.choixAction {
+  margin-top: 58px;
+  border-bottom: 1px solid #d5d5d5;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #6f6f6f;
+  position: relative;
+}
+body > div.liste-dossier div.wrapper div.choixAction > a {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+body > div.liste-dossier div.wrapper div.choixAction div.action {
+  padding-left: 0;
+}
+body > div.liste-dossier div.wrapper div.choixAction div.action:not(.active) p:hover {
+  color: #005ea8;
+}
+body > div.liste-dossier div.wrapper div.choixAction div.action.active p {
+  color: #005da8;
+  cursor: pointer;
+  font-family: 'Proxima Nova semiBold';
+  border-bottom: 1px solid #005da8;
+  margin-bottom: 0;
+  padding-bottom: 9px;
+  margin-right: 76px;
+}
+body > div.liste-dossier div.wrapper div.choixAction div.action p {
+  cursor: pointer;
+}
+body > div.liste-dossier div.wrapper div.tableau {
+  padding: 0 3%;
+  margin-top: 40px;
+}
+body > div.liste-dossier div.wrapper div.tableau table {
+  min-width: 1251px;
+}
+body > div.liste-dossier div.wrapper div.tableau table.dataTable thead .sorting_desc:after,
+body > div.liste-dossier div.wrapper div.tableau table.dataTable thead .sorting:after,
+body > div.liste-dossier div.wrapper div.tableau table.dataTable thead .sorting_asc:after {
+  content: "";
+}
+body > div.liste-dossier div.wrapper div.tableau div.dataTables_wrapper > div.row:first-of-type,
+body > div.liste-dossier div.wrapper div.tableau div.dataTables_wrapper > div.row:last-of-type {
+  display: none;
+}
+body > div.liste-dossier div.wrapper div.tableau th {
+  background-color: #8a8a8a;
+  color: #fff;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 0.9em;
+  letter-spacing: 0.7px;
+}
+body > div.liste-dossier div.wrapper div.tableau th:last-child {
+  border-right: 1px solid #8a8a8a;
+}
+body > div.liste-dossier div.wrapper div.tableau th span.iconSearch {
+  height: 20px;
+  width: 20px;
+  background: url(../img/iconSearch_off.png) no-repeat 50% 50% #747474;
+  background-size: 13px;
+  position: absolute;
+  bottom: -1px;
+  right: -30px;
+  top: 23px;
+  /* &:hover{
+						background-image: url(../img/iconSearch_on.png);
+					} */
+}
+body > div.liste-dossier div.wrapper div.tableau th span.iconSearch .active {
+  display: none;
+}
+body > div.liste-dossier div.wrapper div.tableau th > div {
+  position: relative;
+  height: 60px;
+  text-align: center;
+  top: 24px;
+}
+body > div.liste-dossier div.wrapper div.tableau td {
+  border-bottom: 0;
+  border-top: 0;
+  z-index: 0;
+  color: #6e6e6e;
+  font-family: 'Proxima Nova Semibold';
+  height: 33px;
+  padding-bottom: 0;
+  padding-top: 12px;
+  padding-left: 3%;
+}
+body > div.liste-dossier div.wrapper div.tableau td:first-of-type {
+  padding-left: 70px;
+}
+body > div.liste-dossier div.wrapper div.tableau td.warningIcon {
+  color: #f35b6d;
+  background: url(../img/icon_attention.png) no-repeat 80% 50%;
+  background-size: 14px;
+}
+body > div.liste-dossier div.wrapper div.tableau td.folder.red {
+  background: url(../img/icon_folder_red.png) no-repeat 22px 50%;
+  background-size: 24px;
+}
+body > div.liste-dossier div.wrapper div.tableau td.folder.orange {
+  background: url(../img/icon_folder_orange.png) no-repeat 22px 50%;
+  background-size: 24px;
+}
+body > div.liste-dossier div.wrapper div.tableau td.folder.green {
+  background: url(../img/icon_folder_green.png) no-repeat 22px 50%;
+  background-size: 24px;
+}
+body > div.liste-dossier div.wrapper div.tableau td.folder span.light {
+  font-family: 'Proxima Nova Regular';
+}
+body > div.liste-dossier div.wrapper div.tableau td.multi {
+  background: url(../img/icon_multi.png) no-repeat 80% 50%;
+  background-size: 12px;
+}
+body > div.liste-dossier div.wrapper div.tableau tr:hover {
+  background-color: #005ea8 !important;
+  cursor: pointer;
+}
+body > div.liste-dossier div.wrapper div.tableau tr:hover td:not(.warningIcon) {
+  color: #fff;
+}
+body > div.liste-dossier div.wrapper div.tableau tr:last-child {
+  border-bottom: 1px solid #e1e1e1;
+}
+body > div.liste-dossier div.wrapper div.tableau tr span.iconFilterDown {
+  width: 0;
+  margin-left: 10px;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  top: 6px;
+  -webkit-transform: rotate(360deg);
+}
+body > div.liste-dossier div.wrapper div.tableau tr span.iconFilterDown:hover {
+  border-color: #005ea8 transparent transparent transparent;
+}
+body > div.liste-dossier div.wrapper div.pager {
+  text-align: center;
+}
+body > div.liste-dossier div.wrapper div.pager span.pagerNext {
+  padding-left: 6px;
+}
+body > div.liste-dossier div.wrapper div.pager span.pagerPrev {
+  padding-right: 1px;
+}
+body > div.liste-dossier div.wrapper div.pager span.pagerNext:hover,
+body > div.liste-dossier div.wrapper div.pager span.pagerPrev:hover {
+  color: #005ea8;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* div.tableau select.selectFilterInput{
+    height: auto;
+    font-size: 0.9em;
+    min-width: 85px;
+} */
+/* div.tableau .searchFilterInput#searchName{
+    width: 65px;
+}
+div.tableau .searchFilterInput#statut{
+    width: 75px;
+    min-width: 75px;
+    margin-top: 18px;
+    height: 25px;
+}
+div.tableau .searchFilterInput#searchBirthDate{
+    width: 85px;
+    margin-top: 1px;
+}
+div.tableau .searchFilterInput{
+    margin-top: 17px;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 1px 3px 1px 3px;
+    height: 25px;
+} */
+/* div.tableau span.iconSearch:hover{
+    height: 30px;
+    width: 30px;
+    background: url(../images/iconSearch_on.png) no-repeat 50% 50% transparent;
+     background-size: 98%;
+    position: absolute;
+    bottom: -1px;
+    right: -28px;
+} */
+/* div.tableau thead th::after{
+    content: '';
+} */
+/* div.tableau th > div.dateR{
+    min-width: 125px;
+}
+div.tableau th > div.name{
+    min-width: 65px;
+}
+div.tableau th > div.firstNameR{
+    min-width: 68px;
+}
+div.tableau th > div.dateN{
+    min-width: 85px;
+}
+div.tableau th > div.boss{
+    min-width: 91px;
+}
+div.tableau th > div.cat{
+
+}
+div.tableau th > div.status{
+    min-width: 75px;
+} */
+/* .table-striped > tbody>tr:nth-of-type(odd) {
+    background-color: #f8f8f8;
+} */
+@media (max-width: 1200px) {
+  body > div.liste-dossier div.wrapper {
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  body > div.liste-dossier div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.liste-dossier div.wrapper div.choixAction {
+    border-bottom: 0;
+  }
+  body > div.liste-dossier div.wrapper div.choixAction div.action {
+    margin-bottom: 20px;
+  }
+  body > div.liste-dossier div.wrapper div.choixAction > a {
+    position: relative;
+    float: right;
+    top: -55px;
+  }
+}
+@media (max-width: 480px) {
+  body > div.liste-dossier div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.liste-dossier h3 {
+    padding-right: 60%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

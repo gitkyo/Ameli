@@ -763,6 +763,93 @@ jQuery( document ).ready(function() {
 		});
 	}
 
+	var initListeDossier =function(){
+
+		var table = $('table.table').DataTable({
+			/*paginate: false,*/
+			/*searching: false,*/
+			/*info: false*/
+	    	//ordering:  false
+	    	"pagingType": "simple"
+		});
+
+		//table.fnPageChange( 'sdfsf' );
+
+		$('table thead th').hover(function(e){
+			$(this).find('.iconFilterDown').css('border-color','#005ea8 transparent transparent transparent');
+
+		}, function(){
+			$(this).find('.iconFilterDown').css('border-color','#ffffff transparent transparent transparent');
+		});
+
+		var cpt = 1;
+		$(".pagerNext").click(function(event) {
+			/* Act on the event */
+			cpt++;
+			if(cpt <= 2){
+				$(".paginate_button.next > a").trigger('click');
+				$(".pager span.txt").text(cpt+' sur 2');
+			}
+
+			if(cpt > 1) $(".pagerPrev").removeClass('hidden');
+			if(cpt > 1) $(".pagerNext").addClass('hidden');
+
+		});
+
+		$(".pagerPrev").click(function(event) {
+			/* Act on the event */
+			if(cpt > 1){
+				cpt--;
+				$(".paginate_button.previous > a").trigger('click');
+				$(".pager span.txt").text(cpt+' sur 2');
+			}
+
+			if(cpt == 1) $(".pagerPrev").addClass('hidden');
+			if(cpt >= 1) $(".pagerNext").removeClass('hidden');
+
+
+
+		});
+
+
+	/*
+		var filtreTab = function(itemToFiltre){
+			console.log(itemToFiltre.attr('class'));
+
+			table.order([0, 'desc']).draw();
+			table.search( 'Roder' ).draw();
+		}*/
+
+		//Toggle show input to filter tab
+		/*$('span.iconSearch').click(function(event) {
+
+			$(this).addClass('active');
+			$(this).next().removeClass('hidden');
+		});*/
+
+		/*$('table td').click(function(e){
+			var url = 'detailDossier-agent.html';
+			window.open(url,'_self');
+		});*/
+
+		$('th').click(function(e){
+			myTriangle = $(this).find('span.iconFilterDown');
+			//filtreTab(myTriangle.parent());
+
+			if(myTriangle.hasClass('active')){
+
+				myTriangle.css('transform', 'rotate(0deg)');
+				myTriangle.removeClass('active');
+
+			}else{
+
+				myTriangle.css('transform', 'rotate(180deg)');
+				myTriangle.addClass('active');
+			}
+		});
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
@@ -776,6 +863,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('mention') ) initMention();
 		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
 		if( $('.container-fluid.main').hasClass('questionnaire2') ) initQuestionnaire2();
+		if( $('.container-fluid.main').hasClass('liste-dossier') ) initListeDossier();
 		if( $('.container-fluid').hasClass('main') ) initAide();
 
 
