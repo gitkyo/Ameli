@@ -700,7 +700,18 @@ jQuery( document ).ready(function() {
 
 		$(".BandeauAide").click(function(event) {
 			/* Act on the event */
-			$(this).find('p').text("Pour toute question, veuillez contactez le 3606");
+			if( $(this).hasClass('open') ) {
+
+				$(this).find('p').text("Besoin d'aide ?");
+				$(this).removeClass('open');
+			}
+			else{
+
+				$(this).find('p').text("Pour toute question, veuillez contactez le 3606");
+				$(this).addClass('open');
+			}
+
+
 		});
 	}
 
