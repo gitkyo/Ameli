@@ -11970,6 +11970,8 @@ body > div.detail-dossier div.wrapper span.redTxt {
   float: right;
 }
 body > div.detail-dossier div.wrapper span.iconD {
+  font-family: 'Proxima Nova semiBold';
+  cursor: pointer;
   color: #383838;
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -12049,11 +12051,36 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 {
 body > div.detail-dossier div.wrapper div.bottomZone h5.redTxt {
   color: #f35b6d;
   border-color: #f35b6d;
+  position: relative;
 }
-body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconD {
-  font-family: 'Proxima Nova semiBold';
+body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconClose {
+  background: url(../img/icon_close.png) no-repeat 0 50%;
+  background-size: 12px;
+  height: 12px;
+  width: 12px;
+  display: block;
+  position: absolute;
+  left: -23px;
+  top: 1px;
+}
+body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
+  background: url(../img/icon_valide.png) no-repeat 0 50%;
+  background-size: 13px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: absolute;
+  left: -23px;
+  top: 1px;
 }
 @media (max-width: 1200px) {
+  body > div.detail-dossier div.wrapper div.bottomZone div.leftZone,
+  body > div.detail-dossier div.wrapper div.bottomZone div.rightZone {
+    padding: 0;
+  }
+  body > div.detail-dossier div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
   body > div.detail-dossier div.wrapper {
     padding-bottom: 50px;
   }

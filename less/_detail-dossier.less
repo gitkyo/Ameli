@@ -66,6 +66,8 @@ body > div.detail-dossier{
 			float: right;
 		}
 		span.iconD{
+			font-family: 'Proxima Nova semiBold';
+			cursor: pointer;
 			color: #383838;
 			-ms-transform: rotate(90deg);
 			-webkit-transform: rotate(90deg);
@@ -148,10 +150,30 @@ body > div.detail-dossier{
 				margin-bottom: 40px;
 				&.redTxt{
 					color: @rougeAmeli;
-					border-color: @rougeAmeli;;
+					border-color: @rougeAmeli;
+					position: relative;
 				}
-				span.iconD{
-					font-family: 'Proxima Nova semiBold';
+				span.iconClose{
+					background: url(../img/icon_close.png) no-repeat 0 50%;
+					background-size: 12px;
+					height: 12px;
+					width: 12px;
+					display: block;
+					position: absolute;
+					left: -23px;
+					top: 1px;
+
+				}
+				span.iconValide{
+					background: url(../img/icon_valide.png) no-repeat 0 50%;
+					background-size: 13px;
+					height: 13px;
+					width: 13px;
+					display: block;
+					position: absolute;
+					left: -23px;
+					top: 1px;
+
 				}
 			}
 		}
@@ -159,6 +181,13 @@ body > div.detail-dossier{
 }
 
 @media (max-width: @screen-lg-min) {
+	body > div.detail-dossier div.wrapper div.bottomZone div.leftZone,
+	body > div.detail-dossier div.wrapper div.bottomZone div.rightZone{
+		padding: 0;
+	}
+	body > div.detail-dossier div.wrapper div.rightZone{
+		margin-top: 100px;
+	}
 	body > div.detail-dossier div.wrapper {
 		padding-bottom: 50px;
 	}
