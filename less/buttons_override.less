@@ -129,6 +129,21 @@
       font-size: 0.8em;
       padding: 0 40px;
     }
+    &.vert{
+      color: @vertAmeli;
+      border-color: @vertAmeli;
+      &.inverse{
+        color: #fff;
+        background-color: @vertAmeli;
+        &:hover, &:focus, &:active {
+          background-color: #fff;
+          color: @vertAmeli;
+        }
+      }
+      &:hover, &:focus, &:active {
+        background-color: @vertAmeli;
+      }
+    }
     &.orange{
       color: @orangeAmeli;
       border-color: @orangeAmeli;

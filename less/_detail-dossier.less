@@ -1,0 +1,130 @@
+@borderH4 : #005ea8;
+
+body > div.detail-dossier{
+	section.postTete{
+		border-bottom: none;
+		background-color: #efefef;
+		position: relative;
+		div.userBlock{
+			margin-top: -15px;
+			display: inline-block;
+			float: right;
+			width: 200px;
+			text-align: right;
+			padding-right: 50px;
+			background: url(../img/icon_user.png) no-repeat 93% 8px;
+			background-size: 29px;
+			position: absolute;
+			top: 39px;
+			right: 2%;
+			span{
+				font-family: 'Proxima Nova semiBold';
+				color: #ea213a;
+				width: 100%;
+				font-size: 0.6em;
+				display: inline-block;
+			}
+			a{
+				font-family: 'Proxima Nova semiBold';
+				color: #6e6e6e;
+				width: 100%;
+				font-size: 0.4em;
+				display: inline-block;
+				top: -13px;
+				position: relative;
+			}
+		}
+	}
+	h3{
+		font-family: 'Proxima Nova Light';
+		text-align: left;
+		padding-right: 20%;
+	}
+	div.wrapper{
+		min-height: 600px;
+		padding: 0 10%;
+		padding-top: 100px;
+		background-color: #fff;
+		h4{
+			font-family: 'Proxima Nova Regular';
+			margin-bottom: 50px;
+			border-bottom: 1px solid @borderH4;
+			padding-bottom: 10px;
+			color: #404040;
+		}
+		div.buttonRow{
+			position: absolute;
+			right: 0;
+			a{
+				display: block;
+				&:first-of-type{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		div.textRow{
+			padding-right: 200px;
+			> p {
+				&:first-of-type{
+					margin-top: 20px;
+				}
+				span{
+					color: @bleuAmeli;
+				}
+			}
+			> a{
+				margin-top: 20px;
+			}
+			div.form-group{
+				margin-bottom: 0;
+				label{
+					font-family: 'Proxima Nova Light';
+					font-size: 1.1em;
+				}
+				p{
+					&.green{
+						color: @vertAmeli;
+						font-family: 'Proxima Nova semiBold';
+						font-weight: normal;
+					}
+					&.warningIcon{
+						color: @rougeAmeli;
+						font-family: 'Proxima Nova semiBold';
+						font-weight: normal;
+						background: url(../img/icon_attention.png) no-repeat 99px 3px;
+						background-size: 14px;
+					}
+				}
+				b{
+					font-family: 'Proxima Nova semiBold';
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	body > div.detail-dossier div.wrapper {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.detail-dossier {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.detail-dossier {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+	}
+	body > div.detail-dossier h3 {
+		padding-right: 60%;
+	}
+}
