@@ -850,6 +850,25 @@ jQuery( document ).ready(function() {
 
 	}
 
+	var initDetailDossier = function(){
+		//init modal
+		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		});
+
+		$('#myModalDownload').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		});
+
+		$('#myModalDownload input').change(function(e){
+
+			if($(this).is(':checked')) $(this).parents(".checkbox").addClass('checked');
+			else $(this).parents(".checkbox").removeClass('checked');
+
+		});
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
@@ -864,6 +883,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
 		if( $('.container-fluid.main').hasClass('questionnaire2') ) initQuestionnaire2();
 		if( $('.container-fluid.main').hasClass('liste-dossier') ) initListeDossier();
+		if( $('.container-fluid.main').hasClass('detail-dossier') ) initDetailDossier();
 		if( $('.container-fluid').hasClass('main') ) initAide();
 
 

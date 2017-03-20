@@ -40,6 +40,43 @@ body > div.detail-dossier{
 		text-align: left;
 		padding-right: 20%;
 	}
+	div.modal{
+		&.download{
+			div.checkbox{
+				text-align: left;
+				margin-left: 26%;
+				label{
+					color: #1b1b1b;
+				}
+				&.checked{
+					label{
+						color: @bleuAmeli;
+					}
+				}
+			}
+			a{
+				margin-top: 40px;
+			}
+		}
+		div.modal-dialog{
+			min-width: 750px;
+		}
+		h2{
+			font-family: 'Proxima Nova ThinIt';
+			text-align: center;
+			font-size: 1.8em;
+		}
+		div.modal-body{
+			text-align: center;
+			padding-bottom: 40px;
+			padding-left: 16%;
+			padding-right: 16%;
+		}
+		p{
+			color: #495058;
+			margin-bottom: 30px;
+		}
+	}
 	div.wrapper{
 		min-height: 600px;
 		padding: 0 10%;
@@ -199,6 +236,16 @@ body > div.detail-dossier{
 			padding: 50px 10%;
 		}
 	}
+	body > div.detail-dossier div.modal div.modal-dialog{
+		min-width: auto;
+		a.okAmeli{
+			min-width: 150px;
+			margin-bottom: 20px;
+		}
+	}
+	body > div.detail-dossier div.modal.download div.checkbox {
+		margin-left: 15%;
+	}
 }
 
 @media (max-width: @screen-xs-min) {
@@ -209,5 +256,8 @@ body > div.detail-dossier{
 	}
 	body > div.detail-dossier h3 {
 		padding-right: 60%;
+	}
+	body > div.detail-dossier div.modal.download div.checkbox {
+		margin-left: 0;
 	}
 }

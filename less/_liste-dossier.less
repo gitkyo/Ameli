@@ -120,11 +120,16 @@ body > div.liste-dossier{
 					bottom: -1px;
 					right: -30px;
 					top: 23px;
+					z-index: 99;
 					/* &:hover{
 						background-image: url(../img/iconSearch_on.png);
 					} */
 					.active{
 						display: none;
+					}
+					&:hover{
+						background: url(../img/iconSearch_on.png) no-repeat 50% 50% #747474;
+						background-size: 13px;
 					}
 				}
 				> div{

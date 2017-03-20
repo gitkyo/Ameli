@@ -41,6 +41,73 @@
             </header>
         </div> <!-- fin row header -->
 
+        <!-- Modal mail -->
+        <div class="modal fade mail" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="ameli modal-title" id="myModalLabel">Envoyer un mail</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Choississez un destinataire</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="#" class="btn btn-default okAmeli light">L’assuré</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#" class="btn btn-default okAmeli light">SNCF</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#" class="btn btn-default okAmeli light">Histoire d’Or</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal download -->
+        <div class="modal fade download" id="myModalDownload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="ameli modal-title" id="myModalLabel">Télécharger le dossier</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Choississez le ou les questionnaires à télécharger</p>
+                        <div class="row">
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                Questionnaire de l’assuré
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                Questionnaire de l’employeur 1 (SNCF)
+                              </label>
+                            </div>
+
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                Questionnaire de l’emplyeur 2 (Histoire d’Or)
+                              </label>
+                            </div>
+
+                            <a href="#" class="btn btn-default okAmeli light">Télécharger</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <form class="form-horizontal">
 
             <div class="wrapper row">
@@ -50,7 +117,7 @@
                         <h4>Gestion du dossier</h4>
 
                         <div class="buttonRow">
-                            <a href="#" class="btn btn-default okAmeli orange light">Télécharger le dossier</a>
+                            <a href="#" data-toggle="modal" data-target="#myModalDownload" class="btn btn-default okAmeli orange light">Télécharger le dossier</a>
                             <a href="#" class="btn btn-default okAmeli light vert">Archiver diademe</a>
                         </div>
 
@@ -78,7 +145,7 @@
                             <p>L’employeur <span class="blueTxt">n’a pas modifié</span> de données pré-remplies</p>
                             <p>L’assuré <span class="blueTxt">n’a pas modifié</span> de données pré-remplies.</p>
 
-                            <a href="#" class="btn btn-default okAmeli light">ENVOYER UN MAIL</a>
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-default okAmeli light">ENVOYER UN MAIL</a>
 
                         </div>
 

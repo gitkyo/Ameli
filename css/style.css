@@ -8527,6 +8527,10 @@ button.close {
   font-family: 'Proxima Nova Light';
   src: url('../fonts/Proxima Nova Light.otf') format("opentype");
 }
+@font-face {
+  font-family: 'Proxima Nova ThinIt';
+  src: url('../fonts/ProximaNova-ThinIt.otf') format("opentype");
+}
 /* Globals variables*/
 /* @borderTopPostTete : #dae5eb; */
 /* DIVERS */
@@ -11724,12 +11728,17 @@ body > div.liste-dossier div.wrapper div.tableau th span.iconSearch {
   bottom: -1px;
   right: -30px;
   top: 23px;
+  z-index: 99;
   /* &:hover{
 						background-image: url(../img/iconSearch_on.png);
 					} */
 }
 body > div.liste-dossier div.wrapper div.tableau th span.iconSearch .active {
   display: none;
+}
+body > div.liste-dossier div.wrapper div.tableau th span.iconSearch:hover {
+  background: url(../img/iconSearch_on.png) no-repeat 50% 50% #747474;
+  background-size: 13px;
 }
 body > div.liste-dossier div.wrapper div.tableau th > div {
   position: relative;
@@ -11945,6 +11954,37 @@ body > div.detail-dossier h3 {
   text-align: left;
   padding-right: 20%;
 }
+body > div.detail-dossier div.modal.download div.checkbox {
+  text-align: left;
+  margin-left: 26%;
+}
+body > div.detail-dossier div.modal.download div.checkbox label {
+  color: #1b1b1b;
+}
+body > div.detail-dossier div.modal.download div.checkbox.checked label {
+  color: #005da8;
+}
+body > div.detail-dossier div.modal.download a {
+  margin-top: 40px;
+}
+body > div.detail-dossier div.modal div.modal-dialog {
+  min-width: 750px;
+}
+body > div.detail-dossier div.modal h2 {
+  font-family: 'Proxima Nova ThinIt';
+  text-align: center;
+  font-size: 1.8em;
+}
+body > div.detail-dossier div.modal div.modal-body {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-left: 16%;
+  padding-right: 16%;
+}
+body > div.detail-dossier div.modal p {
+  color: #495058;
+  margin-bottom: 30px;
+}
 body > div.detail-dossier div.wrapper {
   min-height: 600px;
   padding: 0 10%;
@@ -12091,6 +12131,16 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   body > div.detail-dossier div.wrapper {
     padding: 50px 10%;
   }
+  body > div.detail-dossier div.modal div.modal-dialog {
+    min-width: auto;
+  }
+  body > div.detail-dossier div.modal div.modal-dialog a.okAmeli {
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+  body > div.detail-dossier div.modal.download div.checkbox {
+    margin-left: 15%;
+  }
 }
 @media (max-width: 480px) {
   body > div.detail-dossier div.wrapper {
@@ -12098,6 +12148,9 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   }
   body > div.detail-dossier h3 {
     padding-right: 60%;
+  }
+  body > div.detail-dossier div.modal.download div.checkbox {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
