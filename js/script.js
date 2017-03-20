@@ -612,7 +612,7 @@ jQuery( document ).ready(function() {
 		});
 		$('#datetimepicker5').datetimepicker({
 			format: 'DD/MM/YYYY',
-			defaultDate: "20016-04-07",
+			defaultDate: "2016-04-07",
 			//useCurrent: false //Important! See issue #1075
 		});
 		$('#datetimepicker6').datetimepicker({
@@ -632,7 +632,7 @@ jQuery( document ).ready(function() {
 		});
 		$('#datetimepicker9').datetimepicker({
 			format: 'DD/MM/YYYY',
-			defaultDate: "20016-04-07",
+			defaultDate: "2016-04-07",
 			//useCurrent: false //Important! See issue #1075
 		});
 		$('#datetimepicker10').datetimepicker({

@@ -11100,10 +11100,12 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel.on
   background-color: #f1f1f1;
 }
 body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
-  background: url(../img/icon_pathologie_pied.jpg) no-repeat 50% 50%;
+  background: url(../img/pied-v2_small.gif) no-repeat 0 50%;
   width: 198px;
   height: 233px;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
+  margin-top: 90px;
+  margin-left: 10%;
 }
 body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload {
   display: inline-block;
