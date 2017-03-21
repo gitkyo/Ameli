@@ -812,7 +812,28 @@ jQuery( document ).ready(function() {
 		});
 
 
-	/*
+	    /* search in one column : https://datatables.net/examples/api/multi_filter.html
+	    $('.table.table th.statutTh').each( function () {
+	        var title = $(this).text();
+	        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+	    } );
+
+	    // DataTable
+	    var table = $('#example').DataTable();
+
+	    // Apply the search
+	    table.columns().every( function () {
+	        var that = this;
+
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value ) {
+	                that
+	                    .search( this.value )
+	                    .draw();
+	            }
+	        } );
+	    } );*/
+		/*
 		var filtreTab = function(itemToFiltre){
 			console.log(itemToFiltre.attr('class'));
 
@@ -821,11 +842,12 @@ jQuery( document ).ready(function() {
 		}*/
 
 		//Toggle show input to filter tab
-		/*$('span.iconSearch').click(function(event) {
+		$('span.iconSearch').click(function(event) {
 
-			$(this).addClass('active');
-			$(this).next().removeClass('hidden');
-		});*/
+			if( $(this).hasClass('active') ) $(this).removeClass('active').next().addClass('hidden');
+			else $(this).addClass('active').next().removeClass('hidden');
+
+		});
 
 		/*$('table td').click(function(e){
 			var url = 'detailDossier-agent.html';

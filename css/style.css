@@ -11732,11 +11732,12 @@ body > div.liste-dossier div.wrapper div.tableau th span.iconSearch {
   /* &:hover{
 						background-image: url(../img/iconSearch_on.png);
 					} */
+  /* .active{
+						display: none;
+					} */
 }
-body > div.liste-dossier div.wrapper div.tableau th span.iconSearch .active {
-  display: none;
-}
-body > div.liste-dossier div.wrapper div.tableau th span.iconSearch:hover {
+body > div.liste-dossier div.wrapper div.tableau th span.iconSearch:hover,
+body > div.liste-dossier div.wrapper div.tableau th span.iconSearch.active {
   background: url(../img/iconSearch_on.png) no-repeat 50% 50% #747474;
   background-size: 13px;
 }
@@ -11745,6 +11746,14 @@ body > div.liste-dossier div.wrapper div.tableau th > div {
   height: 60px;
   text-align: center;
   top: 24px;
+}
+body > div.liste-dossier div.wrapper div.tableau th input.searchFilterInput {
+  height: 23px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 20px;
 }
 body > div.liste-dossier div.wrapper div.tableau td {
   border-bottom: 0;
@@ -11804,6 +11813,27 @@ body > div.liste-dossier div.wrapper div.tableau tr span.iconFilterDown {
   position: absolute;
   top: 6px;
   -webkit-transform: rotate(360deg);
+  /* &.statut{
+
+					}
+					&.date{
+
+					}
+					&.nir{
+
+					}
+					&.nom{
+
+					}
+					&.firstName{
+
+					}
+					&.employeur{
+
+					}
+					&.dateGen{
+
+					} */
 }
 body > div.liste-dossier div.wrapper div.tableau tr span.iconFilterDown:hover {
   border-color: #005ea8 transparent transparent transparent;

@@ -124,10 +124,10 @@ body > div.liste-dossier{
 					/* &:hover{
 						background-image: url(../img/iconSearch_on.png);
 					} */
-					.active{
+					/* .active{
 						display: none;
-					}
-					&:hover{
+					} */
+					&:hover, &.active{
 						background: url(../img/iconSearch_on.png) no-repeat 50% 50% #747474;
 						background-size: 13px;
 					}
@@ -137,6 +137,14 @@ body > div.liste-dossier{
 					height: 60px;
 					text-align: center;
 					top: 24px;
+				}
+				input.searchFilterInput{
+					height: 23px;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					top: 20px;
 				}
 			}
 			td{
@@ -200,6 +208,27 @@ body > div.liste-dossier{
 					position: absolute;
 					top: 6px;
 					-webkit-transform:rotate(360deg);
+					/* &.statut{
+
+					}
+					&.date{
+
+					}
+					&.nir{
+
+					}
+					&.nom{
+
+					}
+					&.firstName{
+
+					}
+					&.employeur{
+
+					}
+					&.dateGen{
+
+					} */
 					&:hover{
 						border-color: #005ea8 transparent transparent transparent;
 					}
