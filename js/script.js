@@ -889,6 +889,24 @@ jQuery( document ).ready(function() {
 
 		});
 
+		// Toggle click show / hide h4
+		$("h4 .iconD").click(function(event) {
+			/* Act on the event */
+			var elem = $(this).parent('.mrgT').next();
+			if(elem.hasClass('hidden')) elem.removeClass('hidden');
+			else elem.addClass('hidden');
+
+		});
+
+		// Toggle click show / hide h5
+		$("h5 .iconD").click(function(event) {
+			/* Act on the event */
+			var elem = $(this).parent('h5').next();
+			if(elem.hasClass('hidden')) elem.removeClass('hidden');
+			else elem.addClass('hidden');
+
+		});
+
 	}
 
 	window.init = function() {

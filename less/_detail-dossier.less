@@ -80,6 +80,7 @@ body > div.detail-dossier{
 	div.wrapper{
 		min-height: 600px;
 		padding: 0 10%;
+		padding-bottom: 100px;
 		padding-top: 100px;
 		background-color: #fff;
 		h4{
@@ -92,8 +93,13 @@ body > div.detail-dossier{
 			&.mrgT{
 				margin-top: 90px;
 				text-transform: uppercase;
+				padding-right: 180px;
+				position: relative;
 				span{
 					font-family: 'Proxima Nova semiBold';
+					position: absolute;
+					right: 0;
+					top: 0px;
 				}
 			}
 		}
@@ -175,6 +181,49 @@ body > div.detail-dossier{
 					border-color: @orangeAmeli;
 				}
 			}
+			div.identBlock1{
+				min-height: 836px;
+			}
+			div.postBlock{
+				margin: 0 6%;
+				padding-bottom: 25px;
+				p{
+					font-family: 'Proxima Nova Light';
+					&.preTitle{
+						color: #929292;
+						font-family: 'Proxima Nova semiBold';
+					}
+					b{
+						color: #767676;
+						font-family: 'Proxima Nova semiBold';
+					}
+				}
+			}
+			h6{
+				color: #929292;
+				font-family: 'Proxima Nova semiBold';
+				margin: 0 6%;
+				font-size: 14px;
+				margin-bottom: 25px;
+				text-decoration: underline;
+
+			}
+			div.textBlock{
+				margin: 0 6%;
+				padding-bottom: 25px;
+				p{
+					margin-bottom: 5px;
+					font-family: 'Proxima Nova Light';
+					&.red{
+						color: @rougeAmeli;
+						font-family: 'Proxima Nova semiBold';
+					}
+					b{
+						color: #767676;
+						font-family: 'Proxima Nova semiBold';
+					}
+				}
+			}
 			h5{
 				font-family: 'Proxima Nova Regular';
 				margin-bottom: 20px;
@@ -185,6 +234,7 @@ body > div.detail-dossier{
 				position: relative;
 				font-size: 15px;
 				margin-bottom: 40px;
+				margin-top: 50px;
 				&.redTxt{
 					color: @rougeAmeli;
 					border-color: @rougeAmeli;
@@ -246,6 +296,13 @@ body > div.detail-dossier{
 	body > div.detail-dossier div.modal.download div.checkbox {
 		margin-left: 15%;
 	}
+	body > div.detail-dossier div.wrapper div.textRow {
+		padding-top: 150px;
+		padding-right: 0;
+	}
+	body > div.detail-dossier div.wrapper div.buttonRow {
+		right: auto;
+	}
 }
 
 @media (max-width: @screen-xs-min) {
@@ -259,5 +316,17 @@ body > div.detail-dossier{
 	}
 	body > div.detail-dossier div.modal.download div.checkbox {
 		margin-left: 0;
+	}
+	body > div.detail-dossier div.wrapper h4.mrgT {
+		padding-right: 30px;
+		span {
+			left: 0;
+			top: -25px;
+			&.iconD{
+				right: 0;
+				top: inherit;
+				left: inherit;
+			}
+		}
 	}
 }

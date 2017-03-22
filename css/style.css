@@ -9475,10 +9475,10 @@ body > div.description div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
 body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
-  padding-left: 2%;
+  /* padding-left: 2%; */
 }
 body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
-  padding-left: 2%;
+  /* padding-left: 2%; */
 }
 body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
   padding-left: 0;
@@ -11750,10 +11750,12 @@ body > div.liste-dossier div.wrapper div.tableau th > div {
 body > div.liste-dossier div.wrapper div.tableau th input.searchFilterInput {
   height: 23px;
   width: 100%;
+  font-family: 'Proxima Nova Regular';
   position: absolute;
   bottom: 0;
   left: 0;
   top: 20px;
+  padding: 0 5px;
 }
 body > div.liste-dossier div.wrapper div.tableau td {
   border-bottom: 0;
@@ -12018,6 +12020,7 @@ body > div.detail-dossier div.modal p {
 body > div.detail-dossier div.wrapper {
   min-height: 600px;
   padding: 0 10%;
+  padding-bottom: 100px;
   padding-top: 100px;
   background-color: #fff;
 }
@@ -12032,9 +12035,14 @@ body > div.detail-dossier div.wrapper h4 {
 body > div.detail-dossier div.wrapper h4.mrgT {
   margin-top: 90px;
   text-transform: uppercase;
+  padding-right: 180px;
+  position: relative;
 }
 body > div.detail-dossier div.wrapper h4.mrgT span {
   font-family: 'Proxima Nova semiBold';
+  position: absolute;
+  right: 0;
+  top: 0px;
 }
 body > div.detail-dossier div.wrapper span.redTxt {
   color: #f35b6d;
@@ -12109,6 +12117,48 @@ body > div.detail-dossier div.wrapper div.bottomZone div.rightZone {
 body > div.detail-dossier div.wrapper div.bottomZone div.rightZone h4 {
   border-color: #f68527;
 }
+body > div.detail-dossier div.wrapper div.bottomZone div.identBlock1 {
+  min-height: 836px;
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.postBlock {
+  margin: 0 6%;
+  padding-bottom: 25px;
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.postBlock p {
+  font-family: 'Proxima Nova Light';
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.postBlock p.preTitle {
+  color: #929292;
+  font-family: 'Proxima Nova semiBold';
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.postBlock p b {
+  color: #767676;
+  font-family: 'Proxima Nova semiBold';
+}
+body > div.detail-dossier div.wrapper div.bottomZone h6 {
+  color: #929292;
+  font-family: 'Proxima Nova semiBold';
+  margin: 0 6%;
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.textBlock {
+  margin: 0 6%;
+  padding-bottom: 25px;
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.textBlock p {
+  margin-bottom: 5px;
+  font-family: 'Proxima Nova Light';
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.textBlock p.red {
+  color: #f35b6d;
+  font-family: 'Proxima Nova semiBold';
+}
+body > div.detail-dossier div.wrapper div.bottomZone div.textBlock p b {
+  color: #767676;
+  font-family: 'Proxima Nova semiBold';
+}
 body > div.detail-dossier div.wrapper div.bottomZone h5 {
   font-family: 'Proxima Nova Regular';
   margin-bottom: 20px;
@@ -12119,6 +12169,7 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 {
   position: relative;
   font-size: 15px;
   margin-bottom: 40px;
+  margin-top: 50px;
 }
 body > div.detail-dossier div.wrapper div.bottomZone h5.redTxt {
   color: #f35b6d;
@@ -12171,6 +12222,13 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   body > div.detail-dossier div.modal.download div.checkbox {
     margin-left: 15%;
   }
+  body > div.detail-dossier div.wrapper div.textRow {
+    padding-top: 150px;
+    padding-right: 0;
+  }
+  body > div.detail-dossier div.wrapper div.buttonRow {
+    right: auto;
+  }
 }
 @media (max-width: 480px) {
   body > div.detail-dossier div.wrapper {
@@ -12181,6 +12239,18 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   }
   body > div.detail-dossier div.modal.download div.checkbox {
     margin-left: 0;
+  }
+  body > div.detail-dossier div.wrapper h4.mrgT {
+    padding-right: 30px;
+  }
+  body > div.detail-dossier div.wrapper h4.mrgT span {
+    left: 0;
+    top: -25px;
+  }
+  body > div.detail-dossier div.wrapper h4.mrgT span.iconD {
+    right: 0;
+    top: inherit;
+    left: inherit;
   }
 }
 /*# sourceMappingURL=style.css.map */
