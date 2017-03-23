@@ -12060,6 +12060,11 @@ body > div.detail-dossier div.wrapper span.iconD {
   right: 5px;
   top: 0;
 }
+body > div.detail-dossier div.wrapper span.iconD.active {
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
 body > div.detail-dossier div.wrapper div.buttonRow {
   position: absolute;
   right: 0;
