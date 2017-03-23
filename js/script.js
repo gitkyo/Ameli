@@ -4,6 +4,57 @@ Custom script
 jQuery( document ).ready(function() {
 
 	var initInfoConnexion = function(){
+
+		/*var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+
+		//Change style if
+		var isOther = getUrlParameter('other');
+		if(isOther == 1) {}*/
+
+		$('.loginBlock button').click(function(event) {
+			/* Act on the event */
+			$('div.loginRow p').addClass('hidden');
+			$('div.hiddenForm').removeClass('hidden');
+		});
+
+		//active tooltips
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+
+	var initInfoConnexionSalarie = function(){
+
+		/*var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+
+		//Change style if
+		var isOther = getUrlParameter('other');
+		if(isOther == 1) {}*/
+
 		$('.loginBlock button').click(function(event) {
 			/* Act on the event */
 			$('div.loginRow p').addClass('hidden');
@@ -1008,6 +1059,7 @@ jQuery( document ).ready(function() {
 
 		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
+		if( $('.container-fluid.main').hasClass('connexion-salarie') ) initInfoConnexionSalarie();
 		if( $('.container-fluid.main').hasClass('identification') ) initIdentification();
 		if( $('.container-fluid.main').hasClass('description') ) initDescription();
 		if( $('.container-fluid.main').hasClass('description2') ) initDescription2();
