@@ -9014,7 +9014,10 @@ body > div.connexion div.wrapper div.loginRow {
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock {
   padding: 70px 8%;
-  min-height: 366px;
+  min-height: 492px;
+}
+body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm {
+  margin-top: 80px;
 }
 body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
   width: 92%;
@@ -9043,9 +9046,12 @@ body > div.connexion div.wrapper div.loginRow p span {
   color: #005da8;
 }
 body > div.connexion div.wrapper div.loginRow button {
-  margin-top: 45px;
+  margin-top: 15px;
   padding: 0px 30px;
   height: 40px;
+}
+body > div.connexion div.wrapper div.loginRow button:first-of-type {
+  margin-bottom: 60px;
 }
 body > div.connexion div.wrapper div.bottomContainer {
   padding: 0;
@@ -9088,9 +9094,17 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon3 
 body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 {
   background: url(../img/icon_4_connexion.jpg) no-repeat 50% 50%;
 }
+@media (max-width: 1500px) {
+  body > div.connexion div.wrapper div.loginRow {
+    background-image: url(../img/background_postHeader_connexion-1500.jpg);
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock {
+    padding-right: 0%;
+  }
+}
 @media (max-width: 1199px) {
   body > div.connexion div.wrapper div.loginRow {
-    background: url(../img/background_postHeader_connexion_md.jpg) no-repeat 50% 0%;
+    background-image: url(../img/background_postHeader_connexion-1200.jpg);
   }
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
     width: 33%;
@@ -9103,7 +9117,7 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
 }
 @media (max-width: 992px) {
   body > div.connexion div.wrapper div.loginRow {
-    background: url(../img/background_postHeader_connexion_sm.jpg) no-repeat 50% 0%;
+    background-image: url(../img/background_postHeader_connexion-992.jpg);
   }
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
     width: 45%;
@@ -9116,13 +9130,32 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
   }
 }
 @media (max-width: 768px) {
+  body > div.connexion div.wrapper div.loginRow {
+    background-image: url(../img/background_postHeader_connexion-768.jpg);
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock {
+    text-align: center;
+    padding-right: 8%;
+  }
   body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 71%;
+    width: 100%;
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second {
+    margin-bottom: 40px;
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group input {
+    width: 100% !important;
+  }
+  body > div.connexion div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group span.myTooltip {
+    position: relative;
+    top: 25px;
   }
 }
 @media (max-width: 480px) {
   body > div.connexion div.wrapper div.loginRow div.loginBlock {
+    min-height: 668px;
     text-align: center;
+    padding: 150px 20px 0 20px;
   }
   body > div.connexion div.wrapper div.loginRow div.loginBlock a {
     width: 100%;
@@ -9146,149 +9179,9 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
     height: 40px;
   }
 }
-body > div.connexion-salarie div.wrapper {
-  background-color: #fff;
-  padding: 0;
-}
-body > div.connexion-salarie div.wrapper div.loginRow {
-  background: url(../img/background_postHeader_connexion.jpg) no-repeat 50% 0%;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  min-height: 316px;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock {
-  padding: 70px 8%;
-  min-height: 366px;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-  width: 92%;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.first input {
-  width: 87%;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second {
-  margin-bottom: 10px;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second input {
-  width: 87%;
-  display: inline-block;
-  margin-right: 12px;
-}
-body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm a {
-  cursor: pointer;
-  font-family: 'Proxima Nova Regular';
-}
-body > div.connexion-salarie div.wrapper div.loginRow p {
-  font-family: 'Proxima Nova Regular';
-  text-transform: uppercase;
-  font-size: 1.4em;
-}
-body > div.connexion-salarie div.wrapper div.loginRow p span {
-  color: #005da8;
-}
-body > div.connexion-salarie div.wrapper div.loginRow button {
-  margin-top: 45px;
-  padding: 0px 30px;
-  height: 40px;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer {
-  padding: 0;
-  padding-top: 30px;
-  text-align: center;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer h3 {
-  font-family: 'Proxima Nova Semibold';
-  color: #757575;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer p.subtitle {
-  padding: 5px 30%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer p.last {
-  margin-bottom: 70px;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow {
-  padding: 50px 15%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow p {
-  margin-top: 20px;
-  padding: 0 4%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow p span {
-  color: #f68527;
-  font-weight: bold;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow div.icon {
-  height: 100px;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow div.icon.icon1 {
-  background: url(../img/icon_1_connexion.jpg) no-repeat 50% 50%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow div.icon.icon2 {
-  background: url(../img/icon_2_connexion.jpg) no-repeat 50% 50%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow div.icon.icon3 {
-  background: url(../img/icon_3_connexion.jpg) no-repeat 50% 50%;
-}
-body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow div.icon.icon4 {
-  background: url(../img/icon_4_connexion.jpg) no-repeat 50% 50%;
-}
-@media (max-width: 1199px) {
-  body > div.connexion-salarie div.wrapper div.loginRow {
-    background: url(../img/background_postHeader_connexion.jpg) no-repeat 50% 0%;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 33%;
-  }
-}
-@media (max-width: 1100px) {
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 35%;
-  }
-}
-@media (max-width: 992px) {
-  body > div.connexion-salarie div.wrapper div.loginRow {
-    background: url(../img/background_postHeader_connexion.jpg) no-repeat 50% 0%;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 45%;
-  }
-  body > div.connexion-salarie div.wrapper div.bottomContainer div.iconRow > div {
-    margin-bottom: 80px;
-  }
-  body > div.connexion-salarie div.wrapper div.bottomContainer p.subtitle {
-    padding: 5px 20%;
-  }
-}
-@media (max-width: 768px) {
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 71%;
-  }
-}
-@media (max-width: 480px) {
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock {
-    text-align: center;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock a {
-    width: 100%;
-    display: inline-block;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group {
-    width: 80%;
-    display: inline-block;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.first input {
-    width: 100%;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow div.loginBlock div.hiddenForm div.form-group.second input {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 16px;
-  }
-  body > div.connexion-salarie div.wrapper div.loginRow button {
-    margin-top: 22px;
-    padding: 0px 30px;
-    height: 40px;
+@media (max-width: 400px) {
+  body > div.connexion div.wrapper div.loginRow div.loginBlock {
+    padding: 90px 20px 0 20px;
   }
 }
 body > div.identification div.wrapper {

@@ -5,60 +5,22 @@ jQuery( document ).ready(function() {
 
 	var initInfoConnexion = function(){
 
-		/*var getUrlParameter = function getUrlParameter(sParam) {
-		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-		        sURLVariables = sPageURL.split('&'),
-		        sParameterName,
-		        i;
-
-		    for (i = 0; i < sURLVariables.length; i++) {
-		        sParameterName = sURLVariables[i].split('=');
-
-		        if (sParameterName[0] === sParam) {
-		            return sParameterName[1] === undefined ? true : sParameterName[1];
-		        }
-		    }
-		};
-
-		//Change style if
-		var isOther = getUrlParameter('other');
-		if(isOther == 1) {}*/
-
 		$('.loginBlock button').click(function(event) {
-			/* Act on the event */
-			$('div.loginRow p').addClass('hidden');
-			$('div.hiddenForm').removeClass('hidden');
-		});
 
-		//active tooltips
-		$('[data-toggle="tooltip"]').tooltip();
-	}
+			if($(this).hasClass('employeur')){
 
-	var initInfoConnexionSalarie = function(){
+				$('div.loginRow p').addClass('hidden');
+				$('div.hiddenForm').removeClass('hidden');
+				$("button.salarie").text('connexion employeur');
+				$(this).addClass('hidden');
 
-		/*var getUrlParameter = function getUrlParameter(sParam) {
-		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-		        sURLVariables = sPageURL.split('&'),
-		        sParameterName,
-		        i;
+			}else{
+				$('.loginBlock p').addClass('hidden');
+				$('button.employeur').addClass('hidden');
+				$('div.hiddenForm').removeClass('hidden');
+				$('div.form-group.first input').attr('placeholder', 'Numéro de sécu')
+			}
 
-		    for (i = 0; i < sURLVariables.length; i++) {
-		        sParameterName = sURLVariables[i].split('=');
-
-		        if (sParameterName[0] === sParam) {
-		            return sParameterName[1] === undefined ? true : sParameterName[1];
-		        }
-		    }
-		};
-
-		//Change style if
-		var isOther = getUrlParameter('other');
-		if(isOther == 1) {}*/
-
-		$('.loginBlock button').click(function(event) {
-			/* Act on the event */
-			$('div.loginRow p').addClass('hidden');
-			$('div.hiddenForm').removeClass('hidden');
 		});
 
 		//active tooltips
@@ -69,9 +31,6 @@ jQuery( document ).ready(function() {
 
 		//init custom select
 		$('select').selectric();
-		//init datePicker
-		//$('#datetimepicker1').datetimepicker();
-
 
 		/*
 		Popup
@@ -156,27 +115,15 @@ jQuery( document ).ready(function() {
 
 			// not the first time
 			if(cpt > 2){
-				/*console.log('là : '+cpt);
-				console.log("new datetimepicker"+(cpt1DateTimePicker + cpt));
-				console.log("new datetimepicker"+(cpt2DateTimePicker + cpt));
-				console.log("-----");*/
+
 
 				lastBlock.find(".first .date").attr("id", "datetimepicker"+(cpt1DateTimePicker + cpt));
 				lastBlock.find(".second .date").attr("id", "datetimepicker"+(cpt2DateTimePicker + cpt));
 			}else{
 
-				// First fired
-				/*console.log("#datetimepicker"+(cpt1DateTimePicker));
-				console.log("#Changer en");
-				console.log("datetimepicker"+(cpt1DateTimePicker + 2));
-				console.log("et");
-				console.log("#datetimepicker"+(cpt2DateTimePicker));
-				console.log("#Changer en");
-				console.log("datetimepicker"+(cpt2DateTimePicker + 2));
-				console.log("-----");*/
-
 				lastBlock.find("#datetimepicker"+(cpt1DateTimePicker)).attr("id", "datetimepicker"+(cpt1DateTimePicker + 2));
 				lastBlock.find("#datetimepicker"+(cpt2DateTimePicker)).attr("id", "datetimepicker"+(cpt2DateTimePicker + 2));
+
 			}
 
 			// Increment counter
@@ -209,10 +156,6 @@ jQuery( document ).ready(function() {
 
 			// Init new dateTimePicker
 			if(cpt > 2){
-				/*console.log("là");
-				console.log("#datetimepicker"+(cpt1DateTimePicker + cpt - 1));
-				console.log("#datetimepicker"+(cpt2DateTimePicker + cpt - 1));
-				console.log("---");*/
 
 				$("#datetimepicker"+(cpt1DateTimePicker + cpt - 1)).datetimepicker({
 					format: 'DD/MM/YYYY'
@@ -231,9 +174,6 @@ jQuery( document ).ready(function() {
 				});
 			}
 			else{
-				/*console.log("#datetimepicker"+(cpt1DateTimePicker + 1));
-				console.log("#datetimepicker"+(cpt2DateTimePicker + 1));
-				console.log("---");*/
 
 				// Init new dateTimePicker
 				$("#datetimepicker"+(cpt1DateTimePicker + 1)).datetimepicker({
@@ -314,24 +254,10 @@ jQuery( document ).ready(function() {
 
 			// not the first time
 			if(cpt > 2){
-				/*console.log('là : '+cpt);
-				console.log("new datetimepicker"+(cpt1DateTimePicker + cpt));
-				console.log("new datetimepicker"+(cpt2DateTimePicker + cpt));
-				console.log("-----");*/
 
 				lastBlock.find(".first .date").attr("id", "datetimepicker"+(cpt1DateTimePicker + cpt));
 				lastBlock.find(".second .date").attr("id", "datetimepicker"+(cpt2DateTimePicker + cpt));
 			}else{
-
-				// First fired
-				/*console.log("#datetimepicker"+(cpt1DateTimePicker));
-				console.log("#Changer en");
-				console.log("datetimepicker"+(cpt1DateTimePicker + 2));
-				console.log("et");
-				console.log("#datetimepicker"+(cpt2DateTimePicker));
-				console.log("#Changer en");
-				console.log("datetimepicker"+(cpt2DateTimePicker + 2));
-				console.log("-----");*/
 
 				lastBlock.find("#datetimepicker"+(cpt1DateTimePicker)).attr("id", "datetimepicker"+(cpt1DateTimePicker + 2));
 				lastBlock.find("#datetimepicker"+(cpt2DateTimePicker)).attr("id", "datetimepicker"+(cpt2DateTimePicker + 2));
@@ -367,10 +293,6 @@ jQuery( document ).ready(function() {
 
 			// Init new dateTimePicker
 			if(cpt > 2){
-				/*console.log("là");
-				console.log("#datetimepicker"+(cpt1DateTimePicker + cpt - 1));
-				console.log("#datetimepicker"+(cpt2DateTimePicker + cpt - 1));
-				console.log("---");*/
 
 				$("#datetimepicker"+(cpt1DateTimePicker + cpt - 1)).datetimepicker({
 					format: 'DD/MM/YYYY'
@@ -389,9 +311,6 @@ jQuery( document ).ready(function() {
 				});
 			}
 			else{
-				/*console.log("#datetimepicker"+(cpt1DateTimePicker + 1));
-				console.log("#datetimepicker"+(cpt2DateTimePicker + 1));
-				console.log("---");*/
 
 				// Init new dateTimePicker
 				$("#datetimepicker"+(cpt1DateTimePicker + 1)).datetimepicker({
@@ -737,9 +656,6 @@ jQuery( document ).ready(function() {
 			$('#datetimepicker11').data("DateTimePicker").maxDate(e.date);
 		});
 
-		// toggle date/periode disabled / enable input value
-
-
 	}
 
 	var initMention = function(){
@@ -803,11 +719,11 @@ jQuery( document ).ready(function() {
 			cpt++;
 
 			var htmlRaisonSocial = '<div class="form-group mrgtop padBot">'+
-	                            		'<label for="input'+(cpt+3)+'" class="col-sm-4 control-label readOnly spec">Raison social de l’employeur '+(cpt+1)+' :</label>'+
-	                            		'<div class="col-sm-8">'+
-	                              		'<input type="text" class="form-control" id="input'+(cpt+3)+'" placeholder="">'+
-	                            		'</div>'+
-	                        		'</div>';
+			'<label for="input'+(cpt+3)+'" class="col-sm-4 control-label readOnly spec">Raison social de l’employeur '+(cpt+1)+' :</label>'+
+			'<div class="col-sm-8">'+
+			'<input type="text" class="form-control" id="input'+(cpt+3)+'" placeholder="">'+
+			'</div>'+
+			'</div>';
 
 			$(this).before(htmlRaisonSocial);
 
@@ -817,14 +733,9 @@ jQuery( document ).ready(function() {
 	var initListeDossier =function(){
 
 		var table = $('table.table').DataTable({
-			/*paginate: false,*/
-			/*searching: false,*/
-			/*info: false*/
-	    	//ordering:  false
-	    	"pagingType": "simple"
-		});
 
-		//table.fnPageChange( 'sdfsf' );
+			"pagingType": "simple"
+		});
 
 		$('table thead th').hover(function(e){
 			$(this).find('.iconFilterDown').css('border-color','#005ea8 transparent transparent transparent');
@@ -862,36 +773,6 @@ jQuery( document ).ready(function() {
 
 		});
 
-
-	    /* search in one column : https://datatables.net/examples/api/multi_filter.html
-	    $('.table.table th.statutTh').each( function () {
-	        var title = $(this).text();
-	        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-	    } );
-
-	    // DataTable
-	    var table = $('#example').DataTable();
-
-	    // Apply the search
-	    table.columns().every( function () {
-	        var that = this;
-
-	        $( 'input', this.footer() ).on( 'keyup change', function () {
-	            if ( that.search() !== this.value ) {
-	                that
-	                    .search( this.value )
-	                    .draw();
-	            }
-	        } );
-	    } );*/
-		/*
-		var filtreTab = function(itemToFiltre){
-			console.log(itemToFiltre.attr('class'));
-
-			table.order([0, 'desc']).draw();
-			table.search( 'Roder' ).draw();
-		}*/
-
 		//Toggle show input to filter tab
 		$('span.iconSearch').click(function(event) {
 
@@ -899,11 +780,6 @@ jQuery( document ).ready(function() {
 			else $(this).addClass('active').next().removeClass('hidden');
 
 		});
-
-		/*$('table td').click(function(e){
-			var url = 'detailDossier-agent.html';
-			window.open(url,'_self');
-		});*/
 
 		$('th').click(function(e){
 			myTriangle = $(this).find('span.iconFilterDown');
@@ -943,8 +819,6 @@ jQuery( document ).ready(function() {
 		// Toggle click show / hide h4
 		$("h4 .iconD").click(function(event) {
 
-
-
 			var elem = $(this).parent('.mrgT').next();
 			if(elem.hasClass('hidden')) {
 				elem.removeClass('hidden');
@@ -956,19 +830,6 @@ jQuery( document ).ready(function() {
 			}
 
 		});
-
-		// Toggle click show / hide h5
-		/*$("h5 .iconD").click(function(event) {
-
-			var elem = $(this).parent('h5').next();
-			if(elem.hasClass('hidden')) elem.removeClass('hidden');
-			else elem.addClass('hidden');
-
-			var elemLink = $("div.rightZone div.identBlock1");
-			if(elemLink.hasClass('hidden')) elemLink.removeClass('hidden');
-			else elemLink.addClass('hidden');
-
-		});*/
 
 		$("div.one div.leftZone .iconD").click(function(event) {
 			var elem = $(this).parent('h5').next();
@@ -1043,16 +904,6 @@ jQuery( document ).ready(function() {
 				$("div.two div.leftZone ."+elemLink).addClass('hidden');
 			}
 		});
-
-		/*$("div.leftZone h5 .iconD").click(function(event) {
-
-			var elem = $(this).parent('h5').next();
-			if(elem.hasClass('hidden')) elem.removeClass('hidden');
-			else elem.addClass('hidden');
-
-			//var elemLink = $("div.rightZone h5 .iconD")
-		});*/
-
 	}
 
 	window.init = function() {
@@ -1072,8 +923,6 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('liste-dossier') ) initListeDossier();
 		if( $('.container-fluid.main').hasClass('detail-dossier') ) initDetailDossier();
 		if( $('.container-fluid').hasClass('main') ) initAide();
-
-
 
 	}
 
