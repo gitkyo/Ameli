@@ -9,10 +9,17 @@ body > div.connexion{
 			-moz-background-size: cover;
 			min-height: 316px;
 			div.loginBlock{
-				padding: 70px 8%;
-				min-height: 492px;
+				min-height: 380px;
+				div.showFirst{
+					position: relative;
+					top: 130px;
+					left: 20%;
+				}
 				div.hiddenForm{
-					margin-top: 80px;
+					width: 65%;
+					margin-left: 20%;
+					position: relative;
+					top: 90px;
 					div.form-group{
 						width: 92%;
 						&.first{
@@ -32,6 +39,16 @@ body > div.connexion{
 					a{
 						cursor: pointer;
 						font-family: 'Proxima Nova Regular';
+						&.employeur{
+							margin-top: 20px;
+							padding: 0px 30px;
+							height: 40px;
+							min-width: 160px;
+							font-family: 'Proxima Nova Semibold';
+							line-height: 40px;
+							display: table;
+							margin-right: 20%;
+						}
 					}
 				}
 			}
@@ -44,11 +61,12 @@ body > div.connexion{
 				}
 			}
 			button{
-				margin-top: 15px;
+				margin-top: 20px;
 				padding: 0px 30px;
 				height: 40px;
+				min-width: 160px;
 				&:first-of-type{
-					margin-bottom: 60px;
+					margin-right: 20px;
 				}
 			}
 		}
@@ -100,16 +118,19 @@ body > div.connexion{
 	body > div.connexion div.wrapper div.loginRow{
 		background-image: url(../img/background_postHeader_connexion-1500.jpg);
 	}
-	body > div.connexion div.wrapper div.loginRow div.loginBlock {
-		padding-right: 0%;
+	body > div.connexion div.wrapper div.loginRow div.loginBlock div.showFirst{
+		left: 6%;
 	}
 }
 
 @media (max-width: 1199px) {
 	body > div.connexion div.wrapper div.loginRow{
 		background-image: url(../img/background_postHeader_connexion-1200.jpg);
-		div.loginBlock div.hiddenForm div.form-group {
-			width: 33%;
+		div.loginBlock div.hiddenForm{
+			margin-left: 6%;
+			div.form-group {
+				width: 50%;
+			}
 		}
 	}
 
@@ -118,7 +139,7 @@ body > div.connexion{
 @media (max-width: 1100px) {
 	body > div.connexion div.wrapper div.loginRow{
 		div.loginBlock div.hiddenForm div.form-group {
-			width: 35%;
+			/* width: 35%; */
 		}
 	}
 
@@ -130,7 +151,7 @@ body > div.connexion{
 		div.loginRow{
 			background-image: url(../img/background_postHeader_connexion-992.jpg);
 			div.loginBlock div.hiddenForm div.form-group {
-				width: 45%;
+				width: 75%;
 			}
 		}
 		div.bottomContainer {
@@ -148,47 +169,67 @@ body > div.connexion{
 
 	body > div.connexion div.wrapper div.loginRow{
 		background-image: url(../img/background_postHeader_connexion-768.jpg);
+		background-position-x: 45%;
 		div.loginBlock {
 			text-align: center;
-			padding-right: 8%;
-			div.hiddenForm div.form-group {
-				width: 100%;
-				&.second {
-					margin-bottom: 40px;
+			div.showFirst {
+				left: 0;
+			}
+			div.hiddenForm{
+				margin-left: 20%;
+				width: 60%;
+				top: 75px;
+				a.employeur{
+					display: table;
+					margin: 0 auto;
+					margin-top: 20px;
 				}
-				input{
-					width: 100% !important;
-				}
-				span.myTooltip{
-					position: relative;
-					top: 25px;
+				div.form-group {
+					width: 100%;
+					&.second {
+						margin-bottom: 40px;
+					}
+					input{
+						width: 100% !important;
+					}
+					span.myTooltip{
+						position: relative;
+						top: 25px;
+					}
 				}
 			}
-
 		}
 	}
 }
 
 @media (max-width: @screen-xs-min) {
+
 	body > div.connexion div.wrapper div.loginRow{
 		div.loginBlock {
-			min-height: 668px;
-			text-align: center;
-			padding: 150px 20px 0 20px;
 			a{
 				width: 100%;
 				display: inline-block;
 			}
-			div.hiddenForm div.form-group {
+			div.hiddenForm {
+				margin-left: 10%;
 				width: 80%;
-				display: inline-block;
-				&.first input{
-					width: 100%;
-				}
-				&.second input {
-					width: 100%;
+				div.form-group {
 					display: inline-block;
-					margin-bottom: 16px;
+					span.myTooltip {
+						position: relative;
+						top: 5px;
+					}
+					&.first input{
+						width: 100%;
+					}
+					&.second {
+						margin-bottom: 20px;
+						input {
+							width: 100%;
+							display: inline-block;
+							margin-bottom: 16px;
+						}
+					}
 				}
 			}
 		}
@@ -201,7 +242,7 @@ body > div.connexion{
 }
 
 @media (max-width: 400px) {
-	body > div.connexion div.wrapper div.loginRow div.loginBlock {
-		padding: 90px 20px 0 20px;
+	body > div.connexion div.wrapper div.loginRow button:first-of-type {
+		margin-right: 0px;
 	}
 }

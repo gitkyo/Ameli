@@ -9,16 +9,14 @@ jQuery( document ).ready(function() {
 
 			if($(this).hasClass('employeur')){
 
-				$('div.loginRow p').addClass('hidden');
+				$('div.showFirst').addClass('hidden');
 				$('div.hiddenForm').removeClass('hidden');
-				$("button.salarie").text('connexion employeur');
-				$(this).addClass('hidden');
 
-			}else{
-				$('.loginBlock p').addClass('hidden');
-				$('button.employeur').addClass('hidden');
-				$('div.hiddenForm').removeClass('hidden');
-				$('div.form-group.first input').attr('placeholder', 'Numéro de sécu')
+			}else if( $(this).hasClass('salarie') ){
+
+				$('div.showFirst').addClass('hidden');
+				$('div.hiddenForm').removeClass('hidden').find('a.employeur').text('connexion salarié');
+				$('#exampleInputPassword1').attr("placeholder","Numéro de sécurité sociale")
 			}
 
 		});

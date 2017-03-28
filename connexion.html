@@ -47,10 +47,15 @@
 
             <div class="row loginRow">
                 <div class="col-lg-5 loginBlock">
-                    <p><span>l'un de vos salariés</span> a fait recement <br/> une déclaration de maladie <br/> profesionnelle</p>
-                    <button type="submit" class="okAmeli inverse orange btn btn-primary employeur">connexion employeur</button>
 
-                    <p>J'AI RECEMMENT FAIT <span>UNE DECLARATION</span><br/> DE MALADIE PROFESSIONNELLE AUPRES<br/> DE l'ASSURANCE MALADIE</p>
+                    <div class="showFirst">
+                        <p class="labelInput">Séléctionnez votre statut :</p>
+                        <button type="submit" class="okAmeli inverse orange btn btn-primary employeur">employeur</button>
+                        <button type="submit" class="okAmeli orange btn btn-primary salarie">salarié</button>
+                    </div>
+
+                    <p class="txtEmp hidden"><span>l'un de vos salariés</span> a fait recement <br/> une déclaration de maladie <br/> profesionnelle</p>
+                    <p class="txtSalarie hidden">J'AI RECEMMENT FAIT <span>UNE DECLARATION</span><br/> DE MALADIE PROFESSIONNELLE AUPRES<br/> DE l'ASSURANCE MALADIE</p>
 
                     <!-- hidden dom -->
                     <div class="hidden hiddenForm">
@@ -61,9 +66,10 @@
                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Code d'accès"><span class="myTooltip" data-toggle="tooltip" data-placement="right" title="Tooltip on right">?</span>
                          </div>
                          <a>Mot de passe oublié ?</a>
+                         <a href="#" type="submit" class="okAmeli inverse orange btn btn-primary employeur">connexion employeur</a>
                     </div>
 
-                    <button type="submit" class="okAmeli inverse orange btn btn-primary salarie">connexion salarié</button>
+
                 </div>
             </div>
 
