@@ -8690,7 +8690,6 @@ header section.preEntete .logoAM {
   width: 124px;
   height: 75px;
   background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
-  background-color: transparent;
 }
 header section.entete {
   position: relative;
@@ -8699,6 +8698,48 @@ header section.entete {
   background-color: #fff;
   margin-top: 10px;
   border-bottom: 1px solid rgba(0, 93, 168, 0.17);
+}
+header section.entete div.userBlock {
+  display: inline-block;
+  float: right;
+  width: 200px;
+  text-align: right;
+  padding-right: 52px;
+  background: url(../img/icon_user_blue.png) no-repeat 93% 2px;
+  background-size: 30px;
+  position: absolute;
+  top: 15px;
+  right: 2%;
+}
+header section.entete div.userBlock a {
+  font-family: 'Proxima Nova semiBold';
+  color: #6e6e6e;
+  width: 100%;
+  font-size: 0.7em;
+  display: inline-block;
+  top: -7px;
+  position: relative;
+  text-transform: uppercase;
+}
+header section.entete div.userBlock a.likeUser {
+  position: absolute;
+  right: 7px;
+  height: 40px;
+  width: 39px;
+  top: -3px;
+}
+header section.entete div.userBlock a.user {
+  font-family: 'Proxima Nova semiBold';
+  color: #005da8;
+  width: 100%;
+  font-size: 1em;
+  top: 0px;
+  display: inline-block;
+}
+header section.entete div.userBlock a.user:hover,
+header section.entete div.userBlock a.user:visited,
+header section.entete div.userBlock a.user:focus {
+  text-decoration: none;
 }
 header section.entete div.logoBlock {
   float: left;
@@ -8825,9 +8866,13 @@ body > div.accueil div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.accueil div.actionRow > div.form-group button {
+body > div.accueil div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
+}
+body > div.accueil div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
 }
 body > div.accueil div.wrapper {
   min-height: 450px;
@@ -8864,7 +8909,7 @@ body > div.accueil div.wrapper h4 {
   body > div.accueil div.wrapper {
     padding: 50px 10%;
   }
-  body > div.accueil div.actionRow > div.form-group button {
+  body > div.accueil div.actionRow > div.form-group a {
     display: inline-block;
     margin: 0;
     float: none;
@@ -10283,6 +10328,26 @@ body > div.questionnaire div.wrapper h4 {
   border-bottom: 1px solid #005ea8;
   padding-bottom: 10px;
   color: #404040;
+  position: relative;
+}
+body > div.questionnaire div.wrapper h4 span.search {
+  background: url(../img/iconSearch_on.png) no-repeat 50% 50%;
+  cursor: pointer;
+  float: right;
+  height: 13px;
+  width: 13px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+body > div.questionnaire div.wrapper h4 input {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  top: -6px;
+  right: 0px;
+  width: 25%;
+  height: 30px;
+  background: initial;
+  padding-right: 25px;
 }
 @media (max-width: 1200px) {
   body > div.questionnaire div.wrapper div.leftZone,

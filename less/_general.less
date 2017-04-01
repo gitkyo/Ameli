@@ -214,7 +214,6 @@ header {
 			width: 124px;
 			height: 75px;
 			background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
-			background-color: transparent;
 		}
 	}
 	section.entete {
@@ -224,6 +223,46 @@ header {
 		background-color: #fff;
 		margin-top: 10px;
 		border-bottom: 1px solid rgba(0, 93, 168, 0.17);
+		div.userBlock{
+			display: inline-block;
+			float: right;
+			width: 200px;
+			text-align: right;
+			padding-right: 52px;
+			background: url(../img/icon_user_blue.png) no-repeat 93% 2px;
+			background-size: 30px;
+			position: absolute;
+			top: 15px;
+			right: 2%;
+			a{
+				font-family: 'Proxima Nova semiBold';
+				color: #6e6e6e;
+				width: 100%;
+				font-size: 0.7em;
+				display: inline-block;
+				top: -7px;
+				position: relative;
+				text-transform: uppercase;
+				&.likeUser{
+					position: absolute;
+					right: 7px;
+					height: 40px;
+					width: 39px;
+					top: -3px;
+				}
+				&.user{
+					font-family: 'Proxima Nova semiBold';
+					color: @bleuAmeli;
+					width: 100%;
+					font-size: 1em;
+					top: 0px;
+					display: inline-block;
+					&:hover, &:visited, &:focus{
+						text-decoration: none;
+					}
+				}
+			}
+		}
 		div.logoBlock{
 			float: left;
 			h1{

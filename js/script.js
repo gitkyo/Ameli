@@ -15,8 +15,8 @@ jQuery( document ).ready(function() {
 			}else if( $(this).hasClass('salarie') ){
 
 				$('div.showFirst').addClass('hidden');
-				$('div.hiddenForm').removeClass('hidden').find('a.employeur').text('connexion salarié');
-				$('#exampleInputPassword1').attr("placeholder","Numéro de sécurité sociale")
+				$('div.hiddenForm').removeClass('hidden').find('a.employeur').text('connexion salarié').attr('href','index.html?&statut=sal');
+				$('#exampleInputPassword1').attr("placeholder","Numéro de sécurité sociale");
 			}
 
 		});
@@ -30,6 +30,16 @@ jQuery( document ).ready(function() {
 		//init custom select
 		$('select').selectric();
 
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a").attr("href","description.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
 		/*
 		Popup
 		$(window).bind('beforeunload', function(){
@@ -39,6 +49,18 @@ jQuery( document ).ready(function() {
 	}
 
 	var initDescription = function(){
+
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a.suivAmeli").attr("href","description2.html?&statut=emp");
+			$("div.actionRow a.prevAmeli").attr("href","identification.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
 
 		$("div.barRow div.border").addClass('animOn');
 
@@ -199,6 +221,18 @@ jQuery( document ).ready(function() {
 
 	var initDescription2 = function(){
 
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a.suivAmeli").attr("href","pathologie.html?&statut=emp");
+			$("div.actionRow a.prevAmeli").attr("href","description.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
+
 		$("div.barRow div.border").addClass('animOn');
 		//init dateTimePicker
 		$('#datetimepicker1').datetimepicker({
@@ -343,6 +377,10 @@ jQuery( document ).ready(function() {
 
 	var initQuestionnaire = function(){
 
+		$("h4 span.search").click(function(event) {
+			$(this).prev().removeClass('hidden');
+		});
+
 		$("div.oneEmploye").click(function(event) {
 			/* Act on the event */
 			if( !$(this).hasClass('active') ) {
@@ -372,6 +410,18 @@ jQuery( document ).ready(function() {
 	}
 
 	var initPathologie = function(){
+
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a.suivAmeli").attr("href","recap.html?&statut=emp");
+			$("div.actionRow a.prevAmeli").attr("href","description2.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
 
 		$("div.barRow div.border").addClass('animOn');
 
@@ -426,6 +476,18 @@ jQuery( document ).ready(function() {
 	}
 
 	var initRecap = function(){
+
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a.suivAmeli").attr("href","confirmation.html?&statut=emp");
+			$("div.actionRow a.prevAmeli").attr("href","pathologie.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
 
 		$("div.barRow div.border").addClass('animOn');
 
@@ -680,26 +742,57 @@ jQuery( document ).ready(function() {
 		});
 	}
 
+	var getUrlParameter = function getUrlParameter(sParam) {
+	    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
+
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
+
+	        if (sParameterName[0] === sParam) {
+	            return sParameterName[1] === undefined ? true : sParameterName[1];
+	        }
+	    }
+	};
+
 	var initAccueil = function(){
-		var getUrlParameter = function getUrlParameter(sParam) {
-		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-		        sURLVariables = sPageURL.split('&'),
-		        sParameterName,
-		        i;
 
-		    for (i = 0; i < sURLVariables.length; i++) {
-		        sParameterName = sURLVariables[i].split('=');
 
-		        if (sParameterName[0] === sParam) {
-		            return sParameterName[1] === undefined ? true : sParameterName[1];
-		        }
-		    }
-		};
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("div.actionRow a").attr("href","identification.html?&statut=emp");
+		}else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
 
+		// disable link
+		$("div.userBlock a.likeUser, div.userBlock a.user").click(function(event) {
+			event.preventDefault();
+		});
+
+		// Test page loaded from back button
 		var isOther = getUrlParameter('back');
 		if(isOther == 1) {
 			$(".required").removeClass('required');
+
+			$("div.actionRow a").text('Valider');
+
+			var oldURL = document.referrer;
+			$("div.actionRow a").before('<a href="'+oldURL+'" type="submit" class="suivAmeli prevAmeli btn btn-primary">Retour</a>');
+
+			if(statut == "emp") {
+				$("div.wrapper > .row").before('<center>Numéro SIRET, Raison Sociale, Adresse, Branche d’activité</center>');
+			}else{
+				$("div.wrapper > .row").before('<center>Nom, Prénom, Numéro de Sécurité Sociale, adresse, téléphone, email ;</center>');
+			}
+
+
 		}
+
 	}
 
 	var initQuestionnaire1 = function(){
@@ -710,6 +803,7 @@ jQuery( document ).ready(function() {
 	}
 
 	var initQuestionnaire2 = function(){
+
 		var cpt =0;
 
 		$(".separation").click(function(event) {
@@ -904,6 +998,21 @@ jQuery( document ).ready(function() {
 		});
 	}
 
+	var initConfirmation = function(){
+
+		// Test if user is employeur or salarie
+		var statut = getUrlParameter('statut');
+		if(statut == "emp") {
+			$("div.userBlock a.user").text('VILLISA COMPAGNY');
+			$("a.action.okAmeli").attr("href","questionnaire.html?&statut=emp");
+			$("div.userBlock a.likeUser, div.userBlock a.user").attr("href","index.html?&back=1&statut=emp")
+		}
+		else {
+			$("div.logoBlock h2").text('Je suis salarié');
+		}
+
+	}
+
 	window.init = function() {
 
 		if( $('.container-fluid.main').hasClass('accueil') ) initAccueil();
@@ -916,6 +1025,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('pathologie') ) initPathologie();
 		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
 		if( $('.container-fluid.main').hasClass('mention') ) initMention();
+		if( $('.container-fluid.main').hasClass('confirmation') ) initConfirmation();
 		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
 		if( $('.container-fluid.main').hasClass('questionnaire2') ) initQuestionnaire2();
 		if( $('.container-fluid.main').hasClass('liste-dossier') ) initListeDossier();

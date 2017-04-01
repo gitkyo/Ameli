@@ -44,7 +44,12 @@
                         </a>
                         <h2>Je suis employeur</h2>
                     </div>
-                    <div class="loginBlock"><a href="index.html?&back=1">Mon compte</a></div>
+                    <!-- <div class="loginBlock"><a href="index.html?&back=1">Mon compte</a></div> -->
+                    <div class="userBlock">
+                        <a href="index.html?&back=1" class="user">MICHEL ADAM</a>
+                        <a href="connexion.html">deconnexion</a>
+                        <a href="index.html?&back=1" class="likeUser"></a>
+                    </div>
                 </section>
 
                 <section class="postTete">
@@ -68,7 +73,15 @@
                 <form class="form-horizontal">
 
                     <div class="col-lg-6 leftZone">
-                        <h4>Poste(s) occupé(s) par votre salarié(e)</h4>
+                        <h4>Métier de votre salarié</h4>
+
+                        <div class="form-group required">
+                            <label for="input5" class="col-sm-4 control-label">Métier exercé dans l’entreprise</label>
+                            <div class="col-sm-8 withTooltip">
+                              <input type="text" class="form-control" id="input5" placeholder="">
+                              <span class="myTooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">?</span>
+                            </div>
+                        </div>
 
                         <div class="form-group required dateFormGroup">
                             <label for="input1" class="col-sm-4 control-label">Date du dernier jour de travail</label>
@@ -105,15 +118,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="form-group required">
-                            <label for="input5" class="col-sm-4 control-label">Métier exercé dans l’entreprise</label>
-                            <div class="col-sm-8 withTooltip">
-                              <input type="text" class="form-control" id="input5" placeholder="">
-                              <span class="myTooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">?</span>
-                            </div>
-                        </div>
-
 
                         <div class="form-group required">
                             <label for="input6" class="col-sm-4 control-label">Nature du contrat de travail</label>
