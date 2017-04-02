@@ -52,15 +52,27 @@
                     <div class="modal-body">
                         <p>Choississez un destinataire</p>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <a href="#" class="btn btn-default okAmeli light">L’assuré</a>
+
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <div class="form-group required">
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control" id="input6">
+                                        <option>SNCF</option>
+                                        <option>DECATHLON</option>
+                                        <option>INTERMARCHE</option>
+                                        <option>NATURE & découverte</option>
+                                        <option>RTM</option>
+                                        <option>h&m</option>
+                                        <option>Super u</option>
+                                        <option>LIDL</option>
+                                      </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-4">
-                                <a href="#" class="btn btn-default okAmeli light">SNCF</a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a href="#" class="btn btn-default okAmeli light">Histoire d’Or</a>
-                            </div>
+
+                        </div>
+                        <div class="col-sm-offset-4 col-sm-4">
+                            <a href="#" class="btn btn-default okAmeli light">ENVOYER</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +130,8 @@
 
                         <div class="buttonRow">
                             <a href="#" data-toggle="modal" data-target="#myModalDownload" class="btn btn-default okAmeli orange light">Télécharger le dossier</a>
-                            <a href="#" class="btn btn-default okAmeli light vert">Archiver diademe</a>
+
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-default okAmeli light">ENVOYER UN MAIL</a>
                         </div>
 
                         <div class="textRow">
@@ -145,7 +158,8 @@
                             <p>L’employeur <span class="blueTxt">n’a pas modifié</span> de données pré-remplies</p>
                             <p>L’assuré <span class="blueTxt">n’a pas modifié</span> de données pré-remplies.</p>
 
-                            <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-default okAmeli light">ENVOYER UN MAIL</a>
+                            <a href="#" class="btn btn-default okAmeli light vert">Clore le dossier</a>
+
                         </div>
 
                         <h4 class="mrgT">Comparaison des réponses de l’assuré et de l’employeur 1 (SNCF)<span class="redTxt">5 différences</span><span class="iconD">></span></h4>
@@ -1113,7 +1127,7 @@
                         </div>
 
 
-
+                        <a href="#" class="btn btn-default okAmeli light vert large">Clore le dossier</a>
 
                     </div>
 

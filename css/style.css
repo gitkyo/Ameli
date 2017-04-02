@@ -8877,8 +8877,22 @@ body > div.accueil div.actionRow > div.form-group a.prevAmeli {
 body > div.accueil div.wrapper {
   min-height: 450px;
   padding: 0 150px;
+  padding-bottom: 50px;
   padding-top: 70px;
   background-color: #fff;
+}
+body > div.accueil div.wrapper div.sal,
+body > div.accueil div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.accueil div.wrapper div.sal div.form-group,
+body > div.accueil div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.accueil div.wrapper div.sal div.form-group label,
+body > div.accueil div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
 }
 body > div.accueil div.wrapper div.leftZone {
   padding-right: 6%;
@@ -10283,8 +10297,12 @@ body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente
 body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail p {
   color: #fff;
 }
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span,
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span {
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span.myTooltip,
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span.myTooltip {
+  color: #fff;
+}
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span:not(.myTooltip),
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span:not(.myTooltip) {
   color: #fff;
 }
 body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.left {
@@ -10315,7 +10333,10 @@ body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente
   padding-left: 3%;
   margin-bottom: 0;
 }
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span {
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span.myTooltip {
+  margin-left: 10px;
+}
+body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span:not(.myTooltip) {
   font-family: 'Proxima Nova Regular';
   color: #767676;
   padding-left: 3%;
@@ -12151,9 +12172,15 @@ body > div.detail-dossier div.modal h2 {
 }
 body > div.detail-dossier div.modal div.modal-body {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
   padding-left: 16%;
   padding-right: 16%;
+}
+body > div.detail-dossier div.modal div.modal-body a.okAmeli {
+  margin-top: 30px;
+}
+body > div.detail-dossier div.modal div.modal-body option {
+  text-transform: uppercase;
 }
 body > div.detail-dossier div.modal p {
   color: #495058;
@@ -12165,6 +12192,16 @@ body > div.detail-dossier div.wrapper {
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: #fff;
+}
+body > div.detail-dossier div.wrapper a.large {
+  width: 200px;
+  top: 50px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1em;
 }
 body > div.detail-dossier div.wrapper h4 {
   font-family: 'Proxima Nova Regular';
@@ -12351,13 +12388,15 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   body > div.detail-dossier div.wrapper div.rightZone {
     margin-top: 100px;
   }
-  body > div.detail-dossier div.wrapper {
-    padding-bottom: 50px;
-  }
+  /* body > div.detail-dossier div.wrapper {
+		padding-bottom: 50px;
+	} */
 }
 @media (max-width: 768px) {
-  body > div.detail-dossier div.wrapper {
-    padding: 50px 10%;
+  body > div.detail-dossier {
+    /* div.wrapper {
+			padding: 50px 10%;
+		} */
   }
   body > div.detail-dossier div.modal div.modal-dialog {
     min-width: auto;
@@ -12378,8 +12417,10 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
   }
 }
 @media (max-width: 480px) {
-  body > div.detail-dossier div.wrapper {
-    padding: 50px 10%;
+  body > div.detail-dossier {
+    /* div.wrapper {
+			padding: 50px 10%;
+		} */
   }
   body > div.detail-dossier h3 {
     padding-right: 60%;

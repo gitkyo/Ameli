@@ -377,6 +377,9 @@ jQuery( document ).ready(function() {
 
 	var initQuestionnaire = function(){
 
+		//active tooltips
+		$('[data-toggle="tooltip"]').tooltip();
+
 		$("h4 span.search").click(function(event) {
 			$(this).prev().removeClass('hidden');
 		});
@@ -780,14 +783,20 @@ jQuery( document ).ready(function() {
 			$(".required").removeClass('required');
 
 			$("div.actionRow a").text('Valider');
+			$("div.leftZone h4").text('Modifier votre email');
+			$("div.rightZone h4").text('Modifier votre mot de passe');
+			$("header h3").text('MODIFICATION DES INFORMATIONS DE VOTRE COMPTE');
+
 
 			var oldURL = document.referrer;
 			$("div.actionRow a").before('<a href="'+oldURL+'" type="submit" class="suivAmeli prevAmeli btn btn-primary">Retour</a>');
 
 			if(statut == "emp") {
-				$("div.wrapper > .row").before('<center>Numéro SIRET, Raison Sociale, Adresse, Branche d’activité</center>');
+				$("div.wrapper .emp").removeClass('hidden');
+				$("div.wrapper .sal").addClass('hidden');
 			}else{
-				$("div.wrapper > .row").before('<center>Nom, Prénom, Numéro de Sécurité Sociale, adresse, téléphone, email ;</center>');
+				$("div.wrapper .emp").addClass('hidden');
+				$("div.wrapper .sal").removeClass('hidden');
 			}
 
 
