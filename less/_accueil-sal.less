@@ -1,0 +1,75 @@
+@borderH4 : #005ea8;
+
+body > div.accueil-sal{
+	div.actionRow{
+		background-color: @backgroundGrisClair;
+		> div.form-group{
+			margin: 10px 0;
+			text-align: center;
+			a{
+				float: right;
+				margin-right: 134px;
+				&.prevAmeli {
+					float: left;
+					margin-left: 134px;
+				}
+			}
+		}
+	}
+	div.wrapper{
+		min-height: 450px;
+		padding: 0 150px;
+		padding-bottom: 50px;
+		padding-top: 70px;
+		background-color: #fff;
+		div.sal, div.emp{
+			padding-bottom: 20px;
+			div.form-group{
+				margin-bottom: 0;
+				label{
+					padding-top: 0;
+					font-family: 'Proxima Nova Semibold';
+				}
+			}
+		}
+		div.leftZone{
+			padding-right: 6%;
+		}
+		div.rightZone{
+			padding-left: 6%;
+		}
+		h4{
+			font-family: 'Proxima Nova Semibold';
+			margin-bottom: 50px;
+			border-bottom: 1px solid @borderH4;
+			padding-bottom: 10px;
+			color: #404040;
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	body > div.accueil-sal div.wrapper div.leftZone,
+	body > div.accueil-sal div.wrapper div.rightZone{
+		padding: 0;
+	}
+	body > div.accueil-sal div.wrapper div.rightZone{
+		margin-top: 100px;
+	}
+	body > div.accueil-sal div.wrapper {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.accueil-sal {
+		div.wrapper {
+			padding: 50px 10%;
+		}
+		div.actionRow > div.form-group a {
+			display: inline-block;
+			margin: 0;
+			float: none;
+		}
+	}
+}

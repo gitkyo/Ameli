@@ -5096,6 +5096,25 @@ input[type="button"].btn-block {
 .btn.okAmeli.vert:active {
   background-color: #56ca81;
 }
+.btn.okAmeli.violet {
+  color: #5e01e9;
+  border-color: #5e01e9;
+}
+.btn.okAmeli.violet.inverse {
+  color: #fff;
+  background-color: #5e01e9;
+}
+.btn.okAmeli.violet.inverse:hover,
+.btn.okAmeli.violet.inverse:focus,
+.btn.okAmeli.violet.inverse:active {
+  background-color: #fff;
+  color: #5e01e9;
+}
+.btn.okAmeli.violet:hover,
+.btn.okAmeli.violet:focus,
+.btn.okAmeli.violet:active {
+  background-color: #5e01e9;
+}
 .btn.okAmeli.orange {
   color: #f68527;
   border-color: #f68527;
@@ -8680,7 +8699,7 @@ div.form-group.dateFormGroup span.input-group-addon {
 /* HEADER */
 header section.preEntete {
   position: relative;
-  height: 44px;
+  height: 51px;
   background-color: #fff;
   border-bottom: 1px solid #dae4eb;
   z-index: 10;
@@ -8689,7 +8708,7 @@ header section.preEntete .logoAM {
   margin: 0 auto;
   width: 124px;
   height: 75px;
-  background: url(../img/logo_am_entete.jpg) no-repeat 50% 50%;
+  background: url(../img/logo_am_entete.png) no-repeat 50% 50%;
 }
 header section.entete {
   position: relative;
@@ -8924,6 +8943,76 @@ body > div.accueil div.wrapper h4 {
     padding: 50px 10%;
   }
   body > div.accueil div.actionRow > div.form-group a {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+}
+body > div.accueil-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.accueil-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.accueil-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+}
+body > div.accueil-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+}
+body > div.accueil-sal div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.accueil-sal div.wrapper div.sal,
+body > div.accueil-sal div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.accueil-sal div.wrapper div.sal div.form-group,
+body > div.accueil-sal div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.accueil-sal div.wrapper div.sal div.form-group label,
+body > div.accueil-sal div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.accueil-sal div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.accueil-sal div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.accueil-sal div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+@media (max-width: 1200px) {
+  body > div.accueil-sal div.wrapper div.leftZone,
+  body > div.accueil-sal div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.accueil-sal div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.accueil-sal div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.accueil-sal div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.accueil-sal div.actionRow > div.form-group a {
     display: inline-block;
     margin: 0;
     float: none;
@@ -11626,12 +11715,12 @@ body > div.questionnaire2 div.wrapper div.rightZone {
   padding-left: 6%;
 }
 body > div.questionnaire2 div.wrapper div.rightZone span.separation {
-  top: -25px;
   display: block;
   position: relative;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
+  top: 20px;
 }
 body > div.questionnaire2 div.wrapper div.rightZone span.separation:hover p {
   color: #005da8;
@@ -11644,15 +11733,18 @@ body > div.questionnaire2 div.wrapper div.rightZone span.separation p {
   letter-spacing: 1px;
   color: #cacaca;
   display: inline-block;
-  top: 32px;
-  position: relative;
   background-color: #fff;
   padding: 0 1%;
+  position: relative;
+  z-index: 2;
 }
 body > div.questionnaire2 div.wrapper div.rightZone span.separation span.line {
   border-top: 1px dashed #d5d5d5;
   display: inline-block;
   width: 100%;
+  position: relative;
+  top: -32px;
+  z-index: 1;
 }
 body > div.questionnaire2 div.wrapper div.actionRow {
   margin-top: 45px;
@@ -12439,6 +12531,146 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
     right: 0;
     top: inherit;
     left: inherit;
+  }
+}
+body > div.compte-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.compte-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.compte-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+}
+body > div.compte-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+}
+body > div.compte-sal div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.compte-sal div.wrapper div.sal,
+body > div.compte-sal div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.compte-sal div.wrapper div.sal div.form-group,
+body > div.compte-sal div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.compte-sal div.wrapper div.sal div.form-group label,
+body > div.compte-sal div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.compte-sal div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.compte-sal div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.compte-sal div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+@media (max-width: 1200px) {
+  body > div.compte-sal div.wrapper div.leftZone,
+  body > div.compte-sal div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.compte-sal div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.compte-sal div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.compte-sal div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.compte-sal div.actionRow > div.form-group a {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+}
+body > div.compte-emp div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.compte-emp div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.compte-emp div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+}
+body > div.compte-emp div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+}
+body > div.compte-emp div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.compte-emp div.wrapper div.sal,
+body > div.compte-emp div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.compte-emp div.wrapper div.sal div.form-group,
+body > div.compte-emp div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.compte-emp div.wrapper div.sal div.form-group label,
+body > div.compte-emp div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.compte-emp div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.compte-emp div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.compte-emp div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+@media (max-width: 1200px) {
+  body > div.compte-emp div.wrapper div.leftZone,
+  body > div.compte-emp div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.compte-emp div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.compte-emp div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.compte-emp div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.compte-emp div.actionRow > div.form-group a {
+    display: inline-block;
+    margin: 0;
+    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
