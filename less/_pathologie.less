@@ -196,73 +196,73 @@ body > div.pathologie{
 				padding-left: 2%;
 				padding-right: 2%;
 			}
-			div.leftZone{
-				padding-right: 5%;
-				div.firstRowSpecialRadio{
-					margin-top: 100px;
+			div.firstRowSpecialRadio{
+				margin-top: 165px;
+			}
+			div.rowCustomRadio{
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				div.bar{
+					width: 94%;
+					position: absolute;
+					top: 8px;
+					height: 3.5px;
+					background-color: #dbdbdb;
 				}
-				div.rowCustomRadio{
-					text-align: center;
-					margin-top: 20px;
-					margin-bottom: 55px;
-					div.bar{
-						width: 94%;
-						position: absolute;
-						top: 8px;
-						height: 3.5px;
-						background-color: #dbdbdb;
-					}
+			}
+			div.oneRadioCustom{
+				display: inline-block;
+				position: relative;
+				min-height: 30px;
+				p{
+					font-family: 'Proxima Nova Regular';
+					position: absolute;
+					bottom: -25px;
+					width: auto;
+					color: #a4a4a4;
+					margin-bottom: 0;
 				}
-				div.oneRadioCustom{
+				span.boule{
+					height: 20px;
+					width: 20px;
+					background-color: #dbdbdb;
+					border-radius: 20px;
+					-webkit-border-radius: 20px;
+					-moz-border-radius: 20px;
 					display: inline-block;
-					position: relative;
-					min-height: 30px;
+					cursor: pointer;
+				}
+				&.active{
 					p{
-						font-family: 'Proxima Nova Regular';
-						position: absolute;
-						bottom: -25px;
-						width: auto;
-						color: #a4a4a4;
-						margin-bottom: 0;
+						color: @bleuAmeli;
+						font-family: 'Proxima Nova Semibold';
+						margin: 0 -1px;
 					}
 					span.boule{
-						height: 20px;
-						width: 20px;
-						background-color: #dbdbdb;
-						border-radius: 20px;
-						-webkit-border-radius: 20px;
-						-moz-border-radius: 20px;
-						display: inline-block;
-						cursor: pointer;
-					}
-					&.active{
-						p{
-							color: @bleuAmeli;
-							font-family: 'Proxima Nova Semibold';
-							margin: 0 -1px;
-						}
-						span.boule{
-							background-color: @bleuAmeli;
-						}
-					}
-					&.one{
-						text-align: left;
-						float: left;
-					}
-					&.two{
-						text-align: center;
-						p{
-							margin-left: -26px;
-						}
-					}
-					&.three{
-						text-align: left;
-						float: right;
-						p{
-							margin-left: -111px;
-						}
+						background-color: @bleuAmeli;
 					}
 				}
+				&.one{
+					text-align: left;
+					float: left;
+				}
+				&.two{
+					text-align: center;
+					p{
+						margin-left: -26px;
+					}
+				}
+				&.three{
+					text-align: left;
+					float: right;
+					p{
+						margin-left: -111px;
+					}
+				}
+			}
+			div.leftZone{
+				padding-right: 5%;
 				div.second{
 					margin-top: 55px;
 				}
@@ -316,7 +316,7 @@ body > div.pathologie{
 			div.rightZone{
 				padding-left: 5%;
 				div.form-group{
-					margin-bottom: 52px;
+					margin-bottom: 25px;
 				}
 
 			}

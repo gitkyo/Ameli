@@ -10729,30 +10729,27 @@ body > div.pathologie div.wrapper div.wrapperForm div.form-group.reduced {
   padding-left: 2%;
   padding-right: 2%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone {
-  padding-right: 5%;
+body > div.pathologie div.wrapper div.wrapperForm div.firstRowSpecialRadio {
+  margin-top: 165px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.firstRowSpecialRadio {
-  margin-top: 100px;
-}
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio {
+body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
   width: 94%;
   position: absolute;
   top: 8px;
   height: 3.5px;
   background-color: #dbdbdb;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom {
   display: inline-block;
   position: relative;
   min-height: 30px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom p {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom p {
   font-family: 'Proxima Nova Regular';
   position: absolute;
   bottom: -25px;
@@ -10760,7 +10757,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCusto
   color: #a4a4a4;
   margin-bottom: 0;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom span.boule {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom span.boule {
   height: 20px;
   width: 20px;
   background-color: #dbdbdb;
@@ -10770,30 +10767,33 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCusto
   display: inline-block;
   cursor: pointer;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.active p {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.active p {
   color: #005da8;
   font-family: 'Proxima Nova Semibold';
   margin: 0 -1px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.active span.boule {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.active span.boule {
   background-color: #005da8;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.one {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.one {
   text-align: left;
   float: left;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.two {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two {
   text-align: center;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.two p {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two p {
   margin-left: -26px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.three {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three {
   text-align: left;
   float: right;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.oneRadioCustom.three p {
+body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three p {
   margin-left: -111px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.second {
   margin-top: 55px;
@@ -10850,7 +10850,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group {
-  margin-bottom: 52px;
+  margin-bottom: 25px;
 }
 body > div.pathologie div.actionRow {
   background-color: #f7f7f7;
