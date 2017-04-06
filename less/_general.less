@@ -212,9 +212,32 @@ header {
 		z-index: 10;
 		.logoAM {
 			margin: 0 auto;
-			width: 124px;
+			width: 135px;
 			height: 75px;
-			background: url(../img/logo_am_entete.png) no-repeat 50% 50%;
+			background: url(../img/logo_am_entete_big.png) no-repeat 50% 50%;
+			background-size: 100%;
+			background-color: #fff;
+			border-radius: 0px 0px 8px 8px;
+			border-bottom: 1px solid #dae4eb;
+			border-left: 1px solid #dae4eb;
+			border-right: 1px solid #dae4eb;
+			position: relative;
+			.hideBorderLeft{
+				position: absolute;
+				display: block;
+				height: 50px;
+				background-color: #fff;
+				left: -1px;
+				width: 1px;
+			}
+			.hideBorderRight{
+				position: absolute;
+				display: block;
+				height: 50px;
+				background-color: #fff;
+				right: -1px;
+				width: 1px;
+			}
 		}
 	}
 	section.entete {
@@ -230,7 +253,7 @@ header {
 			width: 200px;
 			text-align: right;
 			padding-right: 52px;
-			background: url(../img/icon_user_blue.png) no-repeat 93% 2px;
+			background: url(../img/icon_user_bleu_big.png) no-repeat 93% 2px;
 			background-size: 30px;
 			position: absolute;
 			top: 15px;

@@ -15,7 +15,7 @@
     <!-- Custom select (http://selectric.js.org) -->
     <link href="css/selectric.css" rel="stylesheet">
     <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
-    <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,17 +34,15 @@
         <div class="row header">
             <header>
                 <section class="preEntete">
-                    <div class="logoAM"></div>
+                    <div class="logoAM"><span class="hideBorderLeft"></span><span class="hideBorderRight"></span></div>
                 </section>
 
                 <section class="entete">
                     <div class="logoBlock">
-                        <a href='index.html'>
-                            <h1>ameli.fr</h1>
-                        </a>
+                        <h1>ameli.fr</h1>
                         <h2>Je suis employeur</h2>
                     </div>
-                    <!-- <div class="loginBlock"><a href="index.html?&back=1">Mon compte</a></div> -->
+
                     <div class="userBlock" title="Modifier les informations de mon compte">
                         <a href="compte-emp.html" class="user">Villisa compagny</a>
                         <a href="connexion.html">deconnexion</a>
@@ -145,9 +143,9 @@
                         <div class="col-lg-6 rightZone">
 
                             <div class="form-group">
-                                <label for="input6" class="col-sm-8 control-label">Nombre de jour par semaine</label>
+                                <label for="input3" class="col-sm-8 control-label">Nombre de jour par semaine</label>
                                 <div class="col-sm-4 withSelect">
-                                  <select class="form-control" id="input6">
+                                  <select class="form-control" id="input3">
                                     <option>Choisissez...</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -172,10 +170,20 @@
                                 </div>
                             </div>
 
+                            <div class="form-group required dateFormGroup">
+                                <label for="input4" class="col-sm-8 control-label">Date du Certificat Médical Initial</label>
+                                <div class="col-sm-4 input-group date" id="datetimepicker1">
+                                    <input type="text" class="form-control" id="input4">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+
                             <div class="form-group">
-                                <label for="input9" class="col-sm-8 control-label">Eventuel question supplémentaire (pathologie main)</label>
+                                <label for="input5" class="col-sm-8 control-label">Eventuel question supplémentaire (pathologie main)</label>
                                 <div class="col-sm-4 withTooltip">
-                                  <input type="text" class="form-control" id="input9" placeholder="">
+                                  <input type="text" class="form-control" id="input5" placeholder="">
                                 </div>
                             </div>
 
@@ -195,7 +203,7 @@
 
                             <div class="row">
                                 <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
+                                    <label for="" class="control-label col-xs-12" >
                                       Durée quotidienne du mouvement
                                     </label>
                                     <div class="rowCustomRadio col-xs-12">
@@ -204,6 +212,16 @@
                                         <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
                                         <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group required dateFormGroup">
+                                <label for="input8" class="col-sm-8 control-label">Date du Certificat Médical Initial</label>
+                                <div class="col-sm-4 input-group date" id="datetimepicker2">
+                                    <input type="text" class="form-control" id="input8">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
                                 </div>
                             </div>
 
@@ -293,6 +311,9 @@
                             <p class="subTitle">Travaux prolongés sur la pointe des pieds</p>
                             <div class="iconPathologiePied"></div>
 
+                            <p class="subTitle">Travaux prolongés sur la pointe des pieds</p>
+                            <div class="iconPathologiePied"></div>
+
 
                             <div class="form-group">
                                 <label for="" class="fileIcon">Joindre un fichier en rapport avec le mouvement exercé par l’employé</label>
@@ -356,9 +377,9 @@
                         <div class="col-lg-6 rightZone">
 
                             <div class="form-group">
-                                <label for="input18" class="col-sm-8 control-label">Nombre de jour par semaine</label>
+                                <label for="input10" class="col-sm-8 control-label">Nombre de jour par semaine</label>
                                 <div class="col-sm-4 withSelect">
-                                  <select class="form-control" id="input18">
+                                  <select class="form-control" id="input10">
                                     <option>Choisissez...</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -369,74 +390,83 @@
                                 </div>
                             </div>
 
-                            <div class="form-group required">
-                                <label for="input19" class="col-xs-8 control-label">Le poste de travail est-il réglable en fonction de la taille de la personne ?</label>
-                                <div class="col-xs-4 widthRadio">
-                                    <label class="radio-inline">
-                                      <input type="radio" name="input19" id="input19" value="option1" checked=""> Oui
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="input15" class="control-label col-xs-12" >
+                                      Durée quotidienne du mouvement
                                     </label>
-                                    <label class="radio-inline decale">
-                                      <input type="radio" name="input19" id="input19" value="option1"> Non
-                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="form-group required">
-                                <label for="input20" class="col-xs-8 control-label">Y-a-t-il un équipement d'aide à la manutention ?</label>
-                                <div class="col-xs-4 widthRadio">
-                                    <label class="radio-inline">
-                                      <input type="radio" name="input20" id="input20" value="option1" checked=""> Oui
-                                    </label>
-                                    <label class="radio-inline decale">
-                                      <input type="radio" name="input20" id="input20" value="option1"> Non
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="input21" class="col-sm-8 control-label">Si oui, lequel ?</label>
-                                <div class="col-sm-4 withTooltip">
-                                  <input type="text" class="form-control" id="input21" placeholder="">
-                                </div>
-                            </div>
-
-                            <div class="form-group required">
-                                <label for="input22" class="col-xs-8 control-label">Y-a-t-il d'autres outils ou matériels utilisés qui n'ont pas été mentionnés ci-dessus ? </label>
-                                <div class="col-xs-4 widthRadio">
-                                    <label class="radio-inline">
-                                      <input type="radio" name="input22" id="input22" value="option1" checked=""> Oui
-                                    </label>
-                                    <label class="radio-inline decale">
-                                      <input type="radio" name="input22" id="input10" value="option1"> Non
-                                    </label>
+                            <div class="form-group required dateFormGroup">
+                                <label for="input11" class="col-sm-8 control-label">Date du Certificat Médical Initial</label>
+                                <div class="col-sm-4 input-group date" id="datetimepicker3">
+                                    <input type="text" class="form-control" id="input11">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="input23" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <label for="input12" class="col-sm-8 control-label">Eventuel question supplémentaire (pathologie main)</label>
                                 <div class="col-sm-4 withTooltip">
-                                  <input type="text" class="form-control" id="input23" placeholder="">
+                                  <input type="text" class="form-control" id="input12" placeholder="">
                                 </div>
                             </div>
 
-                            <div class="form-group required">
-                                <label for="input24" class="col-xs-8 control-label">Utilise-t-il  des outils vibrants ?</label>
-                                <div class="col-xs-4 widthRadio">
-                                    <label class="radio-inline">
-                                      <input type="radio" name="input24" id="input24" value="option1" checked=""> Oui
+                            <div class="form-group firstRowSpecialRadio">
+                                <label for="input20" class="col-sm-8 control-label">Nombre de jour par semaine</label>
+                                <div class="col-sm-4 withSelect">
+                                  <select class="form-control" id="input20">
+                                    <option>Choisissez...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                  </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group reduced required radioFormGroup">
+                                    <label for="" class="control-label col-xs-12" >
+                                      Durée quotidienne du mouvement
                                     </label>
-                                    <label class="radio-inline decale">
-                                      <input type="radio" name="input24" id="input24" value="option1"> Non
-                                    </label>
+                                    <div class="rowCustomRadio col-xs-12">
+                                        <div class="bar"></div>
+                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group required dateFormGroup">
+                                <label for="input21" class="col-sm-8 control-label">Date du Certificat Médical Initial</label>
+                                <div class="col-sm-4 input-group date" id="datetimepicker4">
+                                    <input type="text" class="form-control" id="input21">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="input25" class="col-sm-8 control-label">Si oui, lequel ?</label>
+                                <label for="input22" class="col-sm-8 control-label">Eventuel question supplémentaire (pathologie main)</label>
                                 <div class="col-sm-4 withTooltip">
-                                  <input type="text" class="form-control" id="input25" placeholder="">
+                                  <input type="text" class="form-control" id="input22" placeholder="">
                                 </div>
                             </div>
+
+
 
                         </div>
 
@@ -488,13 +518,13 @@
     <script src="js/jquery.selectric.js"></script>
 
     <!-- Moment JS (https://momentjs.com/) -->
-    <!-- <script src="js/moment.min.js"></script> -->
+    <script src="js/moment.min.js"></script>
 
     <!-- Moment JS local settings FR -->
-    <!-- <script src="js/moment-local.js"></script> -->
+    <script src="js/moment-local.js"></script>
 
     <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
-    <!-- <script src="js/bootstrap-datetimepicker.min.js"></script> -->
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
 
     <!-- Custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
