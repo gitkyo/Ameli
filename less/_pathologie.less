@@ -158,7 +158,11 @@ body > div.pathologie{
 			margin-top: 60px;
 			margin-bottom: 100px;
 			padding: 0 6%;
+			.top,.bottom{
+				padding-bottom: 40px;
+			}
 			div.minimized {
+				padding-bottom: 0px;
 				div.leftZone{
 					display: none;
 				}
@@ -218,10 +222,11 @@ body > div.pathologie{
 				p{
 					font-family: 'Proxima Nova Regular';
 					position: absolute;
-					bottom: -25px;
 					width: auto;
 					color: #a4a4a4;
 					margin-bottom: 0;
+					top: 33px;
+					min-width: 110px;
 				}
 				span.boule{
 					height: 20px;
@@ -250,14 +255,16 @@ body > div.pathologie{
 				&.two{
 					text-align: center;
 					p{
-						margin-left: -26px;
+						margin-left: -43px;
 					}
 				}
 				&.three{
 					text-align: left;
 					float: right;
 					p{
-						margin-left: -111px;
+						margin-left: -163px;
+						text-align: right;
+						min-width: 180px;
 					}
 				}
 			}
@@ -270,12 +277,15 @@ body > div.pathologie{
 					background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
 					width: 198px;
 					height: 233px;
-					margin-bottom: 80px;
-					margin-top: 80px;
+					margin-bottom: 0;
+					margin-top: 63px;
 					margin-left: 5%;
 				}
 				p.subTitle{
 					margin-bottom: 20px;
+					&.secondRow{
+						margin-top: 155px;
+					}
 				}
 				label.fileIcon{
 					background: url(../img/icon_file.png) no-repeat 0% 50%;
@@ -315,25 +325,16 @@ body > div.pathologie{
 			}
 			div.rightZone{
 				padding-left: 5%;
+				div.secondRow{
+					margin-top: 50px;
+				}
 				div.form-group{
-					margin-bottom: 25px;
+					margin-bottom: 0px;
+					textarea{
+						width: 100%;
+					}
 				}
-
 			}
-			/* div.form-group{
-				div.withSelect{
-					position: relative;
-					input{
-						width: 91%;
-					}
-					select{
-						width: 10%;
-						float: right;
-						margin-top: -40px;
-						padding: 0 0 0 12px;
-					}
-				}
-			} */
 		}
 	}
 	div.actionRow {

@@ -10699,20 +10699,13 @@ body > div.pathologie div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
-  /* div.form-group{
-				div.withSelect{
-					position: relative;
-					input{
-						width: 91%;
-					}
-					select{
-						width: 10%;
-						float: right;
-						margin-top: -40px;
-						padding: 0 0 0 12px;
-					}
-				}
-			} */
+}
+body > div.pathologie div.wrapper div.wrapperForm .top,
+body > div.pathologie div.wrapper div.wrapperForm .bottom {
+  padding-bottom: 40px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.minimized {
+  padding-bottom: 0px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.minimized div.leftZone {
   display: none;
@@ -10775,10 +10768,11 @@ body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom {
 body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom p {
   font-family: 'Proxima Nova Regular';
   position: absolute;
-  bottom: -25px;
   width: auto;
   color: #a4a4a4;
   margin-bottom: 0;
+  top: 33px;
+  min-width: 110px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom span.boule {
   height: 20px;
@@ -10806,14 +10800,16 @@ body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two {
   text-align: center;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two p {
-  margin-left: -26px;
+  margin-left: -43px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three {
   text-align: left;
   float: right;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three p {
-  margin-left: -111px;
+  margin-left: -163px;
+  text-align: right;
+  min-width: 180px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
@@ -10825,12 +10821,15 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin-bottom: 0;
+  margin-top: 63px;
   margin-left: 5%;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle {
   margin-bottom: 20px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
+  margin-top: 155px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone label.fileIcon {
   background: url(../img/icon_file.png) no-repeat 0% 50%;
@@ -10872,8 +10871,14 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four:focus
 body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
+body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.secondRow {
+  margin-top: 50px;
+}
 body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group textarea {
+  width: 100%;
 }
 body > div.pathologie div.actionRow {
   background-color: #f7f7f7;
