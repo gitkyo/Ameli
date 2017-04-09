@@ -440,6 +440,8 @@ jQuery( document ).ready(function() {
 				if($(this).hasClass('nan')) var olderValue = $(this).prev().val();
 				else var olderValue = $(this).prev().val().split(" ")[0];
 
+				/*console.log("olderValue", olderValue);*/
+
 				$(this).parents(".specialEdit").next().find("select").val( olderValue );
 			}
 
