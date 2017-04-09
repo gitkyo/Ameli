@@ -10825,11 +10825,30 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   margin-top: 63px;
   margin-left: 5%;
 }
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
+  background: url(../img/schema2.jpg) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 0;
+  margin-top: 63px;
+  margin-left: 5%;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
+  background: url(../img/schema3.jpg) no-repeat 50% 50%;
+  width: 299px;
+  height: 233px;
+  margin-bottom: 0;
+  margin-top: 63px;
+  margin-left: 0%;
+}
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle {
   margin-bottom: 20px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
   margin-top: 155px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow.more {
+  margin-top: 358px;
 }
 body > div.pathologie div.wrapper div.wrapperForm div.leftZone label.fileIcon {
   background: url(../img/icon_file.png) no-repeat 0% 50%;
@@ -10901,8 +10920,8 @@ body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
   body > div.pathologie div.wrapper div.wrapperForm {
     /* padding: 0 10%; */
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
-    width: 94.8%;
+  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 95%;
   }
   body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
@@ -10925,13 +10944,8 @@ body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
   }
 }
 @media (max-width: 768px) {
-  body > div.pathologie div.wrapper {
-    /* div.wrapperForm {
-				padding: 0 15%;
-			} */
-  }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
-    width: 92.2%;
+  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 93%;
   }
   body > div.pathologie div.wrapper div.barRow div.border p {
     text-align: right;
@@ -10953,6 +10967,9 @@ body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
 @media (max-width: 480px) {
   body > div.pathologie div.wrapper div.radioFormGroup label {
     text-align: center;
+  }
+  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 89%;
   }
   body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom {
     text-align: center !important;
