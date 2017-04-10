@@ -71,14 +71,9 @@
                 <form class="form-horizontal">
 
                     <div class="row">
-                        <div class="form-group required dateFormGroup">
-                            <label for="input4" class="col-lg-2 control-label">Date du Certificat Médical Initial</label>
-                            <div class="col-lg-2 input-group date" id="datetimepicker1">
-                                <input type="text" class="form-control" id="input4">
-                                <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
+                        <div class="dateFormGroup">
+                            <label for="" class="control-label">Date du Certificat Médical Initial :</label>
+                            <p>14/02/2017</p>
                         </div>
                     </div>
 
@@ -89,8 +84,8 @@
                             <p class="subTitle">Travaux prolongés sur la pointe des pieds</p>
                             <div class="iconPathologiePied"></div>
 
-                            <p class="subTitle secondRow">Travaux prolongés sur la pointe des pieds</p>
-                            <div class="iconPathologiePied"></div>
+                            <!-- <p class="subTitle secondRow">Travaux prolongés sur la pointe des pieds</p>
+                            <div class="iconPathologiePied"></div> -->
 
 
                             <div class="form-group">
@@ -139,31 +134,18 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
-                                      Durée quotidienne du mouvement
-                                    </label>
-                                    <div class="rowCustomRadio col-xs-12">
-                                        <div class="bar"></div>
-                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
-                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
-                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="form-group">
                                 <label for="input5" class="col-sm-12 control-label">Décrivez brièvement les situations de travail  amenant vos salariés à se trouver dans cette position ?</label>
                                 <div class="col-sm-12">
-                                <!-- <textarea rows="3" class="form-control" id="input5" placeholder="">
-                                </textarea> -->
-                                <input type="text" class="form-control" id="input5" placeholder="">
+                                <textarea rows="3" class="form-control" id="input5" placeholder="">
+                                </textarea>
+                                <!-- <input type="text" class="form-control" id="input5" placeholder=""> -->
                                 </div>
                             </div>
 
 
-                            <div class="row secondRow">
+                            <!-- <div class="row secondRow">
                                 <div class="form-group reduced required radioFormGroup">
                                     <label for="input15" class="control-label col-xs-12" >
                                       Temps journalier
@@ -191,28 +173,14 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
-                                      Durée quotidienne du mouvement
-                                    </label>
-                                    <div class="rowCustomRadio col-xs-12">
-                                        <div class="bar"></div>
-                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
-                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
-                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="form-group">
                                 <label for="input6" class="col-sm-12 control-label">Décrivez brièvement les situations de travail  amenant vos salariés à se trouver dans cette position ?</label>
                                 <div class="col-sm-12">
-                                <!-- <textarea rows="3" class="form-control" id="input5" placeholder="">
-                                </textarea> -->
+                                <textarea rows="3" class="form-control" id="input5" placeholder="">
+                                </textarea>
                                 <input type="text" class="form-control" id="input6" placeholder="">
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -274,30 +242,15 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
-                                      Durée quotidienne du mouvement
+                            <div class="form-group required withDescro">
+                                <label for="input10.1" class="col-xs-12 control-label">Des gants sont-ils portés ?</label>
+                                <div class="col-xs-12">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input10.1" id="input10.1" value="yes" checked=""> Oui
                                     </label>
-                                    <div class="rowCustomRadio col-xs-12">
-                                        <div class="bar"></div>
-                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
-                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
-                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
-                                      Des gants sont-ils portés ?
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input10.1" id="input10.1" value="no"> Non
                                     </label>
-                                    <div class="rowCustomRadio col-xs-12">
-                                        <div class="bar"></div>
-                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Oui</p></div>
-                                        <div class="oneRadioCustom three"><span class="boule"></span><p>Non</p></div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -310,12 +263,33 @@
 
                             <br/>
 
+                            <div class="form-group required withDescro">
+                                <label for="input10.2" class="col-xs-12 control-label">Utilise-t-il  des outils vibrants ?</label>
+                                <div class="col-xs-12">
+                                    <label class="radio-inline">
+                                      <input type="radio" name="input10.2" id="input10.2" value="yes" checked=""> Oui
+                                    </label>
+                                    <label class="radio-inline decale">
+                                      <input type="radio" name="input10.2" id="input10.2" value="no"> Non
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input8.1" class="col-sm-12 control-label">Si oui, lesquels?</label>
+                                <div class="col-sm-12 withTooltip">
+                                  <input type="text" class="form-control" id="input8.1" placeholder="">
+                                </div>
+                            </div>
+
+                            <br/>
+
                             <div class="form-group">
                                 <label for="input9" class="col-sm-12 control-label">Décrivez brièvement les situations de travail  amenant vos salariés à se trouver dans cette position ?</label>
                                 <div class="col-sm-12">
-                                <!-- <textarea rows="3" class="form-control" id="input9" placeholder="">
-                                </textarea> -->
-                                <input type="text" class="form-control" id="input9" placeholder="">
+                                <textarea rows="3" class="form-control" id="input9" placeholder="">
+                                </textarea>
+                                <!-- <input type="text" class="form-control" id="input9" placeholder=""> -->
                                 </div>
                             </div>
 
@@ -351,20 +325,6 @@
                             <div class="row">
                                 <div class="form-group reduced required radioFormGroup">
                                     <label for="input15" class="control-label col-xs-12" >
-                                      Durée quotidienne du mouvement
-                                    </label>
-                                    <div class="rowCustomRadio col-xs-12">
-                                        <div class="bar"></div>
-                                        <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
-                                        <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
-                                        <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-group reduced required radioFormGroup">
-                                    <label for="input15" class="control-label col-xs-12" >
                                       Des gants sont-ils portés ?
                                     </label>
                                     <div class="rowCustomRadio col-xs-12">
@@ -387,9 +347,9 @@
                             <div class="form-group">
                                 <label for="input11" class="col-sm-12 control-label">Décrivez brièvement les situations de travail  amenant vos salariés à se trouver dans cette position ?</label>
                                 <div class="col-sm-12">
-                                <!-- <textarea rows="3" class="form-control" id="input5" placeholder="">
-                                </textarea> -->
-                                <input type="text" class="form-control" id="input11" placeholder="">
+                                <textarea rows="3" class="form-control" id="input5" placeholder="">
+                                </textarea>
+                                <!-- <input type="text" class="form-control" id="input11" placeholder=""> -->
                                 </div>
                             </div>
 

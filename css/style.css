@@ -10700,6 +10700,16 @@ body > div.pathologie div.wrapper div.wrapperForm {
   margin-bottom: 100px;
   padding: 0 6%;
 }
+body > div.pathologie div.wrapper div.wrapperForm div.dateFormGroup {
+  position: relative;
+  top: -20px;
+}
+body > div.pathologie div.wrapper div.wrapperForm div.dateFormGroup p {
+  font-family: 'Proxima Nova Semibold';
+  display: inline-block;
+  position: relative;
+  left: 5px;
+}
 body > div.pathologie div.wrapper div.wrapperForm .top,
 body > div.pathologie div.wrapper div.wrapperForm .bottom {
   padding-bottom: 40px;
@@ -10821,7 +10831,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
-  margin-bottom: 0;
+  margin-bottom: 62px;
   margin-top: 63px;
   margin-left: 5%;
 }
@@ -10837,7 +10847,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   background: url(../img/schema3.jpg) no-repeat 50% 50%;
   width: 299px;
   height: 233px;
-  margin-bottom: 0;
+  margin-bottom: 250px;
   margin-top: 63px;
   margin-left: 0%;
 }

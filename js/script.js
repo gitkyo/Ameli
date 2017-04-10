@@ -365,10 +365,13 @@ jQuery( document ).ready(function() {
 
 		$("div.barRow div.border").addClass('animOn');
 
-		//init dateTimePicker
-		$('#datetimepicker1').datetimepicker({
-			format: 'DD/MM/YYYY'
+		$("div.withDescro input").click(function(event) {
+
+			if( $(this).attr('value') == 'no' )	$(this).parents('.withDescro').next().addClass('hidden');
+			else $(this).parents('.withDescro').next().removeClass('hidden');
+
 		});
+
 
 		$('form').submit(function(event){
 			event.preventDefault();
