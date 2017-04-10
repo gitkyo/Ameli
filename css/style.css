@@ -10900,6 +10900,9 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four:focus
 body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
+body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.blocSchema1 {
+  min-height: 620px;
+}
 body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.secondRow {
   margin-top: 50px;
 }
