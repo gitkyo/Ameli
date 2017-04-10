@@ -10981,21 +10981,22 @@ body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
   body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
     width: 89%;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom {
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
     text-align: center !important;
     width: 100%;
     margin-bottom: 50px;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom.two p {
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
     margin-left: 0;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom.three p {
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
     margin-left: 0;
+    text-align: center;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.oneRadioCustom p {
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
     width: 100%;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.rowCustomRadio div.bar {
+  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
     display: none;
   }
   body > div.pathologie div.wrapper div.barRow div.border {
@@ -11220,6 +11221,17 @@ body > div.recap div.wrapper div.wrapperForm h4.infoTitleCondition {
   border-color: #84156e;
   margin-top: 70px;
 }
+body > div.recap div.wrapper div.wrapperForm div.quesionsBlock {
+  position: relative;
+  top: 50px;
+  left: 8%;
+}
+body > div.recap div.wrapper div.wrapperForm div.quesionsBlock.second {
+  top: 100px;
+}
+body > div.recap div.wrapper div.wrapperForm div.quesionsBlock span.btnOkEditSelect {
+  background-position: 100% 100% !important;
+}
 body > div.recap div.wrapper div.wrapperForm div.editSelect {
   padding-right: 30px;
   margin-bottom: 2px;
@@ -11401,6 +11413,34 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.on span.
 }
 body > div.recap div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup {
+  margin-bottom: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 0;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup input {
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup div.specialPaddingForIcon {
+  padding-right: 3%;
+}
+body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup span.btnOkEditDate {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
 }
 body > div.recap div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
   margin-top: 40px;

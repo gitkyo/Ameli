@@ -302,7 +302,36 @@
                             </div>
                         </div>
 
-						<h4 class="postTitle">Poste(s) occupé(s) par votre salarié(e)</h4>
+						<h4 class="postTitle">Métier de votre salarié</h4>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input10" class="col-sm-6 control-label">Métier exercé dans l’entreprise :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input10" placeholder="" value="Manutentionnaire" disabled>
+                              <div class="fakeInput"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input51" class="col-sm-6 control-label">Date du dernier jour de travail :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input51" placeholder="" value="20/12/2016" disabled>
+                                <div class="fakeInput toEditPeriode"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group dateFormGroup hidden">
+                            <label for="input52" class="col-sm-6 control-label">Date du dernier jour de travail :</label>
+                            <div class="col-sm-5 input-group date specialPaddingForIcon" id="datetimepicker4">
+                                <input type="text" class="form-control" id="input52">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                                <span class="btnOkEditDate"></span>
+                            </div>
+                        </div>
 
 						<div class="form-group specialEdit off">
 						    <label for="input7" class="col-sm-6 control-label">Période de travail :</label>
@@ -344,15 +373,6 @@
 						</div>
 
 						<div class="form-group specialEdit off">
-						    <label for="input10" class="col-sm-6 control-label">Métier exercé dans l’entreprise :</label>
-						    <div class="col-sm-6 editCol">
-						    	<span class="btnOkEdit"></span>
-						      <input type="text" class="form-control" id="input10" placeholder="" value="Manutentionnaire" disabled>
-						      <div class="fakeInput"></div>
-						    </div>
-						</div>
-
-						<div class="form-group specialEdit off">
 						    <label for="input11" class="col-sm-6 control-label">Nature du contrat :</label>
 						    <div class="col-sm-6 editCol">
 						    	<span class="btnOkEdit"></span>
@@ -360,6 +380,92 @@
 						      <div class="fakeInput"></div>
 						    </div>
 						</div>
+
+                        <h4 class="postTitle">Conditions particulières d’emploi</h4>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input19" class="col-sm-6 control-label">Travail posté :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input20" class="col-sm-6 control-label">Travail posté :</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control large" id="input20">
+                                <option>oui</option>
+                                <option>non</option>
+                              </select>
+                              <span class="secondLabel"></span>
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input19" class="col-sm-6 control-label">Travail de nuit :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input19" placeholder="" value="oui" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input20" class="col-sm-6 control-label">Travail de nuit :</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control large" id="input20">
+                                <option>oui</option>
+                                <option>non</option>
+                              </select>
+                              <span class="secondLabel"></span>
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input19" class="col-sm-6 control-label">Travail en horaire décalé :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input20" class="col-sm-6 control-label">Travail en horaire décalé :</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control large" id="input20">
+                                <option>oui</option>
+                                <option>non</option>
+                              </select>
+                              <span class="secondLabel"></span>
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input19" class="col-sm-6 control-label">Travail à la chaine :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                              <input type="text" class="form-control" id="input19" placeholder="" value="oui" disabled>
+                              <div class="fakeInput toEditSelect nan"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group editSelect hidden">
+                            <label for="input20" class="col-sm-6 control-label">Travail à la chaine :</label>
+                            <div class="col-sm-6 withSelect">
+                              <select class="form-control large" id="input20">
+                                <option>oui</option>
+                                <option>non</option>
+                              </select>
+                              <span class="secondLabel"></span>
+                            </div>
+                            <span class="btnOkEditSelect" data-label=""></span>
+                        </div>
 
 						<h4 class="infoTitle">Organisation du travail</h4>
 
@@ -477,8 +583,84 @@
 			            </div>
 
 			            <h4 class="postTitle">Tendinite Achileenne</h4>
+
+                        <div class="form-group specialEdit off">
+                            <label for="input45" class="col-sm-6 control-label">Date CMI :</label>
+                            <div class="col-sm-6 editCol">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input45" placeholder="" value="13/12/2016" disabled>
+                                <div class="fakeInput toEditPeriode"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group dateFormGroup hidden">
+                            <label for="input46" class="col-sm-6 control-label">Date CMI :</label>
+                            <div class="col-sm-5 input-group date specialPaddingForIcon" id="datetimepicker3">
+                                <input type="text" class="form-control" id="input46">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                                <span class="btnOkEditDate"></span>
+                            </div>
+                        </div>
+
+                        <br/>
+
                         <p>Travaux prolongés sur la pointe des pieds</p>
-                        <div class="iconPathologiePied"></div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="iconPathologiePied"></div>
+                            </div>
+                            <div class="col-lg-6 quesionsBlock">
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Moins d'1h" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'1h</option>
+                                        <option>Entre 1h et 3h30</option>
+                                        <option>Plus de 3H</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Entre 1 et 3 jours" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'un jour</option>
+                                        <option>Entre 1 et 3 jours</option>
+                                        <option>Plus de 3 jours</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                         <p class="fichierJointLabel off">Fichiers joints en rapports avec le mouvement exercé par l’employé :<span class="btnOkEdit"></span></p>
 
                         <input type="file" class="form-control input16 hidden three" id="input16" placeholder="">
@@ -493,77 +675,202 @@
                         <input type="file" class="form-control input18 hidden three" id="input18" placeholder="">
                         <a class="btn btn-primary upload emptyInputFile">AJOUTER UN DOCUEMENT</a>
                         <p class="specialhelp"></p>
-
-                        <div class="form-group specialEdit off">
-                            <label for="input19" class="col-sm-6 control-label">Temps journalier :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input19" placeholder="" value="Moins d'1h" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Temps journalier :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Moins d'1h</option>
-                                <option>Entre 1h et 3h30</option>
-                                <option>Plus de 3H</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
-
-                        <div class="form-group specialEdit off">
-                            <label for="input19" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input19" placeholder="" value="Entre 1 et 3 jours" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Moins d'un jour</option>
-                                <option>Entre 1 et 3 jours</option>
-                                <option>Plus de 3 jours</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
-
-                        <div class="form-group specialEdit off">
-                            <label for="input21" class="col-sm-6 control-label">Durée quotidienne du mouvement :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input21" placeholder="" value="Jamais" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Durée quotidienne du mouvement :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Jamais</option>
-                                <option>Occasionnel</option>
-                                <option>La majorité du temps</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
 
                         <h4 class="postTitle">Tendinopathie d’insertion des muscles épitrochléens</h4>
                         <p>Mouvements répétés de préhension ou extension de la main sur l’avant-bras ou des mouvements de pronosupination</p>
-                        <div class="iconPathologieMain1"></div>
-                        <div class="iconPathologieMain2"></div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="iconPathologieMain1"></div>
+                            </div>
+                            <div class="col-lg-6 quesionsBlock second">
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Moins d'1h" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'1h</option>
+                                        <option>Entre 1h et 3h30</option>
+                                        <option>Plus de 3H</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Entre 1 et 3 jours" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'un jour</option>
+                                        <option>Entre 1 et 3 jours</option>
+                                        <option>Plus de 3 jours</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Des gants sont-ils portés :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Des gants sont-ils portés :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>oui</option>
+                                        <option>non</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Utilise-t-il des outils vibrants :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Utilise-t-il des outils vibrants :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>oui</option>
+                                        <option>non</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="iconPathologieMain2"></div>
+                            </div>
+                            <div class="col-lg-6 quesionsBlock second">
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Moins d'1h" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Temps journalier :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'1h</option>
+                                        <option>Entre 1h et 3h30</option>
+                                        <option>Plus de 3H</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="Entre 1 et 3 jours" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Nombre de jour par semaine :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>Moins d'un jour</option>
+                                        <option>Entre 1 et 3 jours</option>
+                                        <option>Plus de 3 jours</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Des gants sont-ils portés :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Des gants sont-ils portés :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>oui</option>
+                                        <option>non</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                                <div class="form-group specialEdit off">
+                                    <label for="input19" class="col-sm-12 control-label">Utilise-t-il des outils vibrants :</label>
+                                    <div class="col-sm-12 editCol">
+                                        <span class="btnOkEdit"></span>
+                                      <input type="text" class="form-control" id="input19" placeholder="" value="non" disabled>
+                                      <div class="fakeInput toEditSelect nan"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group editSelect hidden">
+                                    <label for="input20" class="col-sm-12 control-label">Utilise-t-il des outils vibrants :</label>
+                                    <div class="col-sm-12 withSelect">
+                                      <select class="form-control large" id="input20">
+                                        <option>oui</option>
+                                        <option>non</option>
+                                      </select>
+                                      <span class="secondLabel"></span>
+                                    </div>
+                                    <span class="btnOkEditSelect" data-label=""></span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <br/>
+
                         <p class="fichierJointLabel off">Fichiers joints en rapports avec le mouvement exercé par l’employé :<span class="btnOkEdit"></span></p>
 
                         <input type="file" class="form-control input16 hidden three" id="input16" placeholder="">
@@ -579,71 +886,7 @@
                         <a class="btn btn-primary upload emptyInputFile">AJOUTER UN DOCUEMENT</a>
                         <p class="specialhelp"></p>
 
-                        <div class="form-group specialEdit off">
-                            <label for="input19" class="col-sm-6 control-label">Temps journalier :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input19" placeholder="" value="Moins d'1h" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
 
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Temps journalier :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Moins d'1h</option>
-                                <option>Entre 1h et 3h30</option>
-                                <option>Plus de 3H</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
-
-                        <div class="form-group specialEdit off">
-                            <label for="input19" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input19" placeholder="" value="Entre 1 et 3 jours" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Nombre de jour par semaine :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Moins d'un jour</option>
-                                <option>Entre 1 et 3 jours</option>
-                                <option>Plus de 3 jours</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
-
-                        <div class="form-group specialEdit off">
-                            <label for="input21" class="col-sm-6 control-label">Durée quotidienne du mouvement :</label>
-                            <div class="col-sm-6 editCol">
-                                <span class="btnOkEdit"></span>
-                              <input type="text" class="form-control" id="input21" placeholder="" value="Jamais" disabled>
-                              <div class="fakeInput toEditSelect nan"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group editSelect hidden">
-                            <label for="input20" class="col-sm-6 control-label">Durée quotidienne du mouvement :</label>
-                            <div class="col-sm-6 withSelect">
-                              <select class="form-control large" id="input20">
-                                <option>Jamais</option>
-                                <option>Occasionnel</option>
-                                <option>La majorité du temps</option>
-                              </select>
-                              <span class="secondLabel"></span>
-                            </div>
-                            <span class="btnOkEditSelect" data-label=""></span>
-                        </div>
 
                     </div>
                     <div class="col-lg-6 rightZone">
@@ -672,6 +915,15 @@
                             <div class="col-sm-6 editCol fullWidth">
                                 <span class="btnOkEdit"></span>
                                 <input type="text" class="form-control" id="input39" placeholder="" value="Michelle" disabled>
+                                <div class="fakeInput"></div>
+                            </div>
+                        </div>
+
+                         <div class="form-group specialEdit off">
+                            <label for="input50" class="col-sm-6 control-label">Numéro de sécurité sociale :</label>
+                            <div class="col-sm-6 editCol fullWidth">
+                                <span class="btnOkEdit"></span>
+                                <input type="text" class="form-control" id="input50" placeholder="" value="1 69 05 49 588 157 80" disabled>
                                 <div class="fakeInput"></div>
                             </div>
                         </div>
@@ -721,27 +973,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group specialEdit off">
-                            <label for="input45" class="col-sm-6 control-label">Date CMI :</label>
-                            <div class="col-sm-6 editCol fullWidth">
-                                <span class="btnOkEdit"></span>
-                                <input type="text" class="form-control" id="input45" placeholder="" value="13/12/2016" disabled>
-                                <div class="fakeInput toEditPeriode"></div>
-                            </div>
-                        </div>
-
-                        <div class="form-group dateFormGroup hidden">
-                            <label for="input46" class="col-sm-6 control-label">Date CMI :</label>
-                            <div class="col-sm-5 input-group date specialPaddingForIcon" id="datetimepicker3">
-                                <input type="text" class="form-control" id="input46">
-                                <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                                <span class="btnOkEditDate"></span>
-                            </div>
-                        </div>
-
-                        <div class="form-group specialEdit off">
+                        <!-- <div class="form-group specialEdit off">
                             <label for="input47" class="col-sm-6 control-label">Côté de l’affectation :</label>
                             <div class="col-sm-6 editCol fullWidth">
                                 <span class="btnOkEdit"></span>
@@ -757,7 +989,7 @@
                                 <option>Droit</option>
                                 <option>Gauche</option>
                               </select>
-                              <!-- <span class="secondLabel">jours</span> -->
+                              <span class="secondLabel">jours</span>
                             </div>
                             <span class="btnOkEditSelect" data-label=""></span>
                         </div>
@@ -767,15 +999,6 @@
                             <div class="col-sm-6 editCol fullWidth">
                                 <span class="btnOkEdit"></span>
                                 <input type="text" class="form-control" id="input49" placeholder="" value="durand.michelle@gmail.com" disabled>
-                                <div class="fakeInput"></div>
-                            </div>
-                        </div>
-
-                         <div class="form-group specialEdit off">
-                            <label for="input50" class="col-sm-6 control-label">Numéro de sécurité sociale :</label>
-                            <div class="col-sm-6 editCol fullWidth">
-                                <span class="btnOkEdit"></span>
-                                <input type="text" class="form-control" id="input50" placeholder="" value="1 69 05 49 588 157 80" disabled>
                                 <div class="fakeInput"></div>
                             </div>
                         </div>
@@ -798,7 +1021,7 @@
                                 </span>
                                 <span class="btnOkEditDate"></span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <h4 class="infoTitleSalaire marginTop">Absence au cours des 12 derniers mois qui précède 01/02/2017</h4>
 
