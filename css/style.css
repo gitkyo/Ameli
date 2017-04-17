@@ -8901,48 +8901,48 @@ footer a:hover {
     height: 130px;
   }
 }
-body > div.accueil div.actionRow {
+body > div.premiere-co-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.accueil div.actionRow > div.form-group {
+body > div.premiere-co-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.accueil div.actionRow > div.form-group a {
+body > div.premiere-co-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
 }
-body > div.accueil div.actionRow > div.form-group a.prevAmeli {
+body > div.premiere-co-emp div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
 }
-body > div.accueil div.wrapper {
+body > div.premiere-co-emp div.wrapper {
   min-height: 450px;
   padding: 0 150px;
   padding-bottom: 50px;
   padding-top: 70px;
   background-color: #fff;
 }
-body > div.accueil div.wrapper div.sal,
-body > div.accueil div.wrapper div.emp {
+body > div.premiere-co-emp div.wrapper div.sal,
+body > div.premiere-co-emp div.wrapper div.emp {
   padding-bottom: 20px;
 }
-body > div.accueil div.wrapper div.sal div.form-group,
-body > div.accueil div.wrapper div.emp div.form-group {
+body > div.premiere-co-emp div.wrapper div.sal div.form-group,
+body > div.premiere-co-emp div.wrapper div.emp div.form-group {
   margin-bottom: 0;
 }
-body > div.accueil div.wrapper div.sal div.form-group label,
-body > div.accueil div.wrapper div.emp div.form-group label {
+body > div.premiere-co-emp div.wrapper div.sal div.form-group label,
+body > div.premiere-co-emp div.wrapper div.emp div.form-group label {
   padding-top: 0;
   font-family: 'Proxima Nova Semibold';
 }
-body > div.accueil div.wrapper div.leftZone {
+body > div.premiere-co-emp div.wrapper div.leftZone {
   padding-right: 6%;
 }
-body > div.accueil div.wrapper div.rightZone {
+body > div.premiere-co-emp div.wrapper div.rightZone {
   padding-left: 6%;
 }
-body > div.accueil div.wrapper h4 {
+body > div.premiere-co-emp div.wrapper h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005ea8;
@@ -8950,69 +8950,69 @@ body > div.accueil div.wrapper h4 {
   color: #404040;
 }
 @media (max-width: 1200px) {
-  body > div.accueil div.wrapper div.leftZone,
-  body > div.accueil div.wrapper div.rightZone {
+  body > div.premiere-co-emp div.wrapper div.leftZone,
+  body > div.premiere-co-emp div.wrapper div.rightZone {
     padding: 0;
   }
-  body > div.accueil div.wrapper div.rightZone {
+  body > div.premiere-co-emp div.wrapper div.rightZone {
     margin-top: 100px;
   }
-  body > div.accueil div.wrapper {
+  body > div.premiere-co-emp div.wrapper {
     padding-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
-  body > div.accueil div.wrapper {
+  body > div.premiere-co-emp div.wrapper {
     padding: 50px 10%;
   }
-  body > div.accueil div.actionRow > div.form-group a {
+  body > div.premiere-co-emp div.actionRow > div.form-group a {
     display: inline-block;
     margin: 0;
     float: none;
   }
 }
-body > div.accueil-sal div.actionRow {
+body > div.premiere-co-sal div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.accueil-sal div.actionRow > div.form-group {
+body > div.premiere-co-sal div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.accueil-sal div.actionRow > div.form-group a {
+body > div.premiere-co-sal div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
 }
-body > div.accueil-sal div.actionRow > div.form-group a.prevAmeli {
+body > div.premiere-co-sal div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
 }
-body > div.accueil-sal div.wrapper {
+body > div.premiere-co-sal div.wrapper {
   min-height: 450px;
   padding: 0 150px;
   padding-bottom: 50px;
   padding-top: 70px;
   background-color: #fff;
 }
-body > div.accueil-sal div.wrapper div.sal,
-body > div.accueil-sal div.wrapper div.emp {
+body > div.premiere-co-sal div.wrapper div.sal,
+body > div.premiere-co-sal div.wrapper div.emp {
   padding-bottom: 20px;
 }
-body > div.accueil-sal div.wrapper div.sal div.form-group,
-body > div.accueil-sal div.wrapper div.emp div.form-group {
+body > div.premiere-co-sal div.wrapper div.sal div.form-group,
+body > div.premiere-co-sal div.wrapper div.emp div.form-group {
   margin-bottom: 0;
 }
-body > div.accueil-sal div.wrapper div.sal div.form-group label,
-body > div.accueil-sal div.wrapper div.emp div.form-group label {
+body > div.premiere-co-sal div.wrapper div.sal div.form-group label,
+body > div.premiere-co-sal div.wrapper div.emp div.form-group label {
   padding-top: 0;
   font-family: 'Proxima Nova Semibold';
 }
-body > div.accueil-sal div.wrapper div.leftZone {
+body > div.premiere-co-sal div.wrapper div.leftZone {
   padding-right: 6%;
 }
-body > div.accueil-sal div.wrapper div.rightZone {
+body > div.premiere-co-sal div.wrapper div.rightZone {
   padding-left: 6%;
 }
-body > div.accueil-sal div.wrapper h4 {
+body > div.premiere-co-sal div.wrapper h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005ea8;
@@ -9020,22 +9020,22 @@ body > div.accueil-sal div.wrapper h4 {
   color: #404040;
 }
 @media (max-width: 1200px) {
-  body > div.accueil-sal div.wrapper div.leftZone,
-  body > div.accueil-sal div.wrapper div.rightZone {
+  body > div.premiere-co-sal div.wrapper div.leftZone,
+  body > div.premiere-co-sal div.wrapper div.rightZone {
     padding: 0;
   }
-  body > div.accueil-sal div.wrapper div.rightZone {
+  body > div.premiere-co-sal div.wrapper div.rightZone {
     margin-top: 100px;
   }
-  body > div.accueil-sal div.wrapper {
+  body > div.premiere-co-sal div.wrapper {
     padding-bottom: 50px;
   }
 }
 @media (max-width: 768px) {
-  body > div.accueil-sal div.wrapper {
+  body > div.premiere-co-sal div.wrapper {
     padding: 50px 10%;
   }
-  body > div.accueil-sal div.actionRow > div.form-group a {
+  body > div.premiere-co-sal div.actionRow > div.form-group a {
     display: inline-block;
     margin: 0;
     float: none;
