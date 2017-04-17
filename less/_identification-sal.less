@@ -1,0 +1,107 @@
+body > div.identification-sal{
+	div.wrapper{
+		background-color: #fff;
+		div.tabsRow{
+			margin-top: 30px;
+			width: 98%;
+			border-bottom: 1px solid #c9c9c9;
+			margin-left: 1%;
+			p{
+				text-transform: uppercase;
+				display: inline-block;
+				margin-bottom: 0;
+				padding-bottom: 10px;
+				margin-right: 4%;
+				&.active{
+					font-family: 'Proxima Nova Semibold';
+					color: @bleuAmeli;
+					border-bottom: 1px solid @bleuAmeli;
+				}
+			}
+		}
+		div.wrapperForm{
+			margin-top: 60px;
+			margin-bottom: 100px;
+			padding: 0 6%;
+			h4{
+				font-family: 'Proxima Nova Semibold';
+				margin-bottom: 50px;
+				border-bottom: 1px solid @bleuAmeli;
+				padding-bottom: 10px;
+				color: #404040;
+				&.infoTitle{
+					margin-top: 70px;
+					border-color: #f68428;
+				}
+				&.infoTitleSalaire{
+					border-color: #56ca81;
+				}
+			}
+			div.leftZone{
+				padding-right: 5%;
+			}
+			div.rightZone{
+				padding-left: 5%;
+			}
+			.decale{
+				margin-left: 15%;
+			}
+			div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			}
+		}
+	}
+	div.actionRow {
+		background-color: #f7f7f7;
+		> div.form-group {
+			margin: 10px 0;
+			text-align: center;
+			a {
+				float: right;
+				margin-right: 134px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	body > div.identification-sal div.wrapper div.wrapperForm {
+		div.rightZone {
+			padding-left: 0%;
+			padding-right: 5%;
+			margin-top: 160px;
+		}
+		h4.infoTitle {
+			margin-top: 160px;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.identification-sal {
+		div.wrapper div.tabsRow {
+			border-color: #fff;
+			p{
+				width: 100%;
+				margin-bottom: 25px;
+			}
+		}
+		div.actionRow > div.form-group a {
+			float: none;
+			display: inline-block;
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+@radius : 15px;
+body > div.confirmation-sal{
+	div.wrapper{
+		padding: 0 20%;
+		padding-top: 80px;
+		text-align: center;
+		background-color: #fff;
+		p.subTitle{
+			margin-top: 50px;
+			font-family: 'Proxima Nova Light';
+			font-size: 1.1em;
+		}
+		div.border{
+			display: inline;
+			border: 1px solid #ebebeb;
+			padding: 8px 3px;
+			.border-left-radius(@radius);
+			.border-right-radius(@radius);
+			.border-top-radius(@radius);
+			.border-bottom-radius(@radius);
+			div.completeBar{
+				background: #ebebeb;
+				font-family: 'Proxima Nova Regular';
+				width: auto;
+				font-size: 1.2em;
+				display: inline-block;
+				b{
+					font-family: 'Proxima Nova Semibold';
+					font-weight: normal;
+				}
+				.border-left-radius(@radius);
+				.border-right-radius(@radius);
+				.border-top-radius(@radius);
+				.border-bottom-radius(@radius);
+				padding: 3px 7%;
+				color: @bleuAmeli;
+			}
+		}
+		div.downloadPDF{
+			margin-top: 20px;
+			a{
+				font-weight: normal;
+				padding: 0 40px;
+				font-size: 0.8em;
+			}
+			p{
+				font-size: 1.1em;
+				font-family: 'Proxima Nova Light';
+				display: inline-block;
+				padding-right: 20px;
+			}
+		}
+		a.action{
+			display: inline-block;
+			margin-top: 120px;
+			margin-bottom: 110px;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	body > div.confirmation-sal div.wrapper {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.confirmation-sal div.wrapper a.action {
+		display: none;
+		&.hidden{
+			display: block !important;
+			height: auto;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0;
+		}
+	}
+}

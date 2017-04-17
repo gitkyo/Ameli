@@ -941,21 +941,42 @@ jQuery( document ).ready(function() {
 
 	window.init = function() {
 
+		// global on front
+		if( $('.container-fluid').hasClass('main') ) initAide();
+
+		// Login page
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
-		if( $('.container-fluid.main').hasClass('identification') ) initIdentification();
-		if( $('.container-fluid.main').hasClass('description') ) initDescription();
-		if( $('.container-fluid.main').hasClass('description2') ) initDescription2();
-		if( $('.container-fluid.main').hasClass('questionnaire') ) initQuestionnaire();
-		if( $('.container-fluid.main').hasClass('pathologie') ) initPathologie();
-		if( $('.container-fluid.main').hasClass('recap') ) initRecap();
+
+		if( $('.container-fluid.main').hasClass('identification-emp') ) initIdentification();
+		if( $('.container-fluid.main').hasClass('identification-sal') ) initIdentification();
+
+		if( $('.container-fluid.main').hasClass('description-emp') ) initDescription();
+		if( $('.container-fluid.main').hasClass('description-sal') ) initDescription();
+
+		if( $('.container-fluid.main').hasClass('description2-emp') ) initDescription2();
+		if( $('.container-fluid.main').hasClass('description2-sal') ) initDescription2();
+
+		if( $('.container-fluid.main').hasClass('pathologie-emp') ) initPathologie();
+		if( $('.container-fluid.main').hasClass('pathologie-sal') ) initPathologie();
+
+		if( $('.container-fluid.main').hasClass('recap-emp') ) initRecap();
+		if( $('.container-fluid.main').hasClass('recap-sal') ) initRecap();
+
+		if( $('.container-fluid.main').hasClass('questionnaire-emp') ) initQuestionnaire();
+		if( $('.container-fluid.main').hasClass('questionnaire-sal') ) initQuestionnaire();
+
+		if( $('.container-fluid').hasClass('compte-sal') ) initCompteSal();
+		if( $('.container-fluid').hasClass('compte-emp') ) initCompteEmp();
+
 		if( $('.container-fluid.main').hasClass('mention') ) initMention();
+
+		// Back office
 		if( $('.container-fluid.main').hasClass('questionnaire1') ) initQuestionnaire1();
 		if( $('.container-fluid.main').hasClass('questionnaire2') ) initQuestionnaire2();
 		if( $('.container-fluid.main').hasClass('liste-dossier') ) initListeDossier();
 		if( $('.container-fluid.main').hasClass('detail-dossier') ) initDetailDossier();
-		if( $('.container-fluid').hasClass('main') ) initAide();
-		if( $('.container-fluid').hasClass('compte-sal') ) initCompteSal();
-		if( $('.container-fluid').hasClass('compte-emp') ) initCompteEmp();
+
+
 
 	}
 

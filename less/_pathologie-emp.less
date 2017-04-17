@@ -1,4 +1,4 @@
-body > div.description{
+body > div.pathologie-emp{
 	/* @animation : color: @orangeAmeli; */
 	@-webkit-keyframes colorTextOange {
 	    0%   {color : #cecece}
@@ -8,13 +8,13 @@ body > div.description{
 	    0%   {background-color: #ebebeb}
 	    100% {background-color : @orangeAmeli}
 	}
-	@-webkit-keyframes pinnoccioBar {
+	@-webkit-keyframes pinnoccioBarThree {
 	    0%   {width : 0%}
 	    20%   {background-color: @orangeAmeli}
 	    40%   {background-color: #ebebeb}
 	    60%   {background-color: @orangeAmeli}
 	    80%   {background-color: #ebebeb}
-	    100% {width : 30%}
+	    100% {width : 45%}
 	}
 	@keyframes colorTextOange {
 	    0%   {color : #cecece}
@@ -24,13 +24,13 @@ body > div.description{
 	    0%   {background-color: #ebebeb}
 	    100% {background-color : @orangeAmeli}
 	}
-	@keyframes pinnoccioBar {
+	@keyframes pinnoccioBarThree {
 	    0%   {width : 0%}
 	    20%   {background-color: @orangeAmeli}
 	    40%   {background-color: #ebebeb}
 	    60%   {background-color: @orangeAmeli}
 	    80%   {background-color: #ebebeb}
-	    100% {width : 30%}
+	    100% {width : 45%}
 	}
 	div.wrapper{
 		background-color: #fff;
@@ -77,7 +77,7 @@ body > div.description{
 						} */
 					}
 					div.completeBar{
-						width: 30%;
+						width: 45%;
 						background-color: #ebebeb;
 						animation-name: colorBarOange;
 						-webkit-animation-name: colorBarOange; /* Safari 4.0 - 8.0 */
@@ -94,9 +94,9 @@ body > div.description{
 						-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
 						animation-timing-function: ease-in;
 
-						/* pinnoccioBar*/
-						animation-name: pinnoccioBar;
-						-webkit-animation-name: pinnoccioBar; /* Safari 4.0 - 8.0 */
+						/* pinnoccioBarThree*/
+						animation-name: pinnoccioBarThree;
+						-webkit-animation-name: pinnoccioBarThree; /* Safari 4.0 - 8.0 */
 
 						animation-duration: 0.9s;
 						-webkit-animation-duration: 0.9s; /* Safari 4.0 - 8.0 */
@@ -158,109 +158,215 @@ body > div.description{
 			margin-top: 60px;
 			margin-bottom: 100px;
 			padding: 0 6%;
+			div.dateFormGroup{
+				position: relative;
+				top: -20px;
+				p{
+					font-family: 'Proxima Nova Semibold';
+					display: inline-block;
+					position: relative;
+					left: 5px;
+				}
+			}
+			.top,.bottom{
+				padding-bottom: 40px;
+			}
+			div.minimized {
+				padding-bottom: 0px;
+				div.leftZone{
+					display: none;
+				}
+				div.rightZone{
+					display: none;
+				}
+				h4 {
+					span{
+						-ms-transform: rotate(90deg); /* IE 9 */
+						-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+						transform: rotate(90deg);
+					}
+				}
+			}
 			h4{
+				cursor: pointer;
 				font-family: 'Proxima Nova Semibold';
 				margin-bottom: 50px;
 				border-bottom: 1px solid @bleuAmeli;
 				padding-bottom: 10px;
 				color: #404040;
-				&.infoTitle{
-					margin-top: 70px;
-					border-color: #f68428;
+				position: relative;
+				padding-right: 100px;
+				span{
+					color: #383838;
+					-ms-transform: rotate(-90deg); /* IE 9 */
+					-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+					transform: rotate(-90deg);
+					position: absolute;
+					right: 5px;
+					top: 0;
 				}
-				&.infoTitleSalaire{
-					border-color: #56ca81;
+			}
+			div.form-group.reduced{
+				padding-left: 2%;
+				padding-right: 2%;
+			}
+			div.firstRowSpecialRadio{
+				margin-top: 165px;
+			}
+			div.rowCustomRadio{
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				div.bar{
+					width: 94%;
+					position: absolute;
+					top: 8px;
+					height: 3.5px;
+					background-color: #dbdbdb;
 				}
-				&.infoTitleCondition{
-					border-color: #84156e;
-					margin-top: 70px;
+			}
+			div.oneRadioCustom{
+				display: inline-block;
+				position: relative;
+				min-height: 30px;
+				p{
+					font-family: 'Proxima Nova Regular';
+					position: absolute;
+					width: auto;
+					color: #a4a4a4;
+					margin-bottom: 0;
+					top: 33px;
+					min-width: 110px;
+				}
+				span.boule{
+					height: 20px;
+					width: 20px;
+					background-color: #dbdbdb;
+					border-radius: 20px;
+					-webkit-border-radius: 20px;
+					-moz-border-radius: 20px;
+					display: inline-block;
+					cursor: pointer;
+				}
+				&.active{
+					p{
+						color: @bleuAmeli;
+						font-family: 'Proxima Nova Semibold';
+						margin: 0 -1px;
+					}
+					span.boule{
+						background-color: @bleuAmeli;
+					}
+				}
+				&.one{
+					text-align: left;
+					float: left;
+				}
+				&.two{
+					text-align: center;
+					p{
+						margin-left: -43px;
+					}
+				}
+				&.three{
+					text-align: left;
+					float: right;
+					p{
+						margin-left: -163px;
+						text-align: right;
+						min-width: 180px;
+					}
 				}
 			}
 			div.leftZone{
 				padding-right: 5%;
-				div.periode div.dateFormGroup{
-					&.first div.input-group{
-						/* padding-left: 2%; */
-					}
-					&.second{
-						div.input-group{
-							/* padding-left: 2%; */
-						}
-						label{
-							padding-left: 0;
-							left: -10px;
+				div.second{
+					margin-top: 55px;
+				}
+				div.iconPathologiePied{
+					background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
+					width: 198px;
+					height: 233px;
+					margin-bottom: 62px;
+					margin-top: 63px;
+					margin-left: 5%;
+				}
+				div.iconPathologieMain1{
+					background: url(../img/schema2.jpg) no-repeat 50% 50%;
+					width: 198px;
+					height: 233px;
+					margin-bottom: 0;
+					margin-top: 63px;
+					margin-left: 5%;
+				}
+				div.iconPathologieMain2{
+					background: url(../img/schema3.jpg) no-repeat 50% 50%;
+					width: 299px;
+					height: 233px;
+					margin-bottom: 250px;
+					margin-top: 63px;
+					margin-left: 0%;
+				}
+				p.subTitle{
+					margin-bottom: 20px;
+					&.secondRow{
+						margin-top: 155px;
+						&.more{
+							margin-top: 358px;
 						}
 					}
 				}
-				.decale{
-					margin-left: 15%;
+				label.fileIcon{
+					background: url(../img/icon_file.png) no-repeat 0% 50%;
+					padding-left: 25px;
+					padding-top: 4px;
+					width: 100%;
+					letter-spacing: 0.2px;
+					margin-bottom: 25px;
+				}
+				p.specialhelp{
+					color: #464646;
+					display: inline-block;
+					margin-left: 20px;
+					font-family: 'Proxima Nova Regular';
+				}
+				button.one,
+				button.two,
+				button.three,
+				button.four{
+					border-color: @orangeAmeli;
+					color: @orangeAmeli;
+					font-size: 0.8em;
+					font-family: 'Proxima Nova Regular';
+					padding-left: 50px;
+					background: url(../img/icon_upload.png) no-repeat 18px 50%;
+					background-size: 18px;
+					border-radius: 20px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					padding-right: 20px;
+					text-transform: uppercase;
+					&:focus{
+						outline: none;
+					}
+
 				}
 			}
 			div.rightZone{
 				padding-left: 5%;
-				div.oneBlock{
-					&:first-of-type{
-						margin-bottom: 0px;
-					}
-					margin-top: 70px;
+				div.blocSchema1{
+					min-height: 620px;
 				}
-				div.periode div.dateFormGroup.second label {
-					padding-left: 0;
-					left: -10px;
+				div.secondRow{
+					margin-top: 50px;
 				}
-				div.oneBlock{
-					> p{
-						font-family: 'Proxima Nova Semibold';
-					}
-					div.motifRow{
-						width: 96%;
-						margin-left: 2%;
-					}
-				}
-				span.separation{
-					display: block;
-					position: relative;
-					text-align: center;
-					cursor: pointer;
-					text-transform: uppercase;
-					&:hover{
-						p{
-							color: @bleuAmeli;
-						}
-						span.line{
-							border-color: @bleuAmeli;
-						}
-					}
-					p{
-						color: #d5d5d5;
-						display: inline-block;
-						top: 34px;
-						position: relative;
-						background-color: #fff;
-						padding: 0 1%;
-					}
-					span.line{
-						border-top: 1px dashed #d5d5d5;
-						display: inline-block;
+				div.form-group{
+					margin-bottom: 0px;
+					textarea{
 						width: 100%;
 					}
 				}
-
 			}
-			/* div.form-group{
-				div.withSelect{
-					position: relative;
-					input{
-						width: 91%;
-					}
-					select{
-						width: 10%;
-						float: right;
-						margin-top: -40px;
-						padding: 0 0 0 12px;
-					}
-				}
-			} */
 		}
 	}
 	div.actionRow {
@@ -283,15 +389,15 @@ body > div.description{
 }
 
 @media (max-width: 1199px) {
-	body > div.description div.wrapper div.wrapperForm {
+	body > div.pathologie-emp div.wrapper div.wrapperForm {
 		/* padding: 0 10%; */
+		div.rowCustomRadio div.bar {
+			width: 95%;
+		}
 		div.rightZone {
 			padding-left: 0%;
 			padding-right: 5%;
 			margin-top: 160px;
-		}
-		div.leftZone div.periode div.dateFormGroup.first div.input-group {
-			padding-left: 0;
 		}
 		h4.infoTitle {
 			margin-top: 160px;
@@ -300,7 +406,7 @@ body > div.description{
 }
 
 @media (max-width: @screen-md-min) {
-	body > div.description div.wrapper div.barRow div.border{
+	body > div.pathologie-emp div.wrapper div.barRow div.border{
 		float: none;
 		top: 15px;
 		left: 2%;
@@ -313,11 +419,11 @@ body > div.description{
 
 
 @media (max-width: @screen-sm-min) {
-	body > div.description {
+	body > div.pathologie-emp {
 		div.wrapper {
-			/* div.wrapperForm {
-				padding: 0 15%;
-			} */
+			div.wrapperForm div.rowCustomRadio div.bar {
+				width: 93%;
+			}
 			div.barRow div.border{
 				p {
 					text-align: right;
@@ -341,13 +447,49 @@ body > div.description{
 }
 
 @media (max-width: @screen-xs-min) {
-	body > div.description div.wrapper div.barRow div.border {
-		left: 4%;
-		width: 92%;
+	body > div.pathologie-emp div.wrapper {
+		div.radioFormGroup{
+			label{
+				text-align: center;
+			}
+		}
+
+		div.wrapperForm div.rowCustomRadio div.bar {
+			width: 89%;
+		}
+
+		div.wrapperForm div.rightZone div.rowCustomRadio {
+			div.oneRadioCustom {
+				text-align: center !important;
+				width: 100%;
+				margin-bottom: 50px;
+				&.two{
+					p{
+						margin-left: 0;
+					}
+				}
+				&.three{
+					p{
+						margin-left: 0;
+						text-align: center;
+					}
+				}
+				p{
+					width: 100%;
+				}
+			}
+			div.bar {
+				display: none;
+			}
+		}
+		div.barRow div.border {
+			left: 4%;
+			width: 92%;
+		}
 	}
 }
 @media (max-width: 300px) {
-	body > div.description div.wrapper div.barRow div.border {
+	body > div.pathologie-emp div.wrapper div.barRow div.border {
 		left: -5%;
 	}
 }

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Je suis salarié | Première connexion</title>
+    <title>Je suis salarié | Questionnaire Maladie Professionnelle</title>
 
     <!-- Bootstrap + bootstrap_override + customcss -->
     <link href="css/style.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 
     <div class="BandeauAide"><p>Besoin d'aide ?</p></div>
 
-    <div class="container-fluid main premiere-co-sal">
+    <div class="container-fluid main confirmation-sal">
 
         <div class="row header">
             <header>
@@ -47,62 +47,26 @@
                 </section>
 
                 <section class="postTete">
-                    <h3>PREMIèRE CONNEXION</h3>
+                    <h3>Questionnaire <span>maladie professionelle</span></h3>
                 </section>
             </header>
         </div> <!-- fin row header -->
 
-        <form class="form-horizontal">
+        <div class="wrapper row">
 
-            <div class="wrapper row">
-                <div class="row">
-                    <div class="col-lg-6 leftZone">
-
-                        <h4>Saisissez votre email</h4>
-
-                        <div class="form-group required">
-                            <label for="input1" class="col-sm-3 control-label">Email</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="input1" placeholder="">
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="input2" class="col-sm-3 control-label">Confirmer l'Email</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="input2" placeholder="">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 rightZone">
-                        <h4>Personalisez votre code d'accès</h4>
-
-                        <div class="form-group required">
-                            <label for="input3" class="col-sm-3 control-label">Nouveau code</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" id="input3" placeholder="">
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="input4" class="col-sm-3 control-label">Confirmer le code</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" id="input4" placeholder="">
-                            </div>
-                        </div>
-                    </div>
+			<div class="col-lg-12">
+                <div class="border"><div class="completeBar">complété à <b>100%</b></div></div>
+                <p class="subTitle">Votre formulaire à bien été transmis au service ameli maladie professionelle.</p>
+                <div class="downloadPDF">
+                    <p>Télécharger le récapitulatif du formulaire : </p>
+                    <a download href='pdf/fake_pdf_formulaire.pdf' type="submit" class="okAmeli orange btn btn-primary">formulaire.pdf</a>
                 </div>
-            </div> <!-- fin wrapper -->
+                <a href='questionnaire-sal.html' type="submit" class="action okAmeli btn btn-primary">retour à vos autres questionnaires en attente</a>
+                <!-- <a href='index.html' type="submit" class="hidden action okAmeli btn btn-primary">retour à vos autres <br/> questionnaires en attente</a> -->
+			</div>
 
-            <div class="actionRow row">
-                <div class="form-group">
-                    <a href="identification-sal.html" class="suivAmeli btn btn-primary">Suivant</a>
-                </div>
-            </div>
+        </div> <!-- fin wrapper -->
 
-        </form>
     </div> <!-- fin container -->
 
     <footer>

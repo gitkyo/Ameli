@@ -9097,81 +9097,6 @@ body > div.cgu div.wrapper button {
   margin-top: 60px;
   text-transform: initial;
 }
-body > div.confirmation div.wrapper {
-  padding: 0 20%;
-  padding-top: 80px;
-  text-align: center;
-  background-color: #fff;
-}
-body > div.confirmation div.wrapper p.subTitle {
-  margin-top: 50px;
-  font-family: 'Proxima Nova Light';
-  font-size: 1.1em;
-}
-body > div.confirmation div.wrapper div.border {
-  display: inline;
-  border: 1px solid #ebebeb;
-  padding: 8px 3px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-body > div.confirmation div.wrapper div.border div.completeBar {
-  background: #ebebeb;
-  font-family: 'Proxima Nova Regular';
-  width: auto;
-  font-size: 1.2em;
-  display: inline-block;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding: 3px 7%;
-  color: #005da8;
-}
-body > div.confirmation div.wrapper div.border div.completeBar b {
-  font-family: 'Proxima Nova Semibold';
-  font-weight: normal;
-}
-body > div.confirmation div.wrapper div.downloadPDF {
-  margin-top: 20px;
-}
-body > div.confirmation div.wrapper div.downloadPDF a {
-  font-weight: normal;
-  padding: 0 40px;
-  font-size: 0.8em;
-}
-body > div.confirmation div.wrapper div.downloadPDF p {
-  font-size: 1.1em;
-  font-family: 'Proxima Nova Light';
-  display: inline-block;
-  padding-right: 20px;
-}
-body > div.confirmation div.wrapper a.action {
-  display: inline-block;
-  margin-top: 120px;
-  margin-bottom: 110px;
-}
-@media (max-width: 768px) {
-  body > div.confirmation div.wrapper {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-}
-@media (max-width: 480px) {
-  body > div.confirmation div.wrapper a.action {
-    display: none;
-  }
-  body > div.confirmation div.wrapper a.action.hidden {
-    display: block !important;
-    height: auto;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
-}
 body > div.connexion div.wrapper {
   background-color: #fff;
   padding: 0;
@@ -9394,104 +9319,201 @@ body > div.connexion div.wrapper div.bottomContainer div.iconRow div.icon.icon4 
     margin-right: 0px;
   }
 }
-body > div.identification div.wrapper {
+body > div.identification-emp div.wrapper {
   background-color: #fff;
 }
-body > div.identification div.wrapper div.tabsRow {
+body > div.identification-emp div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
-body > div.identification div.wrapper div.tabsRow p {
+body > div.identification-emp div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-right: 4%;
 }
-body > div.identification div.wrapper div.tabsRow p.active {
+body > div.identification-emp div.wrapper div.tabsRow p.active {
   font-family: 'Proxima Nova Semibold';
   color: #005da8;
   border-bottom: 1px solid #005da8;
 }
-body > div.identification div.wrapper div.wrapperForm {
+body > div.identification-emp div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
 }
-body > div.identification div.wrapper div.wrapperForm h4 {
+body > div.identification-emp div.wrapper div.wrapperForm h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005da8;
   padding-bottom: 10px;
   color: #404040;
 }
-body > div.identification div.wrapper div.wrapperForm h4.infoTitle {
+body > div.identification-emp div.wrapper div.wrapperForm h4.infoTitle {
   margin-top: 70px;
   border-color: #f68428;
 }
-body > div.identification div.wrapper div.wrapperForm h4.infoTitleSalaire {
+body > div.identification-emp div.wrapper div.wrapperForm h4.infoTitleSalaire {
   border-color: #56ca81;
 }
-body > div.identification div.wrapper div.wrapperForm div.leftZone {
+body > div.identification-emp div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
-body > div.identification div.wrapper div.wrapperForm div.rightZone {
+body > div.identification-emp div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.identification div.wrapper div.wrapperForm .decale {
+body > div.identification-emp div.wrapper div.wrapperForm .decale {
   margin-left: 15%;
 }
-body > div.identification div.wrapper div.wrapperForm div.form-group div.withSelect {
+body > div.identification-emp div.wrapper div.wrapperForm div.form-group div.withSelect {
   position: relative;
 }
-body > div.identification div.wrapper div.wrapperForm div.form-group div.withSelect input {
+body > div.identification-emp div.wrapper div.wrapperForm div.form-group div.withSelect input {
   width: 91%;
 }
-body > div.identification div.wrapper div.wrapperForm div.form-group div.withSelect select {
+body > div.identification-emp div.wrapper div.wrapperForm div.form-group div.withSelect select {
   width: 10%;
   float: right;
   margin-top: -40px;
   padding: 0 0 0 12px;
 }
-body > div.identification div.actionRow {
+body > div.identification-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.identification div.actionRow > div.form-group {
+body > div.identification-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.identification div.actionRow > div.form-group a {
+body > div.identification-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
 }
 @media (max-width: 1200px) {
-  body > div.identification div.wrapper div.wrapperForm div.rightZone {
+  body > div.identification-emp div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.identification div.wrapper div.wrapperForm h4.infoTitle {
+  body > div.identification-emp div.wrapper div.wrapperForm h4.infoTitle {
     margin-top: 160px;
   }
 }
 @media (max-width: 768px) {
-  body > div.identification div.wrapper div.tabsRow {
+  body > div.identification-emp div.wrapper div.tabsRow {
     border-color: #fff;
   }
-  body > div.identification div.wrapper div.tabsRow p {
+  body > div.identification-emp div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.identification div.actionRow > div.form-group a {
+  body > div.identification-emp div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 auto;
   }
 }
-body > div.description {
+body > div.identification-sal div.wrapper {
+  background-color: #fff;
+}
+body > div.identification-sal div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.identification-sal div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.identification-sal div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.identification-sal div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+}
+body > div.identification-sal div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.identification-sal div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.identification-sal div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.identification-sal div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.identification-sal div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.identification-sal div.wrapper div.wrapperForm .decale {
+  margin-left: 15%;
+}
+body > div.identification-sal div.wrapper div.wrapperForm div.form-group div.withSelect {
+  position: relative;
+}
+body > div.identification-sal div.wrapper div.wrapperForm div.form-group div.withSelect input {
+  width: 91%;
+}
+body > div.identification-sal div.wrapper div.wrapperForm div.form-group div.withSelect select {
+  width: 10%;
+  float: right;
+  margin-top: -40px;
+  padding: 0 0 0 12px;
+}
+body > div.identification-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.identification-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.identification-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  body > div.identification-sal div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.identification-sal div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.identification-sal div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.identification-sal div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.identification-sal div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+body > div.description-emp {
   /* @animation : color: @orangeAmeli; */
 }
 @-webkit-keyframes colorTextOange {
@@ -9566,10 +9588,10 @@ body > div.description {
     width: 30%;
   }
 }
-body > div.description div.wrapper {
+body > div.description-emp div.wrapper {
   background-color: #fff;
 }
-body > div.description div.wrapper div.barRow div.border {
+body > div.description-emp div.wrapper div.barRow div.border {
   min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
@@ -9584,7 +9606,7 @@ body > div.description div.wrapper div.barRow div.border {
   top: -35px;
   right: 35px;
 }
-body > div.description div.wrapper div.barRow div.border.animOn p {
+body > div.description-emp div.wrapper div.barRow div.border.animOn p {
   animation-name: colorTextOange;
   -webkit-animation-name: colorTextOange;
   /* Safari 4.0 - 8.0 */
@@ -9609,7 +9631,7 @@ body > div.description div.wrapper div.barRow div.border.animOn p {
 						animation: @animation;
 						} */
 }
-body > div.description div.wrapper div.barRow div.border.animOn div.completeBar {
+body > div.description-emp div.wrapper div.barRow div.border.animOn div.completeBar {
   width: 30%;
   background-color: #ebebeb;
   animation-name: colorBarOange;
@@ -9644,14 +9666,14 @@ body > div.description div.wrapper div.barRow div.border.animOn div.completeBar 
   /* Safari 4.0 - 8.0 */
   animation-timing-function: linear;
 }
-body > div.description div.wrapper div.barRow div.border p {
+body > div.description-emp div.wrapper div.barRow div.border p {
   color: #cecece;
   text-transform: lowercase;
   position: absolute;
   right: 15px;
   top: 0;
 }
-body > div.description div.wrapper div.barRow div.border div.completeBar {
+body > div.description-emp div.wrapper div.barRow div.border div.completeBar {
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -9664,25 +9686,25 @@ body > div.description div.wrapper div.barRow div.border div.completeBar {
   position: relative;
   top: -2px;
 }
-body > div.description div.wrapper div.tabsRow {
+body > div.description-emp div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
-body > div.description div.wrapper div.tabsRow p {
+body > div.description-emp div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-right: 4%;
 }
-body > div.description div.wrapper div.tabsRow p.active {
+body > div.description-emp div.wrapper div.tabsRow p.active {
   font-family: 'Proxima Nova Semibold';
   color: #005da8;
   border-bottom: 1px solid #005da8;
 }
-body > div.description div.wrapper div.wrapperForm {
+body > div.description-emp div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
@@ -9701,74 +9723,74 @@ body > div.description div.wrapper div.wrapperForm {
 				}
 			} */
 }
-body > div.description div.wrapper div.wrapperForm h4 {
+body > div.description-emp div.wrapper div.wrapperForm h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005da8;
   padding-bottom: 10px;
   color: #404040;
 }
-body > div.description div.wrapper div.wrapperForm h4.infoTitle {
+body > div.description-emp div.wrapper div.wrapperForm h4.infoTitle {
   margin-top: 70px;
   border-color: #f68428;
 }
-body > div.description div.wrapper div.wrapperForm h4.infoTitleSalaire {
+body > div.description-emp div.wrapper div.wrapperForm h4.infoTitleSalaire {
   border-color: #56ca81;
 }
-body > div.description div.wrapper div.wrapperForm h4.infoTitleCondition {
+body > div.description-emp div.wrapper div.wrapperForm h4.infoTitleCondition {
   border-color: #84156e;
   margin-top: 70px;
 }
-body > div.description div.wrapper div.wrapperForm div.leftZone {
+body > div.description-emp div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
-body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+body > div.description-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
   /* padding-left: 2%; */
 }
-body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+body > div.description-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
   /* padding-left: 2%; */
 }
-body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+body > div.description-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
   padding-left: 0;
   left: -10px;
 }
-body > div.description div.wrapper div.wrapperForm div.leftZone .decale {
+body > div.description-emp div.wrapper div.wrapperForm div.leftZone .decale {
   margin-left: 15%;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone div.oneBlock {
   margin-top: 70px;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock:first-of-type {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone div.oneBlock:first-of-type {
   margin-bottom: 0px;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone div.periode div.dateFormGroup.second label {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone div.periode div.dateFormGroup.second label {
   padding-left: 0;
   left: -10px;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock > p {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone div.oneBlock > p {
   font-family: 'Proxima Nova Semibold';
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone div.oneBlock div.motifRow {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone div.oneBlock div.motifRow {
   width: 96%;
   margin-left: 2%;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone span.separation {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone span.separation {
   display: block;
   position: relative;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone span.separation:hover p {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone span.separation:hover p {
   color: #005da8;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone span.separation:hover span.line {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone span.separation:hover span.line {
   border-color: #005da8;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone span.separation p {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone span.separation p {
   color: #d5d5d5;
   display: inline-block;
   top: 34px;
@@ -9776,90 +9798,458 @@ body > div.description div.wrapper div.wrapperForm div.rightZone span.separation
   background-color: #fff;
   padding: 0 1%;
 }
-body > div.description div.wrapper div.wrapperForm div.rightZone span.separation span.line {
+body > div.description-emp div.wrapper div.wrapperForm div.rightZone span.separation span.line {
   border-top: 1px dashed #d5d5d5;
   display: inline-block;
   width: 100%;
 }
-body > div.description div.actionRow {
+body > div.description-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.description div.actionRow > div.form-group {
+body > div.description-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.description div.actionRow > div.form-group a {
+body > div.description-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
 }
-body > div.description div.actionRow > div.form-group a.prevAmeli {
+body > div.description-emp div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
   margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  body > div.description div.wrapper div.wrapperForm {
+  body > div.description-emp div.wrapper div.wrapperForm {
     /* padding: 0 10%; */
   }
-  body > div.description div.wrapper div.wrapperForm div.rightZone {
+  body > div.description-emp div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.description div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  body > div.description-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
     padding-left: 0;
   }
-  body > div.description div.wrapper div.wrapperForm h4.infoTitle {
+  body > div.description-emp div.wrapper div.wrapperForm h4.infoTitle {
     margin-top: 160px;
   }
 }
 @media (max-width: 992px) {
-  body > div.description div.wrapper div.barRow div.border {
+  body > div.description-emp div.wrapper div.barRow div.border {
     float: none;
     top: 15px;
     left: 2%;
     width: 96%;
   }
-  body > div.description div.wrapper div.barRow div.border div.completeBar {
+  body > div.description-emp div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
 }
 @media (max-width: 768px) {
-  body > div.description div.wrapper {
+  body > div.description-emp div.wrapper {
     /* div.wrapperForm {
 				padding: 0 15%;
 			} */
   }
-  body > div.description div.wrapper div.barRow div.border p {
+  body > div.description-emp div.wrapper div.barRow div.border p {
     text-align: right;
   }
-  body > div.description div.wrapper div.tabsRow {
+  body > div.description-emp div.wrapper div.tabsRow {
     border-color: #fff;
   }
-  body > div.description div.wrapper div.tabsRow p {
+  body > div.description-emp div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.description div.actionRow > div.form-group a.prevAmeli,
-  body > div.description div.actionRow > div.form-group a {
+  body > div.description-emp div.actionRow > div.form-group a.prevAmeli,
+  body > div.description-emp div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 5%;
   }
 }
 @media (max-width: 480px) {
-  body > div.description div.wrapper div.barRow div.border {
+  body > div.description-emp div.wrapper div.barRow div.border {
     left: 4%;
     width: 92%;
   }
 }
 @media (max-width: 300px) {
-  body > div.description div.wrapper div.barRow div.border {
+  body > div.description-emp div.wrapper div.barRow div.border {
     left: -5%;
   }
 }
-body > div.description2 {
+body > div.description-sal {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBar {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 30%;
+  }
+}
+body > div.description-sal div.wrapper {
+  background-color: #fff;
+}
+body > div.description-sal div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.description-sal div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.description-sal div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 30%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBar*/
+  animation-name: pinnoccioBar;
+  -webkit-animation-name: pinnoccioBar;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.description-sal div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.description-sal div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.description-sal div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.description-sal div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.description-sal div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.description-sal div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+  /* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+}
+body > div.description-sal div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.description-sal div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.description-sal div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.description-sal div.wrapper div.wrapperForm h4.infoTitleCondition {
+  border-color: #84156e;
+  margin-top: 70px;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  /* padding-left: 2%; */
+}
+body > div.description-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+  /* padding-left: 2%; */
+}
+body > div.description-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.leftZone .decale {
+  margin-left: 15%;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone div.oneBlock {
+  margin-top: 70px;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone div.oneBlock:first-of-type {
+  margin-bottom: 0px;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone div.oneBlock > p {
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone div.oneBlock div.motifRow {
+  width: 96%;
+  margin-left: 2%;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone span.separation {
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone span.separation:hover p {
+  color: #005da8;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone span.separation:hover span.line {
+  border-color: #005da8;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone span.separation p {
+  color: #d5d5d5;
+  display: inline-block;
+  top: 34px;
+  position: relative;
+  background-color: #fff;
+  padding: 0 1%;
+}
+body > div.description-sal div.wrapper div.wrapperForm div.rightZone span.separation span.line {
+  border-top: 1px dashed #d5d5d5;
+  display: inline-block;
+  width: 100%;
+}
+body > div.description-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.description-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.description-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.description-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.description-sal div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
+  }
+  body > div.description-sal div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.description-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+    padding-left: 0;
+  }
+  body > div.description-sal div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.description-sal div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.description-sal div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  body > div.description-sal div.wrapper {
+    /* div.wrapperForm {
+				padding: 0 15%;
+			} */
+  }
+  body > div.description-sal div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.description-sal div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.description-sal div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.description-sal div.actionRow > div.form-group a.prevAmeli,
+  body > div.description-sal div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.description-sal div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.description-sal div.wrapper div.barRow div.border {
+    left: -5%;
+  }
+}
+body > div.description2-emp {
   /* @animation : color: @orangeAmeli; */
 }
 @-webkit-keyframes colorTextOange {
@@ -9934,10 +10324,10 @@ body > div.description2 {
     width: 45%;
   }
 }
-body > div.description2 div.wrapper {
+body > div.description2-emp div.wrapper {
   background-color: #fff;
 }
-body > div.description2 div.wrapper div.barRow div.border {
+body > div.description2-emp div.wrapper div.barRow div.border {
   min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
@@ -9952,7 +10342,7 @@ body > div.description2 div.wrapper div.barRow div.border {
   top: -35px;
   right: 35px;
 }
-body > div.description2 div.wrapper div.barRow div.border.animOn p {
+body > div.description2-emp div.wrapper div.barRow div.border.animOn p {
   animation-name: colorTextOange;
   -webkit-animation-name: colorTextOange;
   /* Safari 4.0 - 8.0 */
@@ -9977,7 +10367,7 @@ body > div.description2 div.wrapper div.barRow div.border.animOn p {
 						animation: @animation;
 						} */
 }
-body > div.description2 div.wrapper div.barRow div.border.animOn div.completeBar {
+body > div.description2-emp div.wrapper div.barRow div.border.animOn div.completeBar {
   width: 45%;
   background-color: #ebebeb;
   animation-name: colorBarOange;
@@ -10012,14 +10402,14 @@ body > div.description2 div.wrapper div.barRow div.border.animOn div.completeBar
   /* Safari 4.0 - 8.0 */
   animation-timing-function: linear;
 }
-body > div.description2 div.wrapper div.barRow div.border p {
+body > div.description2-emp div.wrapper div.barRow div.border p {
   color: #cecece;
   text-transform: lowercase;
   position: absolute;
   right: 15px;
   top: 0;
 }
-body > div.description2 div.wrapper div.barRow div.border div.completeBar {
+body > div.description2-emp div.wrapper div.barRow div.border div.completeBar {
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -10032,25 +10422,25 @@ body > div.description2 div.wrapper div.barRow div.border div.completeBar {
   position: relative;
   top: -2px;
 }
-body > div.description2 div.wrapper div.tabsRow {
+body > div.description2-emp div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
-body > div.description2 div.wrapper div.tabsRow p {
+body > div.description2-emp div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-right: 4%;
 }
-body > div.description2 div.wrapper div.tabsRow p.active {
+body > div.description2-emp div.wrapper div.tabsRow p.active {
   font-family: 'Proxima Nova Semibold';
   color: #005da8;
   border-bottom: 1px solid #005da8;
 }
-body > div.description2 div.wrapper div.wrapperForm {
+body > div.description2-emp div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
@@ -10069,77 +10459,77 @@ body > div.description2 div.wrapper div.wrapperForm {
 				}
 			} */
 }
-body > div.description2 div.wrapper div.wrapperForm h4 {
+body > div.description2-emp div.wrapper div.wrapperForm h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005da8;
   padding-bottom: 10px;
   color: #404040;
 }
-body > div.description2 div.wrapper div.wrapperForm h4.infoTitle {
+body > div.description2-emp div.wrapper div.wrapperForm h4.infoTitle {
   margin-top: 70px;
   border-color: #f68428;
 }
-body > div.description2 div.wrapper div.wrapperForm h4.infoTitleSalaire {
+body > div.description2-emp div.wrapper div.wrapperForm h4.infoTitleSalaire {
   border-color: #56ca81;
 }
-body > div.description2 div.wrapper div.wrapperForm h4.infoTitleCondition {
+body > div.description2-emp div.wrapper div.wrapperForm h4.infoTitleCondition {
   border-color: #84156e;
   margin-top: 70px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.form-group.reduced {
+body > div.description2-emp div.wrapper div.wrapperForm div.form-group.reduced {
   padding-left: 2%;
   padding-right: 2%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone textarea {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone textarea {
   max-width: 100%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
   padding-left: 2%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
   padding-left: 2%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
   padding-left: 0;
   left: -10px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.oneBlock {
   margin-top: 70px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock > p {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.oneBlock > p {
   font-family: 'Proxima Nova Semibold';
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock > p:after {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.oneBlock > p:after {
   content: "*";
   color: #e76207;
   margin-left: 6px;
   font-weight: bold;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock div.motifRow {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.oneBlock div.motifRow {
   width: 96%;
   margin-left: 2%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone div.oneBlock:first-of-type {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.oneBlock:first-of-type {
   margin-bottom: 0px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone span.separation {
   display: block;
   position: relative;
   text-align: center;
   cursor: pointer;
   text-transform: uppercase;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation:hover p {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone span.separation:hover p {
   color: #005da8;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation:hover span.line {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone span.separation:hover span.line {
   border-color: #005da8;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation p {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone span.separation p {
   color: #d5d5d5;
   display: inline-block;
   top: 34px;
@@ -10147,35 +10537,35 @@ body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation
   background-color: #fff;
   padding: 0 1%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone span.separation span.line {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone span.separation span.line {
   border-top: 1px dashed #d5d5d5;
   display: inline-block;
   width: 100%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.leftZone .decale {
+body > div.description2-emp div.wrapper div.wrapperForm div.leftZone .decale {
   margin-left: 15%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 55px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
   width: 94%;
   position: absolute;
   top: 8px;
   height: 3.5px;
   background-color: #dbdbdb;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
   display: inline-block;
   position: relative;
   min-height: 30px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
   font-family: 'Proxima Nova Regular';
   position: absolute;
   bottom: -25px;
@@ -10183,7 +10573,7 @@ body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomR
   color: #a4a4a4;
   margin-bottom: 0;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom span.boule {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom span.boule {
   height: 20px;
   width: 20px;
   background-color: #dbdbdb;
@@ -10193,318 +10583,599 @@ body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomR
   display: inline-block;
   cursor: pointer;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active p {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active p {
   color: #005da8;
   font-family: 'Proxima Nova Semibold';
   margin: 0 -1px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active span.boule {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active span.boule {
   background-color: #005da8;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.one {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.one {
   text-align: left;
   float: left;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two {
   text-align: center;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
   margin-left: -26px;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three {
   text-align: left;
   float: right;
 }
-body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
   margin-left: -111px;
 }
-body > div.description2 div.actionRow {
+body > div.description2-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.description2 div.actionRow > div.form-group {
+body > div.description2-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.description2 div.actionRow > div.form-group a {
+body > div.description2-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
 }
-body > div.description2 div.actionRow > div.form-group a.prevAmeli {
+body > div.description2-emp div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
   margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  body > div.description2 div.wrapper div.wrapperForm {
+  body > div.description2-emp div.wrapper div.wrapperForm {
     /* padding: 0 10%; */
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
     width: 94.8%;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  body > div.description2-emp div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
     padding-left: 0;
   }
-  body > div.description2 div.wrapper div.wrapperForm h4.infoTitle {
+  body > div.description2-emp div.wrapper div.wrapperForm h4.infoTitle {
     margin-top: 160px;
   }
 }
 @media (max-width: 992px) {
-  body > div.description2 div.wrapper div.barRow div.border {
+  body > div.description2-emp div.wrapper div.barRow div.border {
     float: none;
     top: 15px;
     left: 2%;
     width: 96%;
   }
-  body > div.description2 div.wrapper div.barRow div.border div.completeBar {
+  body > div.description2-emp div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
 }
 @media (max-width: 768px) {
-  body > div.description2 div.wrapper {
+  body > div.description2-emp div.wrapper {
     /* div.wrapperForm {
 				padding: 0 15%;
 			} */
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
     width: 92.2%;
   }
-  body > div.description2 div.wrapper div.barRow div.border p {
+  body > div.description2-emp div.wrapper div.barRow div.border p {
     text-align: right;
   }
-  body > div.description2 div.wrapper div.tabsRow {
+  body > div.description2-emp div.wrapper div.tabsRow {
     border-color: #fff;
   }
-  body > div.description2 div.wrapper div.tabsRow p {
+  body > div.description2-emp div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.description2 div.actionRow > div.form-group a.prevAmeli,
-  body > div.description2 div.actionRow > div.form-group a {
+  body > div.description2-emp div.actionRow > div.form-group a.prevAmeli,
+  body > div.description2-emp div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 5%;
   }
 }
 @media (max-width: 480px) {
-  body > div.description2 div.wrapper div.radioFormGroup label {
+  body > div.description2-emp div.wrapper div.radioFormGroup label {
     text-align: center;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
     text-align: center !important;
     width: 100%;
     margin-bottom: 50px;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
     margin-left: 0;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
     margin-left: 0;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
     width: 100%;
   }
-  body > div.description2 div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  body > div.description2-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
     display: none;
   }
-  body > div.description2 div.wrapper div.barRow div.border {
+  body > div.description2-emp div.wrapper div.barRow div.border {
     left: 4%;
     width: 92%;
   }
 }
 @media (max-width: 300px) {
-  body > div.description2 div.wrapper div.barRow div.border {
+  body > div.description2-emp div.wrapper div.barRow div.border {
     left: -5%;
   }
 }
-body > div.questionnaire div.actionRow {
+body > div.description2-sal {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBarTwo {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBarTwo {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+body > div.description2-sal div.wrapper {
+  background-color: #fff;
+}
+body > div.description2-sal div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.description2-sal div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.description2-sal div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 45%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBarTwo*/
+  animation-name: pinnoccioBarTwo;
+  -webkit-animation-name: pinnoccioBarTwo;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.description2-sal div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.description2-sal div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.description2-sal div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.description2-sal div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.description2-sal div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.description2-sal div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+  /* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+}
+body > div.description2-sal div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.description2-sal div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.description2-sal div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.description2-sal div.wrapper div.wrapperForm h4.infoTitleCondition {
+  border-color: #84156e;
+  margin-top: 70px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.form-group.reduced {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone textarea {
+  max-width: 100%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+  padding-left: 2%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second div.input-group {
+  padding-left: 2%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.second label {
+  padding-left: 0;
+  left: -10px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.oneBlock {
+  margin-top: 70px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.oneBlock > p {
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.oneBlock > p:after {
+  content: "*";
+  color: #e76207;
+  margin-left: 6px;
+  font-weight: bold;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.oneBlock div.motifRow {
+  width: 96%;
+  margin-left: 2%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.oneBlock:first-of-type {
+  margin-bottom: 0px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone span.separation {
+  display: block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone span.separation:hover p {
+  color: #005da8;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone span.separation:hover span.line {
+  border-color: #005da8;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone span.separation p {
+  color: #d5d5d5;
+  display: inline-block;
+  top: 34px;
+  position: relative;
+  background-color: #fff;
+  padding: 0 1%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone span.separation span.line {
+  border-top: 1px dashed #d5d5d5;
+  display: inline-block;
+  width: 100%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.leftZone .decale {
+  margin-left: 15%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  width: 94%;
+  position: absolute;
+  top: 8px;
+  height: 3.5px;
+  background-color: #dbdbdb;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+  display: inline-block;
+  position: relative;
+  min-height: 30px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  bottom: -25px;
+  width: auto;
+  color: #a4a4a4;
+  margin-bottom: 0;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom span.boule {
+  height: 20px;
+  width: 20px;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active p {
+  color: #005da8;
+  font-family: 'Proxima Nova Semibold';
+  margin: 0 -1px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.active span.boule {
+  background-color: #005da8;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.one {
+  text-align: left;
+  float: left;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two {
+  text-align: center;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+  margin-left: -26px;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three {
+  text-align: left;
+  float: right;
+}
+body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+  margin-left: -111px;
+}
+body > div.description2-sal div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.questionnaire div.actionRow > div.form-group {
+body > div.description2-sal div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.questionnaire div.actionRow > div.form-group button {
+body > div.description2-sal div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
+  margin-bottom: 10px;
 }
-body > div.questionnaire div.wrapper {
-  min-height: 450px;
-  padding: 0 150px;
-  padding-top: 70px;
-  background-color: #fff;
+body > div.description2-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
 }
-body > div.questionnaire div.wrapper div.leftZone {
-  padding-right: 6%;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye {
-  cursor: pointer;
-  height: 45px;
-  margin-bottom: 30px;
-  border: 1px solid #d5d5d5;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye p {
-  margin-top: 10px;
-  margin: 0;
-  padding-left: 2%;
-  position: relative;
-  padding-right: 10%;
-  display: block;
-  height: 100%;
-  padding-top: 12px;
-  color: #767676;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye p span {
-  position: absolute;
-  padding: 0px 20px;
-  border-left: 1px solid #d5d5d5;
-  right: 0;
-  top: 0;
-  height: 100%;
-  padding-top: 12px;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye.active,
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye:hover {
-  border-color: #005da8;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye.active p,
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye:hover p {
-  color: #005da8;
-}
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye.active p span,
-body > div.questionnaire div.wrapper div.leftZone div.oneEmploye:hover p span {
-  border-color: #005da8;
-}
-body > div.questionnaire div.wrapper div.rightZone {
-  padding-left: 6%;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente {
-  cursor: pointer;
-  position: relative;
-  padding-left: 50px;
-  min-height: 50px;
-  margin-bottom: 30px;
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active,
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover {
-  background-color: #005da8;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right p.date,
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right p.date {
-  color: #fff;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail p,
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail p {
-  color: #fff;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span.myTooltip,
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span.myTooltip {
-  color: #fff;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span:not(.myTooltip),
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span:not(.myTooltip) {
-  color: #fff;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.left {
-  display: inline-block;
-  background: url(../img/icon_dossier.png) no-repeat 50% 50%;
-  border-right: 1px solid #d5d5d5;
-  width: 50px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right {
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 4px;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right p.date {
-  color: #bebebe;
-  border-bottom: 1px solid #d5d5d5;
-  margin-top: 5px;
-  padding-left: 3%;
-  margin-bottom: 7px;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail p {
-  color: #8d8d8d;
-  font-family: 'Proxima Nova Semibold';
-  padding-left: 3%;
-  margin-bottom: 0;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span.myTooltip {
-  margin-left: 10px;
-}
-body > div.questionnaire div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span:not(.myTooltip) {
-  font-family: 'Proxima Nova Regular';
-  color: #767676;
-  padding-left: 3%;
-  font-size: 12px;
-  line-height: 1.42857143;
-}
-body > div.questionnaire div.wrapper h4 {
-  font-family: 'Proxima Nova Semibold';
-  margin-bottom: 50px;
-  border-bottom: 1px solid #005ea8;
-  padding-bottom: 10px;
-  color: #404040;
-  position: relative;
-}
-body > div.questionnaire div.wrapper h4 span.search {
-  background: url(../img/iconSearch_on.png) no-repeat 50% 50%;
-  cursor: pointer;
-  float: right;
-  height: 13px;
-  width: 13px;
-  margin-right: 8px;
-  margin-top: 2px;
-}
-body > div.questionnaire div.wrapper h4 input {
-  font-family: 'Proxima Nova Regular';
-  position: absolute;
-  top: -6px;
-  right: 0px;
-  width: 25%;
-  height: 30px;
-  background: initial;
-  padding-right: 25px;
-}
-@media (max-width: 1200px) {
-  body > div.questionnaire div.wrapper div.leftZone,
-  body > div.questionnaire div.wrapper div.rightZone {
-    padding: 0;
+@media (max-width: 1199px) {
+  body > div.description2-sal div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
   }
-  body > div.questionnaire div.wrapper div.rightZone {
-    margin-top: 100px;
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
   }
-  body > div.questionnaire div.wrapper {
-    padding-bottom: 50px;
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    width: 94.8%;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.leftZone div.periode div.dateFormGroup.first div.input-group {
+    padding-left: 0;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.description2-sal div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.description2-sal div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
   }
 }
 @media (max-width: 768px) {
-  body > div.questionnaire div.wrapper {
-    padding: 50px 10%;
+  body > div.description2-sal div.wrapper {
+    /* div.wrapperForm {
+				padding: 0 15%;
+			} */
   }
-  body > div.questionnaire div.actionRow > div.form-group button {
-    display: inline-block;
-    margin: 0;
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    width: 92.2%;
+  }
+  body > div.description2-sal div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.description2-sal div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.description2-sal div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.description2-sal div.actionRow > div.form-group a.prevAmeli,
+  body > div.description2-sal div.actionRow > div.form-group a {
     float: none;
+    display: inline-block;
+    margin: 0 5%;
   }
 }
-body > div.pathologie {
+@media (max-width: 480px) {
+  body > div.description2-sal div.wrapper div.radioFormGroup label {
+    text-align: center;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+    margin-left: 0;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+    margin-left: 0;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+    width: 100%;
+  }
+  body > div.description2-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    display: none;
+  }
+  body > div.description2-sal div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.description2-sal div.wrapper div.barRow div.border {
+    left: -5%;
+  }
+}
+body > div.pathologie-emp {
   /* @animation : color: @orangeAmeli; */
 }
 @-webkit-keyframes colorTextOange {
@@ -10579,10 +11250,10 @@ body > div.pathologie {
     width: 45%;
   }
 }
-body > div.pathologie div.wrapper {
+body > div.pathologie-emp div.wrapper {
   background-color: #fff;
 }
-body > div.pathologie div.wrapper div.barRow div.border {
+body > div.pathologie-emp div.wrapper div.barRow div.border {
   min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
@@ -10597,7 +11268,7 @@ body > div.pathologie div.wrapper div.barRow div.border {
   top: -35px;
   right: 35px;
 }
-body > div.pathologie div.wrapper div.barRow div.border.animOn p {
+body > div.pathologie-emp div.wrapper div.barRow div.border.animOn p {
   animation-name: colorTextOange;
   -webkit-animation-name: colorTextOange;
   /* Safari 4.0 - 8.0 */
@@ -10622,7 +11293,7 @@ body > div.pathologie div.wrapper div.barRow div.border.animOn p {
 						animation: @animation;
 						} */
 }
-body > div.pathologie div.wrapper div.barRow div.border.animOn div.completeBar {
+body > div.pathologie-emp div.wrapper div.barRow div.border.animOn div.completeBar {
   width: 45%;
   background-color: #ebebeb;
   animation-name: colorBarOange;
@@ -10657,14 +11328,14 @@ body > div.pathologie div.wrapper div.barRow div.border.animOn div.completeBar {
   /* Safari 4.0 - 8.0 */
   animation-timing-function: linear;
 }
-body > div.pathologie div.wrapper div.barRow div.border p {
+body > div.pathologie-emp div.wrapper div.barRow div.border p {
   color: #cecece;
   text-transform: lowercase;
   position: absolute;
   right: 15px;
   top: 0;
 }
-body > div.pathologie div.wrapper div.barRow div.border div.completeBar {
+body > div.pathologie-emp div.wrapper div.barRow div.border div.completeBar {
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -10677,60 +11348,60 @@ body > div.pathologie div.wrapper div.barRow div.border div.completeBar {
   position: relative;
   top: -2px;
 }
-body > div.pathologie div.wrapper div.tabsRow {
+body > div.pathologie-emp div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
-body > div.pathologie div.wrapper div.tabsRow p {
+body > div.pathologie-emp div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-right: 4%;
 }
-body > div.pathologie div.wrapper div.tabsRow p.active {
+body > div.pathologie-emp div.wrapper div.tabsRow p.active {
   font-family: 'Proxima Nova Semibold';
   color: #005da8;
   border-bottom: 1px solid #005da8;
 }
-body > div.pathologie div.wrapper div.wrapperForm {
+body > div.pathologie-emp div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.dateFormGroup {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.dateFormGroup {
   position: relative;
   top: -20px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.dateFormGroup p {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.dateFormGroup p {
   font-family: 'Proxima Nova Semibold';
   display: inline-block;
   position: relative;
   left: 5px;
 }
-body > div.pathologie div.wrapper div.wrapperForm .top,
-body > div.pathologie div.wrapper div.wrapperForm .bottom {
+body > div.pathologie-emp div.wrapper div.wrapperForm .top,
+body > div.pathologie-emp div.wrapper div.wrapperForm .bottom {
   padding-bottom: 40px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.minimized {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.minimized {
   padding-bottom: 0px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.minimized div.leftZone {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.minimized div.leftZone {
   display: none;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.minimized div.rightZone {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.minimized div.rightZone {
   display: none;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.minimized h4 span {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.minimized h4 span {
   -ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   /* Chrome, Safari, Opera */
   transform: rotate(90deg);
 }
-body > div.pathologie div.wrapper div.wrapperForm h4 {
+body > div.pathologie-emp div.wrapper div.wrapperForm h4 {
   cursor: pointer;
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
@@ -10740,7 +11411,7 @@ body > div.pathologie div.wrapper div.wrapperForm h4 {
   position: relative;
   padding-right: 100px;
 }
-body > div.pathologie div.wrapper div.wrapperForm h4 span {
+body > div.pathologie-emp div.wrapper div.wrapperForm h4 span {
   color: #383838;
   -ms-transform: rotate(-90deg);
   /* IE 9 */
@@ -10751,31 +11422,31 @@ body > div.pathologie div.wrapper div.wrapperForm h4 span {
   right: 5px;
   top: 0;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.form-group.reduced {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.form-group.reduced {
   padding-left: 2%;
   padding-right: 2%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.firstRowSpecialRadio {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.firstRowSpecialRadio {
   margin-top: 165px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rowCustomRadio {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
   width: 94%;
   position: absolute;
   top: 8px;
   height: 3.5px;
   background-color: #dbdbdb;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom {
   display: inline-block;
   position: relative;
   min-height: 30px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom p {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom p {
   font-family: 'Proxima Nova Regular';
   position: absolute;
   width: auto;
@@ -10784,7 +11455,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom p {
   top: 33px;
   min-width: 110px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom span.boule {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom span.boule {
   height: 20px;
   width: 20px;
   background-color: #dbdbdb;
@@ -10794,40 +11465,40 @@ body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom span.boule 
   display: inline-block;
   cursor: pointer;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.active p {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.active p {
   color: #005da8;
   font-family: 'Proxima Nova Semibold';
   margin: 0 -1px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.active span.boule {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.active span.boule {
   background-color: #005da8;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.one {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.one {
   text-align: left;
   float: left;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.two {
   text-align: center;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.two p {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.two p {
   margin-left: -43px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.three {
   text-align: left;
   float: right;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.oneRadioCustom.three p {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.oneRadioCustom.three p {
   margin-left: -163px;
   text-align: right;
   min-width: 180px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.second {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone div.second {
   margin-top: 55px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
   background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
@@ -10835,7 +11506,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   margin-top: 63px;
   margin-left: 5%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
   background: url(../img/schema2.jpg) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
@@ -10843,7 +11514,7 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   margin-top: 63px;
   margin-left: 5%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
   background: url(../img/schema3.jpg) no-repeat 50% 50%;
   width: 299px;
   height: 233px;
@@ -10851,16 +11522,16 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone div.iconPathologi
   margin-top: 63px;
   margin-left: 0%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle {
   margin-bottom: 20px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
   margin-top: 155px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow.more {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow.more {
   margin-top: 358px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone label.fileIcon {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone label.fileIcon {
   background: url(../img/icon_file.png) no-repeat 0% 50%;
   padding-left: 25px;
   padding-top: 4px;
@@ -10868,16 +11539,16 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone label.fileIcon {
   letter-spacing: 0.2px;
   margin-bottom: 25px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.specialhelp {
   color: #464646;
   display: inline-block;
   margin-left: 20px;
   font-family: 'Proxima Nova Regular';
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.one,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.two,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.three,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.one,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.two,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.three,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.four {
   border-color: #f68527;
   color: #f68527;
   font-size: 0.8em;
@@ -10891,128 +11562,636 @@ body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four {
   padding-right: 20px;
   text-transform: uppercase;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.one:focus,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.two:focus,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.three:focus,
-body > div.pathologie div.wrapper div.wrapperForm div.leftZone button.four:focus {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.one:focus,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.two:focus,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.three:focus,
+body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone button.four:focus {
   outline: none;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.blocSchema1 {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.blocSchema1 {
   min-height: 620px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.secondRow {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.secondRow {
   margin-top: 50px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.form-group {
   margin-bottom: 0px;
 }
-body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.form-group textarea {
+body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.form-group textarea {
   width: 100%;
 }
-body > div.pathologie div.actionRow {
+body > div.pathologie-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.pathologie div.actionRow > div.form-group {
+body > div.pathologie-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.pathologie div.actionRow > div.form-group a {
+body > div.pathologie-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
 }
-body > div.pathologie div.actionRow > div.form-group a.prevAmeli {
+body > div.pathologie-emp div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
   margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  body > div.pathologie div.wrapper div.wrapperForm {
+  body > div.pathologie-emp div.wrapper div.wrapperForm {
     /* padding: 0 10%; */
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
     width: 95%;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.pathologie div.wrapper div.wrapperForm h4.infoTitle {
+  body > div.pathologie-emp div.wrapper div.wrapperForm h4.infoTitle {
     margin-top: 160px;
   }
 }
 @media (max-width: 992px) {
-  body > div.pathologie div.wrapper div.barRow div.border {
+  body > div.pathologie-emp div.wrapper div.barRow div.border {
     float: none;
     top: 15px;
     left: 2%;
     width: 96%;
   }
-  body > div.pathologie div.wrapper div.barRow div.border div.completeBar {
+  body > div.pathologie-emp div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
 }
 @media (max-width: 768px) {
-  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
     width: 93%;
   }
-  body > div.pathologie div.wrapper div.barRow div.border p {
+  body > div.pathologie-emp div.wrapper div.barRow div.border p {
     text-align: right;
   }
-  body > div.pathologie div.wrapper div.tabsRow {
+  body > div.pathologie-emp div.wrapper div.tabsRow {
     border-color: #fff;
   }
-  body > div.pathologie div.wrapper div.tabsRow p {
+  body > div.pathologie-emp div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.pathologie div.actionRow > div.form-group a.prevAmeli,
-  body > div.pathologie div.actionRow > div.form-group a {
+  body > div.pathologie-emp div.actionRow > div.form-group a.prevAmeli,
+  body > div.pathologie-emp div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 5%;
   }
 }
 @media (max-width: 480px) {
-  body > div.pathologie div.wrapper div.radioFormGroup label {
+  body > div.pathologie-emp div.wrapper div.radioFormGroup label {
     text-align: center;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
     width: 89%;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
     text-align: center !important;
     width: 100%;
     margin-bottom: 50px;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
     margin-left: 0;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
     margin-left: 0;
     text-align: center;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
     width: 100%;
   }
-  body > div.pathologie div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+  body > div.pathologie-emp div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
     display: none;
   }
-  body > div.pathologie div.wrapper div.barRow div.border {
+  body > div.pathologie-emp div.wrapper div.barRow div.border {
     left: 4%;
     width: 92%;
   }
 }
 @media (max-width: 300px) {
-  body > div.pathologie div.wrapper div.barRow div.border {
+  body > div.pathologie-emp div.wrapper div.barRow div.border {
     left: -5%;
   }
 }
-body > div.recap {
+body > div.pathologie-sal {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBarThree {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBarThree {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 45%;
+  }
+}
+body > div.pathologie-sal div.wrapper {
+  background-color: #fff;
+}
+body > div.pathologie-sal div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.pathologie-sal div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* color: @orangeAmeli; */
+  /* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+  /* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+}
+body > div.pathologie-sal div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 45%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBarThree*/
+  animation-name: pinnoccioBarThree;
+  -webkit-animation-name: pinnoccioBarThree;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.pathologie-sal div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.pathologie-sal div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.pathologie-sal div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.pathologie-sal div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.pathologie-sal div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.dateFormGroup {
+  position: relative;
+  top: -20px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.dateFormGroup p {
+  font-family: 'Proxima Nova Semibold';
+  display: inline-block;
+  position: relative;
+  left: 5px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm .top,
+body > div.pathologie-sal div.wrapper div.wrapperForm .bottom {
+  padding-bottom: 40px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.minimized {
+  padding-bottom: 0px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.minimized div.leftZone {
+  display: none;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.minimized div.rightZone {
+  display: none;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.minimized h4 span {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm h4 {
+  cursor: pointer;
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+  position: relative;
+  padding-right: 100px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm h4 span {
+  color: #383838;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.form-group.reduced {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.firstRowSpecialRadio {
+  margin-top: 165px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rowCustomRadio {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+  width: 94%;
+  position: absolute;
+  top: 8px;
+  height: 3.5px;
+  background-color: #dbdbdb;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom {
+  display: inline-block;
+  position: relative;
+  min-height: 30px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom p {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  width: auto;
+  color: #a4a4a4;
+  margin-bottom: 0;
+  top: 33px;
+  min-width: 110px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom span.boule {
+  height: 20px;
+  width: 20px;
+  background-color: #dbdbdb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.active p {
+  color: #005da8;
+  font-family: 'Proxima Nova Semibold';
+  margin: 0 -1px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.active span.boule {
+  background-color: #005da8;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.one {
+  text-align: left;
+  float: left;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.two {
+  text-align: center;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.two p {
+  margin-left: -43px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.three {
+  text-align: left;
+  float: right;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.oneRadioCustom.three p {
+  margin-left: -163px;
+  text-align: right;
+  min-width: 180px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone div.second {
+  margin-top: 55px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+  background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 62px;
+  margin-top: 63px;
+  margin-left: 5%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
+  background: url(../img/schema2.jpg) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 0;
+  margin-top: 63px;
+  margin-left: 5%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
+  background: url(../img/schema3.jpg) no-repeat 50% 50%;
+  width: 299px;
+  height: 233px;
+  margin-bottom: 250px;
+  margin-top: 63px;
+  margin-left: 0%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone p.subTitle {
+  margin-bottom: 20px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
+  margin-top: 155px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow.more {
+  margin-top: 358px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone label.fileIcon {
+  background: url(../img/icon_file.png) no-repeat 0% 50%;
+  padding-left: 25px;
+  padding-top: 4px;
+  width: 100%;
+  letter-spacing: 0.2px;
+  margin-bottom: 25px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+  color: #464646;
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Proxima Nova Regular';
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.one,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.two,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.three,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.four {
+  border-color: #f68527;
+  color: #f68527;
+  font-size: 0.8em;
+  font-family: 'Proxima Nova Regular';
+  padding-left: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
+  background-size: 18px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.one:focus,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.two:focus,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.three:focus,
+body > div.pathologie-sal div.wrapper div.wrapperForm div.leftZone button.four:focus {
+  outline: none;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.blocSchema1 {
+  min-height: 620px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.secondRow {
+  margin-top: 50px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.form-group {
+  margin-bottom: 0px;
+}
+body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.form-group textarea {
+  width: 100%;
+}
+body > div.pathologie-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.pathologie-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.pathologie-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.pathologie-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.pathologie-sal div.wrapper div.wrapperForm {
+    /* padding: 0 10%; */
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 95%;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.pathologie-sal div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.pathologie-sal div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 93%;
+  }
+  body > div.pathologie-sal div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.pathologie-sal div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.pathologie-sal div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.pathologie-sal div.actionRow > div.form-group a.prevAmeli,
+  body > div.pathologie-sal div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.pathologie-sal div.wrapper div.radioFormGroup label {
+    text-align: center;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rowCustomRadio div.bar {
+    width: 89%;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom {
+    text-align: center !important;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.two p {
+    margin-left: 0;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom.three p {
+    margin-left: 0;
+    text-align: center;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.oneRadioCustom p {
+    width: 100%;
+  }
+  body > div.pathologie-sal div.wrapper div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+    display: none;
+  }
+  body > div.pathologie-sal div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.pathologie-sal div.wrapper div.barRow div.border {
+    left: -5%;
+  }
+}
+body > div.recap-emp {
   /* @animation : color: @orangeAmeli; */
 }
 @-webkit-keyframes colorTextOange {
@@ -11087,10 +12266,10 @@ body > div.recap {
     width: 95%;
   }
 }
-body > div.recap div.wrapper {
+body > div.recap-emp div.wrapper {
   background-color: #fff;
 }
-body > div.recap div.wrapper div.barRow div.border {
+body > div.recap-emp div.wrapper div.barRow div.border {
   min-width: 255px;
   border: 1px solid #ebebeb;
   padding: 3px 2px;
@@ -11105,7 +12284,7 @@ body > div.recap div.wrapper div.barRow div.border {
   top: -35px;
   right: 35px;
 }
-body > div.recap div.wrapper div.barRow div.border.animOn p {
+body > div.recap-emp div.wrapper div.barRow div.border.animOn p {
   animation-name: colorTextOange;
   -webkit-animation-name: colorTextOange;
   /* Safari 4.0 - 8.0 */
@@ -11122,7 +12301,7 @@ body > div.recap div.wrapper div.barRow div.border.animOn p {
   /* Safari 4.0 - 8.0 */
   animation-timing-function: ease-in;
 }
-body > div.recap div.wrapper div.barRow div.border.animOn div.completeBar {
+body > div.recap-emp div.wrapper div.barRow div.border.animOn div.completeBar {
   width: 95%;
   background-color: #ebebeb;
   animation-name: colorBarOange;
@@ -11157,14 +12336,14 @@ body > div.recap div.wrapper div.barRow div.border.animOn div.completeBar {
   /* Safari 4.0 - 8.0 */
   animation-timing-function: linear;
 }
-body > div.recap div.wrapper div.barRow div.border p {
+body > div.recap-emp div.wrapper div.barRow div.border p {
   color: #cecece;
   text-transform: lowercase;
   position: absolute;
   right: 15px;
   top: 0;
 }
-body > div.recap div.wrapper div.barRow div.border div.completeBar {
+body > div.recap-emp div.wrapper div.barRow div.border div.completeBar {
   font-family: 'Proxima Nova Regular';
   font-size: 1.2em;
   display: inline-block;
@@ -11177,81 +12356,81 @@ body > div.recap div.wrapper div.barRow div.border div.completeBar {
   position: relative;
   top: -2px;
 }
-body > div.recap div.wrapper div.tabsRow {
+body > div.recap-emp div.wrapper div.tabsRow {
   margin-top: 30px;
   width: 98%;
   border-bottom: 1px solid #c9c9c9;
   margin-left: 1%;
 }
-body > div.recap div.wrapper div.tabsRow p {
+body > div.recap-emp div.wrapper div.tabsRow p {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 10px;
   margin-right: 4%;
 }
-body > div.recap div.wrapper div.tabsRow p.active {
+body > div.recap-emp div.wrapper div.tabsRow p.active {
   font-family: 'Proxima Nova Semibold';
   color: #005da8;
   border-bottom: 1px solid #005da8;
 }
-body > div.recap div.wrapper div.wrapperForm {
+body > div.recap-emp div.wrapper div.wrapperForm {
   margin-top: 60px;
   margin-bottom: 100px;
   padding: 0 6%;
 }
-body > div.recap div.wrapper div.wrapperForm h4 {
+body > div.recap-emp div.wrapper div.wrapperForm h4 {
   font-family: 'Proxima Nova Semibold';
   margin-bottom: 50px;
   border-bottom: 1px solid #005da8;
   padding-bottom: 10px;
   color: #404040;
 }
-body > div.recap div.wrapper div.wrapperForm h4.infoTitle {
+body > div.recap-emp div.wrapper div.wrapperForm h4.infoTitle {
   margin-top: 70px;
   border-color: #f68428;
 }
-body > div.recap div.wrapper div.wrapperForm h4.postTitle {
+body > div.recap-emp div.wrapper div.wrapperForm h4.postTitle {
   margin-top: 70px;
 }
-body > div.recap div.wrapper div.wrapperForm h4.infoTitleSalaire {
+body > div.recap-emp div.wrapper div.wrapperForm h4.infoTitleSalaire {
   border-color: #56ca81;
 }
-body > div.recap div.wrapper div.wrapperForm h4.infoTitleSalaire.marginTop {
+body > div.recap-emp div.wrapper div.wrapperForm h4.infoTitleSalaire.marginTop {
   margin-top: 70px;
 }
-body > div.recap div.wrapper div.wrapperForm h4.infoTitleCondition {
+body > div.recap-emp div.wrapper div.wrapperForm h4.infoTitleCondition {
   border-color: #84156e;
   margin-top: 70px;
 }
-body > div.recap div.wrapper div.wrapperForm div.quesionsBlock {
+body > div.recap-emp div.wrapper div.wrapperForm div.quesionsBlock {
   position: relative;
   top: 50px;
   left: 8%;
 }
-body > div.recap div.wrapper div.wrapperForm div.quesionsBlock.second {
+body > div.recap-emp div.wrapper div.wrapperForm div.quesionsBlock.second {
   top: 100px;
 }
-body > div.recap div.wrapper div.wrapperForm div.quesionsBlock span.btnOkEditSelect {
+body > div.recap-emp div.wrapper div.wrapperForm div.quesionsBlock span.btnOkEditSelect {
   background-position: 100% 100% !important;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect {
   padding-right: 30px;
   margin-bottom: 2px;
   position: relative;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup {
   margin-top: 25px;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup select {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup select {
   margin-left: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect span.secondLabel {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect span.secondLabel {
   font-weight: normal;
   font-family: 'Proxima Nova Semibold';
   color: #555555;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
   position: absolute;
   right: 2%;
   top: 0;
@@ -11262,11 +12441,11 @@ body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect label {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect label {
   padding-top: 0;
   font-family: 'Proxima Nova Light';
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect select {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect select {
   display: inline-block;
   width: 110px;
   padding: 0;
@@ -11276,27 +12455,27 @@ body > div.recap div.wrapper div.wrapperForm div.editSelect select {
 						width: 80%;
 					} */
 }
-body > div.recap div.wrapper div.wrapperForm div.editSelect select.large {
+body > div.recap-emp div.wrapper div.wrapperForm div.editSelect select.large {
   width: 95%;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode {
   padding-right: 30px;
   position: relative;
   min-height: 30px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode p {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode p {
   padding-left: 3px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.specialNoPadding {
   padding-left: 43px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.specialPadding input {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.specialPadding input {
   margin-left: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.specialPadding input {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.specialPadding input {
   width: 98% !important;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
   position: absolute;
   right: 2%;
   top: 14px;
@@ -11307,20 +12486,20 @@ body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode.spe {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode.spe {
   top: 25px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup {
   margin-bottom: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
   font-family: 'Proxima Nova Semibold';
   color: #555555;
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.first span.secondLabel {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup.first span.secondLabel {
   position: absolute;
   left: -16px;
   top: 9px;
@@ -11330,17 +12509,17 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.first
   left: -15px;
   top: 5px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.first div.input-group {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup.first div.input-group {
   padding-left: 2%;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.first label {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup.first label {
   font-family: 'Proxima Nova Light';
   padding-top: 5px;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.second div.input-group {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup.second div.input-group {
   padding-left: 2%;
 }
-body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.second label {
+body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup.second label {
   position: absolute;
   padding-left: 0;
   left: 10px;
@@ -11348,29 +12527,29 @@ body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup.secon
   color: #555555;
   left: -3px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit {
   margin-bottom: 3px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.marginTopFormGroup {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit.marginTopFormGroup {
   margin-top: 25px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol {
   position: relative;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.fullWidth input {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.fullWidth input {
   padding-left: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
   left: -7%;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit label {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit label {
   font-family: 'Proxima Nova Light';
   padding-top: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit label.noPadRight {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit label.noPadRight {
   padding-right: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit input {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit input {
   font-family: 'Proxima Nova Semibold';
   padding-right: 30px;
   height: 20px;
@@ -11381,11 +12560,11 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit input[type="text"]:disabled {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit input[type="text"]:disabled {
   cursor: pointer;
   background-color: #fff;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput {
   position: absolute;
   left: 0;
   right: 0;
@@ -11396,16 +12575,16 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.off div.
   width: 96%;
   height: 20px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput:hover {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput:hover {
   cursor: pointer;
   background: url(../img/icon_edit.png) no-repeat 100% 50%;
   background-size: 25px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.on input {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit.on input {
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
 }
-body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.on span.btnOkEdit {
+body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit.on span.btnOkEdit {
   position: absolute;
   right: 2%;
   top: 0;
@@ -11414,27 +12593,27 @@ body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit.on span.
   width: 30px;
   cursor: pointer;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone {
   padding-right: 5%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.dateFormGroup {
   margin-bottom: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup label {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.dateFormGroup label {
   font-family: 'Proxima Nova Light';
   padding-top: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup input {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.dateFormGroup input {
   font-family: 'Proxima Nova Semibold';
   color: #555555;
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup div.specialPaddingForIcon {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.dateFormGroup div.specialPaddingForIcon {
   padding-right: 3%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup span.btnOkEditDate {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.dateFormGroup span.btnOkEditDate {
   position: absolute;
   right: 10px;
   top: 0;
@@ -11445,29 +12624,29 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone div.dateFormGroup span
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
   margin-top: 40px;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone p.specialhelp {
   display: inline-block;
   position: relative;
   top: -23px;
   left: 6px;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel {
   cursor: pointer;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel:hover {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel:hover {
   background: url(../img/icon_edit.png) no-repeat 100% 50%;
   background-size: 25px;
   background-color: #f1f1f1;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel.on {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel.on {
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
   background-color: #f1f1f1;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
   background: url(../img/pied-v2_small.gif) no-repeat 0 50%;
   width: 198px;
   height: 233px;
@@ -11475,7 +12654,7 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied
   margin-top: 90px;
   margin-left: 10%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
   background: url(../img/schema2.jpg) no-repeat 50% 50%;
   width: 198px;
   height: 233px;
@@ -11483,7 +12662,7 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain
   margin-top: 63px;
   margin-left: 5%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
   background: url(../img/schema3.jpg) no-repeat 50% 50%;
   width: 299px;
   height: 233px;
@@ -11491,7 +12670,7 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain
   margin-top: 63px;
   margin-left: 0%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload {
   display: inline-block;
   border: 1px solid;
   border-color: #f68527;
@@ -11505,45 +12684,45 @@ body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload {
   padding-right: 20px;
   text-transform: uppercase;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.emptyInputFile {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload.emptyInputFile {
   padding-left: 50px;
   margin-bottom: 50px;
   background: url(../img/icon_upload.png) no-repeat 18px 50%;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.second {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload.second {
   margin-left: 15px;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:hover {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload:hover {
   text-decoration: none;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload:focus {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload:focus {
   outline: none;
 }
-body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.editOn {
+body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload.editOn {
   padding-left: 50px;
   background: url(../img/icon_upload.png) no-repeat 18px 50%;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone {
   padding-left: 5%;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone div.dateFormGroup {
   margin-bottom: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup label {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone div.dateFormGroup label {
   font-family: 'Proxima Nova Light';
   padding-top: 0;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup input {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone div.dateFormGroup input {
   font-family: 'Proxima Nova Semibold';
   color: #555555;
   padding-top: 0;
   padding-bottom: 0;
   height: 30px;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup div.specialPaddingForIcon {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone div.dateFormGroup div.specialPaddingForIcon {
   padding-right: 3%;
 }
-body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup span.btnOkEditDate {
+body > div.recap-emp div.wrapper div.wrapperForm div.rightZone div.dateFormGroup span.btnOkEditDate {
   position: absolute;
   right: 10px;
   top: 0;
@@ -11554,105 +12733,1402 @@ body > div.recap div.wrapper div.wrapperForm div.rightZone div.dateFormGroup spa
   background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
   background-size: 20px;
 }
-body > div.recap div.actionRow {
+body > div.recap-emp div.actionRow {
   background-color: #f7f7f7;
 }
-body > div.recap div.actionRow > div.form-group {
+body > div.recap-emp div.actionRow > div.form-group {
   margin: 10px 0;
   text-align: center;
 }
-body > div.recap div.actionRow > div.form-group a {
+body > div.recap-emp div.actionRow > div.form-group a {
   float: right;
   margin-right: 134px;
   margin-bottom: 10px;
 }
-body > div.recap div.actionRow > div.form-group a.prevAmeli {
+body > div.recap-emp div.actionRow > div.form-group a.prevAmeli {
   float: left;
   margin-left: 134px;
   margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
-  body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+  body > div.recap-emp div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
     right: 10px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.rightZone {
+  body > div.recap-emp div.wrapper div.wrapperForm div.rightZone {
     padding-left: 0%;
     padding-right: 5%;
     margin-top: 160px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode p {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode p {
     padding-left: 7px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode div.specialNoPadding {
     padding-left: 35px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup div.input-group {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup div.input-group {
     padding-left: 0;
   }
-  body > div.recap div.wrapper div.wrapperForm h4.infoTitle {
+  body > div.recap-emp div.wrapper div.wrapperForm h4.infoTitle {
     margin-top: 160px;
   }
 }
 @media (max-width: 992px) {
-  body > div.recap div.wrapper div.barRow div.border {
+  body > div.recap-emp div.wrapper div.barRow div.border {
     float: none;
     top: 15px;
     left: 2%;
     width: 96%;
   }
-  body > div.recap div.wrapper div.barRow div.border div.completeBar {
+  body > div.recap-emp div.wrapper div.barRow div.border div.completeBar {
     width: 30%;
   }
 }
 @media (max-width: 768px) {
-  body > div.recap div.wrapper div.tabsRow {
+  body > div.recap-emp div.wrapper div.tabsRow {
     border-color: #fff;
   }
-  body > div.recap div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
+  body > div.recap-emp div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
     left: 0%;
   }
-  body > div.recap div.wrapper div.wrapperForm div.leftZone a.upload.second {
+  body > div.recap-emp div.wrapper div.wrapperForm div.leftZone a.upload.second {
     margin-left: 0;
     display: block;
     margin-top: 15px;
     width: 165px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+  body > div.recap-emp div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
     right: 10px;
     top: 12px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode div.specialNoPadding {
     padding-left: 15px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
     top: 28px;
   }
-  body > div.recap div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+  body > div.recap-emp div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
     /* width: 93.7%; */
   }
-  body > div.recap div.wrapper div.barRow div.border p {
+  body > div.recap-emp div.wrapper div.barRow div.border p {
     text-align: right;
   }
-  body > div.recap div.wrapper div.tabsRow p {
+  body > div.recap-emp div.wrapper div.tabsRow p {
     width: 100%;
     margin-bottom: 25px;
   }
-  body > div.recap div.actionRow > div.form-group a.prevAmeli,
-  body > div.recap div.actionRow > div.form-group a {
+  body > div.recap-emp div.actionRow > div.form-group a.prevAmeli,
+  body > div.recap-emp div.actionRow > div.form-group a {
     float: none;
     display: inline-block;
     margin: 0 5%;
   }
 }
 @media (max-width: 480px) {
-  body > div.recap div.wrapper div.barRow div.border {
+  body > div.recap-emp div.wrapper div.barRow div.border {
     left: 4%;
     width: 92%;
   }
 }
 @media (max-width: 300px) {
-  body > div.recap div.wrapper div.barRow div.border {
+  body > div.recap-emp div.wrapper div.barRow div.border {
     left: -5%;
+  }
+}
+body > div.recap-sal {
+  /* @animation : color: @orangeAmeli; */
+}
+@-webkit-keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@-webkit-keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@-webkit-keyframes pinnoccioBarFour {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes colorTextOange {
+  0% {
+    color: #cecece;
+  }
+  100% {
+    color: #f68527;
+  }
+}
+@keyframes colorBarOange {
+  0% {
+    background-color: #ebebeb;
+  }
+  100% {
+    background-color: #f68527;
+  }
+}
+@keyframes pinnoccioBarFour {
+  0% {
+    width: 0%;
+  }
+  20% {
+    background-color: #f68527;
+  }
+  40% {
+    background-color: #ebebeb;
+  }
+  60% {
+    background-color: #f68527;
+  }
+  80% {
+    background-color: #ebebeb;
+  }
+  100% {
+    width: 95%;
+  }
+}
+body > div.recap-sal div.wrapper {
+  background-color: #fff;
+}
+body > div.recap-sal div.wrapper div.barRow div.border {
+  min-width: 255px;
+  border: 1px solid #ebebeb;
+  padding: 3px 2px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-family: 'Proxima Nova Regular';
+  float: right;
+  height: 23px;
+  position: relative;
+  top: -35px;
+  right: 35px;
+}
+body > div.recap-sal div.wrapper div.barRow div.border.animOn p {
+  animation-name: colorTextOange;
+  -webkit-animation-name: colorTextOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+}
+body > div.recap-sal div.wrapper div.barRow div.border.animOn div.completeBar {
+  width: 95%;
+  background-color: #ebebeb;
+  animation-name: colorBarOange;
+  -webkit-animation-name: colorBarOange;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 3;
+  -webkit-animation-timing-function: ease-in;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: ease-in;
+  /* pinnoccioBarFour*/
+  animation-name: pinnoccioBarFour;
+  -webkit-animation-name: pinnoccioBarFour;
+  /* Safari 4.0 - 8.0 */
+  animation-duration: 0.9s;
+  -webkit-animation-duration: 0.9s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 1;
+  /* Safari 4.0 - 8.0 */
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  /* Safari 4.0 - 8.0 */
+  animation-timing-function: linear;
+}
+body > div.recap-sal div.wrapper div.barRow div.border p {
+  color: #cecece;
+  text-transform: lowercase;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+body > div.recap-sal div.wrapper div.barRow div.border div.completeBar {
+  font-family: 'Proxima Nova Regular';
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 0;
+  min-height: 19px;
+  position: relative;
+  top: -2px;
+}
+body > div.recap-sal div.wrapper div.tabsRow {
+  margin-top: 30px;
+  width: 98%;
+  border-bottom: 1px solid #c9c9c9;
+  margin-left: 1%;
+}
+body > div.recap-sal div.wrapper div.tabsRow p {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  margin-right: 4%;
+}
+body > div.recap-sal div.wrapper div.tabsRow p.active {
+  font-family: 'Proxima Nova Semibold';
+  color: #005da8;
+  border-bottom: 1px solid #005da8;
+}
+body > div.recap-sal div.wrapper div.wrapperForm {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 0 6%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005da8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4.infoTitle {
+  margin-top: 70px;
+  border-color: #f68428;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4.postTitle {
+  margin-top: 70px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4.infoTitleSalaire {
+  border-color: #56ca81;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4.infoTitleSalaire.marginTop {
+  margin-top: 70px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm h4.infoTitleCondition {
+  border-color: #84156e;
+  margin-top: 70px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.quesionsBlock {
+  position: relative;
+  top: 50px;
+  left: 8%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.quesionsBlock.second {
+  top: 100px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.quesionsBlock span.btnOkEditSelect {
+  background-position: 100% 100% !important;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect {
+  padding-right: 30px;
+  margin-bottom: 2px;
+  position: relative;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup {
+  margin-top: 25px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect.marginTopFormGroup select {
+  margin-left: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect span.secondLabel {
+  font-weight: normal;
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Light';
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect select {
+  display: inline-block;
+  width: 110px;
+  padding: 0;
+  height: 20px;
+  margin-left: 20px;
+  /* &.medium{
+						width: 80%;
+					} */
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.editSelect select.large {
+  width: 95%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode {
+  padding-right: 30px;
+  position: relative;
+  min-height: 30px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode p {
+  padding-left: 3px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+  padding-left: 43px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.specialPadding input {
+  margin-left: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.specialPadding input {
+  width: 98% !important;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
+  position: absolute;
+  right: 2%;
+  top: 14px;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode.spe {
+  top: 25px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup {
+  margin-bottom: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup.first span.secondLabel {
+  position: absolute;
+  left: -16px;
+  top: 9px;
+  font-weight: normal;
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  left: -15px;
+  top: 5px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup.first div.input-group {
+  padding-left: 2%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup.first label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 5px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup.second div.input-group {
+  padding-left: 2%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup.second label {
+  position: absolute;
+  padding-left: 0;
+  left: 10px;
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  left: -3px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit {
+  margin-bottom: 3px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit.marginTopFormGroup {
+  margin-top: 25px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol {
+  position: relative;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.fullWidth input {
+  padding-left: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
+  left: -7%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit label.noPadRight {
+  padding-right: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit input {
+  font-family: 'Proxima Nova Semibold';
+  padding-right: 30px;
+  height: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit input[type="text"]:disabled {
+  cursor: pointer;
+  background-color: #fff;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  margin-left: 2%;
+  width: 96%;
+  height: 20px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit.off div.fakeInput:hover {
+  cursor: pointer;
+  background: url(../img/icon_edit.png) no-repeat 100% 50%;
+  background-size: 25px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit.on input {
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit.on span.btnOkEdit {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone {
+  padding-right: 5%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.dateFormGroup {
+  margin-bottom: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.dateFormGroup label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.dateFormGroup input {
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.dateFormGroup div.specialPaddingForIcon {
+  padding-right: 3%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.dateFormGroup span.btnOkEditDate {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone p.otherFileUpload {
+  margin-top: 40px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone p.specialhelp {
+  display: inline-block;
+  position: relative;
+  top: -23px;
+  left: 6px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel {
+  cursor: pointer;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel:hover {
+  background: url(../img/icon_edit.png) no-repeat 100% 50%;
+  background-size: 25px;
+  background-color: #f1f1f1;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone p.fichierJointLabel.on {
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+  background-color: #f1f1f1;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologiePied {
+  background: url(../img/pied-v2_small.gif) no-repeat 0 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 55px;
+  margin-top: 90px;
+  margin-left: 10%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain1 {
+  background: url(../img/schema2.jpg) no-repeat 50% 50%;
+  width: 198px;
+  height: 233px;
+  margin-bottom: 0;
+  margin-top: 63px;
+  margin-left: 5%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone div.iconPathologieMain2 {
+  background: url(../img/schema3.jpg) no-repeat 50% 50%;
+  width: 299px;
+  height: 233px;
+  margin-bottom: 0;
+  margin-top: 63px;
+  margin-left: 0%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload {
+  display: inline-block;
+  border: 1px solid;
+  border-color: #f68527;
+  color: #f68527;
+  font-size: 0.8em;
+  font-family: 'Proxima Nova Regular';
+  padding-left: 20px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload.emptyInputFile {
+  padding-left: 50px;
+  margin-bottom: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload.second {
+  margin-left: 15px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload:hover {
+  text-decoration: none;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload:focus {
+  outline: none;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload.editOn {
+  padding-left: 50px;
+  background: url(../img/icon_upload.png) no-repeat 18px 50%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone {
+  padding-left: 5%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone div.dateFormGroup {
+  margin-bottom: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone div.dateFormGroup label {
+  font-family: 'Proxima Nova Light';
+  padding-top: 0;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone div.dateFormGroup input {
+  font-family: 'Proxima Nova Semibold';
+  color: #555555;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 30px;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone div.dateFormGroup div.specialPaddingForIcon {
+  padding-right: 3%;
+}
+body > div.recap-sal div.wrapper div.wrapperForm div.rightZone div.dateFormGroup span.btnOkEditDate {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+  background-size: 20px;
+}
+body > div.recap-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.recap-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.recap-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+  margin-bottom: 10px;
+}
+body > div.recap-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  body > div.recap-sal div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+    right: 10px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.rightZone {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 160px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode p {
+    padding-left: 7px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+    padding-left: 35px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup div.input-group {
+    padding-left: 0;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm h4.infoTitle {
+    margin-top: 160px;
+  }
+}
+@media (max-width: 992px) {
+  body > div.recap-sal div.wrapper div.barRow div.border {
+    float: none;
+    top: 15px;
+    left: 2%;
+    width: 96%;
+  }
+  body > div.recap-sal div.wrapper div.barRow div.border div.completeBar {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  body > div.recap-sal div.wrapper div.tabsRow {
+    border-color: #fff;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.form-group.specialEdit div.editCol.specialLabel {
+    left: 0%;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.leftZone a.upload.second {
+    margin-left: 0;
+    display: block;
+    margin-top: 15px;
+    width: 165px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.editSelect span.btnOkEditSelect {
+    right: 10px;
+    top: 12px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode div.specialNoPadding {
+    padding-left: 15px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode span.btnOkEditPeriode {
+    top: 28px;
+  }
+  body > div.recap-sal div.wrapper div.wrapperForm div.periode div.dateFormGroup input {
+    /* width: 93.7%; */
+  }
+  body > div.recap-sal div.wrapper div.barRow div.border p {
+    text-align: right;
+  }
+  body > div.recap-sal div.wrapper div.tabsRow p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  body > div.recap-sal div.actionRow > div.form-group a.prevAmeli,
+  body > div.recap-sal div.actionRow > div.form-group a {
+    float: none;
+    display: inline-block;
+    margin: 0 5%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.recap-sal div.wrapper div.barRow div.border {
+    left: 4%;
+    width: 92%;
+  }
+}
+@media (max-width: 300px) {
+  body > div.recap-sal div.wrapper div.barRow div.border {
+    left: -5%;
+  }
+}
+body > div.confirmation-emp div.wrapper {
+  padding: 0 20%;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #fff;
+}
+body > div.confirmation-emp div.wrapper p.subTitle {
+  margin-top: 50px;
+  font-family: 'Proxima Nova Light';
+  font-size: 1.1em;
+}
+body > div.confirmation-emp div.wrapper div.border {
+  display: inline;
+  border: 1px solid #ebebeb;
+  padding: 8px 3px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+body > div.confirmation-emp div.wrapper div.border div.completeBar {
+  background: #ebebeb;
+  font-family: 'Proxima Nova Regular';
+  width: auto;
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 3px 7%;
+  color: #005da8;
+}
+body > div.confirmation-emp div.wrapper div.border div.completeBar b {
+  font-family: 'Proxima Nova Semibold';
+  font-weight: normal;
+}
+body > div.confirmation-emp div.wrapper div.downloadPDF {
+  margin-top: 20px;
+}
+body > div.confirmation-emp div.wrapper div.downloadPDF a {
+  font-weight: normal;
+  padding: 0 40px;
+  font-size: 0.8em;
+}
+body > div.confirmation-emp div.wrapper div.downloadPDF p {
+  font-size: 1.1em;
+  font-family: 'Proxima Nova Light';
+  display: inline-block;
+  padding-right: 20px;
+}
+body > div.confirmation-emp div.wrapper a.action {
+  display: inline-block;
+  margin-top: 120px;
+  margin-bottom: 110px;
+}
+@media (max-width: 768px) {
+  body > div.confirmation-emp div.wrapper {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.confirmation-emp div.wrapper a.action {
+    display: none;
+  }
+  body > div.confirmation-emp div.wrapper a.action.hidden {
+    display: block !important;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+body > div.confirmation-sal div.wrapper {
+  padding: 0 20%;
+  padding-top: 80px;
+  text-align: center;
+  background-color: #fff;
+}
+body > div.confirmation-sal div.wrapper p.subTitle {
+  margin-top: 50px;
+  font-family: 'Proxima Nova Light';
+  font-size: 1.1em;
+}
+body > div.confirmation-sal div.wrapper div.border {
+  display: inline;
+  border: 1px solid #ebebeb;
+  padding: 8px 3px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+body > div.confirmation-sal div.wrapper div.border div.completeBar {
+  background: #ebebeb;
+  font-family: 'Proxima Nova Regular';
+  width: auto;
+  font-size: 1.2em;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 3px 7%;
+  color: #005da8;
+}
+body > div.confirmation-sal div.wrapper div.border div.completeBar b {
+  font-family: 'Proxima Nova Semibold';
+  font-weight: normal;
+}
+body > div.confirmation-sal div.wrapper div.downloadPDF {
+  margin-top: 20px;
+}
+body > div.confirmation-sal div.wrapper div.downloadPDF a {
+  font-weight: normal;
+  padding: 0 40px;
+  font-size: 0.8em;
+}
+body > div.confirmation-sal div.wrapper div.downloadPDF p {
+  font-size: 1.1em;
+  font-family: 'Proxima Nova Light';
+  display: inline-block;
+  padding-right: 20px;
+}
+body > div.confirmation-sal div.wrapper a.action {
+  display: inline-block;
+  margin-top: 120px;
+  margin-bottom: 110px;
+}
+@media (max-width: 768px) {
+  body > div.confirmation-sal div.wrapper {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+@media (max-width: 480px) {
+  body > div.confirmation-sal div.wrapper a.action {
+    display: none;
+  }
+  body > div.confirmation-sal div.wrapper a.action.hidden {
+    display: block !important;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+body > div.questionnaire-emp div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.questionnaire-emp div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.questionnaire-emp div.actionRow > div.form-group button {
+  float: right;
+  margin-right: 134px;
+}
+body > div.questionnaire-emp div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye {
+  cursor: pointer;
+  height: 45px;
+  margin-bottom: 30px;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye p {
+  margin-top: 10px;
+  margin: 0;
+  padding-left: 2%;
+  position: relative;
+  padding-right: 10%;
+  display: block;
+  height: 100%;
+  padding-top: 12px;
+  color: #767676;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye p span {
+  position: absolute;
+  padding: 0px 20px;
+  border-left: 1px solid #d5d5d5;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding-top: 12px;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye.active,
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye:hover {
+  border-color: #005da8;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye.active p,
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye:hover p {
+  color: #005da8;
+}
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye.active p span,
+body > div.questionnaire-emp div.wrapper div.leftZone div.oneEmploye:hover p span {
+  border-color: #005da8;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente {
+  cursor: pointer;
+  position: relative;
+  padding-left: 50px;
+  min-height: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active,
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover {
+  background-color: #005da8;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right p.date,
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right p.date {
+  color: #fff;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail p,
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail p {
+  color: #fff;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span.myTooltip,
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span.myTooltip {
+  color: #fff;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span:not(.myTooltip),
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span:not(.myTooltip) {
+  color: #fff;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.left {
+  display: inline-block;
+  background: url(../img/icon_dossier.png) no-repeat 50% 50%;
+  border-right: 1px solid #d5d5d5;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 4px;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right p.date {
+  color: #bebebe;
+  border-bottom: 1px solid #d5d5d5;
+  margin-top: 5px;
+  padding-left: 3%;
+  margin-bottom: 7px;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail p {
+  color: #8d8d8d;
+  font-family: 'Proxima Nova Semibold';
+  padding-left: 3%;
+  margin-bottom: 0;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span.myTooltip {
+  margin-left: 10px;
+}
+body > div.questionnaire-emp div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span:not(.myTooltip) {
+  font-family: 'Proxima Nova Regular';
+  color: #767676;
+  padding-left: 3%;
+  font-size: 12px;
+  line-height: 1.42857143;
+}
+body > div.questionnaire-emp div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+  position: relative;
+}
+body > div.questionnaire-emp div.wrapper h4 span.search {
+  background: url(../img/iconSearch_on.png) no-repeat 50% 50%;
+  cursor: pointer;
+  float: right;
+  height: 13px;
+  width: 13px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+body > div.questionnaire-emp div.wrapper h4 input {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  top: -6px;
+  right: 0px;
+  width: 25%;
+  height: 30px;
+  background: initial;
+  padding-right: 25px;
+}
+@media (max-width: 1200px) {
+  body > div.questionnaire-emp div.wrapper div.leftZone,
+  body > div.questionnaire-emp div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.questionnaire-emp div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.questionnaire-emp div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.questionnaire-emp div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.questionnaire-emp div.actionRow > div.form-group button {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+}
+body > div.questionnaire-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.questionnaire-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.questionnaire-sal div.actionRow > div.form-group button {
+  float: right;
+  margin-right: 134px;
+}
+body > div.questionnaire-sal div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye {
+  cursor: pointer;
+  height: 45px;
+  margin-bottom: 30px;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye p {
+  margin-top: 10px;
+  margin: 0;
+  padding-left: 2%;
+  position: relative;
+  padding-right: 10%;
+  display: block;
+  height: 100%;
+  padding-top: 12px;
+  color: #767676;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye p span {
+  position: absolute;
+  padding: 0px 20px;
+  border-left: 1px solid #d5d5d5;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding-top: 12px;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye.active,
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye:hover {
+  border-color: #005da8;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye.active p,
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye:hover p {
+  color: #005da8;
+}
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye.active p span,
+body > div.questionnaire-sal div.wrapper div.leftZone div.oneEmploye:hover p span {
+  border-color: #005da8;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente {
+  cursor: pointer;
+  position: relative;
+  padding-left: 50px;
+  min-height: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active,
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover {
+  background-color: #005da8;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right p.date,
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right p.date {
+  color: #fff;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail p,
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail p {
+  color: #fff;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span.myTooltip,
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span.myTooltip {
+  color: #fff;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente.active div.right div.detail span:not(.myTooltip),
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente:hover div.right div.detail span:not(.myTooltip) {
+  color: #fff;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.left {
+  display: inline-block;
+  background: url(../img/icon_dossier.png) no-repeat 50% 50%;
+  border-right: 1px solid #d5d5d5;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 4px;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right p.date {
+  color: #bebebe;
+  border-bottom: 1px solid #d5d5d5;
+  margin-top: 5px;
+  padding-left: 3%;
+  margin-bottom: 7px;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail p {
+  color: #8d8d8d;
+  font-family: 'Proxima Nova Semibold';
+  padding-left: 3%;
+  margin-bottom: 0;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span.myTooltip {
+  margin-left: 10px;
+}
+body > div.questionnaire-sal div.wrapper div.rightZone div.oneQuestionnaireEnAttente div.right div.detail span:not(.myTooltip) {
+  font-family: 'Proxima Nova Regular';
+  color: #767676;
+  padding-left: 3%;
+  font-size: 12px;
+  line-height: 1.42857143;
+}
+body > div.questionnaire-sal div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+  position: relative;
+}
+body > div.questionnaire-sal div.wrapper h4 span.search {
+  background: url(../img/iconSearch_on.png) no-repeat 50% 50%;
+  cursor: pointer;
+  float: right;
+  height: 13px;
+  width: 13px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+body > div.questionnaire-sal div.wrapper h4 input {
+  font-family: 'Proxima Nova Regular';
+  position: absolute;
+  top: -6px;
+  right: 0px;
+  width: 25%;
+  height: 30px;
+  background: initial;
+  padding-right: 25px;
+}
+@media (max-width: 1200px) {
+  body > div.questionnaire-sal div.wrapper div.leftZone,
+  body > div.questionnaire-sal div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.questionnaire-sal div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.questionnaire-sal div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.questionnaire-sal div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.questionnaire-sal div.actionRow > div.form-group button {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+}
+body > div.compte-sal div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.compte-sal div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.compte-sal div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+}
+body > div.compte-sal div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+}
+body > div.compte-sal div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.compte-sal div.wrapper div.sal,
+body > div.compte-sal div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.compte-sal div.wrapper div.sal div.form-group,
+body > div.compte-sal div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.compte-sal div.wrapper div.sal div.form-group label,
+body > div.compte-sal div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.compte-sal div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.compte-sal div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.compte-sal div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+@media (max-width: 1200px) {
+  body > div.compte-sal div.wrapper div.leftZone,
+  body > div.compte-sal div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.compte-sal div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.compte-sal div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.compte-sal div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.compte-sal div.actionRow > div.form-group a {
+    display: inline-block;
+    margin: 0;
+    float: none;
+  }
+}
+body > div.compte-emp div.actionRow {
+  background-color: #f7f7f7;
+}
+body > div.compte-emp div.actionRow > div.form-group {
+  margin: 10px 0;
+  text-align: center;
+}
+body > div.compte-emp div.actionRow > div.form-group a {
+  float: right;
+  margin-right: 134px;
+}
+body > div.compte-emp div.actionRow > div.form-group a.prevAmeli {
+  float: left;
+  margin-left: 134px;
+}
+body > div.compte-emp div.wrapper {
+  min-height: 450px;
+  padding: 0 150px;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  background-color: #fff;
+}
+body > div.compte-emp div.wrapper div.sal,
+body > div.compte-emp div.wrapper div.emp {
+  padding-bottom: 20px;
+}
+body > div.compte-emp div.wrapper div.sal div.form-group,
+body > div.compte-emp div.wrapper div.emp div.form-group {
+  margin-bottom: 0;
+}
+body > div.compte-emp div.wrapper div.sal div.form-group label,
+body > div.compte-emp div.wrapper div.emp div.form-group label {
+  padding-top: 0;
+  font-family: 'Proxima Nova Semibold';
+}
+body > div.compte-emp div.wrapper div.leftZone {
+  padding-right: 6%;
+}
+body > div.compte-emp div.wrapper div.rightZone {
+  padding-left: 6%;
+}
+body > div.compte-emp div.wrapper h4 {
+  font-family: 'Proxima Nova Semibold';
+  margin-bottom: 50px;
+  border-bottom: 1px solid #005ea8;
+  padding-bottom: 10px;
+  color: #404040;
+}
+@media (max-width: 1200px) {
+  body > div.compte-emp div.wrapper div.leftZone,
+  body > div.compte-emp div.wrapper div.rightZone {
+    padding: 0;
+  }
+  body > div.compte-emp div.wrapper div.rightZone {
+    margin-top: 100px;
+  }
+  body > div.compte-emp div.wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
+  body > div.compte-emp div.wrapper {
+    padding: 50px 10%;
+  }
+  body > div.compte-emp div.actionRow > div.form-group a {
+    display: inline-block;
+    margin: 0;
+    float: none;
   }
 }
 body > div.questionnaire1 section.postTete {
@@ -12662,146 +15138,6 @@ body > div.detail-dossier div.wrapper div.bottomZone h5 span.iconValide {
     right: 0;
     top: inherit;
     left: inherit;
-  }
-}
-body > div.compte-sal div.actionRow {
-  background-color: #f7f7f7;
-}
-body > div.compte-sal div.actionRow > div.form-group {
-  margin: 10px 0;
-  text-align: center;
-}
-body > div.compte-sal div.actionRow > div.form-group a {
-  float: right;
-  margin-right: 134px;
-}
-body > div.compte-sal div.actionRow > div.form-group a.prevAmeli {
-  float: left;
-  margin-left: 134px;
-}
-body > div.compte-sal div.wrapper {
-  min-height: 450px;
-  padding: 0 150px;
-  padding-bottom: 50px;
-  padding-top: 70px;
-  background-color: #fff;
-}
-body > div.compte-sal div.wrapper div.sal,
-body > div.compte-sal div.wrapper div.emp {
-  padding-bottom: 20px;
-}
-body > div.compte-sal div.wrapper div.sal div.form-group,
-body > div.compte-sal div.wrapper div.emp div.form-group {
-  margin-bottom: 0;
-}
-body > div.compte-sal div.wrapper div.sal div.form-group label,
-body > div.compte-sal div.wrapper div.emp div.form-group label {
-  padding-top: 0;
-  font-family: 'Proxima Nova Semibold';
-}
-body > div.compte-sal div.wrapper div.leftZone {
-  padding-right: 6%;
-}
-body > div.compte-sal div.wrapper div.rightZone {
-  padding-left: 6%;
-}
-body > div.compte-sal div.wrapper h4 {
-  font-family: 'Proxima Nova Semibold';
-  margin-bottom: 50px;
-  border-bottom: 1px solid #005ea8;
-  padding-bottom: 10px;
-  color: #404040;
-}
-@media (max-width: 1200px) {
-  body > div.compte-sal div.wrapper div.leftZone,
-  body > div.compte-sal div.wrapper div.rightZone {
-    padding: 0;
-  }
-  body > div.compte-sal div.wrapper div.rightZone {
-    margin-top: 100px;
-  }
-  body > div.compte-sal div.wrapper {
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 768px) {
-  body > div.compte-sal div.wrapper {
-    padding: 50px 10%;
-  }
-  body > div.compte-sal div.actionRow > div.form-group a {
-    display: inline-block;
-    margin: 0;
-    float: none;
-  }
-}
-body > div.compte-emp div.actionRow {
-  background-color: #f7f7f7;
-}
-body > div.compte-emp div.actionRow > div.form-group {
-  margin: 10px 0;
-  text-align: center;
-}
-body > div.compte-emp div.actionRow > div.form-group a {
-  float: right;
-  margin-right: 134px;
-}
-body > div.compte-emp div.actionRow > div.form-group a.prevAmeli {
-  float: left;
-  margin-left: 134px;
-}
-body > div.compte-emp div.wrapper {
-  min-height: 450px;
-  padding: 0 150px;
-  padding-bottom: 50px;
-  padding-top: 70px;
-  background-color: #fff;
-}
-body > div.compte-emp div.wrapper div.sal,
-body > div.compte-emp div.wrapper div.emp {
-  padding-bottom: 20px;
-}
-body > div.compte-emp div.wrapper div.sal div.form-group,
-body > div.compte-emp div.wrapper div.emp div.form-group {
-  margin-bottom: 0;
-}
-body > div.compte-emp div.wrapper div.sal div.form-group label,
-body > div.compte-emp div.wrapper div.emp div.form-group label {
-  padding-top: 0;
-  font-family: 'Proxima Nova Semibold';
-}
-body > div.compte-emp div.wrapper div.leftZone {
-  padding-right: 6%;
-}
-body > div.compte-emp div.wrapper div.rightZone {
-  padding-left: 6%;
-}
-body > div.compte-emp div.wrapper h4 {
-  font-family: 'Proxima Nova Semibold';
-  margin-bottom: 50px;
-  border-bottom: 1px solid #005ea8;
-  padding-bottom: 10px;
-  color: #404040;
-}
-@media (max-width: 1200px) {
-  body > div.compte-emp div.wrapper div.leftZone,
-  body > div.compte-emp div.wrapper div.rightZone {
-    padding: 0;
-  }
-  body > div.compte-emp div.wrapper div.rightZone {
-    margin-top: 100px;
-  }
-  body > div.compte-emp div.wrapper {
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 768px) {
-  body > div.compte-emp div.wrapper {
-    padding: 50px 10%;
-  }
-  body > div.compte-emp div.actionRow > div.form-group a {
-    display: inline-block;
-    margin: 0;
-    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

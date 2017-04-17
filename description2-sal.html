@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Je suis salarié | Questionnaire Maladie Professionnelle</title>
+
+    <!-- Bootstrap + bootstrap_override + customcss -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom select (http://selectric.js.org) -->
+    <!-- <link href="css/selectric.css" rel="stylesheet"> -->
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="BandeauAide"><p>Besoin d'aide ?</p></div>
+
+    <div class="container-fluid main description2-sal">
+
+        <div class="row header">
+            <header>
+                <section class="preEntete">
+                    <div class="logoAM"><span class="hideBorderLeft"></span><span class="hideBorderRight"></span></div>
+                </section>
+
+                <section class="entete">
+                    <div class="logoBlock">
+                        <h1>ameli.fr</h1>
+                        <h2>Je suis salarié</h2>
+                    </div>
+
+                    <div class="userBlock" title="Modifier les informations de mon compte">
+                        <a href="compte-sal.html" class="user">MICHEL ADAM</a>
+                        <a href="connexion.html">deconnexion</a>
+                        <a href="compte-sal.html" class="likeUser"></a>
+                    </div>
+                </section>
+
+                <section class="postTete">
+                    <h3>Questionnaire <span>Maladie Professionnelle</span></h3>
+                </section>
+            </header>
+        </div> <!-- fin row header -->
+
+        <div class="wrapper container-fluid">
+            <div class="row tabsRow">
+                <p>Identification</p>
+                <p class="active">Description</p>
+                <p>Pathologie</p>
+                <p>Récapitulatif</p>
+            </div>
+            <div class="row barRow">
+                <div class="border"><div class="completeBar"></div><p>complété à 45%</p></div>
+            </div>
+
+            <div class="wrapperForm row">
+                <form class="form-horizontal">
+
+                    <div class="col-lg-6 leftZone">
+                        <h4>Chronologie des postes occupées</h4>
+
+                        <div class="oneBlock">
+                            <p class="requiered">Poste 1</p>
+                            <div class="row periode">
+                                <div class="col-sm-8">
+                                    <div class="form-group dateFormGroup first">
+                                        <label for="input1" class="col-sm-6 control-label">Du</label>
+                                        <div class='col-sm-5 input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" id="input1"/>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group dateFormGroup second">
+                                        <label for="input2" class="col-sm-2 control-label">au</label>
+                                        <div class='col-sm-10 input-group date' id='datetimepicker2'>
+                                            <input type='text' class="form-control" id="input2"/>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row motifRow">
+                                <div class="form-group">
+                                    <label for="input3">Intitulé</label>
+                                    <input type="text" class="form-control" id="input3" placeholder="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <span class="separation">
+                            <p>cliquez ici pour ajouter un poste</p>
+                            <span class="line"></span>
+                        </span>
+
+                        <h4 class="infoTitle">Généralités sur le poste</h4>
+
+                        <div class="form-group reduced required">
+                            <label for="input01" class="control-label">Quel est l’intitulé de votre ou de vos postes actuels ?</label>
+                            <input type="text" class="form-control" id="input01" placeholder="">
+                        </div>
+
+                        <div class="form-group reduced">
+                            <label for="input02"  class="control-label">Quel est l’objet produit ou le service rendu ?</label>
+                            <input type="text" class="form-control" id="input02" placeholder="">
+                        </div>
+
+
+                        <div class="form-group reduced required">
+                            <label for="input03" class="control-label">Description du ou des poste(s) de travail</label>
+                            <span id="helpBlock" class="help-block">Détaillez le plus précisément possible les travaux (les tâches) réalisés sur la journée de travail, la cadence, ect...)</span>
+                            <textarea type="text" class="form-control" id="input03" rows="10" placeholder=""></textarea>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-6 rightZone">
+                        <h4 class="infoTitleSalaire">Environnement et conditions du travail</h4>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Le travail expose t’il l’assuré(e) au froid inférieur à 10°
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Le travail expose-t-il l’assuré(e) à l’humidité
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Le travail expose t’il l’assuré(e) au bruit
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Le travail expose t’il l’assuré(e) à la chaleur
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Le travail expose-t-il a des conditions d’éclairage particulière
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group reduced required radioFormGroup">
+                                <label for="input04" class="control-label col-xs-12" >
+                                  Travail en autonomie dans l’organisation du travail
+                                </label>
+                                <div class="rowCustomRadio col-xs-12">
+                                    <div class="bar"></div>
+                                    <div class="oneRadioCustom active one"><span class="boule"></span><p>Jamais</p></div>
+                                    <div class="oneRadioCustom two"><span class="boule"></span><p>Occasionnel</p></div>
+                                    <div class="oneRadioCustom three"><span class="boule"></span><p>La majorité du temps</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div> <!-- fin wrapper -->
+        <div class="actionRow row">
+            <div class="form-group">
+                <a href="description-sal.html" type="submit" class="suivAmeli prevAmeli btn btn-primary">Retour</a>
+                <a href="pathologie-sal.html" type="submit" class="suivAmeli btn btn-primary">Suivant</a>
+            </div>
+        </div>
+
+    </div> <!-- fin container -->
+
+    <footer>
+
+        <div class="container-fluid footer">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <p><a href='mention.html'>Mentions légales</a></p>
+                    <p>Version : 0.1</p>
+                    <p>Janvier 2017</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom select (http://selectric.js.org/index.html) -->
+    <!-- <script src="js/jquery.selectric.js"></script> -->
+
+    <!-- Moment JS (https://momentjs.com/) -->
+    <script src="js/moment.min.js"></script>
+
+    <!-- Moment JS local settings FR -->
+    <script src="js/moment-local.js"></script>
+
+    <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+
+</html>

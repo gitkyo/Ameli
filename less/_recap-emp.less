@@ -1,0 +1,650 @@
+body > div.recap-emp{
+	/* @animation : color: @orangeAmeli; */
+	@-webkit-keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@-webkit-keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@-webkit-keyframes pinnoccioBarFour {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 95%}
+	}
+	@keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@keyframes pinnoccioBarFour {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 95%}
+	}
+	div.wrapper{
+		background-color: #fff;
+		div.barRow{
+			div.border{
+				min-width: 255px;
+				border: 1px solid #ebebeb;
+				padding: 3px 2px;
+				border-top-right-radius: 15px;
+				border-top-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				border-bottom-left-radius: 15px;
+				font-family: 'Proxima Nova Regular';
+				float: right;
+				height: 23px;
+				position: relative;
+				top: -35px;
+				right: 35px;
+				&.animOn{
+					p{
+
+					animation-name: colorTextOange;
+					-webkit-animation-name: colorTextOange; /* Safari 4.0 - 8.0 */
+
+					animation-duration: 0.3s;
+					-webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+
+					animation-delay: 0s;
+					-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+					-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+					animation-iteration-count: 3;
+
+					-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+					animation-timing-function: ease-in;
+
+					}
+					div.completeBar{
+						width: 95%;
+						background-color: #ebebeb;
+						animation-name: colorBarOange;
+						-webkit-animation-name: colorBarOange; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.3s;
+						-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 2s;
+						-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 3;
+
+						-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+						animation-timing-function: ease-in;
+
+						/* pinnoccioBarFour*/
+						animation-name: pinnoccioBarFour;
+						-webkit-animation-name: pinnoccioBarFour; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.9s;
+						-webkit-animation-duration: 0.9s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 0s;
+						-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 1;
+
+						-webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+						animation-timing-function: linear;
+
+
+					}
+				}
+				p{
+					color: #cecece;
+					text-transform: lowercase;
+					position: absolute;
+					right: 15px;
+					top: 0;
+				}
+				div.completeBar{
+					width: 0;
+					font-family: 'Proxima Nova Regular';
+					font-size: 1.2em;
+					display: inline-block;
+					border-top-right-radius: 15px;
+					border-top-left-radius: 15px;
+					border-bottom-right-radius: 15px;
+					border-bottom-left-radius: 15px;
+					width: 0;
+					min-height: 19px;
+					position: relative;
+					top: -2px;
+				}
+			}
+		}
+		div.tabsRow{
+			margin-top: 30px;
+			width: 98%;
+			border-bottom: 1px solid #c9c9c9;
+			margin-left: 1%;
+			p{
+				text-transform: uppercase;
+				display: inline-block;
+				margin-bottom: 0;
+				padding-bottom: 10px;
+				margin-right: 4%;
+				&.active{
+					font-family: 'Proxima Nova Semibold';
+					color: @bleuAmeli;
+					border-bottom: 1px solid @bleuAmeli;
+				}
+			}
+		}
+		div.wrapperForm{
+			margin-top: 60px;
+			margin-bottom: 100px;
+			padding: 0 6%;
+			h4{
+				font-family: 'Proxima Nova Semibold';
+				margin-bottom: 50px;
+				border-bottom: 1px solid @bleuAmeli;
+				padding-bottom: 10px;
+				color: #404040;
+				&.infoTitle{
+					margin-top: 70px;
+					border-color: #f68428;
+				}
+				&.postTitle{
+					margin-top: 70px;
+				}
+				&.infoTitleSalaire{
+					border-color: #56ca81;
+					&.marginTop{
+						margin-top: 70px;
+					}
+				}
+				&.infoTitleCondition{
+					border-color: #84156e;
+					margin-top: 70px;
+				}
+			}
+			div.quesionsBlock{
+				position: relative;
+				top: 50px;
+				left: 8%;
+				&.second{
+					top: 100px;
+				}
+				span.btnOkEditSelect{
+					background-position: 100% 100% !important;
+				}
+			}
+			div.editSelect{
+				padding-right: 30px;
+				margin-bottom: 2px;
+				position: relative;
+				&.marginTopFormGroup{
+					margin-top: 25px;
+					select{
+						margin-left: 0;
+					}
+				}
+				span.secondLabel{
+					font-weight: normal;
+					font-family: 'Proxima Nova Semibold';
+					color: #555555;
+				}
+				span.btnOkEditSelect{
+					position: absolute;
+					right: 2%;
+					top: 0;
+					display: inline-block;
+					height: 100%;
+					width: 30px;
+					cursor: pointer;
+					background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+					background-size: 20px;
+				}
+				label{
+					padding-top: 0;
+					font-family: 'Proxima Nova Light';
+				}
+				select{
+					display: inline-block;
+					width: 110px;
+					padding: 0;
+					height: 20px;
+					margin-left: 20px;
+					&.large{
+						width: 95%;
+					}
+					/* &.medium{
+						width: 80%;
+					} */
+				}
+			}
+			div.periode {
+				padding-right: 30px;
+				position: relative;
+				min-height: 30px;
+				p{
+					padding-left: 3px
+				}
+				div.specialNoPadding{
+					padding-left: 43px;
+				}
+				div.specialPadding{
+					input{
+						margin-left: 0;
+					}
+				}
+				div.specialPadding{
+					input{
+						width: 98% !important;
+					}
+				}
+				span.btnOkEditPeriode{
+					position: absolute;
+					right: 2%;
+					top: 14px;
+					display: inline-block;
+					height: 100%;
+					width: 30px;
+					cursor: pointer;
+					background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+					background-size: 20px;
+					&.spe{
+						top: 25px;
+					}
+				}
+				div.dateFormGroup{
+					margin-bottom: 0;
+					input{
+						font-family: 'Proxima Nova Semibold';
+						color: #555555;
+						padding-top: 0;
+						padding-bottom: 0;
+						height: 30px;
+					}
+					&.first {
+						span.secondLabel{
+							position: absolute;
+							left: -16px;
+							top: 9px;
+							font-weight: normal;
+							font-family: 'Proxima Nova Semibold';
+							color: #555555;
+							left: -15px;
+							top: 5px;
+						}
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							font-family: 'Proxima Nova Light';
+							padding-top: 5px;
+						}
+					}
+					&.second{
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							position: absolute;
+							padding-left: 0;
+							left: 10px;
+							font-family: 'Proxima Nova Semibold';
+							color: #555555;
+							left: -3px;
+						}
+					}
+				}
+			}
+			div.form-group.specialEdit{
+				margin-bottom: 3px;
+				&.marginTopFormGroup{
+					margin-top: 25px;
+				}
+				div.editCol{
+					position: relative;
+					&.fullWidth{
+						input{
+							padding-left: 0;
+						}
+					}
+					&.specialLabel{
+						left: -7%;
+					}
+				}
+				label{
+					font-family: 'Proxima Nova Light';
+					padding-top: 0;
+					&.noPadRight{
+						padding-right: 0;
+					}
+				}
+				input{
+					font-family: 'Proxima Nova Semibold';
+					padding-right: 30px;
+					height: 20px;
+					padding-top: 1px;
+					padding-bottom: 1px;
+					border: none;
+					box-shadow: none;
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					&[type="text"]:disabled {
+						cursor: pointer;
+						background-color: #fff;
+					}
+				}
+				&.off{
+					div.fakeInput{
+						position:absolute;
+						left:0;
+						right:0;
+						top:0;
+						bottom:0;
+						cursor: pointer;
+						margin-left: 2%;
+						width: 96%;
+						height: 20px;
+						&:hover{
+							cursor: pointer;
+							background: url(../img/icon_edit.png) no-repeat 100% 50%;
+							background-size: 25px;
+						}
+					}
+				}
+				&.on{
+					input{
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+					}
+					span.btnOkEdit{
+						position: absolute;
+						right: 2%;
+						top: 0;
+						display: inline-block;
+						height: 100%;
+						width: 30px;
+						cursor: pointer;
+					}
+				}
+			}
+			div.leftZone{
+				padding-right: 5%;
+				div.dateFormGroup{
+					margin-bottom: 0;
+					label{
+						font-family: 'Proxima Nova Light';
+						padding-top: 0;
+					}
+					input{
+						font-family: 'Proxima Nova Semibold';
+						color: #555555;
+						padding-top: 0;
+						padding-bottom: 0;
+						height: 30px;
+					}
+					div.specialPaddingForIcon{
+						padding-right: 3%;
+					}
+					span.btnOkEditDate{
+						position: absolute;
+						right: 10px;
+						top: 0;
+						display: inline-block;
+						height: 100%;
+						width: 30px;
+						cursor: pointer;
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+					}
+				}
+				p.otherFileUpload{
+					margin-top: 40px;
+				}
+				p.specialhelp{
+					display: inline-block;
+					position: relative;
+					top: -23px;
+					left: 6px;
+				}
+				p.fichierJointLabel{
+					cursor: pointer;
+					&:hover{
+						background: url(../img/icon_edit.png) no-repeat 100% 50%;
+						background-size: 25px;
+						background-color: rgb(241, 241, 241);
+					}
+					&.on{
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+						background-color: rgb(241, 241, 241);
+					}
+				}
+				div.iconPathologiePied{
+					background: url(../img/pied-v2_small.gif) no-repeat 0 50%;
+					width: 198px;
+					height: 233px;
+					margin-bottom: 55px;
+					margin-top: 90px;
+					margin-left: 10%;
+				}
+				div.iconPathologieMain1{
+					background: url(../img/schema2.jpg) no-repeat 50% 50%;
+					width: 198px;
+					height: 233px;
+					margin-bottom: 0;
+					margin-top: 63px;
+					margin-left: 5%;
+				}
+				div.iconPathologieMain2{
+					background: url(../img/schema3.jpg) no-repeat 50% 50%;
+					width: 299px;
+					height: 233px;
+					margin-bottom: 0;
+					margin-top: 63px;
+					margin-left: 0%;
+				}
+				a.upload{
+					display: inline-block;
+					border: 1px solid;
+					border-color: @orangeAmeli;
+					color: @orangeAmeli;
+					font-size: 0.8em;
+					font-family: 'Proxima Nova Regular';
+					padding-left: 20px;
+					border-radius: 20px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					padding-right: 20px;
+					text-transform: uppercase;
+					&.emptyInputFile{
+						padding-left: 50px;
+						margin-bottom: 50px;
+						background: url(../img/icon_upload.png) no-repeat 18px 50%;
+					}
+					&.second{
+						margin-left: 15px;
+					}
+					&:hover{
+						text-decoration: none;
+					}
+					&:focus{
+						outline: none;
+					}
+					&.editOn{
+						padding-left: 50px;
+						background: url(../img/icon_upload.png) no-repeat 18px 50%;
+					}
+
+				}
+
+			}
+			div.rightZone{
+				padding-left: 5%;
+				div.dateFormGroup{
+					margin-bottom: 0;
+					label{
+						font-family: 'Proxima Nova Light';
+						padding-top: 0;
+					}
+					input{
+						font-family: 'Proxima Nova Semibold';
+						color: #555555;
+						padding-top: 0;
+						padding-bottom: 0;
+						height: 30px;
+					}
+					div.specialPaddingForIcon{
+						padding-right: 3%;
+					}
+					span.btnOkEditDate{
+						position: absolute;
+						right: 10px;
+						top: 0;
+						display: inline-block;
+						height: 100%;
+						width: 30px;
+						cursor: pointer;
+						background: url(../img/icon_edit_on.png) no-repeat 100% 50%;
+						background-size: 20px;
+					}
+				}
+			}
+		}
+	}
+	div.actionRow {
+		background-color: #f7f7f7;
+		> div.form-group {
+			margin: 10px 0;
+			text-align: center;
+			a {
+				float: right;
+				margin-right: 134px;
+				margin-bottom: 10px;
+				&.prevAmeli{
+					float: left;
+					margin-left: 134px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	body > div.recap-emp div.wrapper div.wrapperForm {
+		div.editSelect span.btnOkEditSelect{
+			right: 10px;
+		}
+		div.rightZone {
+			padding-left: 0%;
+			padding-right: 5%;
+			margin-top: 160px;
+		}
+
+		div.periode {
+			p{
+				padding-left: 7px;
+			}
+			div.specialNoPadding {
+				padding-left: 35px;
+			}
+			div.dateFormGroup{
+				div.input-group {
+					padding-left: 0;
+				}
+			}
+		}
+		h4.infoTitle {
+			margin-top: 160px;
+		}
+	}
+}
+
+@media (max-width: @screen-md-min) {
+	body > div.recap-emp div.wrapper div.barRow div.border{
+		float: none;
+		top: 15px;
+		left: 2%;
+		width: 96%;
+		div.completeBar{
+			width: 30%;
+		}
+	}
+}
+
+
+@media (max-width: @screen-sm-min) {
+	body > div.recap-emp {
+		div.wrapper {
+			div.tabsRow{
+				border-color: #fff;
+			}
+			div.wrapperForm {
+				div.form-group.specialEdit div.editCol.specialLabel {
+					left: 0%;
+				}
+				div.leftZone a.upload.second {
+					margin-left: 0;
+					display: block;
+					margin-top: 15px;
+					width: 165px;
+				}
+				div.editSelect span.btnOkEditSelect {
+					right: 10px;
+					top: 12px;
+				}
+				div.periode {
+					div.specialNoPadding {
+						padding-left: 15px;
+					}
+					span.btnOkEditPeriode{
+						top: 28px
+					}
+					div.dateFormGroup input {
+						/* width: 93.7%; */
+					}
+				}
+			}
+			div.barRow div.border{
+				p {
+					text-align: right;
+				}
+			}
+			div.tabsRow{
+				p{
+					width: 100%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		div.actionRow > div.form-group a.prevAmeli,
+		div.actionRow > div.form-group a{
+			float: none;
+			display: inline-block;
+			margin: 0 5%;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.recap-emp div.wrapper div.barRow div.border {
+		left: 4%;
+		width: 92%;
+	}
+}
+@media (max-width: 300px) {
+	body > div.recap-emp div.wrapper div.barRow div.border {
+		left: -5%;
+	}
+}

@@ -1,0 +1,461 @@
+body > div.description2-sal{
+	/* @animation : color: @orangeAmeli; */
+	@-webkit-keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@-webkit-keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@-webkit-keyframes pinnoccioBarTwo {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 45%}
+	}
+	@keyframes colorTextOange {
+	    0%   {color : #cecece}
+	    100% {color : @orangeAmeli}
+	}
+	@keyframes colorBarOange {
+	    0%   {background-color: #ebebeb}
+	    100% {background-color : @orangeAmeli}
+	}
+	@keyframes pinnoccioBarTwo {
+	    0%   {width : 0%}
+	    20%   {background-color: @orangeAmeli}
+	    40%   {background-color: #ebebeb}
+	    60%   {background-color: @orangeAmeli}
+	    80%   {background-color: #ebebeb}
+	    100% {width : 45%}
+	}
+	div.wrapper{
+		background-color: #fff;
+		div.barRow{
+			div.border{
+				min-width: 255px;
+				border: 1px solid #ebebeb;
+				padding: 3px 2px;
+				border-top-right-radius: 15px;
+				border-top-left-radius: 15px;
+				border-bottom-right-radius: 15px;
+				border-bottom-left-radius: 15px;
+				font-family: 'Proxima Nova Regular';
+				float: right;
+				height: 23px;
+				position: relative;
+				top: -35px;
+				right: 35px;
+				&.animOn{
+					p{
+
+					animation-name: colorTextOange;
+					-webkit-animation-name: colorTextOange; /* Safari 4.0 - 8.0 */
+
+					animation-duration: 0.3s;
+					-webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+
+					animation-delay: 0s;
+					-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+					-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+					animation-iteration-count: 3;
+
+					-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+					animation-timing-function: ease-in;
+						/* color: @orangeAmeli; */
+
+						/* .transition(@transition) {
+						  -webkit-transition: @transition;
+						          transition: @transition; */
+						/* .animation(@animation) {
+						-webkit-animation: @animation;
+						animation: @animation;
+						} */
+					}
+					div.completeBar{
+						width: 45%;
+						background-color: #ebebeb;
+						animation-name: colorBarOange;
+						-webkit-animation-name: colorBarOange; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.3s;
+						-webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 2s;
+						-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 3;
+
+						-webkit-animation-timing-function: ease-in; /* Safari 4.0 - 8.0 */
+						animation-timing-function: ease-in;
+
+						/* pinnoccioBarTwo*/
+						animation-name: pinnoccioBarTwo;
+						-webkit-animation-name: pinnoccioBarTwo; /* Safari 4.0 - 8.0 */
+
+						animation-duration: 0.9s;
+						-webkit-animation-duration: 0.9s; /* Safari 4.0 - 8.0 */
+
+						animation-delay: 0s;
+						-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+
+						-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+						animation-iteration-count: 1;
+
+						-webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+						animation-timing-function: linear;
+
+
+					}
+				}
+				p{
+					color: #cecece;
+					text-transform: lowercase;
+					position: absolute;
+					right: 15px;
+					top: 0;
+				}
+				div.completeBar{
+					width: 0;
+					font-family: 'Proxima Nova Regular';
+					font-size: 1.2em;
+					display: inline-block;
+					border-top-right-radius: 15px;
+					border-top-left-radius: 15px;
+					border-bottom-right-radius: 15px;
+					border-bottom-left-radius: 15px;
+					width: 0;
+					min-height: 19px;
+					position: relative;
+					top: -2px;
+				}
+			}
+		}
+		div.tabsRow{
+			margin-top: 30px;
+			width: 98%;
+			border-bottom: 1px solid #c9c9c9;
+			margin-left: 1%;
+			p{
+				text-transform: uppercase;
+				display: inline-block;
+				margin-bottom: 0;
+				padding-bottom: 10px;
+				margin-right: 4%;
+				&.active{
+					font-family: 'Proxima Nova Semibold';
+					color: @bleuAmeli;
+					border-bottom: 1px solid @bleuAmeli;
+				}
+			}
+		}
+		div.wrapperForm{
+			margin-top: 60px;
+			margin-bottom: 100px;
+			padding: 0 6%;
+			h4{
+				font-family: 'Proxima Nova Semibold';
+				margin-bottom: 50px;
+				border-bottom: 1px solid @bleuAmeli;
+				padding-bottom: 10px;
+				color: #404040;
+				&.infoTitle{
+					margin-top: 70px;
+					border-color: #f68428;
+				}
+				&.infoTitleSalaire{
+					border-color: #56ca81;
+				}
+				&.infoTitleCondition{
+					border-color: #84156e;
+					margin-top: 70px;
+				}
+			}
+			div.form-group.reduced{
+				padding-left: 2%;
+				padding-right: 2%;
+			}
+			div.leftZone{
+				padding-right: 5%;
+				textarea{
+					max-width: 100%;
+				}
+				div.periode div.dateFormGroup{
+					&.first div.input-group{
+						padding-left: 2%;
+					}
+					&.second{
+						div.input-group{
+							padding-left: 2%;
+						}
+						label{
+							padding-left: 0;
+							left: -10px;
+						}
+					}
+				}
+				div.oneBlock{
+					margin-top: 70px;
+					> p{
+						font-family: 'Proxima Nova Semibold';
+						&:after{
+							content:"*";
+							color:@colorAsterixRequirForm;
+							margin-left: 6px;
+							font-weight: bold;
+						}
+					}
+					div.motifRow{
+						width: 96%;
+						margin-left: 2%;
+					}
+					&:first-of-type{
+						margin-bottom: 0px;
+					}
+				}
+				span.separation{
+					display: block;
+					position: relative;
+					text-align: center;
+					cursor: pointer;
+					text-transform: uppercase;
+					&:hover{
+						p{
+							color: @bleuAmeli;
+						}
+						span.line{
+							border-color: @bleuAmeli;
+						}
+					}
+					p{
+						color: #d5d5d5;
+						display: inline-block;
+						top: 34px;
+						position: relative;
+						background-color: #fff;
+						padding: 0 1%;
+					}
+					span.line{
+						border-top: 1px dashed #d5d5d5;
+						display: inline-block;
+						width: 100%;
+					}
+				}
+				.decale{
+					margin-left: 15%;
+				}
+			}
+			div.rightZone{
+				padding-left: 5%;
+				div.rowCustomRadio{
+					text-align: center;
+					margin-top: 20px;
+					margin-bottom: 55px;
+					div.bar{
+						width: 94%;
+						position: absolute;
+						top: 8px;
+						height: 3.5px;
+						background-color: #dbdbdb;
+					}
+					div.oneRadioCustom{
+						display: inline-block;
+						position: relative;
+						min-height: 30px;
+						p{
+							font-family: 'Proxima Nova Regular';
+							position: absolute;
+							bottom: -25px;
+							width: auto;
+							color: #a4a4a4;
+							margin-bottom: 0;
+						}
+						span.boule{
+							height: 20px;
+							width: 20px;
+							background-color: #dbdbdb;
+							border-radius: 20px;
+							-webkit-border-radius: 20px;
+							-moz-border-radius: 20px;
+							display: inline-block;
+							cursor: pointer;
+						}
+						&.active{
+							p{
+								color: @bleuAmeli;
+								font-family: 'Proxima Nova Semibold';
+								margin: 0 -1px;
+							}
+							span.boule{
+								background-color: @bleuAmeli;
+							}
+						}
+						&.one{
+							text-align: left;
+							float: left;
+						}
+						&.two{
+							text-align: center;
+							p{
+								margin-left: -26px;
+							}
+						}
+						&.three{
+							text-align: left;
+							float: right;
+							p{
+								margin-left: -111px;
+							}
+						}
+					}
+
+				}
+
+			}
+			/* div.form-group{
+				div.withSelect{
+					position: relative;
+					input{
+						width: 91%;
+					}
+					select{
+						width: 10%;
+						float: right;
+						margin-top: -40px;
+						padding: 0 0 0 12px;
+					}
+				}
+			} */
+		}
+	}
+	div.actionRow {
+		background-color: #f7f7f7;
+		> div.form-group {
+			margin: 10px 0;
+			text-align: center;
+			a {
+				float: right;
+				margin-right: 134px;
+				margin-bottom: 10px;
+				&.prevAmeli{
+					float: left;
+					margin-left: 134px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	body > div.description2-sal div.wrapper div.wrapperForm {
+		/* padding: 0 10%; */
+		div.rightZone {
+			padding-left: 0%;
+			padding-right: 5%;
+			margin-top: 160px;
+			div.rowCustomRadio div.bar {
+				width: 94.8%;
+			}
+		}
+		div.leftZone div.periode div.dateFormGroup.first div.input-group {
+			padding-left: 0;
+		}
+		h4.infoTitle {
+			margin-top: 160px;
+		}
+	}
+}
+
+@media (max-width: @screen-md-min) {
+	body > div.description2-sal div.wrapper div.barRow div.border{
+		float: none;
+		top: 15px;
+		left: 2%;
+		width: 96%;
+		div.completeBar{
+			width: 30%;
+		}
+	}
+}
+
+
+@media (max-width: @screen-sm-min) {
+	body > div.description2-sal {
+		div.wrapper {
+			div.wrapperForm div.rightZone div.rowCustomRadio div.bar {
+				width: 92.2%;
+			}
+			/* div.wrapperForm {
+				padding: 0 15%;
+			} */
+			div.barRow div.border{
+				p {
+					text-align: right;
+				}
+			}
+			div.tabsRow{
+				border-color: #fff;
+				p{
+					width: 100%;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		div.actionRow > div.form-group a.prevAmeli,
+		div.actionRow > div.form-group a{
+			float: none;
+			display: inline-block;
+			margin: 0 5%;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-min) {
+	body > div.description2-sal div.wrapper {
+
+		div.radioFormGroup{
+			label{
+				text-align: center;
+			}
+		}
+
+		div.wrapperForm div.rightZone div.rowCustomRadio {
+			div.oneRadioCustom {
+				text-align: center !important;
+				width: 100%;
+				margin-bottom: 50px;
+				&.two{
+					p{
+						margin-left: 0;
+					}
+				}
+				&.three{
+					p{
+						margin-left: 0;
+					}
+				}
+				p{
+					width: 100%;
+				}
+			}
+			div.bar {
+				display: none;
+			}
+		}
+		div.barRow div.border {
+			left: 4%;
+			width: 92%;
+		}
+	}
+}
+@media (max-width: 300px) {
+	body > div.description2-sal div.wrapper div.barRow div.border {
+		left: -5%;
+	}
+}
