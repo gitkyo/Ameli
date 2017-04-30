@@ -948,7 +948,7 @@ jQuery( document ).ready(function() {
 		if( $('.container-fluid.main').hasClass('connexion') ) initInfoConnexion();
 
 		if( $('.container-fluid.main').hasClass('identification-emp') ) initIdentification();
-		if( $('.container-fluid.main').hasClass('identification-sal') ) initIdentification();
+		//if( $('.container-fluid.main').hasClass('identification-sal') ) initIdentification();
 
 		if( $('.container-fluid.main').hasClass('description-emp') ) initDescription();
 		if( $('.container-fluid.main').hasClass('description-sal') ) initDescription();

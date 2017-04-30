@@ -13,7 +13,7 @@
     <!-- Bootstrap + bootstrap_override + customcss -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Custom select (http://selectric.js.org) -->
-    <link href="css/selectric.css" rel="stylesheet">
+    <!-- <link href="css/selectric.css" rel="stylesheet"> -->
     <!-- Date picker (https://eonasdan.github.io/bootstrap-datetimepicker/) -->
     <!-- <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> -->
 
@@ -67,151 +67,162 @@
             <div class="wrapperForm row">
                 <form class="form-horizontal">
 
+                    
                     <div class="col-lg-6 leftZone">
+                        <h4 class="infoTitleSalaire">Informations sur le salarié</h4>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Nom de jeune fille</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Nom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="Dupont" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Prénom</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="Michel" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Numéro sécurité social</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="1 69 05 49 588 157 80" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Adresse</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="42 rue Bart" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Code postal</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="13000" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Ville</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="Marseille" >
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="" class="col-sm-4 control-label">Téléphone</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="06 58 15 40 15" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-4 control-label">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="" placeholder="dupont.michel@gmail.com" >
+                            </div>
+                        </div>
+
+                        <!-- <div class="form-group required dateFormGroup">
+                            <label for="" class="col-sm-4 control-label">Date du Certificat Médical Initial</label>
+                            <div class='col-sm-8 input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" id="" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="form-group required">
+                            <label for="input18" class="col-sm-4 control-label">Côté de l’affection</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked > Gauche
+                                </label>
+                                <label class="radio-inline decale">
+                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" > Droite
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input19" class="col-sm-4 control-label">Maladie professionnelle déclarée</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="input19" placeholder="Syndrome de compression du nerf sciatique p..." >
+                            </div>
+                        </div> -->
+
+
+                    </div>
+
+                    <div class="col-lg-6 rightZone">
                         <h4>Informations sur l'entreprise</h4>
 
                         <div class="form-group required">
                             <label for="input1" class="col-sm-4 control-label">Nom de l'entreprise ou de l'employeur</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input1" placeholder="Villisa compagny">
+                              <input type="text" class="form-control" id="input1" placeholder="Villisa compagny" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input2" class="col-sm-4 control-label">Adresse</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input2" placeholder="72 Rue du chemin fleurie">
+                              <input type="text" class="form-control" id="input2" placeholder="72 Rue du chemin fleurie" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input3" class="col-sm-4 control-label">Code postal</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input3" placeholder="13001">
+                              <input type="text" class="form-control" id="input3" placeholder="13001" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input4" class="col-sm-4 control-label">Ville</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input4" placeholder="Marseille">
+                              <input type="text" class="form-control" id="input4" placeholder="Marseille" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input4.1" class="col-sm-4 control-label">Numéro de téléphone</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input4.1" placeholder="07 88 99 55 44">
+                              <input type="text" class="form-control" id="input4.1" placeholder="07 88 99 55 44" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input4.2" class="col-sm-4 control-label">Email</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input4.2" placeholder="email@gmail.com">
+                              <input type="text" class="form-control" id="input4.2" placeholder="email@gmail.com" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input5" class="col-sm-4 control-label">Siret</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input5" placeholder="404 833 579 00022">
+                              <input type="text" class="form-control" id="input5" placeholder="404 833 579 00022" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input6" class="col-sm-4 control-label">Branche d'activité</label>
-                            <div class="col-sm-8 withSelect">
-                              <select class="form-control" id="input6">
-                                <option></option>
-                                <option>Culture et production animale, chasse et services annexes</option>
-                                <option>Sylviculture et exploitation forestière</option>
-                                <option>Pêche et aquaculture</option>
-                                <option>Extraction de houille et de lignite</option>
-                                <option>Extraction d'hydrocarbures</option>
-                                <option>Extraction de minerais métalliques</option>
-                                <option>Autres industries extractives</option>
-                                <option>Services de soutien aux industries extractives</option>
-                                <option>Industries alimentaires</option>
-                                <option>Fabrication de boissons</option>
-                                <option>Fabrication de produits à base de tabac</option>
-                                <option>Fabrication de textiles</option>
-                                <option>Industrie de l'habillement</option>
-                                <option>Industrie du cuir et de la chaussure</option>
-                                <option>Travail du bois et fabrication d'articles en bois et en liège, à l'exception des meubles ; fabrication d'articles en vannerie et sparterie</option>
-                                <option>Industrie du papier et du carton</option>
-                                <option>Imprimerie et reproduction d'enregistrements</option>
-                                <option>Cokéfaction et raffinage</option>
-                                <option>Industrie chimique</option>
-                                <option>Industrie pharmaceutique</option>
-                                <option>Fabrication de produits en caoutchouc et en plastique</option>
-                                <option>Fabrication d'autres produits minéraux non métalliques</option>
-                                <option>Métallurgie</option>
-                                <option>Fabrication de produits métalliques, à l'exception des machines et des équipements</option>
-                                <option>Fabrication de produits informatiques, électroniques et optiques</option>
-                                <option>Fabrication d'équipements électriques</option>
-                                <option>Fabrication de machines et équipements n.c.a.</option>
-                                <option>Industrie automobile</option>
-                                <option>Fabrication d'autres matériels de transport</option>
-                                <option>Fabrication de meubles</option>
-                                <option>Autres industries manufacturières</option>
-                                <option>Réparation et installation de machines et d'équipements</option>
-                                <option>Production et distribution d'électricité, de gaz, de vapeur et d'air conditionné</option>
-                                <option>Captage, traitement et distribution d'eau</option>
-                                <option>Collecte et traitement des eaux usées</option>
-                                <option>Collecte, traitement et élimination des déchets ; récupération</option>
-                                <option>Dépollution et autres services de gestion des déchets</option>
-                                <option>Construction de bâtiments</option>
-                                <option>Génie civil</option>
-                                <option>Travaux de construction spécialisés</option>
-                                <option>Commerce et réparation d'automobiles et de motocycles</option>
-                                <option>Commerce de gros, à l'exception des automobiles et des motocycles</option>
-                                <option>Commerce de détail, à l'exception des automobiles et des motocycles</option>
-                                <option>Transports terrestres et transport par conduites</option>
-                                <option>Transports par eau</option>
-                                <option>Transports aériens</option>
-                                <option>Entreposage et services auxiliaires des transports</option>
-                                <option>Activités de poste et de courrier</option>
-                                <option>Hébergement</option>
-                                <option>Restauration</option>
-                                <option>Édition</option>
-                                <option>Production de films cinématographiques, de vidéo et de programmes de télévision ; enregistrement sonore et édition musicale</option>
-                                <option>Programmation et diffusion</option>
-                                <option>Télécommunications</option>
-                                <option>Programmation, conseil et autres activités informatiques</option>
-                                <option>Services d'information</option>
-                                <option>Activités des services financiers, hors assurance et caisses de retraite</option>
-                                <option>Assurance</option>
-                                <option>Activités auxiliaires de services financiers et d'assurance</option>
-                                <option>Activités immobilières</option>
-                                <option>Activités juridiques et comptables</option>
-                                <option>Activités des sièges sociaux ; conseil de gestion</option>
-                                <option>Activités d'architecture et d'ingénierie ; activités de contrôle et analyses techniques</option>
-                                <option>Recherche-développement scientifique</option>
-                                <option>Publicité et études de marché</option>
-                                <option>Autres activités spécialisées, scientifiques et techniques</option>
-                                <option>Activités vétérinaires</option>
-                                <option>Activités de location et location-bail</option>
-                                <option>Activités liées à l'emploi</option>
-                                <option>Activités des agences de voyage, voyagistes, services de réservation et activités connexes</option>
-                                <option>Enquêtes et sécurité</option>
-                                <option>Services relatifs aux bâtiments et aménagement paysager</option>
-                                <option>Activités administratives et autres activités de soutien aux entreprises</option>
-                                <option>Administration publique et défense ; sécurité sociale obligatoire</option>
-                                <option>Enseignement</option>
-                                <option>Activités pour la santé humaine</option>
-                                <option>Hébergement médico-social et social</option>
-                                <option>Action sociale sans hébergement</option>
-                                <option>Activités créatives, artistiques et de spectacle</option>
-                                <option>Bibliothèques, archives, musées et autres activités culturelles</option>
-                                <option>Organisation de jeux de hasard et d'argent</option>
-                                <option>Activités sportives, récréatives et de loisirs</option>
-                                <option>Activités des organisations associatives</option>
-                                <option>Réparation d'ordinateurs et de biens personnels et domestiques</option>
-                                <option>Autres services personnels</option>
-                                <option>Activités des ménages en tant qu'employeurs de personnel domestique</option>
-                                <option>Activités indifférenciées des ménages en tant que producteurs de biens et services pour usage propre</option>
-                                <option>Activités des organisations et organismes extraterritoriaux</option>
+                            <div class="col-sm-8">
+                              <select class="form-control" id="input6" value="Activités des organisations associatives" disabled>                            
+                                <option>Activités des organisations associatives</option>                                
                               </select>
                             </div>
                         </div>
@@ -221,35 +232,35 @@
                         <div class="form-group required">
                             <label for="input7" class="col-sm-4 control-label">Nom</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input7" placeholder="Albertini">
+                              <input type="text" class="form-control" id="input7" placeholder="Albertini" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input8" class="col-sm-4 control-label">Email</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input8" placeholder="docteur@gmail.com">
+                              <input type="text" class="form-control" id="input8" placeholder="docteur@gmail.com" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input9" class="col-sm-4 control-label">Adresse</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input9" placeholder="">
+                              <input type="text" class="form-control" id="input9" placeholder="" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input9.1" class="col-sm-4 control-label">Code postal</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input9.1" placeholder="">
+                              <input type="text" class="form-control" id="input9.1" placeholder="" disabled>
                             </div>
                         </div>
 
                         <div class="form-group required">
                             <label for="input9.2" class="col-sm-4 control-label">Ville</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input9.2" placeholder="">
+                              <input type="text" class="form-control" id="input9.2" placeholder="" disabled>
                             </div>
                         </div>
                         <!-- <div class="form-group required">
@@ -262,106 +273,9 @@
                         <div class="form-group required">
                             <label for="input10" class="col-sm-4 control-label">Numéro de téléphone</label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input10" placeholder="">
+                              <input type="text" class="form-control" id="input10" placeholder="" disabled>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="col-lg-6 rightZone">
-                        <h4 class="infoTitleSalaire">Informations sur le salarié</h4>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Nom de jeune fille</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Nom</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="Dupont" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Prénom</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="Michel" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Numéro sécurité social</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="1 69 05 49 588 157 80" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Adresse</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="42 rue Bart" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Code postal</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="13000" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Ville</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="Marseille" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="" class="col-sm-4 control-label">Téléphone</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="06 58 15 40 15" disabled>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="" class="col-sm-4 control-label">Email</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="dupont.michel@gmail.com" disabled>
-                            </div>
-                        </div>
-
-                        <!-- <div class="form-group required dateFormGroup">
-                            <label for="" class="col-sm-4 control-label">Date du Certificat Médical Initial</label>
-                            <div class='col-sm-8 input-group date' id='datetimepicker1'>
-                                <input type='text' class="form-control" id="" disabled/>
-                                <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </span>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="form-group required">
-                            <label for="input18" class="col-sm-4 control-label">Côté de l’affection</label>
-                            <div class="col-sm-8">
-                                <label class="radio-inline">
-                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked disabled> Gauche
-                                </label>
-                                <label class="radio-inline decale">
-                                  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled> Droite
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group required">
-                            <label for="input19" class="col-sm-4 control-label">Maladie professionnelle déclarée</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="input19" placeholder="Syndrome de compression du nerf sciatique p..." disabled>
-                            </div>
-                        </div> -->
-
 
                     </div>
 
@@ -408,7 +322,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom select (http://selectric.js.org/index.html) -->
-    <script src="js/jquery.selectric.js"></script>
+    <!-- <script src="js/jquery.selectric.js"></script> -->
 
     <!-- Moment JS (https://momentjs.com/) -->
     <!-- <script src="js/moment.min.js"></script> -->
