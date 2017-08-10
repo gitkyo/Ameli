@@ -32,6 +32,13 @@ body > div.pathologie-emp{
 	    80%   {background-color: #ebebeb}
 	    100% {width : 45%}
 	}
+	.modal-body {
+		padding: 0;
+		div.tac button{
+			margin-left: 2%;
+			margin-bottom: 10px;
+		}
+	}
 	div.wrapper{
 		background-color: #fff;
 		div.barRow{
@@ -284,12 +291,22 @@ body > div.pathologie-emp{
 					margin-top: 55px;
 				}
 				div.iconPathologiePied{
-					background: url(../img/pied-v2_small.gif) no-repeat 50% 50%;
-					width: 198px;
-					height: 233px;
+					cursor: pointer;
+					background: url(../img/tendinite-achiléenne-animée-300x300px.gif) no-repeat 50% 50%;
+					width: 300px;
+					height: 300px;
 					margin-bottom: 62px;
 					margin-top: 63px;
 					margin-left: 5%;
+					background-size: 100%;
+					&.big{
+						cursor: default;
+						background: url(../img/tendinite-achiléenne-animée-600x600px.gif) no-repeat 50% 50%;
+						margin: 0 auto;
+						background-size: 100%;
+						height: 600px;
+						width: 598px;
+					}
 				}
 				div.iconPathologieMain1{
 					background: url(../img/schema2.jpg) no-repeat 50% 50%;
@@ -419,8 +436,12 @@ body > div.pathologie-emp{
 
 
 @media (max-width: @screen-sm-min) {
+
 	body > div.pathologie-emp {
 		div.wrapper {
+			div.wrapperForm div.leftZone div.iconPathologiePied.big {
+				width: 100%;
+			}
 			div.wrapperForm div.rowCustomRadio div.bar {
 				width: 93%;
 			}
