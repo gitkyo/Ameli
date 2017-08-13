@@ -11250,8 +11250,14 @@ body > div.pathologie-emp {
     width: 45%;
   }
 }
+body > div.pathologie-emp div.modal-header h5.modal-title {
+  text-align: center;
+}
 body > div.pathologie-emp .modal-body {
   padding: 0;
+}
+body > div.pathologie-emp .modal-body div.tac {
+  text-align: center;
 }
 body > div.pathologie-emp .modal-body div.tac button {
   margin-left: 2%;
