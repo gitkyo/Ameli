@@ -11262,6 +11262,11 @@ body > div.pathologie-emp .modal-body div.tac {
 body > div.pathologie-emp .modal-body div.tac button {
   margin-left: 2%;
   margin-bottom: 10px;
+  background-image: none;
+  padding: 0 15px 2px 15px;
+}
+body > div.pathologie-emp .modal-body div.tac button:hover {
+  background-image: none;
 }
 body > div.pathologie-emp div.wrapper {
   background-color: #fff;
