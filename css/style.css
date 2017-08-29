@@ -11554,10 +11554,10 @@ body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle {
   margin-bottom: 20px;
 }
 body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow {
-  margin-top: 155px;
+  margin-top: 0;
 }
 body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone p.subTitle.secondRow.more {
-  margin-top: 358px;
+  margin-top: 56px;
 }
 body > div.pathologie-emp div.wrapper div.wrapperForm div.leftZone label.fileIcon {
   background: url(../img/icon_file.png) no-repeat 0% 50%;
